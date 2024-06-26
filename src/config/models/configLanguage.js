@@ -1,4 +1,4 @@
-import VueI18n from 'vue-i18n'
+// import VueI18n from 'vue-i18n'
 import enumConfig from './configEnum'
 import en from '../../locale/en.json'
 import pt from '../../locale/pt.json'
@@ -49,17 +49,18 @@ export default {
     }
   ],
   init(Vue) {
-    Vue.use(VueI18n)
-    const i18n = new VueI18n({
-      locale: uni.getLocale(),
-      messages: this.loadLocaleMessages()
-    })
-
-    this._ins = i18n
-    Vue.prototype.$formartLocaleString = this.formartLocaleString.bind(this)
-    return i18n
+    // Vue.use(VueI18n)
+    // const i18n = new VueI18n({
+    //   locale: uni.getLocale(),
+    //   messages: this.loadLocaleMessages()
+    // })
+    //
+    // this._ins = i18n
+    // Vue.prototype.$formartLocaleString = this.formartLocaleString.bind(this)
+    // return i18n
   },
   loadLocaleMessages() {
+    //  vite: import.meta.globEager()
     const locales = require.context(
       '../../locale',
       true,
@@ -106,6 +107,7 @@ export default {
         if (configWebsite.liuhe_language_auto === 1)
           return this.formatterEnvLocal()
         break
+      default:
     }
   },
   formatterEnvLocal() {

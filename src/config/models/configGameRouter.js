@@ -1,6 +1,6 @@
 // 游戏路径配置 避免在其它逻辑点一直去计算而且不好管理
 import $store from '@/store/index'
-import { config } from '../config'
+import configEnums from './configEnum.js'
 import { enter } from '@/utils/lottery/mine'
 // TODO 替换其它页面中出现的零散逻辑
 export default {
@@ -110,7 +110,7 @@ export default {
 
       const configInfo =
         $store.state.appInfoStore.contantsConfigTypeMap[
-          config.enumMgr.CONTANTS_CONFIGS_ID.ENTER_GAME_CONDITION
+          configEnums.CONTANTS_CONFIGS_ID.ENTER_GAME_CONDITION
         ]
       if (configInfo && configInfo.url == 0) {
         filterLogin = false

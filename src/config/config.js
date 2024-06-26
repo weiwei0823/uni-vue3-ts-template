@@ -78,7 +78,7 @@ if (websocketWsUrl == '') {
 // #endif
 websocketWsUrl = configuratioBuilder.getConfigUsedWsServer(websocketWsUrl)
 
-const config = {
+export const config = {
   // 论坛特殊处理 日期:230720
   // TODO yt 此类需求查config下 configUIMgr
   // is_230720: station === configEnums.STATION.LUNTAN && stationVersionCode == configEnums.STATION_VERSION_CODE.BETA_LUNTAN_20230720,

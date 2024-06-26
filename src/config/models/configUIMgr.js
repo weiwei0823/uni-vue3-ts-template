@@ -1,5 +1,6 @@
 import enumConfig from './configEnum'
-import { config } from '../config.js'
+import configuratioBuilder from '@/config/configurationBuilder/configurationBuilder'
+import configEnums from '@/config/models/configEnum'
 
 export default {
   memCheckPageElement: {},
@@ -188,19 +189,20 @@ export default {
     // TODO @mr 此处报错 我加了一个默认值
     // let stationVersionCode = configs.stationVersionCode;
     const stationVersionCode =
-      config?.stationVersionCode || enumConfig.STATION_VERSION_CODE.DEFAULT_CODE
+      configuratioBuilder.getConfigStationVersionCodeOrDefault(
+        configEnums.STATION_VERSION_CODE.DEFAULT_CODE
+      ) || enumConfig.STATION_VERSION_CODE.DEFAULT_CODE
     const hideArray = this.PAGE_VERSION_HIDE_CONFIGS[stationVersionCode]
     if (!hideArray) {
       return false
     }
-    !this.memCheckPageElement[stationVersionCode] &&
-      (this.memCheckPageElement[stationVersionCode] = {})
-    if (
-      this.memCheckPageElement[stationVersionCode][elementKey] !== undefined
-    ) {
+    if (!this.memCheckPageElement[stationVersionCode]) {
+      this.memCheckPageElement[stationVersionCode] = {}
+    }
+    if (this.memCheckPageElement[stationVersionCode][elementKey] !== undefined) {
       return this.memCheckPageElement[stationVersionCode][elementKey]
     }
-    if (hideArray.indexOf(elementKey) != -1) {
+    if (hideArray.indexOf(elementKey) !== -1) {
       this.memCheckPageElement[stationVersionCode][elementKey] = true
       return true
     }

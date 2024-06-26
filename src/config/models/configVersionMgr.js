@@ -1,5 +1,3 @@
-import { config } from '../config.js'
-
 export default {
   // 版本设置常量ID
   configContantId: 52,
@@ -11,11 +9,11 @@ export default {
 
   // 记录版本匹配信息
   configKeySaveTryMap: 'version_try_map',
-  doCheckReloadStationContrastVersion(contants) {
+  doCheckReloadStationContrastVersion(contants, version) {
     const serverContantsInfo = this.getContantInfoFromContants(contants)
     if (!serverContantsInfo) return
     const serverVersion = serverContantsInfo.url
-    const localVersion = config.version_dev
+    const localVersion = version
     const versionTryMap = uni.getStorageSync(this.configKeySaveTryMap)
     const saveVersionKey = `${localVersion}_to_${serverVersion}`
     let tryVersionTimes = versionTryMap ? versionTryMap[saveVersionKey] : 0
