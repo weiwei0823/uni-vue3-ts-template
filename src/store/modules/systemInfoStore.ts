@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import utlilCommons from '@/utils/common.js'
+import utlilCommons from '@/utils/common'
 
 const systemInfoStore = defineStore('systemInfoStore', {
   state: {

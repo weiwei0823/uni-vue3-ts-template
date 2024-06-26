@@ -1,4 +1,4 @@
-function getTime(value, type = 1) {
+export function getTime(value, type = 1) {
   if (value == undefined) {
     return
   }
@@ -34,7 +34,7 @@ function getTime(value, type = 1) {
   }
 }
 
-function checkPhone(phone) {
+export function checkPhone(phone) {
   const reg = /^[1][3,4,5,6,7,8,9][0-9]{9}$/
   if (phone == '' || !reg.test(phone)) {
     pop('请检查手机格式', 2000)
@@ -43,7 +43,7 @@ function checkPhone(phone) {
   return true
 }
 
-function codeCheck(code) {
+export function codeCheck(code) {
   if (!code) {
     uni.showToast({
       title: '请输入验证码',
@@ -55,7 +55,7 @@ function codeCheck(code) {
   return true
 }
 
-function setPickerStyle(themeColor) {
+export function setPickerStyle(themeColor) {
   console.log('themeColor', themeColor)
   document.querySelectorAll('.uni-picker-action-confirm').forEach((dom) => {
     dom.style.color = themeColor
@@ -121,7 +121,7 @@ function setPickerStyle(themeColor) {
   }, 200)
 }
 
-function formatDate(currentDate) {
+export function formatDate(currentDate) {
   // 定义日期格式化函数
   let date // new Date(currentDate);
   date = new Date(currentDate)
@@ -149,7 +149,7 @@ function formatDate(currentDate) {
   return `${year}.${month}.${day} ${h}:${m}:${s}` // 拼接成yyyymmdd形式字符串
 }
 
-function caculationRpxToPx(rpxsize) {
+export function caculationRpxToPx(rpxsize) {
   const systemInfo = uni.getSystemInfoSync()
   const caculationScreenWidth =
     systemInfo.screenWidth >= 480 ? 480 : systemInfo.screenWidth
@@ -161,7 +161,7 @@ function caculationRpxToPx(rpxsize) {
  按参数名的ascii码从小到大排序
  如age在city前
  */
-function paramKeySort(array) {
+export function paramKeySort(array) {
   if (!array || array === undefined) return ''
   // 先用Object内置类的keys方法获取要排序对象的属性名数组，
   // 再利用Array的sort方法进行排序
@@ -186,7 +186,7 @@ function paramKeySort(array) {
   return newObj
 }
 
-function isNil(s) {
+export function isNil(s) {
   return (
     undefined == s ||
     s == 'undefined' ||
@@ -245,7 +245,7 @@ export function deepEqual(x, y) {
   return false
 }
 
-module.exports = {
+export default {
   getTime,
   checkPhone,
   codeCheck,

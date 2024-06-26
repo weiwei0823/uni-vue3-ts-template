@@ -43,7 +43,7 @@ const formartObjectToQueryString = function (obj, addFirstChar = '?') {
  * 数据格式化工具类
  * @type {{formartActivityKeyToText: (function(*): *)}}
  */
-module.exports = {
+export default {
   formartActivityKeyToText,
   formartObjectToQueryString
 }

@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
-import { paramKeySort } from '@/utils/common.js'
-import { config } from '../../config/config'
+import { paramKeySort } from '@/utils/common'
+import { config } from '@/config/config'
 import requestCache from '@/utils/requestCache/requestCache'
 
 const API_CACHED_STRINGS = {

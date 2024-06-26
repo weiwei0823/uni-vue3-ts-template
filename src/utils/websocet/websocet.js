@@ -1,8 +1,8 @@
 import Base64 from 'base-64'
+import CryptoJS from 'crypto-js'
 import $store from '@/store/index.js'
-import { config } from '../../config/config'
+import { config } from '@/config/config'
 import EncryptUtils from '@/utils/common/encryptUtils.js'
-import CryptoJS from '@/utils/common/crypto-js'
 
 let isSocketClose = false // 是否关闭socket
 const reconnectCount = 5 // 重连次数

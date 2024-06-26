@@ -71,8 +71,8 @@ export default {
     for (const i in contants) {
       const info = contants[i]
       if (
-        info.id == this.configContantId ||
-        info.type == this.configContantType
+        info.id === this.configContantId ||
+        info.type === this.configContantType
       ) {
         return info
       }

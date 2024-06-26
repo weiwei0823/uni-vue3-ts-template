@@ -1,5 +1,5 @@
 import { config } from '@/config/config'
-import { getTime } from '@/utils/common.js'
+import { getTime } from '@/utils/common'
 
 const LogWatcher = function (logName) {
   this.seed = `${Date.now()}${Math.ceil(Math.random() * 99999)}`

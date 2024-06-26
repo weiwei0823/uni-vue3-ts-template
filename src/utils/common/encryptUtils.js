@@ -1,4 +1,4 @@
-import CryptoJS from '@/utils/common/crypto-js.js'
+import CryptoJS from 'crypto-js'
 
 const EncryptUtils = {
   AES: {
