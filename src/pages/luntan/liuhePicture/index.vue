@@ -75,7 +75,7 @@
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
 	import {
 		config
-	} from '@/config/config.js'
+	} from '@/config/config'
 	import lazyImage from '@/components/lazy-image/index.vue'
 	import {
 		mapGetters

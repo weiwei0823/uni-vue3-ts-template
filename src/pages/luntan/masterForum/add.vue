@@ -164,7 +164,7 @@
 	} from '@/utils/forum/index.js'
 	import {
 		config
-	} from '@/config/config.js'
+	} from '@/config/config'
   import {
     lotteryTime
   } from '@/utils/lottery/index'

@@ -45,7 +45,7 @@
 import Header from '@/components/common/header/index.vue';
 import {
 	config
-} from '../../../config/config.js'
+} from '../../../config/config'
 import {
 	comment
 } from '../../../utils/user/index.js'

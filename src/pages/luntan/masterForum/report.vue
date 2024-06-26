@@ -47,7 +47,7 @@
 	import Header from "@/components/common/header/index.vue";
 	import {
 		config
-	} from '@/config/config.js'
+	} from '@/config/config'
 	import {
 		report
 	} from '@/utils/user/index'

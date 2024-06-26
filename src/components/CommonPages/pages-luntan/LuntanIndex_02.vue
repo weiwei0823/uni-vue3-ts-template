@@ -131,7 +131,7 @@ import BodyImage from './BodyImage.vue';
 import { list, lt_init } from '@/utils/home/index.js';
 import { lastLotteryRecord, lastLotteryRecordWithCalculate } from "@/utils/lottery/index.js"
 import { concern } from '@/utils/user/index.js'
-import { config } from '@/config/config.js'
+import { config } from '@/config/config'
 import { mapGetters } from 'pinia';
 
 export default {

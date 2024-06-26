@@ -136,7 +136,7 @@
 	import NavBar from "@/components/common/navBar/navBar";
 	import {
 		config
-	} from '@/config/config.js'
+	} from '@/config/config'
 
 	import {
 		feedback,

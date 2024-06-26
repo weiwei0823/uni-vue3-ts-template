@@ -64,7 +64,7 @@
 
 	import {
 		config
-	} from "@/config/config.js";
+	} from "@/config/config";
 
 	import {
 		regAndLoginLiu,

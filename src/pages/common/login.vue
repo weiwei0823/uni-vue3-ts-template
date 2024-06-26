@@ -5,7 +5,7 @@
 <script>
 	import {
 		config
-	} from '@/config/config.js'
+	} from '@/config/config'
 	import ALL from '@/components/pages-all/login.vue';
 	import LIUHE from '@/components/pages-all/login.vue';
 	import LUNTAN from '@/components/pages-luntan/login.vue';

@@ -83,7 +83,7 @@
   } from '@/utils/lottery/index'
 	import {
 		config
-	} from '@/config/config.js'
+	} from '@/config/config'
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue";
 	import {
 		mapGetters

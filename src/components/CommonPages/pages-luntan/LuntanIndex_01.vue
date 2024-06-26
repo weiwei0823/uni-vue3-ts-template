@@ -318,7 +318,7 @@ import {list, lt_init} from '@//utils/home/index.js';
 import {lastLotteryRecord} from "@//utils/lottery/index.js"
 import {listLatest} from '@//utils/forum/index.js'
 import {concern} from '@//utils/user/index.js'
-import {config} from '@/config/config.js'
+import {config} from '@/config/config'
 import {mapGetters} from 'pinia';
 import {lastLotteryRecordWithCalculate} from "@/utils/lottery/index.js"
 

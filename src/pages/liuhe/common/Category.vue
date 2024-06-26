@@ -56,7 +56,7 @@
 	import Playing from '@/utils/common/playing';
 	import {
 		config
-	} from '@/config/config.js'
+	} from '@/config/config'
 	import CryptoJS from "@/utils/common/crypto-js";
 	import EncryptUtils from '@/utils/common/encryptUtils.js';
 	export default {

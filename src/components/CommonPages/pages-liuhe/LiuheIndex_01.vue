@@ -238,7 +238,7 @@ import {bindStatus, userNewlyPlay} from "@/utils/lottery/mine";
 import {style2GameCollectList} from "@/utils/lottery/list"
 import Playing from '@/utils/common/playing';
 import topicon from '@/components/gwh-backTopIcon/gwh-backTopIcon.vue'
-import {config} from '@/config/config.js'
+import {config} from '@/config/config'
 import defaultTemplate from "@/utils/defaultTemplate";
 
 export default {

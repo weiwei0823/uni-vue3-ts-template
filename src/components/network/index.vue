@@ -44,7 +44,7 @@
 	} from 'pinia';
 	import {
 		config
-	} from '@/config/config.js'
+	} from '@/config/config'
 	export default {
 		props: {
 			lineName: ''
