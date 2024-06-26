@@ -1,0 +1,238 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: Roboto;
+}
+
+body {
+	background: #f8f8f8;
+}
+
+li {
+	list-style: none;
+}
+
+.pc-max-width {
+	max-width: 480px !important;
+}
+
+.tab-div-bg {
+	height: 20rpx;
+	background-color: var(--theme-auxiliary-color-default);
+	position: fixed;
+	top: 86rpx;
+	width: 100%;
+	z-index: 1;
+	border-bottom-left-radius: 24rpx;
+	border-bottom-right-radius: 24rpx;
+}
+
+.mint-tab-container-item {
+	max-width: 480px;
+	margin: auto;
+}
+
+.input-view {
+	margin: auto;
+	color: #323233;
+	font-weight: 500;
+	font-size: 16px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.border-box {
+	background: #ffffff !important;
+	padding: 20rpx;
+}
+
+.border-box .border-box-body {
+	position: relative;
+	border: 2rpx solid var(--theme-color);
+	background-size: 100% 100%;
+	border-radius: 10px;
+	height: 100rpx;
+}
+
+.border-box .border-box-body .border-box-body-bd .van-row .van-col {
+	float: left;
+	box-sizing: border-box;
+	min-height: 2rpx;
+}
+
+.border-box .border-box-body .border-box-body-bd .van-row .van-col--3 {
+	width: 12.5%;
+}
+
+.border-box .border-box-body .border-box-body-bd .van-row .van-col .icon-text {
+	display: inline-block;
+	text-align: center;
+	position: relative;
+}
+
+.border-box .border-box-body .slot-icon.bg-amage-1 {
+	background-image: url("@/static/img/qiu/1.svg");
+	background-size: 100% 100%;
+}
+
+.border-box .border-box-body .slot-icon.bg-amage-2 {
+	background-image: url("@/static/img/qiu/2.svg");
+	background-size: 100% 100%;
+}
+
+.border-box .border-box-body .slot-icon.bg-amage-3 {
+	background-image: url("@/static/img/qiu/3.svg");
+	background-size: 100% 100%;
+}
+
+.border-box .border-box-body .connect {
+	padding-top: 16rpx;
+	padding-right: 16rpx;
+	text-align: center;
+}
+
+.border-box .border-box-body .slot-icon {
+	display: inline-block;
+	width: 68rpx;
+	height: 68rpx;
+	line-height: 68rpx;
+}
+
+.border-box .border-box-body .slot-text {
+	font-size: 24rpx;
+	padding-top: 10rpx;
+	color: #666;
+}
+
+.vant-swiper-body-mini .nice-text {
+	padding: 30rpx 10rpx;
+	color: #fff;
+	font-size: 24rpx;
+	font-weight: 700;
+}
+
+.vant-swiper-body-mini .nice-text label {
+	background-color: #fff;
+	color: var(--theme-color);
+	border-radius: 30rpx;
+	float: right;
+	padding: 10rpx 10rpx;
+	margin-top: -10rpx;
+}
+
+.uni-list-cell-db {
+	display: flex;
+}
+
+.uni-input {
+	height: 50rpx;
+	width: 68rpx;
+	outline: none;
+	background: #f6f6f6;
+	border-radius: 10rpx;
+	border: 2rpx solid #bcbcbc;
+	text-align: center;
+	margin-left: 0px;
+	padding: 0px;
+}
+
+.uni-subtitle {
+	line-height: 50rpx;
+	margin-right: 16rpx;
+	font-size: 30rpx;
+}
+
+.redcolor {
+	background-color: #ed6e6e;
+	color: #fff;
+	position: relative;
+}
+
+.redcolor .line {
+	position: absolute;
+	box-sizing: border-box;
+	height: 3rpx;
+	background-color: #f00;
+	transform-origin: left center;
+	left: 50%;
+	top: 50%;
+	margin-top: -2rpx;
+	-ms-pointer-events: none;
+	pointer-events: none;
+	z-index: 0;
+}
+
+.van-col {
+	float: left;
+	box-sizing: border-box;
+	min-height: 2rpx;
+}
+
+.van-col--2 {
+	width: 8.33333333%;
+}
+
+.van-col--3 {
+	width: 12.5%;
+}
+
+.van-col--4 {
+	width: 16.66666667%;
+}
+
+.van-col--5 {
+	width: 20.83333333%;
+}
+
+.van-col--6 {
+	width: 25%;
+}
+
+.van-col--8 {
+	width: 33.33333333%;
+	padding: 0px 6rpx;
+}
+
+.van-col--12 {
+	width: 50%;
+}
+
+.van-col--16 {
+	width: 66.66666667%;
+}
+
+.van-col--17 {
+	width: 70.83333333%;
+}
+
+.van-col--18 {
+	width: 75%;
+}
+
+.van-col--19 {
+	width: 79.16666667%;
+}
+
+.van-col--20 {
+	width: 83.33333333%;
+}
+
+.van-col--21 {
+	width: 87.5%;
+}
+
+.comment-list .comment-item .comment-item-bd .btn-hf,
+.comment-list .comment-item .comment-item-bd .images-box {
+	padding-top: 16rpx;
+}
+
+/**
+ *	修复六合彩编辑弹窗导宽度不对的BUG
+ */
+.uni-popup .content-box {
+	max-width: 480px !important;
+	width: 100vw !important;
+	left: auto !important;
+	right: auto !important;
+}

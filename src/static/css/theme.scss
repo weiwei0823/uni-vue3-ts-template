@@ -1,0 +1,147 @@
+// --theme-color 主题色
+// --dot-bg-rgba 轮播图指示点颜色 
+
+// 绿色主题
+.theme-green {
+	// 主色 dominant-color
+	--theme-color: #07C160;
+	--theme-dominant-color-linear-gradient-start: #07C160; // 导航栏与标签栏、与主色相关渐变 开始
+	--theme-dominant-color-linear-gradient-end: #03A651; // 导航栏与标签栏、与主色相关渐变 结束
+
+	// 辅色 auxiliary-color
+	--theme-auxiliary-color-current: #AFAFAF; // 通用灰色字体、未选中置灰icon
+	--theme-auxiliary-color-default: #F4F4F4; // 画板默认背景色、分隔线
+	--theme-auxiliary-color-remind: #EC3232; // 消息提醒类
+	--theme-auxiliary-color-dot: #FFE500; // LOGO点缀、收藏
+	--theme-auxiliary-color-linear-gradient-start: #F9FFFC; // 渐色卡片渐变 开始
+	--theme-auxiliary-color-linear-gradient-end: #D7FFEA; // 渐色卡片渐变 结束
+	--theme-auxiliary-bg-color: #F1FCF6; // 背景色块（账变明细、标签栏底部背景等）
+
+	// 字体色 font-color
+	--theme-font-default-shallow-color: #AFAFAF; // 默认浅灰字体、标签栏ICON默认及字体
+	--theme-font-default-deep-color: #404040; // 默认深色字体
+
+	// 图标色 icon-color
+	--theme-icon-default-color: #AFAFAF; // 标签栏icon及字体默认色
+	--theme-icon-active-color: #07C160; // 标签栏icon激活状态颜色
+
+	--theme-color-bg: #F1FCF6;
+	--dot-bg-rgba: rgba(7, 193, 96, .1);
+	--gradient-color-bg: #c0ffbf;
+}
+
+// 蓝色主题
+.theme-blue {
+	// 主色 dominant-color
+	--theme-color: #1592FF;
+	--theme-dominant-color-linear-gradient-start: #1592FF; // 导航栏与标签栏、与主色相关渐变 开始
+	--theme-dominant-color-linear-gradient-end: #0B85EF; // 导航栏与标签栏、与主色相关渐变 结束
+
+	// 辅色 auxiliary-color
+	--theme-auxiliary-color-current: #AFAFAF; // 通用灰色字体、未选中置灰icon
+	--theme-auxiliary-color-default: #F4F4F4; // 画板默认背景色、分隔线
+	--theme-auxiliary-color-remind: #EC3232; // 消息提醒类
+	--theme-auxiliary-color-dot: #FFE500; // LOGO点缀、收藏
+	--theme-auxiliary-color-linear-gradient-start: #F6FBFF; // 渐色卡片渐变 开始
+	--theme-auxiliary-color-linear-gradient-end: #D7ECFF; // 渐色卡片渐变 结束
+	--theme-auxiliary-bg-color: #F4FAFF; // 背景色块（账变明细、标签栏底部背景等）
+
+	// 字体色 font-color
+	--theme-font-default-shallow-color: #AFAFAF; // 默认浅灰字体、标签栏ICON默认及字体
+	--theme-font-default-deep-color: #404040; // 默认深色字体
+
+	// 图标色 icon-color
+	--theme-icon-default-color: #AFAFAF; // 标签栏icon及字体默认色
+	--theme-icon-active-color: #1592FF; // 标签栏icon激活状态颜色
+
+	--theme-color-bg: #F4FAFF;
+	--dot-bg-rgba: rgba(21, 146, 255, .1);
+	--gradient-color-bg: #BFE0FF;
+}
+
+// 蔚蓝色主题
+.theme-skyblue {
+	// 主色 dominant-color
+	--theme-color: #3E73FE;
+	--theme-dominant-color-linear-gradient-start: #3E73FE; // 导航栏与标签栏、与主色相关渐变 开始
+	--theme-dominant-color-linear-gradient-end: #2D67FF; // 导航栏与标签栏、与主色相关渐变 结束
+
+	// 辅色 auxiliary-color
+	--theme-auxiliary-color-current: #AFAFAF; // 通用灰色字体、未选中置灰icon
+	--theme-auxiliary-color-default: #F4F4F4; // 画板默认背景色、分隔线
+	--theme-auxiliary-color-remind: #EC3232; // 消息提醒类
+	--theme-auxiliary-color-dot: #FFE500; // LOGO点缀、收藏
+	--theme-auxiliary-color-linear-gradient-start: #F6FBFF; // 渐色卡片渐变 开始
+	--theme-auxiliary-color-linear-gradient-end: #D7ECFF; // 渐色卡片渐变 结束
+	--theme-auxiliary-bg-color: #F4FAFF; // 背景色块（账变明细、标签栏底部背景等）
+
+	// 字体色 font-color
+	--theme-font-default-shallow-color: #AFAFAF; // 默认浅灰字体、标签栏ICON默认及字体
+	--theme-font-default-deep-color: #404040; // 默认深色字体
+
+	// 图标色 icon-color
+	--theme-icon-default-color: #AFAFAF; // 标签栏icon及字体默认色
+	--theme-icon-active-color: #3E73FE; // 标签栏icon激活状态颜色
+
+	--theme-color-bg: #F4FAFF;
+	--dot-bg-rgba: rgba(21, 146, 255, .1);
+	--gradient-color-bg: #BFE0FF;
+}
+
+// 中国红
+.theme-ChineseRed {
+	// 主色 dominant-color
+	--theme-color: #EF1811;
+	--theme-dominant-color-linear-gradient-start: #EF1811; // 导航栏与标签栏、与主色相关渐变 开始
+	--theme-dominant-color-linear-gradient-end: #EB0405; // 导航栏与标签栏、与主色相关渐变 结束
+
+	// 辅色 auxiliary-color
+	--theme-auxiliary-color-current: #A1A1A1; // 通用灰色字体、未选中置灰icon
+	--theme-auxiliary-color-default: #F4F4F4; // 画板默认背景色、分隔线
+	--theme-auxiliary-color-remind: #CD0001; // 消息提醒类
+	--theme-auxiliary-color-dot: #FFE500; // LOGO点缀、收藏
+	--theme-auxiliary-color-linear-gradient-start: #FFFCFC; // 渐色卡片渐变 开始
+	--theme-auxiliary-color-linear-gradient-end: #FFEDED; // 渐色卡片渐变 结束
+	--theme-auxiliary-bg-color: #F1FCF6; // 背景色块（账变明细、标签栏底部背景等）
+
+	// 字体色 font-color
+	--theme-font-default-shallow-color: #A1A1A1; // 默认浅灰字体、标签栏ICON默认及字体
+	--theme-font-default-deep-color: #404040; // 默认深色字体
+
+	// 图标色 icon-color
+	--theme-icon-default-color: #A1A1A1; // 标签栏icon及字体默认色
+	--theme-icon-active-color: #1592FF; // 标签栏icon激活状态颜色
+
+	--theme-color-bg: #F1FCF6;
+	--dot-bg-rgba: rgba(21, 146, 255, .1);
+	--gradient-color-bg: #FFEDED;
+}
+
+// 国际黑
+.theme-InternationalBlack {
+	// 主色 dominant-color
+	--theme-color: #07C160;
+	--theme-dominant-color-linear-gradient-start: #07C160; // 导航栏与标签栏、与主色相关渐变 开始
+	--theme-dominant-color-linear-gradient-end: #03A651; // 导航栏与标签栏、与主色相关渐变 结束
+
+	// 辅色 auxiliary-color
+	--theme-auxiliary-color-current: #AFAFAF; // 通用灰色字体、未选中置灰icon
+	--theme-auxiliary-color-default: #F4F4F4; // 画板默认背景色、分隔线
+	--theme-auxiliary-color-remind: #EC3232; // 消息提醒类
+	--theme-auxiliary-color-dot: #FFE500; // LOGO点缀、收藏
+	--theme-auxiliary-color-linear-gradient-start: #F9FFFC; // 渐色卡片渐变 开始
+	--theme-auxiliary-color-linear-gradient-end: #D7FFEA; // 渐色卡片渐变 结束
+	--theme-auxiliary-bg-color: #F1FCF6; // 背景色块（账变明细、标签栏底部背景等）
+
+	// 字体色 font-color
+	--theme-font-default-shallow-color: #AFAFAF; // 默认浅灰字体、标签栏ICON默认及字体
+	--theme-font-default-deep-color: #404040; // 默认深色字体
+
+	// 图标色 icon-color
+	--theme-icon-default-color: #AFAFAF; // 标签栏icon及字体默认色
+	--theme-icon-active-color: #07C160; // 标签栏icon激活状态颜色
+
+	--theme-color-bg: #F1FCF6;
+	--dot-bg-rgba: rgba(7, 193, 96, .1);
+	--gradient-color-bg: #c0ffbf;
+}
