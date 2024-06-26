@@ -123,7 +123,7 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .header {
+	::v-deep .header {
 		background: transparent !important;
 	}
 
@@ -192,7 +192,7 @@
 		.web-view {
 			flex: 1;
 
-			/deep/ iframe {
+			::v-deep iframe {
 				border: none;
 			}
 		}

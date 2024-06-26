@@ -229,7 +229,7 @@
 		background: #fff;
 	}
 
-	/deep/ .header {
+	::v-deep .header {
 		border-radius: 0;
 	}
 

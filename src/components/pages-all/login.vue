@@ -449,7 +449,7 @@ export default {
 	}
 }
 
-/deep/ .header-content-box {
+::v-deep .header-content-box {
 	z-index: 9999 !important;
 	// position: fixed !important;
 	// top: 0 !important;

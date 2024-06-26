@@ -167,7 +167,7 @@
 	}
 
 
-	/deep/ .uni-load-more__text {
+	::v-deep .uni-load-more__text {
 		color: #A1A1A1 !important;
 	}
 

@@ -225,7 +225,7 @@ export default {
 			box-shadow: inset 0 3rpx 2rpx rgba(0, 0, 0, 0.5);
 		}
 	}
-	/deep/ .selected {
+	::v-deep .selected {
 		 .right{
 			.num,.mark {
 				color: #fff!important;

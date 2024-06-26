@@ -232,7 +232,7 @@
 		transform: translate(-50%, -50%);
 	}
 
-	/deep/ .header {
+	::v-deep .header {
 		border-radius: 0px !important;
 		top: 0px !important;
 		border: none !important;

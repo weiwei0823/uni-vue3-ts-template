@@ -268,7 +268,7 @@
 </script>
 
 <style lang="scss" scoped>
-  /deep/ .qrcode{
+  ::v-deep .qrcode{
     img{
       opacity: 1 !important;
     }

@@ -843,7 +843,7 @@ export default {
 .popup-widh {
 	width: 100vw;
 
-	/deep/ .uni-video-container {
+	::v-deep .uni-video-container {
 		border-radius: 24rpx;
 	}
 }
@@ -913,7 +913,7 @@ export default {
 </style>
 
 <style lang="scss" scoped>
-/deep/ .header {
+::v-deep .header {
 	z-index: 99 !important;
 }
 
@@ -946,7 +946,7 @@ export default {
 	}
 }
 
-/deep/ .lottery-footer {
+::v-deep .lottery-footer {
 	justify-content: center;
 }
 </style>

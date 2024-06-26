@@ -280,7 +280,7 @@
 	.yeb-earnings {
 		background: var(--theme-auxiliary-color-default);
 
-		/deep/ {
+		::v-deep {
 			.u-drawer {
 				top: 0rpx;
 				z-index: 11 !important;

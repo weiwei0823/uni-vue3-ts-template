@@ -166,7 +166,7 @@ export default {
     border-radius: 24rpx;
     margin-top: 20rpx;
     overflow: hidden;
-    /deep/ .lh-input {
+    ::v-deep .lh-input {
       height: 96rpx;
     }
     .text-all {

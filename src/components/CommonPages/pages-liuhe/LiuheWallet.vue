@@ -678,7 +678,7 @@
 		/* 154.144% */
 	}
 
-	/deep/ .header {
+	::v-deep .header {
 		background: var(--theme-auxiliary-color-default);
 		border-radius: none;
 		z-index: 99;
@@ -817,7 +817,7 @@
 						align-items: center;
 						padding: 20rpx 0;
 
-						/deep/ .u-active {
+						::v-deep .u-active {
 							border-radius: 30rpx;
 							height: 24rpx;
 							margin-left: 4rpx;

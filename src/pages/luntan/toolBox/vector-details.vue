@@ -173,7 +173,7 @@ export default {
           }
         }
 
-        /deep/ .uni-select {
+        ::v-deep .uni-select {
           border: none;
           width: 288rrpx;
           height: 88rpx;

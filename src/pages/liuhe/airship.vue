@@ -1335,7 +1335,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-/deep/ .uni-navbar__header-btns-right {
+::v-deep .uni-navbar__header-btns-right {
 	width: 640rpx !important;
 }
 
@@ -1698,7 +1698,7 @@ export default {
 					text-overflow: ellipsis;
 					overflow: hidden;
 
-					/deep/ .u-count-num {
+					::v-deep .u-count-num {
 						letter-spacing: -1rpx !important;
 						font-family: 'Roboto' !important;
 						font-size: 34rpx !important;
@@ -2146,11 +2146,11 @@ export default {
 
 }
 
-/deep/ * {
+::v-deep * {
 	font-family: "PingFang SC";
 }
 
-/deep/ .box .left {
+::v-deep .box .left {
 	font-weight: 0;
 }
 </style>

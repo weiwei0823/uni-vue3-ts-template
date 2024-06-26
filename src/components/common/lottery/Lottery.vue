@@ -101,9 +101,6 @@
 		websocetObj
 	} from '@/utils/websocet/websocet.js';
 	import {
-		random
-	} from 'nanoid';
-	import {
 		mapGetters
 	} from 'pinia';
 	export default {

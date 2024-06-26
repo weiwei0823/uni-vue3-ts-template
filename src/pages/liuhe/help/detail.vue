@@ -146,7 +146,7 @@
 		width: 100%;
 		max-width: 480px;
 
-		/deep/ .header .center {
+		::v-deep .header .center {
 			white-space: nowrap;
 			overflow: hidden;
 			text-overflow: ellipsis;

@@ -144,22 +144,22 @@
 		// bottom: 146rpx;
 	}
 
-	/deep/ .u-mode-center-box {
+	::v-deep .u-mode-center-box {
 		background-color: unset !important;
 		border-radius: 0 !important;
 		// box-shadow: 0px 14px 17px 10px rgba(0, 0, 0, 0.2);
 		// box-shadow: 0px 12px 20px 13px rgba(0, 0, 0, 0.2);
 	}
 
-	/deep/ .u-mask {
+	::v-deep .u-mask {
 		background-color: rgba(0, 0, 0, 0) !important;
 	}
 
-	/deep/ .u-drawer-center {
+	::v-deep .u-drawer-center {
 		justify-content: flex-end;
 	}
 
-	/deep/ .u-drawer-content {
+	::v-deep .u-drawer-content {
 		background-color: unset;
 		padding-bottom: calc(38rpx + var(--safe-area-inset-bottom));
 	}

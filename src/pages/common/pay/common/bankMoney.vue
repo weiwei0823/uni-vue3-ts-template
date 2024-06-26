@@ -134,7 +134,7 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .uni-drawer__content{
+	::v-deep .uni-drawer__content{
 		max-width: 480px;
 	}
 	.bank-div {
@@ -356,7 +356,7 @@
 		}
 	}
 
-	/deep/ .header,
+	::v-deep .header,
 	.header-box {
 		border-radius: 0 0 20rpx 20rpx;
 		overflow: hidden;

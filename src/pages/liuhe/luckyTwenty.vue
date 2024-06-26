@@ -1667,7 +1667,7 @@
 						text-overflow: ellipsis;
 						overflow: hidden;
 
-						/deep/ .u-count-num {
+						::v-deep .u-count-num {
 							letter-spacing: -1rpx !important;
 							font-family: 'Roboto' !important;
 							font-size: 34rpx !important;
@@ -2041,7 +2041,7 @@
 		color: grey;
 	}
 
-	/deep/ * {
+	::v-deep * {
 		font-family: "PingFang SC";
 	}
 </style>

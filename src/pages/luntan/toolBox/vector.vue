@@ -298,7 +298,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .vector {
-  /deep/ .header {
+  ::v-deep .header {
     background: transparent !important;
   }
   .Light {

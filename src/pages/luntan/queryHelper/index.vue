@@ -146,7 +146,7 @@ import Empty from '@/components/common/empty/empty'
 	} from 'pinia';
 	import {
 		setPickerStyle
-	} from "@/utils/common.js";
+	} from "@/utils/common.ts";
 	export default {
 		name: "index",
 		components: {
@@ -850,18 +850,18 @@ import Empty from '@/components/common/empty/empty'
 		padding-right: 28rpx;
 	}
 
-	/deep/.uni-checkbox-input {
+	::v-deep.uni-checkbox-input {
 		width: 40rpx;
 		height: 40rpx;
 		border-radius: 50%;
 		border: 4rpx solid var(--theme-color) !important;
 	}
 
-	/deep/.uni-checkbox-input-checked {
+	::v-deep.uni-checkbox-input-checked {
 		background: #ffffff !important;
 	}
 
-	/deep/.uni-checkbox-input-checked:before {
+	::v-deep.uni-checkbox-input-checked:before {
 		font: normal normal normal 28rpx/1 uni;
 		content: '' !important;
 		font-size: 34rpx;

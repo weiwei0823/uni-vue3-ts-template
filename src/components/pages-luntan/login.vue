@@ -94,7 +94,7 @@
 	import {
 		checkPhone,
 		codeCheck
-	} from "@/utils/common.js"
+	} from "@/utils/common.ts"
 	import NavBar from "@/components/common/navBar/navBar";
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue";
 
@@ -488,7 +488,7 @@
 </style>
 
 <style lang="scss" scoped>
-	/deep/ .uni-forms-item {
+	::v-deep .uni-forms-item {
 		border: 1px solid var(--theme-auxiliary-color-default);
 		border-radius: 20rpx;
 		margin-bottom: 32rpx;

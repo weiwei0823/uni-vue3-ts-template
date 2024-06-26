@@ -222,7 +222,7 @@ export default {
 		justify-content: center;
 	}
 
-	/deep/ .fixedView {
+	::v-deep .fixedView {
 		left: 0;
 		right: 30rpx;
 	}
@@ -276,7 +276,7 @@ export default {
 				}
 
         .lazy-image {
-          /deep/ {
+          ::v-deep {
             .loading-img, .origin-img {
               width: 128rpx;
               height: 128rpx;

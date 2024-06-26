@@ -538,11 +538,11 @@ export default {
 	max-width: 480px;
 }
 
-/deep/ .zp-l-text {
+::v-deep .zp-l-text {
 	color: #A1A1A1;
 }
 
-/deep/ .account-mess {
+::v-deep .account-mess {
 	.header {
 		padding-bottom: 30rpx;
 	}
@@ -739,7 +739,7 @@ export default {
 		box-sizing: border-box;
 		margin-bottom: 20rpx;
 
-		/deep/ .search {
+		::v-deep .search {
 			margin-top: 20rpx;
 			margin-left: 28rpx;
 			margin-right: 28rpx;

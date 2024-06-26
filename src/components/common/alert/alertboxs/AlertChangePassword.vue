@@ -167,7 +167,7 @@ export default {
         margin-bottom: 20rpx;
     }
 
-    /deep/ .uni-forms-item {
+    ::v-deep .uni-forms-item {
         margin-bottom: 32rpx;
 
         .uni-easyinput__content {

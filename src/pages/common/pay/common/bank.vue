@@ -512,7 +512,7 @@
 		}
 	}
 
-	/deep/ .header,
+	::v-deep .header,
 	.header-box {
 		border-radius: 0 0 20rpx 20rpx;
 		overflow: hidden;

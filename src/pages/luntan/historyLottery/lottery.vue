@@ -436,12 +436,12 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .z-paging-content {
+	::v-deep .z-paging-content {
 		border-radius: 24rpx;
 	}
 
 	.year-select {
-		/deep/ .u-drawer-content {
+		::v-deep .u-drawer-content {
 			border-radius: 24rpx 24rpx 0 0;
 			overflow: hidden;
 
@@ -479,7 +479,7 @@
 		}
 	}
 
-	/deep/ .zp-l-container {
+	::v-deep .zp-l-container {
 		background: var(--theme-auxiliary-color-default) !important;
 	}
 
@@ -562,7 +562,7 @@
 				align-items: center;
 				justify-content: space-between;
 
-				/deep/ .uni-select {
+				::v-deep .uni-select {
 					border: none;
 					padding: 0 10rpx;
 					font-size: 26rpx;
@@ -603,7 +603,7 @@
 				}
 			}
 
-			/deep/ .uni-searchbar {
+			::v-deep .uni-searchbar {
 				padding: 0;
 
 				.uni-searchbar__box {

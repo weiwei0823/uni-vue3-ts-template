@@ -289,7 +289,7 @@ export default {
 	overflow: hidden;
 }
 
-/deep/ .uni-navbar__header-container {
+::v-deep .uni-navbar__header-container {
 	.input-view {
 		font-Size: 34rpx;
 	}
@@ -641,7 +641,7 @@ export default {
 	}
 }
 
-/deep/ .input-view {
+::v-deep .input-view {
 	text-overflow: ellipsis;
 	overflow: hidden;
 }

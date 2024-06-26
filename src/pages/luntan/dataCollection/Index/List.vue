@@ -216,7 +216,7 @@
 	import Header from '@/components/common/header/index.vue';
 	import {
 		setPickerStyle
-	} from "@/utils/common.js";
+	} from "@/utils/common.ts";
 	export default {
 		name: "list",
 		components: {
@@ -413,7 +413,7 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .list-item:first-child {
+	::v-deep .list-item:first-child {
 		margin-top: 0 !important;
 	}
 
@@ -433,17 +433,17 @@
 
 	}
 
-	/deep/ .tab-div-bg {
+	::v-deep .tab-div-bg {
 		border-radius: 0;
 		z-index: 11;
 	}
 
-	/deep/ .zp-paging-touch-view {
+	::v-deep .zp-paging-touch-view {
 		background-color: var(--theme-auxiliary-color-default);
 	}
 
 	.zpLoading {
-		/deep/ .zp-paging-touch-view {
+		::v-deep .zp-paging-touch-view {
 			overflow: hidden;
 		}
 	}
@@ -517,7 +517,7 @@
 		// gap: 20rpx 0;
 
 		// margin-top: 180rpx;
-		/deep/ .uni-list--border-top {
+		::v-deep .uni-list--border-top {
 			display: none;
 		}
 
@@ -530,7 +530,7 @@
 
 
 
-			/deep/ .border--left {
+			::v-deep .border--left {
 				display: none;
 			}
 

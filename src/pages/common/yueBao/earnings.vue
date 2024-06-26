@@ -265,7 +265,7 @@
 		background: var(--theme-auxiliary-color-default);
 		height: var(--vh);
 
-		/deep/ {
+		::v-deep {
 			.u-drawer,
 			.u-mask {
 				top: 95rpx;

@@ -619,11 +619,11 @@
 		border-top-right-radius: 24rpx;
 	}
 
-	/deep/ .uni-popup {
+	::v-deep .uni-popup {
 		z-index: 999;
 	}
 
-	/deep/ .header {
+	::v-deep .header {
 		grid-template-columns: repeat(3, 20% 60% 20%);
 
 		.u-item-bg {
@@ -900,7 +900,7 @@
 				}
 			}
 
-			/deep/ .code-box {
+			::v-deep .code-box {
 				.item {
 					border-radius: 24rpx;
 
@@ -959,7 +959,7 @@
 		}
 	}
 
-	/deep/ .way-item-group {
+	::v-deep .way-item-group {
 		.lh-radio {
 			border-top: 1px solid var(--theme-auxiliary-color-default);
 

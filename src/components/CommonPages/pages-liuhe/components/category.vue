@@ -321,18 +321,18 @@ export default {
 </script>
 <style lang="scss" scoped>
 .isAppShowTop {
-  /deep/ .fixedView {
+  ::v-deep .fixedView {
     bottom: 200rpx;
   }
 }
 
 .showTopClass {
-  /deep/ .fixedView {
+  ::v-deep .fixedView {
     opacity: 1 !important;
   }
 }
 
-/deep/ .fixedView {
+::v-deep .fixedView {
   right: 30rpx;
   left: unset !important;
   top: unset !important;
@@ -341,7 +341,7 @@ export default {
   position: absolute !important;
 }
 
-/deep/ .zp-absoulte {
+::v-deep .zp-absoulte {
   width: 100%;
 }
 
@@ -380,7 +380,7 @@ export default {
       }
 
       .lazy-image {
-        /deep/ {
+        ::v-deep {
           .loading-img, .origin-img {
             width: 44rpx;
             height: 44rpx;

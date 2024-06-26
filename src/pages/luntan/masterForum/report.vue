@@ -163,7 +163,7 @@
 	}
 
 
-	/deep/ .add-image {
+	::v-deep .add-image {
 		background-color: rgba(244, 244, 244, 0.27) !important;
 	}
 

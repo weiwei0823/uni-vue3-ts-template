@@ -53,7 +53,7 @@
 	import {
 		checkPhone,
 		codeCheck
-	} from "@/utils/common.js"
+	} from "@/utils/common.ts"
 	import NavBar from "@/components/common/navBar/navBar";
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
 	export default {

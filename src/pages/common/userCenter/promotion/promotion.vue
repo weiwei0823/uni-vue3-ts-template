@@ -151,18 +151,18 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .segmented-control {
+	::v-deep .segmented-control {
 		height: 80rpx;
 		background: #fff;
 	}
 
-	/deep/ .segmented-control__text {
+	::v-deep .segmented-control__text {
 		font-weight: 800;
 		font-size: 34rpx;
 		color: #999 !important;
 	}
 
-	/deep/ .segmented-control__item--text {
+	::v-deep .segmented-control__item--text {
 		color: rgb(76, 217, 100) !important;
 	}
 

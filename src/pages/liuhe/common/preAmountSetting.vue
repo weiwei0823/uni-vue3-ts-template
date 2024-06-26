@@ -112,10 +112,10 @@
 	}
 </script>
 <style lang="scss" scoped>
-	/deep/ .content-box{
+	::v-deep .content-box{
 		width: 100% !important;
 	}
-	/deep/ .uni-popup .content-box {
+	::v-deep .uni-popup .content-box {
 		background-color: transparent !important;
 		z-index: 10;
 		border-radius: 40rpx 40rpx 0 0 !important;
@@ -125,7 +125,7 @@
 		}
 	}
 
-	/deep/ .msg-box .uni-easyinput .uni-easyinput__content {
+	::v-deep .msg-box .uni-easyinput .uni-easyinput__content {
 		border: none;
 		background-color: var(--theme-auxiliary-color-default) !important;
 		border-radius: 16rpx;
@@ -135,7 +135,7 @@
 
 	}
 
-	/deep/ .msg-box .uni-easyinput .uni-easyinput__content .uni-input-input {
+	::v-deep .msg-box .uni-easyinput .uni-easyinput__content .uni-input-input {
 		color: #404040;
 		font-weight: 500;
 		font-size: 34rpx;

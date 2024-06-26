@@ -413,11 +413,11 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ uni-swiper-item {
+	::v-deep uni-swiper-item {
 		border-radius: 24rpx;
 	}
 
-	/deep/ .uni-scroll-view-content {
+	::v-deep .uni-scroll-view-content {
 		border-radius: 24rpx;
 	}
 
@@ -631,7 +631,7 @@
 							}
 
 							.progress-yuan {
-								/deep/ .progress {
+								::v-deep .progress {
 									&::before {
 										content: '';
 										display: block;

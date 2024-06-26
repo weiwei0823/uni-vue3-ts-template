@@ -268,7 +268,7 @@
 		z-index: 20;
 	}
 
-	/deep/ .header {
+	::v-deep .header {
 		border-radius: 0 !important;
 	}
 

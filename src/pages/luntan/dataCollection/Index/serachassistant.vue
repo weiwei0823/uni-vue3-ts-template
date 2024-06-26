@@ -167,19 +167,19 @@
 		border-bottom-right-radius: 16rpx;
 	}
 
-	/deep/ .uni-searchbar {
+	::v-deep .uni-searchbar {
 		border-radius: 16rpx;
 		overflow: hidden;
 	}
 
-	/deep/ .uni-searchbar__box {
+	::v-deep .uni-searchbar__box {
 		// background-color: var(--theme-auxiliary-color-default) !important;
 		border-radius: 0 !important;
 		border-top-left-radius: 16rpx !important;
 		border-bottom-left-radius: 16rpx !important;
 	}
 
-	/deep/ .uni-searchbar__cancel {
+	::v-deep .uni-searchbar__cancel {
 		border-top-right-radius: 16rpx;
 		border-bottom-right-radius: 16rpx;
 	}

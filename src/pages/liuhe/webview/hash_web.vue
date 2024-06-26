@@ -267,7 +267,7 @@
 </style>
 
 <style lang="scss" scoped>
-	/deep/ body {
+	::v-deep body {
 		width: 100%;
 		height: calc(100vh);
 		position: fixed;
@@ -285,7 +285,7 @@
 		/*background: #ffffff;*/
 	}
 
-	/deep/ body {
+	::v-deep body {
 		width: 100%;
 		height: calc(100vh);
 		position: fixed;
@@ -295,7 +295,7 @@
 	}
 
 
-	/deep/ .pop-box {
+	::v-deep .pop-box {
 		height: 294rpx !important;
 	}
 

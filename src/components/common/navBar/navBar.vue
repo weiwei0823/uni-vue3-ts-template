@@ -139,7 +139,7 @@
 </script>
 
 <style lang="scss" scoped>
-/deep/ .uni-navbar__header{
+::v-deep .uni-navbar__header{
   padding: 0 28rpx;
 }
 	.header-box {

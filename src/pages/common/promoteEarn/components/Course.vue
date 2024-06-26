@@ -71,13 +71,13 @@
 			top: 90rpx;
 			left: 190rpx;
 
-			/deep/ .u-drawer {
+			::v-deep .u-drawer {
 				position: fixed;
 				top: 0;
 				left: 0;
 			}
 
-			/deep/ .u-mode-center-box {
+			::v-deep .u-mode-center-box {
 				background: unset;
 			}
 
@@ -89,7 +89,7 @@
 			}
 		}
 
-		/deep/ .icon {
+		::v-deep .icon {
 			border-radius: 10rpx;
 		}
 	}

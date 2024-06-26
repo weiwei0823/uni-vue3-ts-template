@@ -301,7 +301,7 @@
 		display: flex;
 		flex-direction: column;
 
-		/deep/ .header {
+		::v-deep .header {
 			.center {
 
 				font-weight: 500 !important;
@@ -545,19 +545,19 @@
 			background-color: #fff;
 			padding: 0 28rpx;
 
-			/deep/ .uni-list--border-top {
+			::v-deep .uni-list--border-top {
 				display: none;
 			}
 
-			/deep/ .uni-list-item__container {
+			::v-deep .uni-list-item__container {
 				padding: 34rpx 0;
 			}
 
-			/deep/ .uniui-arrowright {
+			::v-deep .uniui-arrowright {
 				padding: 0;
 			}
 
-			/deep/ .uni-list-item__icon {
+			::v-deep .uni-list-item__icon {
 				margin-right: 0;
 
 				.uni-list--base {
@@ -566,7 +566,7 @@
 				}
 			}
 
-			/deep/ .uni-list-item__content-title {
+			::v-deep .uni-list-item__content-title {
 				color: #404040;
 
 				font-size: 28rpx;

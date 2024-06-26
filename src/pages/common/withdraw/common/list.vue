@@ -641,7 +641,7 @@ export default {
       }
     }
 
-    /deep/ .code-box {
+    ::v-deep .code-box {
       .item {
         border-radius: 24rpx;
 
@@ -661,7 +661,7 @@ export default {
   }
 }
 
-/deep/ .header {
+::v-deep .header {
   border-radius: 0 0 20rpx 20rpx;
   overflow: hidden;
 

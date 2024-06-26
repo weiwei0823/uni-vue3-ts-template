@@ -190,7 +190,7 @@
 					align-items: center;
 					justify-content: space-between;
 
-					/deep/ .uni-select {
+					::v-deep .uni-select {
 						border: none;
 						padding: 0 20rpx;
 
@@ -222,7 +222,7 @@
 					justify-content: flex-end;
 				}
 
-				/deep/ .uni-searchbar {
+				::v-deep .uni-searchbar {
 					width: 160rpx;
 					padding: 0;
 
@@ -241,7 +241,7 @@
 					}
 				}
 
-				/deep/ .uni-stat__select {
+				::v-deep .uni-stat__select {
 					width: auto;
 					flex: none;
 

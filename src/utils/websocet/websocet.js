@@ -1,6 +1,6 @@
 import Base64 from 'base-64'
 import CryptoJS from 'crypto-js'
-import $store from '@/store/index.js'
+import $store from '@/store/index'
 import { config } from '@/config/config'
 import EncryptUtils from '@/utils/common/encryptUtils.js'
 

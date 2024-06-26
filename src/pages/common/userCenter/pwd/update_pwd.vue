@@ -192,7 +192,7 @@ import { nextTick } from 'vue';
 			margin-top: 20rpx;
 		}
 
-		/deep/ .code-box {
+		::v-deep .code-box {
 			.item {
 				width: 88rpx;
 				height: 88rpx;

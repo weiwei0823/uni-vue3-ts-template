@@ -115,7 +115,7 @@
 
 	}
 
-	/deep/ .tab-div-bg {
+	::v-deep .tab-div-bg {
 		border-radius: 0;
 		z-index: 11;
 		top: 84rpx;

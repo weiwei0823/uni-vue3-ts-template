@@ -367,7 +367,7 @@
 					}
 
 					.progress-yuan {
-						/deep/ .progress {
+						::v-deep .progress {
 							&::before {
 								content: '';
 								display: block;
@@ -502,18 +502,18 @@
 	}
 
 
-	/deep/ .input-view {
+	::v-deep .input-view {
 		white-space: nowrap;
 		text-overflow: ellipsis;
 		overflow: hidden;
 	}
 
-	/deep/ .header {
+	::v-deep .header {
 		border-radius: 0 0 20rpx 20rpx;
 		overflow: hidden;
 	}
 
-	/deep/ .uni-navbar__header {
+	::v-deep .uni-navbar__header {
 		padding: 0 28rpx;
 		height: 88rpx !important;
 	}

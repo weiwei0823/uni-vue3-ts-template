@@ -228,7 +228,7 @@
 		padding: 0 28rpx;
 		flex: 0 0 auto;
 
-		/deep/ .uni-section-header {
+		::v-deep .uni-section-header {
 			padding: 20rpx 0;
 		}
 

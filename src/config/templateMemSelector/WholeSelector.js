@@ -8,7 +8,7 @@
 // import luckyfarmSelector from "./LuckyFarmTemplateSelector.js";
 // import arrangementThreeSelector from "./arrangementThreeSelector.js"
 import { config } from '../config'
-import $store from '@/store/index.js'
+import $store from '@/store/index'
 
 /**
  * 按照游戏id查找彩票玩法简易模板信息

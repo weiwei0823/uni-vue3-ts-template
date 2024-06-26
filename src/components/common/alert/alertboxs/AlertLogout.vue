@@ -78,7 +78,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/deep/ .u-mask {
+::v-deep .u-mask {
     background: rgba(0, 0, 0, 0.3) !important;
 }
 

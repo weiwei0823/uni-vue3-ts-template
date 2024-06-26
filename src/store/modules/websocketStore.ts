@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-const WebsocketStore = defineStore('WebsocketStore', {
+const WebsocketStore = defineStore('Websocket', {
   state: {
     status: 0,
     ping: 0,

@@ -29,7 +29,7 @@ export default {
     initialTime: { type: Number, default: 0 }, // 指定视频初始播放位置，单位为秒（s）
     videoSize: { type: [Number, String], default: 10 }, // 视频大小
     ignoreTip: { type: Boolean, default: true }, // 播放环境提示
-    // #ifdef APP-PLUS 
+    // #ifdef APP-PLUS
     enableProgressGesture: { type: Boolean, default: true }, // 手势滑动
     // #endif
     // #ifndef APP-PLUS
@@ -82,7 +82,7 @@ export default {
         video.play()
       })
     },
-    pausePlay() {//暂停播放 
+    pausePlay() {//暂停播放
       const id = `myVideo${this.index}`
       const video = uni.createVideoContext(id)
       video.pause()
@@ -126,7 +126,7 @@ export default {
   // video{
   //     width: 100%;
   //     height: 100%;
-  //     /deep/.uni-video-container{
+  //     ::v-deep.uni-video-container{
   //         width: auto;
   //         height: auto;
   //     }
@@ -136,7 +136,7 @@ export default {
     width: 100%;
     height: 100%;
 
-    /deep/uni-image {
+    ::v-deepuni-image {
       width: 100%;
       height: 100%;
     }

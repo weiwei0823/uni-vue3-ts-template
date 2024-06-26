@@ -126,7 +126,7 @@ export default {
     }
 
   .lazy-image {
-    /deep/ {
+    ::v-deep {
       .loading-img, .origin-img {
         width: 96rpx;
         height: 96rpx;

@@ -684,7 +684,7 @@ import { nextTick } from 'vue';
 		}
 	}
 
-	/deep/ .header {
+	::v-deep .header {
 		border-radius: 0 0 20rpx 20rpx;
 		overflow: hidden;
 

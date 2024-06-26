@@ -87,7 +87,7 @@
 	} from 'pinia';
 	import {
 		setPickerStyle
-	} from "@/utils/common.js";
+	} from "@/utils/common.ts";
 	import Header from '@/components/common/header/index.vue';
 	import ltLoading from '@/components/common/loading/LuntanLoading.vue'
 	export default {
@@ -220,11 +220,11 @@
 	.uni-picker-custom {}
 </style>
 <style scoped lang="scss">
-	/deep/ .uni-searchbar__box {
+	::v-deep .uni-searchbar__box {
 		height: 72rpx;
 	}
 
-	/deep/ .uni-searchbar__box-icon-clear {
+	::v-deep .uni-searchbar__box-icon-clear {
 		height: 72rpx;
 		display: flex;
 		align-items: center;
@@ -280,7 +280,7 @@
 		box-sizing: border-box;
 		width: 100%;
 
-		/deep/ .uni-searchbar {
+		::v-deep .uni-searchbar {
 			padding: 0;
 		}
 	}
@@ -339,7 +339,7 @@
 		}
 	}
 
-	/deep/.empty-box {
+	::v-deep.empty-box {
 		height: 100%;
 	}
 
@@ -373,7 +373,7 @@
 		font-weight: 400;
 	}
 
-	/deep/ .uni-input-placeholder {
+	::v-deep .uni-input-placeholder {
 		color: #A1A1A1 !important;
 	}
 </style>

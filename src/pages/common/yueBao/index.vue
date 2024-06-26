@@ -168,7 +168,7 @@
 			}
 		}
 
-		/deep/ .header-box {
+		::v-deep .header-box {
 			.header {
 				height: 88rpx;
 			}

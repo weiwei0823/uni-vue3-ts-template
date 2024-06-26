@@ -114,7 +114,7 @@
 		}
 	}
 
-	/*/deep/ .uni-swiper__dots-item {*/
+	/*::v-deep .uni-swiper__dots-item {*/
 	/*	height: 6rpx !important;*/
 	/*	width: 29rpx !important;*/
 	/*	!*background: linear-gradient(180deg, #FFF 9.60%, var(--dot-bg-rgba) 53.12%, var(--dot-bg-rgba) 100%);*!*/
@@ -125,7 +125,7 @@
 	/*	border-radius: 1px !important;*/
 	/*}*/
 
-	/*/deep/ .uni-swiper__selected {*/
+	/*::v-deep .uni-swiper__selected {*/
 	/*	width: 48rpx !important;*/
 	/*	background: linear-gradient(180deg, var(--theme-color) 9.60%, var(--theme-color) 53.12%, var(--theme-color) 86.98%) !important;*/
 	/*	border-radius: 1px !important;*/
@@ -133,7 +133,7 @@
 	$swiper-size: 14rpx;
 	$swiper-active-width: 40rpx;
 
-	/deep/ .uni-swiper__dots-item {
+	::v-deep .uni-swiper__dots-item {
 		width: $swiper-size !important;
 		height: $swiper-size !important;
 		border-radius: calc( #{$swiper-size} / 2 ) !important;
@@ -145,7 +145,7 @@
 		/*border-radius: 1px !important;*/
 	}
 
-	/deep/ .uni-swiper__selected {
+	::v-deep .uni-swiper__selected {
 		/*width: 48rpx !important;*/
 		/*background: linear-gradient(180deg, var(--theme-color) 9.60%, var(--theme-color) 53.12%, var(--theme-color) 86.98%) !important;*/
 		/*border-radius: 1px !important;*/

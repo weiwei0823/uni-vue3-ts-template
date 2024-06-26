@@ -149,7 +149,7 @@
 		display: flex;
 		flex-direction: column;
 
-		/deep/ .input-view {
+		::v-deep .input-view {
 			white-space: nowrap;
 			text-overflow: ellipsis;
 			overflow: hidden;

@@ -186,15 +186,8 @@ export function paramKeySort(array) {
   return newObj
 }
 
-export function isNil(s) {
-  return (
-    undefined == s ||
-    s == 'undefined' ||
-    s == null ||
-    s == '' ||
-    s == 'null' ||
-    NaN == s
-  )
+export function isNil(value: any) {
+  return !value || ["undefined", "", "null"].includes(value) || isNaN(value)
 }
 
 export function setNavigationBarColor(color) {

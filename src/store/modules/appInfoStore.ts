@@ -15,7 +15,7 @@ import { formatterColor } from '@/utils/common/theme.js'
 import coreUtils from '@/utils/core/index'
 import { detailInfo } from '@/utils/lottery/mine'
 
-const AppInfoStore = defineStore('AppInfoStore', {
+const AppInfoStore = defineStore('AppInfo', {
   state: {
     configs: null,
     chatRoomUrl: '',

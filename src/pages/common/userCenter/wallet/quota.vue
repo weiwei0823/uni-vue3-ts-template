@@ -225,15 +225,15 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .empty-box {
+	::v-deep .empty-box {
 		height: calc(var(--vh) - 512rpx)
 	}
 
-	/deep/ .uni-input-placeholder {
+	::v-deep .uni-input-placeholder {
 		color: #A1A1A1 !important;
 	}
 
-	/deep/ .uniui-search {
+	::v-deep .uniui-search {
 		color: #A1A1A1 !important;
 		font-size: 20px !important;
 		font-weight: bold;
@@ -404,7 +404,7 @@
 						background: #ffffff;
 						border-radius: 16rpx;
 
-						/deep/ .uni-searchbar__box {
+						::v-deep .uni-searchbar__box {
 							flex-direction: row-reverse;
 
 							.uni-searchbar__box-search-input {

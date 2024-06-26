@@ -730,7 +730,7 @@ export default {
 </script>
 
 <style scoped>
-/deep/ .back-top-icon {
+::v-deep .back-top-icon {
 	bottom: calc(180rpx + var(--safe-area-inset-bottom));
 }
 
@@ -1027,7 +1027,7 @@ export default {
 
 }
 
-.van-list .image-item /deep/ .origin-img {
+.van-list .image-item ::v-deep .origin-img {
 	border-radius: 12rpx 12rpx 0 0 !important;
 }
 
@@ -1542,12 +1542,12 @@ export default {
 </style>
 
 <style lang="scss" scoped>
-/deep/ .uni-scroll-view,
+::v-deep .uni-scroll-view,
 .uni-scroll-view-content {
 	overscroll-behavior: none;
 }
 
-/deep/ .uni-scroll-view-content {
+::v-deep .uni-scroll-view-content {
 	overscroll-behavior: none;
 }
 
@@ -1574,11 +1574,11 @@ export default {
 	}
 }
 
-/deep/ .float-bnt {
+::v-deep .float-bnt {
 	bottom: 352rpx !important;
 }
 
-/deep/ .header {
+::v-deep .header {
 	border-radius: 0;
 }
 
@@ -1598,7 +1598,7 @@ export default {
 $swiper-size: 14rpx;
 $swiper-active-width: 40rpx;
 
-/deep/ .uni-swiper__dots-item {
+::v-deep .uni-swiper__dots-item {
 	width: $swiper-size !important;
 	height: $swiper-size !important;
 	border-radius: calc(#{$swiper-size} / 2) !important;
@@ -1610,7 +1610,7 @@ $swiper-active-width: 40rpx;
 	/*border-radius: 1px !important;*/
 }
 
-/deep/ .uni-swiper__selected {
+::v-deep .uni-swiper__selected {
 	/*width: 48rpx !important;*/
 	/*background: linear-gradient(180deg, var(--theme-color) 9.60%, var(--theme-color) 53.12%, var(--theme-color) 86.98%) !important;*/
 	/*border-radius: 1px !important;*/
@@ -1631,7 +1631,7 @@ $swiper-active-width: 40rpx;
 	margin: 0 28rpx;
 	overflow: hidden;
 
-	/deep/ .van-notice-bar__content {
+	::v-deep .van-notice-bar__content {
 		line-height: 88rpx !important;
 		font-size: 26rpx;
 	}

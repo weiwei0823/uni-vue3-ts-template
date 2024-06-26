@@ -646,7 +646,7 @@ export default {
   top: calc((100vh - 100vw) / 2);;
 }
 
-/deep/ .xgplayer {
+::v-deep .xgplayer {
   height: 100% !important;
   padding-top: 0px !important;
 }

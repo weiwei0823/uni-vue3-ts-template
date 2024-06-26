@@ -362,7 +362,7 @@
 		display: flex;
 		flex-direction: column;
 
-		/deep/ .header {
+		::v-deep .header {
 			grid-template-columns: repeat(3, 25% 50% 25%);
 		}
 
@@ -382,7 +382,7 @@
 				font-weight: 600;
 				margin-right: 20rpx;
 
-				/deep/ .u-count-num {
+				::v-deep .u-count-num {
 					color: #404040 !important;
 					font-family: 'Roboto' !important;
 					font-size: 28rpx !important;

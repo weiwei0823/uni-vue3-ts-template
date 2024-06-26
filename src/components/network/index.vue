@@ -126,16 +126,16 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .u-drawer {
+	::v-deep .u-drawer {
 		position: fixed !important;
 	}
 
-	/deep/ .uni-dialog-content {
+	::v-deep .uni-dialog-content {
 		padding-top: 10rpx;
 		padding-bottom: 0;
 	}
 
-	/deep/ .uni-dialog-title {
+	::v-deep .uni-dialog-title {
 		padding-top: 30rpx;
 
 		.uni-popup__error {
@@ -143,7 +143,7 @@
 		}
 	}
 
-	/deep/ .uni-dialog-button {
+	::v-deep .uni-dialog-button {
 		.uni-dialog-button-text {
 			color: #A1ABA5 !important;
 		}
@@ -165,7 +165,7 @@
 			margin: 29rpx 0;
 		}
 
-		/deep/ .u-radio-group {
+		::v-deep .u-radio-group {
 			max-width: 100%;
 		}
 
@@ -180,12 +180,12 @@
 				box-sizing: border-box;
 				flex-direction: row-reverse;
 
-				/deep/ .u-radio__label {
+				::v-deep .u-radio__label {
 					width: 100%;
 					margin-right: 0;
 				}
 
-				/deep/ .u-radio__icon-wrap {
+				::v-deep .u-radio__icon-wrap {
 					display: none;
 				}
 

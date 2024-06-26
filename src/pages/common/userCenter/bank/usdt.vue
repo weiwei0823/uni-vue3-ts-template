@@ -252,7 +252,7 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .bank-div {
+	::v-deep .bank-div {
 		max-width: 480px;
 	}
 
@@ -306,7 +306,7 @@
 						.input-item {
 							text-align: left;
 
-							/deep/ .uni-icons {
+							::v-deep .uni-icons {
 								columns: var(--theme-color) !important;
 							}
 						}
@@ -376,7 +376,7 @@
 		}
 
 		.bank-list-box {
-			/deep/ .bank-div {
+			::v-deep .bank-div {
 				height: calc(var(--vh) - 88rpx) !important;
 				max-width: 480px;
 
@@ -402,7 +402,7 @@
 				}
 			}
 
-			/deep/ .content-box {
+			::v-deep .content-box {
 				border-radius: 40rpx 40rpx 0 0;
 				overflow: hidden;
 				max-width: 480px;
@@ -412,7 +412,7 @@
 		}
 	}
 
-	/deep/ .header {
+	::v-deep .header {
 		border-radius: 0 0 20rpx 20rpx;
 		overflow: hidden;
 

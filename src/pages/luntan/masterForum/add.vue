@@ -889,7 +889,7 @@
 	}
 </style>
 <style lang="scss" scoped>
-	/deep/ .ql-blank::before {
+	::v-deep .ql-blank::before {
 		color: #d3c9cc;
 		font-size: 28rpx;
 		font-style: normal;

@@ -483,7 +483,7 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .uni-drawer {
+	::v-deep .uni-drawer {
 		.uni-drawer__content {
 			max-width: 480px !important;
 		}

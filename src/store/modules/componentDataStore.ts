@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-const ComponentsDataStore = defineStore('ComponentsDataStore', {
+const ComponentsDataStore = defineStore('ComponentsData', {
   state: {
     uiGlobalLoading: false,
     uiGlobalLogindgText: '加载中'

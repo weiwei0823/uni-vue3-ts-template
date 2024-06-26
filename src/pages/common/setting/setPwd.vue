@@ -245,7 +245,7 @@
 
 		.form-box {
 			.form-item {
-				/deep/ .form-col {
+				::v-deep .form-col {
 					.form-item {
 						width: 100%;
 						border-radius: 20rpx;

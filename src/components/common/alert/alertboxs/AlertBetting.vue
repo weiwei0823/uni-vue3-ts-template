@@ -131,7 +131,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/deep/ .u-mode-center-box {
+::v-deep .u-mode-center-box {
 	background-color: unset;
 }
 

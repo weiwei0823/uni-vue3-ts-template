@@ -471,7 +471,7 @@ export default {
 </style>
 
 <style lang="scss" scoped>
-/deep/ .dt-content {
+::v-deep .dt-content {
 	margin-top: 0 !important;
 }
 

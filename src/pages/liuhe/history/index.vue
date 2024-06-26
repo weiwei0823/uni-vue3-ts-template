@@ -1036,7 +1036,7 @@
 		.nav {
 			height: fit-content;
 
-			/deep/ .header {
+			::v-deep .header {
 				grid-template-columns: repeat(3, 20% 60% 20%);
 
 				.u-item-bg {
@@ -1712,7 +1712,7 @@
 		}
 	}
 
-	/deep/.z-paging-content .zp-l-text{
+	::v-deep.z-paging-content .zp-l-text{
 		color: var(--theme-font-default-shallow-color) !important;
 	}
 

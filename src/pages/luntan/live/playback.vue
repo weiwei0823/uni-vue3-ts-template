@@ -226,7 +226,7 @@
 	}
 </script>
 <style scoped>
-	/deep/ .empty-box {
+	::v-deep .empty-box {
 		height: auto;
 		margin-top: 250rpx;
 	}
@@ -303,7 +303,7 @@
 </style>
 <style lang="scss" scoped>
 	.year-select {
-		/deep/ .u-drawer-content {
+		::v-deep .u-drawer-content {
 			border-radius: 24rpx 24rpx 0 0;
 			overflow: hidden;
 

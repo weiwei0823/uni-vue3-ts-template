@@ -842,7 +842,7 @@ export default {
 
 }
 
-/deep/ .lottery {
+::v-deep .lottery {
 	margin-top: 0 !important;
 }
 
@@ -857,7 +857,7 @@ export default {
 	border-top-right-radius: 24rpx;
 }
 
-/deep/ .tab-div-bg {
+::v-deep .tab-div-bg {
 	border-radius: 0;
 }
 
@@ -1130,7 +1130,7 @@ export default {
 
 }
 
-/deep/ .vant-swiper-body-mini {
+::v-deep .vant-swiper-body-mini {
 	border-radius: 24rpx 24rpx 0 0;
 }
 
@@ -1437,7 +1437,7 @@ export default {
 </style>
 
 <style lang="scss" scoped>
-/deep/ .header {
+::v-deep .header {
 	grid-template-columns: repeat(3, 20% 60% 20%);
 
 	.center {

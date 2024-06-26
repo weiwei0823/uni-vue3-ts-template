@@ -45,7 +45,7 @@ import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
 import TestLogin from "@/components/common/PopItem/TestLogin";
 import {init} from "@/utils/lottery/mine";
 import {advertList, demoLogin} from "@/utils/common/index";
-import {cp_init} from '@//utils/home/index.js';
+import {cp_init} from '@/utils/home/index.js';
 import defaultTemplate from "@/utils/defaultTemplate";
 import {mapGetters} from 'pinia';
 
@@ -384,7 +384,7 @@ export default {
 
 }
 
-/deep/ .category-swiper {
+::v-deep .category-swiper {
 	margin-top: 0;
 }
 
@@ -413,7 +413,7 @@ export default {
 	height: 100%;
 }
 
-/deep/ .swiper-item-content {
+::v-deep .swiper-item-content {
 	padding-bottom: 20rpx !important;
 }
 
@@ -425,12 +425,12 @@ export default {
 	// padding-bottom: 124rpx;
 
 
-	/deep/ .uni-scroll-view {
+	::v-deep .uni-scroll-view {
 		border-radius: 30rpx;
 		overflow: hidden;
 	}
 
-	/deep/ .category-swiper {
+	::v-deep .category-swiper {
 		padding-bottom: 60rpx;
 	}
 
@@ -438,7 +438,7 @@ export default {
 		padding: 0 14px;
 		/*background: #FFF;*/
 
-		/deep/ {
+		::v-deep {
 			uni-swiper {
 				height: 137px !important;
 				border-radius: 10px;

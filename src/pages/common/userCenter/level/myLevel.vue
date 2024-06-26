@@ -33,7 +33,7 @@
 	} from "@/utils/user";
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue";
 	import Header from "@/components/common/header/index";
-	import Empty from '@//components/common/empty/empty'
+	import Empty from '@/components/common/empty/empty'
 	import {
 		mapGetters
 	} from 'pinia';
@@ -72,7 +72,7 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .empty-box {
+	::v-deep .empty-box {
 		height: calc(var(--vh) - 230rpx);
 	}
 
@@ -118,7 +118,7 @@
 			top: 24rpx;
 		}
 
-		/deep/ .uni-list--border-top {
+		::v-deep .uni-list--border-top {
 			&:first-child {
 				height: 0;
 			}

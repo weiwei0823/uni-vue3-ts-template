@@ -94,7 +94,7 @@ import {
 	topData
 } from '@/utils/ptp/index'
 import defaultTemplate from "@/utils/defaultTemplate";
-import { setNavigationBarColor, hideTabBar, lockOrientation } from '@/utils/common.js';
+import { setNavigationBarColor, hideTabBar, lockOrientation } from '@/utils/common.ts';
 
 export default {
 	components: {
@@ -273,13 +273,13 @@ export default {
 .video-box {
 
 
-	/deep/ .u-drawer {
+	::v-deep .u-drawer {
 		position: fixed;
 		top: 0;
 		left: 0;
 	}
 
-	/deep/ .u-mode-center-box {
+	::v-deep .u-mode-center-box {
 		background: unset;
 	}
 
@@ -290,11 +290,11 @@ export default {
 		overflow: hidden;
 	}
 
-	/deep/ .uni-video-container {
+	::v-deep .uni-video-container {
 		border-radius: 20rpx;
 	}
 
-	/deep/ .uni-video-cover {
+	::v-deep .uni-video-cover {
 		border-radius: 20rpx;
 	}
 
@@ -306,7 +306,7 @@ export default {
 		border-radius: 20rpx;
 		// overflow: hidden;
 
-		/deep/ .uni-video-video {
+		::v-deep .uni-video-video {
 			border-radius: 20rpx;
 		}
 	}
@@ -449,7 +449,7 @@ export default {
 			border-radius: 24rpx;
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
-			/deep/ .uni-scroll-view {
+			::v-deep .uni-scroll-view {
 				-webkit-overflow-scrolling: unset !important;
 			}
 		}

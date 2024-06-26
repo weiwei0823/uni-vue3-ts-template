@@ -121,7 +121,7 @@
 		display: flex;
 		flex-direction: column;
 
-		/deep/ .uni-collapse {
+		::v-deep .uni-collapse {
 			border-radius: 24rpx;
 			overflow: hidden;
 			padding: 0 28rpx;

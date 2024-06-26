@@ -989,7 +989,7 @@ export default {
 	font-weight: 500;
 }
 
-/deep/ .header {
+::v-deep .header {
 	grid-template-columns: repeat(3, 20% 60% 20%);
 
 	.center {
@@ -1031,7 +1031,7 @@ export default {
 		z-index: 11;
 		gap: 20rpx;
 
-		/deep/ .uni-stat__select {
+		::v-deep .uni-stat__select {
 			background: var(--theme-color) !important;
 		}
 
@@ -1057,7 +1057,7 @@ export default {
 			align-items: center;
 			justify-content: space-between;
 
-			/deep/ .uni-select {
+			::v-deep .uni-select {
 				border: none;
 				padding: 0 20rpx;
 				font-size: 26rpx;
@@ -1106,7 +1106,7 @@ export default {
 			}
 		}
 
-		/deep/ .uni-searchbar {
+		::v-deep .uni-searchbar {
 			padding: 0;
 
 			.uni-searchbar__box {

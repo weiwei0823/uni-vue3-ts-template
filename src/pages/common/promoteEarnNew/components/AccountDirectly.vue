@@ -237,7 +237,7 @@
 	};
 </script>
 <style lang="scss">
-	/deep/ .uni-forms {
+	::v-deep .uni-forms {
 		.uni-forms-item__label {
 			padding: 20rpx !important;
 			color: var(--theme-color);

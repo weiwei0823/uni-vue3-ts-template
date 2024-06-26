@@ -104,18 +104,18 @@
 	}
 </script>
 <style scoped lang="scss">
-	/deep/ .content-box {
+	::v-deep .content-box {
 		border-radius: 40rpx 40rpx 0px 0px !important;
 	}
 
-	/deep/ .uni-popup__wrapper {
+	::v-deep .uni-popup__wrapper {
 		border-radius: 40rpx 40rpx 0px 0px !important;
 	}
 
 	.uni-popup {
 		max-width: 480px;
 
-		/deep/ .content-box {
+		::v-deep .content-box {
 			max-width: 480px;
 			margin: auto;
 		}

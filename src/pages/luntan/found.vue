@@ -426,24 +426,24 @@
 	}
 </script>
 <style>
-	/deep/ .u-drawer {
+	::v-deep .u-drawer {
 		z-index: 999999 !important;
 	}
 </style>
 <style lang="scss" scoped>
-	/deep/ .login-box {
+	::v-deep .login-box {
 		z-index: 99999 !important;
 	}
 
-	/deep/ .zp-l-container {
+	::v-deep .zp-l-container {
 		background: var(--theme-auxiliary-color-default) !important;
 	}
 
-	/deep/ .zp-l-text {
+	::v-deep .zp-l-text {
 		color: #A1A1A1 !important;
 	}
 
-	/deep/ .float-bnt {
+	::v-deep .float-bnt {
 		bottom: 352rpx;
 	}
 
@@ -530,7 +530,7 @@
 			background: #fff;
 			padding: 8rpx 28rpx;
 
-			/deep/ .uni-searchbar {
+			::v-deep .uni-searchbar {
 				background: var(--theme-auxiliary-color-default);
 				border-radius: 16rpx;
 				height: 76rpx;

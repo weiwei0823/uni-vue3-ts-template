@@ -644,7 +644,7 @@
 			}
 		}
 
-		/deep/ .selected {
+		::v-deep .selected {
 			.left{
 			   .mark {
 				   color: #fff!important;

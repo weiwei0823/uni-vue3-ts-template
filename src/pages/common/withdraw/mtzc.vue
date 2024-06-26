@@ -297,7 +297,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/deep/.uni-popup {
+::v-deep.uni-popup {
 	z-index: 999;
 }
 
@@ -525,7 +525,7 @@ export default {
 			}
 		}
 
-		/deep/ .code-box {
+		::v-deep .code-box {
 			.item {
 				border-radius: 24rpx;
 			}

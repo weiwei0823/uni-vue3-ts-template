@@ -106,7 +106,7 @@ import TestLogin from '@/components/common/PopItem/TestLogin';
 import NoticeScroll from '@/components/common/noticeScroll/index.vue';
 import {bindStatus} from '@/utils/lottery/mine';
 import {demoLogin} from '@/utils/common/index';
-import {cp_init} from '@//utils/home/index.js';
+import {cp_init} from '@/utils/home/index.js';
 import {mapGetters, mapMutations, mapState} from 'pinia';
 import defaultTemplate from '@/utils/defaultTemplate';
 import HomePop from '@/pages/liuhe/common/HomePop';
@@ -598,7 +598,7 @@ export default {
 <style lang="scss" scoped>
 $swiper-size: 14rpx;
 $swiper-active-width: 40rpx;
-/deep/ .uni-swiper__dots-item {
+::v-deep .uni-swiper__dots-item {
 	width: $swiper-size !important;
 	height: $swiper-size !important;
 	border-radius: calc(#{$swiper-size} / 2) !important;
@@ -609,7 +609,7 @@ $swiper-active-width: 40rpx;
 	flex-shrink: 0;
 	/*border-radius: 1px !important;*/
 }
-/deep/ .uni-swiper__selected {
+::v-deep .uni-swiper__selected {
 	/*width: 48rpx !important;*/
 	/*background: linear-gradient(180deg, var(--theme-color) 9.60%, var(--theme-color) 53.12%, var(--theme-color) 86.98%) !important;*/
 	/*border-radius: 1px !important;*/
@@ -659,7 +659,7 @@ $swiper-active-width: 40rpx;
 }
 
 .scroll-is-top {
-	/deep/ .uni-scroll-view {
+	::v-deep .uni-scroll-view {
 		-webkit-overflow-scrolling: touch;
 	}
 }
@@ -736,7 +736,7 @@ $swiper-active-width: 40rpx;
 			padding: 0 28rpx;
 			background: #fff;
 
-			/deep/ {
+			::v-deep {
 				uni-swiper,
 				uni-swiper .uni-swiper-wrapper {
 					height: 137px !important;

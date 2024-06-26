@@ -98,7 +98,7 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .uni-scroll-view-content .list-item:nth-child(1) .uni-list--border {
+	::v-deep .uni-scroll-view-content .list-item:nth-child(1) .uni-list--border {
 		display: none;
 	}
 

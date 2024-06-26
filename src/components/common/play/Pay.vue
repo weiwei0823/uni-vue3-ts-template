@@ -179,7 +179,7 @@
 		width: 100%;
 	}
 
-	/deep/ .lottery-center {
+	::v-deep .lottery-center {
 		padding: 0 !important;
 	}
 
@@ -194,7 +194,7 @@
 			align-items: center;
 			padding: 0 20rpx;
 
-			/deep/ .lottery-box {
+			::v-deep .lottery-box {
 				width: 100%;
 			}
 		}

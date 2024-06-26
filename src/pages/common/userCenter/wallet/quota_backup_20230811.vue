@@ -303,7 +303,7 @@ export default {
           border: 1px solid rgba(66, 175, 153, 0.25);
           overflow: hidden;
           margin-bottom: 10rpx;
-          /deep/ .uni-searchbar__box {
+          ::v-deep .uni-searchbar__box {
             flex-direction: row-reverse;
 
             .uni-searchbar__box-search-input {

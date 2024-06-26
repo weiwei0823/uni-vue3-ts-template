@@ -449,7 +449,7 @@
 	}
 </script>
 <style lang="scss" scoped>
-	/deep/ .uni-popup .content-box {
+	::v-deep .uni-popup .content-box {
 		left: 0 !important;
 		right: 0 !important;
 		max-width: none !important;
@@ -520,16 +520,16 @@
 				// margin-top:20rpx;
 				padding: 20rpx 60rpx;
 
-				/deep/ ._block {
+				::v-deep ._block {
 					display: block !important;
 
 				}
 
-				/deep/ .exp {
+				::v-deep .exp {
 					margin-bottom: 40rpx;
 				}
 
-				/deep/ .text {
+				::v-deep .text {
 					color: #404040;
 					font-family: 'PingFang SC';
 					font-size: 26rpx;

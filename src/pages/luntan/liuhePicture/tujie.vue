@@ -389,7 +389,7 @@
 </script>
 
 <style scoped>
-	/deep/ .header {
+	::v-deep .header {
 		grid-template-columns: repeat(3, 30% 40% 30%);
 		border-bottom: 0 !important;
 	}
@@ -663,7 +663,7 @@
 		background: var(--theme-auxiliary-color-default);
 	}
 
-	/deep/ .header {
+	::v-deep .header {
 		grid-template-columns: repeat(3, 30% 40% 30%) !important;
 
 		.center {
@@ -678,7 +678,7 @@
 		display: grid;
 		place-content: center;
 
-		/deep/ .empty-box {
+		::v-deep .empty-box {
 			display: grid;
 			place-content: center;
 		}

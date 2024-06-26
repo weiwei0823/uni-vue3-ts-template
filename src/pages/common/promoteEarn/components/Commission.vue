@@ -232,7 +232,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/deep/ .uni-drawer__content {
+::v-deep .uni-drawer__content {
 	background: var(--theme-auxiliary-color-default);
 }
 
@@ -264,7 +264,7 @@ export default {
 			}
 		}
 
-		/deep/ .uni-select {
+		::v-deep .uni-select {
 			border: none;
 			width: 170rpx;
 			height: 88rpx;
@@ -304,7 +304,7 @@ export default {
 			}
 		}
 
-		/deep/ .uni-stat__select {
+		::v-deep .uni-stat__select {
 			width: auto;
 			flex: none;
 

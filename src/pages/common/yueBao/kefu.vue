@@ -126,7 +126,7 @@
 		height: var(--vh);
 		background: var(--theme-auxiliary-color-default);
 
-		/deep/ .header {
+		::v-deep .header {
 			background: #BFE0FF;
 			border-radius: 0;
 		}

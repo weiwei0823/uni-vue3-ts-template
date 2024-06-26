@@ -44,7 +44,7 @@
 	}
 </script>
 <style lang="scss" scoped>
-	/deep/ .fiterIcon {
+	::v-deep .fiterIcon {
 		min-width: 48rpx;
 	}
 
@@ -67,7 +67,7 @@
 			width: calc(100% - 200rpx);
 		}
 
-		/deep/.u-notice-bar {
+		::v-deep.u-notice-bar {
 			padding: 0 20rpx !important;
 		}
 

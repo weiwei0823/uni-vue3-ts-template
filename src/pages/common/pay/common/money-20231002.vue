@@ -470,7 +470,7 @@
 		}
 	}
 
-	/deep/ .input-view {
+	::v-deep .input-view {
 		text-overflow: ellipsis;
 		overflow: hidden;
 	}

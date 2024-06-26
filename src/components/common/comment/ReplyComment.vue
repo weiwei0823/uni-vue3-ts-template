@@ -293,7 +293,7 @@ export default {
 </style>
 
 <style lang="scss" scoped>
-/deep/ .file-list-row {
+::v-deep .file-list-row {
 	border-radius: 24rpx !important;
 	overflow: hidden;
 	border: 1px dashed #A1A1A1 !important;
@@ -301,7 +301,7 @@ export default {
 	margin: 0 20rpx 20rpx 0 !important;
 }
 
-/deep/ .file-list {
+::v-deep .file-list {
 	grid-template-columns: repeat(3, 1fr) !important;
 	gap: 0 !important;
 }

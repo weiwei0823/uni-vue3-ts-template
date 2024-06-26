@@ -329,15 +329,15 @@
 	}
 </script>
 <style scoped lang="scss">
-	/deep/ .uni-calendar--fixed-top {
+	::v-deep .uni-calendar--fixed-top {
 		display: none;
 	}
 
-	/deep/ .uni-calendar-item__weeks-box .uni-calendar-item--checked {
+	::v-deep .uni-calendar-item__weeks-box .uni-calendar-item--checked {
 		background-color: var(--theme-color);
 	}
 
-	/deep/ .uni-datetime-picker--btn {
+	::v-deep .uni-datetime-picker--btn {
 		background-color: var(--theme-color);
 	}
 
@@ -350,16 +350,16 @@
 		flex-direction: column;
 		background: var(--theme-auxiliary-color-default);
 
-		/deep/ .date-part .date-part-title .center,
-		/deep/ .date-part-content-item.center {
+		::v-deep .date-part .date-part-title .center,
+		::v-deep .date-part-content-item.center {
 			color: var(--theme-color) !important;
 		}
 
-		/deep/ .uni-calendar-item--checked {
+		::v-deep .uni-calendar-item--checked {
 			background: var(--theme-color) !important;
 		}
 
-		/deep/ .uni-datetime-picker--btn {
+		::v-deep .uni-datetime-picker--btn {
 			background-color: var(--theme-color) !important;
 		}
 

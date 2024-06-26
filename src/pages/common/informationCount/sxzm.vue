@@ -284,7 +284,7 @@
 </script>
 
 <style scoped>
-	/deep/ .header{
+	::v-deep .header{
 		border-radius: unset !important;
 	}
 	.scroll-y{

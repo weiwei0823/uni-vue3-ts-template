@@ -287,12 +287,12 @@
 	}
 </script>
 <style lang="scss">
-/deep/ .header{
+::v-deep .header{
 	border-radius: 0px !important;
 }
 </style>
 <style scoped>
-	/deep/ .header{
+	::v-deep .header{
 		border-radius: unset !important;
 	}
 	.scroll-y{

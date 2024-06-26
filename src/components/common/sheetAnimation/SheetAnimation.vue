@@ -5,8 +5,9 @@
 </template>
 
 <script>
-    import {mapGetters} from  'vuex';
-    export default {
+import {mapGetters} from 'pinia';
+
+export default {
         name: "SheetAnimation",
         desc: "动画",
 

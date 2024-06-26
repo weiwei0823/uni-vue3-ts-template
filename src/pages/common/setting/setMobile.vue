@@ -34,7 +34,7 @@
 	import Header from '@/components/common/header/index.vue';
 	import {
 		checkPhone
-	} from "@/utils/common.js"
+	} from "@/utils/common.ts"
 	import {
 		getVCode,
 		checkCode
@@ -240,7 +240,7 @@
 						}
 					}
 
-					/deep/ .uni-select {
+					::v-deep .uni-select {
 						border: none;
 						width: 170rpx;
 						height: 88rpx;

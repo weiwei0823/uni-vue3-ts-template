@@ -1005,7 +1005,7 @@ page {
 
 <style lang="scss" scoped>
 .category-other {
-  /deep/ .category-item {
+  ::v-deep .category-item {
     padding: 0 28rpx;
   }
 }
@@ -1036,7 +1036,7 @@ page {
   }
 }
 
-/deep/ .zp-container {
+::v-deep .zp-container {
   margin-bottom: 0 !important;
 
   .zp-empty-view {
@@ -1136,7 +1136,7 @@ page {
   // display: none;
 }
 
-/deep/ .u-tabs {
+::v-deep .u-tabs {
   background: unset !important;
 
   .u-tabs-item {

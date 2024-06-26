@@ -230,7 +230,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/deep/ .uni-drawer__content {
+::v-deep .uni-drawer__content {
 	background: var(--theme-auxiliary-color-default);
 }
 
@@ -275,7 +275,7 @@ export default {
 			align-items: center;
 			justify-content: space-between;
 
-			/deep/ .uni-select {
+			::v-deep .uni-select {
 				border: none;
 				padding: 0 20rpx;
 				font-size: 26rpx;
@@ -303,7 +303,7 @@ export default {
 			}
 		}
 
-		/deep/ .uni-searchbar {
+		::v-deep .uni-searchbar {
 			padding: 0;
 
 			.uni-searchbar__box {

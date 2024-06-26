@@ -260,7 +260,7 @@
 
 		padding-bottom: 50rpx;
 
-		/deep/ .header {
+		::v-deep .header {
 			background: #BFE0FF !important;
 			border-radius: 0 !important;
 		}

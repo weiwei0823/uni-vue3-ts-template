@@ -260,7 +260,7 @@
 </script>
 
 <style lang="scss">
-	/deep/ .uni-scroll-view-content{
+	::v-deep .uni-scroll-view-content{
 		display: flex;
 	}
 

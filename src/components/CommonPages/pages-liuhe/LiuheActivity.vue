@@ -432,12 +432,12 @@
 		height: calc(var(--vh) - 60rpx);
 	}
 
-	/deep/ .header {
+	::v-deep .header {
 		border-radius: 0 0 20rpx 20rpx;
 		overflow: hidden;
 	}
 
-	/deep/ .uni-navbar__header {
+	::v-deep .uni-navbar__header {
 		padding: 0 28rpx;
 		height: 88rpx !important;
 	}

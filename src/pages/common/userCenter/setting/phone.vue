@@ -69,7 +69,7 @@
 	} from "@/utils/common/index.js";
 	import {
 		checkPhone
-	} from "@/utils/common.js"
+	} from "@/utils/common.ts"
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
 	import {
 		mapGetters

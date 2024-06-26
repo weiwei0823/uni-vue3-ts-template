@@ -313,26 +313,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/deep/ .uni-popup {
+::v-deep .uni-popup {
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 9999999;
 }
 
-/deep/ .uni-dialog-title-text {
+::v-deep .uni-dialog-title-text {
 	color: #404844 !important;
 }
 
-/deep/ .uni-dialog-content-text {
+::v-deep .uni-dialog-content-text {
 	color: #A0ABA5 !important;
 }
 
-/deep/ .uni-dialog-button-text {
+::v-deep .uni-dialog-button-text {
 	color: var(--theme-color) !important;
 }
 
-/deep/ .uni-dialog-title {
+::v-deep .uni-dialog-title {
 	color: #404040;
 }
 

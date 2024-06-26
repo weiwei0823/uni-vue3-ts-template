@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-const playingStore = defineStore('playingStore', {
+const playingStore = defineStore('playing', {
   state: {
     orderList: [], //
     onlineNum: 0,

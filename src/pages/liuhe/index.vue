@@ -993,7 +993,7 @@ height: 34rpx;"></image>
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .fixedView {
+	::v-deep .fixedView {
 		right: 30rpx;
 		left: unset !important;
 		top: unset !important;
@@ -1005,7 +1005,7 @@ height: 34rpx;"></image>
 		--scrollbar-display: 'block'
 	}
 
-	/deep/ .input-view {
+	::v-deep .input-view {
 		margin: auto 0;
 	}
 
@@ -1025,7 +1025,7 @@ height: 34rpx;"></image>
 		height: var(--vh);
 
 
-		/deep/ {
+		::v-deep {
 			.uni-navbar__header-btns-right {
 				width: fit-content !important;
 			}
@@ -1218,7 +1218,7 @@ height: 34rpx;"></image>
 					text-overflow: ellipsis;
 					overflow: hidden;
 
-					/deep/ .u-notice-bar {
+					::v-deep .u-notice-bar {
 						padding: 0 !important;
 					}
 				}
@@ -1417,7 +1417,7 @@ height: 34rpx;"></image>
 					}
 				}
 
-				/deep/ .icon {
+				::v-deep .icon {
 					border-radius: 10rpx;
 				}
 
@@ -1504,7 +1504,7 @@ height: 34rpx;"></image>
 			width: 162.5rpx;
 			height: 212.5rpx;
 
-			/deep/ .list-item {
+			::v-deep .list-item {
 				width: 162.5rpx;
 
 				.image {

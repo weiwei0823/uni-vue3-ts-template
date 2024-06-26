@@ -831,20 +831,20 @@
 	}
 </script>
 <style>
-	/* 	/deep/ .u-drawer {
+	/* 	::v-deep .u-drawer {
 		z-index: 999999 !important;
 	} */
 </style>
 <style lang="scss" scoped>
-	/deep/ .login-box {
+	::v-deep .login-box {
 		z-index: 9999 !important;
 	}
 
-	/deep/ .empty-box {
+	::v-deep .empty-box {
 		height: calc(var(--vh) - 600rpx);
 	}
 
-	/deep/ .float-bnt {
+	::v-deep .float-bnt {
 		bottom: 352rpx !important;
 	}
 

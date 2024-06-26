@@ -412,11 +412,11 @@ export default {
 	height: 100vh;
 }
 
-/deep/ .content::before {
+::v-deep .content::before {
 	height: auto !important;
 }
 
-/deep/ .webkit-line-clamp {
+::v-deep .webkit-line-clamp {
 	height: auto !important;
 }
 

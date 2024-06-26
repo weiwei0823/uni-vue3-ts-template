@@ -712,14 +712,14 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .empty-box{
+	::v-deep .empty-box{
 		height: calc(var(--vh) - 163px) !important;
 	}
-	/deep/ .uni-select--disabled {
+	::v-deep .uni-select--disabled {
 		background-color: #f2f2f2;
 	}
 
-	/deep/ .uni-select__input-box {
+	::v-deep .uni-select__input-box {
 		height: 64rpx;
 	}
 
@@ -752,7 +752,7 @@
 			z-index: 11;
 			gap: 20rpx;
 
-			/deep/ .uni-stat__select {
+			::v-deep .uni-stat__select {
 				background: unset !important;
 			}
 
@@ -778,7 +778,7 @@
 				align-items: center;
 				justify-content: space-between;
 
-				/deep/ .uni-select {
+				::v-deep .uni-select {
 					border: none;
 					padding: 0 20rpx;
 					font-size: 26rpx;
@@ -821,7 +821,7 @@
 				}
 			}
 
-			/deep/ .uni-searchbar {
+			::v-deep .uni-searchbar {
 				padding: 0;
 
 				.uni-searchbar__box {
@@ -855,7 +855,7 @@
 			flex: 1;
 			font-size: 26rpx;
 
-			/deep/ .u-content {
+			::v-deep .u-content {
 				padding: 0 !important;
 
 				.u-icon-wrap {
@@ -871,7 +871,7 @@
 		}
 	}
 
-	/deep/ .float-bnt {
+	::v-deep .float-bnt {
 		bottom: 352rpx !important;
 	}
 </style>
@@ -1144,7 +1144,7 @@
 
 	}
 
-	.van-list .image-item /deep/ .origin-img {
+	.van-list .image-item ::v-deep .origin-img {
 		border-radius: 12rpx 12rpx 0 0 !important;
 	}
 
@@ -1658,11 +1658,11 @@
 </style>
 
 <style lang="scss" scoped>
-	/deep/ .float-bnt {
+	::v-deep .float-bnt {
 		bottom: 352rpx !important;
 	}
 
-	/deep/ .header {
+	::v-deep .header {
 		border-radius: 0;
 	}
 
@@ -1679,7 +1679,7 @@
 		}
 	}
 
-	/deep/ .uni-swiper__dots-item {
+	::v-deep .uni-swiper__dots-item {
 		height: 6rpx !important;
 		width: 29rpx !important;
 		background: linear-gradient(180deg, #FFF 9.60%, var(--dot-bg-rgba) 53.12%, var(--dot-bg-rgba) 100%) !important;
@@ -1690,7 +1690,7 @@
 		border-radius: 1px !important;
 	}
 
-	/deep/ .uni-swiper__selected {
+	::v-deep .uni-swiper__selected {
 		width: 48rpx !important;
 		background: linear-gradient(180deg, var(--theme-color) 9.60%, var(--theme-color) 53.12%, var(--theme-color) 86.98%) !important;
 		border-radius: 1px !important;
@@ -1705,7 +1705,7 @@
 		margin: 0 28rpx;
 		overflow: hidden;
 
-		/deep/ .van-notice-bar__content {
+		::v-deep .van-notice-bar__content {
 			line-height: 88rpx !important;
 			font-size: 26rpx;
 		}

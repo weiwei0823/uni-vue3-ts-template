@@ -190,7 +190,7 @@
 			border-radius: 16rpx 16rpx 0 0;
 			border-bottom: 1px solid var(--theme-auxiliary-color-default) !important;
 
-			/deep/ .u-tab-bar {
+			::v-deep .u-tab-bar {
 				bottom: -5rpx;
 				width: 36rpx !important;
 				height: 6rpx !important;

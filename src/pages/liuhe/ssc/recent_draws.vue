@@ -123,11 +123,11 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .tab-div-bg {
+	::v-deep .tab-div-bg {
 		border-radius: 0;
 	}
 
-	/deep/ .uni-list--border-top {
+	::v-deep .uni-list--border-top {
 		background-color: transparent !important;
 	}
 
@@ -162,7 +162,7 @@
 			overflow: hidden;
 			// height: calc(var(--vh) - 100rpx);
 
-			/deep/ .border--left {
+			::v-deep .border--left {
 				display: none;
 			}
 

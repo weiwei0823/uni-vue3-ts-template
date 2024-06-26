@@ -111,16 +111,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/deep/ .uni-drawer {
+::v-deep .uni-drawer {
 	max-width: 480px;
 	margin: auto;
 }
 
-/deep/ .uni-drawer__content {
+::v-deep .uni-drawer__content {
 	max-width: 384px;
 }
 
-/deep/ .back-title {
+::v-deep .back-title {
 	padding-top: 20rpx !important;
 }
 </style>

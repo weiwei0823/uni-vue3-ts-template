@@ -587,7 +587,7 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .content-box {
+	::v-deep .content-box {
 		z-index: 10;
 	}
 

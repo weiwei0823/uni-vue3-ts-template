@@ -643,7 +643,7 @@
 				}
 			}
 
-			/deep/ .content-box {
+			::v-deep .content-box {
 				border-radius: 24rpx 24rpx 0 0;
 				width: 100% !important;
 			}
@@ -699,7 +699,7 @@
 					box-sizing: border-box;
 					height: 476rpx;
 
-					/deep/ .uni-scroll-view-content {
+					::v-deep .uni-scroll-view-content {
 						display: flex;
 						flex-wrap: wrap;
 					}
@@ -728,7 +728,7 @@
 </style>
 
 <style lang="scss" scoped>
-	/deep/ .header {
+	::v-deep .header {
 		grid-template-columns: repeat(3, 40% 20% 40%) !important;
 	}
 

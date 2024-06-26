@@ -112,7 +112,7 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .uni-list--border-top {
+	::v-deep .uni-list--border-top {
 		height: 0 !important;
 	}
 
@@ -129,7 +129,7 @@
 			overflow: hidden;
 			height: calc(var(--vh) - 300rpx);
 
-			/deep/ .border--left {
+			::v-deep .border--left {
 				display: none;
 			}
 

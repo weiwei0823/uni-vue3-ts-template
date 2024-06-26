@@ -284,7 +284,7 @@
 			color: #fff;
 		}
 
-		/deep/ .u-btn--default--disabled {
+		::v-deep .u-btn--default--disabled {
 			background: #A1A1A1;
 		}
 

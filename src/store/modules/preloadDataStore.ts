@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 import { cp_init, lt_init } from '@/utils/home/index.js'
 import { listLatest } from '@/utils/forum/index.js'
 
-const preloadDataStore = defineStore('preloadDataStore', {
+const preloadDataStore = defineStore('preloadData', {
   namespaced: true,
   state: {
     liuhePreload: {

@@ -118,7 +118,7 @@
 		}
 	}
 
-	/deep/ .flex-box {
+	::v-deep .flex-box {
 		padding: 0 60rpx;
 	}
 </style>

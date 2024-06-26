@@ -436,7 +436,7 @@
 </script>
 
 <style scoped lang="scss">
-	/deep/ .uni-popup__wrapper {
+	::v-deep .uni-popup__wrapper {
 		overflow: hidden;
 	}
 
@@ -630,7 +630,7 @@
 		#qrcode {
 			margin-top: 10rpx;
 
-			/deep/ .uqrcode {
+			::v-deep .uqrcode {
 				margin: 0 auto;
 			}
 

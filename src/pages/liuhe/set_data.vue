@@ -266,7 +266,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-/deep/ .u-form-item--left {
+::v-deep .u-form-item--left {
 	width: 120rpx !important;
 	flex: 0 0 120rpx !important;
 }
@@ -325,7 +325,7 @@ export default {
 			text-align: center;
 		}
 
-		/deep/ .code-box {
+		::v-deep .code-box {
 			.item {
 				width: 88rpx;
 				height: 88rpx;
@@ -443,7 +443,7 @@ export default {
 }
 
 .bank-list-box {
-	/deep/ .bank-div {
+	::v-deep .bank-div {
 		height: calc(var(--vh) - 88rpx) !important;
 		max-width: 480px;
 
@@ -465,7 +465,7 @@ export default {
 		}
 	}
 
-	/deep/ .content-box {
+	::v-deep .content-box {
 		border-radius: 40rpx 40rpx 0 0;
 		overflow: hidden;
 		max-width: 480px;
@@ -474,7 +474,7 @@ export default {
 	}
 }
 
-/deep/ {
+::v-deep {
 	.uni-list--border {
 		width: calc(100% - 28rpx);
 		margin: 0 auto;

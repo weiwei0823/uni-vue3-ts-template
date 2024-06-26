@@ -99,7 +99,7 @@
 	import Header from '@/components/common/header/index.vue';
 	import {
 		setPickerStyle
-	} from "@/utils/common.js";
+	} from "@/utils/common.ts";
 	export default {
 		name: "wsdx",
 		components: {

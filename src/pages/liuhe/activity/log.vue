@@ -234,7 +234,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-/deep/ .uni-select--mask {}
+::v-deep .uni-select--mask {}
 
 .content {
 	padding: 20rpx 28rpx;
@@ -267,7 +267,7 @@ export default {
 				}
 			}
 
-			/deep/ .uni-select {
+			::v-deep .uni-select {
 				border: none;
 				width: 288rrpx;
 				height: 88rpx;
@@ -380,7 +380,7 @@ export default {
 	}
 }
 
-/deep/ .header {
+::v-deep .header {
 	border-radius: 0 0 20rpx 20rpx;
 	overflow: hidden;
 }

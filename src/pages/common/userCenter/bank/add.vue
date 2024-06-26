@@ -274,15 +274,15 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .bank-div {
+	::v-deep .bank-div {
 		max-width: 480px !important;
 	}
 
-	/deep/ .uni-popup {
+	::v-deep .uni-popup {
 		z-index: 999;
 	}
 
-	/deep/ .input-item .uni-easyinput__content .content-clear-icon {
+	::v-deep .input-item .uni-easyinput__content .content-clear-icon {
 		color: var(--theme-color) !important;
 	}
 
@@ -392,7 +392,7 @@
 	}
 
 	.bank-list-box {
-		/deep/ .bank-div {
+		::v-deep .bank-div {
 			height: calc(var(--vh) - 88rpx) !important;
 			max-width: 480px;
 
@@ -414,7 +414,7 @@
 			}
 		}
 
-		/deep/ .content-box {
+		::v-deep .content-box {
 			border-radius: 40rpx 40rpx 0 0;
 			overflow: hidden;
 			max-width: 480px;
@@ -424,7 +424,7 @@
 	}
 
 
-	/deep/ .header {
+	::v-deep .header {
 		border-radius: 0 0 20rpx 20rpx;
 		overflow: hidden;
 

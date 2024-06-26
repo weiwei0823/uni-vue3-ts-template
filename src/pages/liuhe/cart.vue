@@ -692,7 +692,7 @@ export default {
 							align-items: center;
 							line-height: 1;
 
-							/deep/ .u-count-num {
+							::v-deep .u-count-num {
 								color: #404040 !important;
 								font-family: 'Roboto' !important;
 								font-size: 34rpx !important;

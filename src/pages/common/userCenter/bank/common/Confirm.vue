@@ -146,7 +146,7 @@ export default {
 		}
 	}
 
-	/deep/ .uni-list-item__container {
+	::v-deep .uni-list-item__container {
 		padding: 40rpx 28rpx;
 	}
 
@@ -227,7 +227,7 @@ export default {
 	}
 }
 
-/deep/ .header {
+::v-deep .header {
 	border-radius: 0 0 20rpx 20rpx;
 	overflow: hidden;
 }

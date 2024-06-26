@@ -194,12 +194,12 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-/deep/ .u-tabs {
+::v-deep .u-tabs {
   border-bottom-left-radius: 24rpx;
   border-bottom-right-radius: 24rpx;
 }
 
-/deep/ .u-scroll-bar {
+::v-deep .u-scroll-bar {
   bottom: 0rpx;
   border-bottom-left-radius: 0!important;
   border-bottom-right-radius: 0!important;
@@ -214,7 +214,7 @@ export default {
     background: #fff;
     padding: 8rpx 28rpx;
 
-    /deep/ .uni-searchbar {
+    ::v-deep .uni-searchbar {
       background: var(--theme-auxiliary-color-default);
       border-radius: 16rpx;
       height: 76rpx;

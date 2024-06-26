@@ -539,7 +539,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/deep/ .uni-popup .content-box {
+::v-deep .uni-popup .content-box {
   background-color: transparent !important;
   z-index: 10;
 
@@ -548,7 +548,7 @@ export default {
   }
 }
 
-/deep/ .msg-box .uni-easyinput .uni-easyinput__content {
+::v-deep .msg-box .uni-easyinput .uni-easyinput__content {
   border: none;
   background-color: var(--theme-auxiliary-color-default) !important;
   border-radius: 16rpx;
@@ -557,7 +557,7 @@ export default {
   text-align: center;
 }
 
-/deep/ .msg-box .uni-easyinput .uni-easyinput__content .uni-input-input {
+::v-deep .msg-box .uni-easyinput .uni-easyinput__content .uni-input-input {
   color: #404040;
   font-weight: 500;
   font-size: 34rpx;
@@ -1037,15 +1037,15 @@ export default {
           position: relative;
           left: 120rpx;
           z-index: 3;
-          /deep/ .uni-slider {
+          ::v-deep .uni-slider {
             margin: 0px !important;
           }
 
-          /deep/ .uni-slider-value {
+          ::v-deep .uni-slider-value {
             display: none;
           }
 
-          /deep/ .u-slider__button {
+          ::v-deep .u-slider__button {
             width: 160rpx !important;
             height: 60rpx !important;
             margin-left: -80rpx !important;
@@ -1059,7 +1059,7 @@ export default {
             font-weight: 500;
             font-family: MiSans;
           }
-          /deep/ .u-slider__button:after {
+          ::v-deep .u-slider__button:after {
             content: '收单返点';
           }
         }

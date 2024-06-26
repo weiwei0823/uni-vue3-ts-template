@@ -1,5 +1,5 @@
 import { config } from '@/config/config'
-import $store from '@/store/index.js'
+import $store from '@/store/index'
 // localstore 读取器
 import localStoreFactory from './localstore/index.js'
 // 预留其它数据读取器

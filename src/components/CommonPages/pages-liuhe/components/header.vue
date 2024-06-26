@@ -125,11 +125,11 @@
 	}
 </script>
 <style lang="scss" scoped>
-	/*/deep/ .uni-drawer__content{*/
+	/*::v-deep .uni-drawer__content{*/
 	/*    width: 80% !important;*/
 	/*}*/
 
-	/*/deep/ .uni-drawer{*/
+	/*::v-deep .uni-drawer{*/
 	/*    position: fixed;*/
 	/*    width: 100%;*/
 	/*    max-width: 480px;*/

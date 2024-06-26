@@ -499,7 +499,7 @@
 				border-radius: 16rpx;
 				overflow: hidden;
 
-				/deep/ .uni-searchbar {
+				::v-deep .uni-searchbar {
 					height: 76rpx;
 					padding: 0px !important;
 

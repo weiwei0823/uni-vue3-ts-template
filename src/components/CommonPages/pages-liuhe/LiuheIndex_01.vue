@@ -232,7 +232,7 @@ import CategoryItem from "@/pages/liuhe/common/CategoryItem";
 import HomePop from "@/pages/liuhe/common/HomePop";
 import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
 import {demoLogin} from "@/utils/common/index";
-import {cp_init} from '@//utils/home/index.js';
+import {cp_init} from '@/utils/home/index.js';
 import {categoryData} from "@/utils/lottery/betting";
 import {bindStatus, userNewlyPlay} from "@/utils/lottery/mine";
 import {style2GameCollectList} from "@/utils/lottery/list"
@@ -1039,7 +1039,7 @@ export default {
 		--scrollbar-display: 'block'
 	}
 
-	/deep/ .fixedView {
+	::v-deep .fixedView {
 		right: 30rpx;
 		left: unset !important;
 		top: unset !important;
@@ -1047,7 +1047,7 @@ export default {
 		opacity: 0;
 	}
 
-	/deep/ .input-view {
+	::v-deep .input-view {
 		margin: auto 0;
 	}
 
@@ -1067,7 +1067,7 @@ export default {
 		height: var(--vh);
 
 
-		/deep/ {
+		::v-deep {
 			.uni-navbar__header-btns-right {
 				width: fit-content !important;
 			}
@@ -1260,7 +1260,7 @@ export default {
 					text-overflow: ellipsis;
 					overflow: hidden;
 
-					/deep/ .u-notice-bar {
+					::v-deep .u-notice-bar {
 						padding: 0 !important;
 					}
 				}
@@ -1459,7 +1459,7 @@ export default {
 					}
 				}
 
-				/deep/ .icon {
+				::v-deep .icon {
 					border-radius: 10rpx;
 				}
 
@@ -1545,7 +1545,7 @@ export default {
 			width: 162.5rpx;
 			height: 212.5rpx;
 
-			/deep/ .list-item {
+			::v-deep .list-item {
 				width: 162.5rpx;
 
 				.image {

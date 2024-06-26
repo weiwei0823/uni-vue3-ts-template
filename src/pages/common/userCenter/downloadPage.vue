@@ -557,7 +557,7 @@
 			margin-top: 40rpx;
 			padding: 0 28rpx;
 
-			/deep/ .uni-link {
+			::v-deep .uni-link {
 				flex: 1;
 				width: 100%;
 			}

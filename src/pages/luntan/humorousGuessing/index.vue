@@ -818,7 +818,7 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-/deep/ .uni-select--mask {
+::v-deep .uni-select--mask {
 	z-index: 999999;
 }
 
@@ -830,7 +830,7 @@ export default {
 	align-items: center;
 	justify-content: space-between;
 
-	/deep/ .uni-select {
+	::v-deep .uni-select {
 		border: none;
 		padding: 0 20rpx;
 		font-size: 26rpx;
@@ -1524,7 +1524,7 @@ export default {
 
 }
 
-/deep/ .vant-swiper-body-mini {
+::v-deep .vant-swiper-body-mini {
 	border-radius: 0;
 }
 

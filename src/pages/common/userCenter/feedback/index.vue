@@ -306,7 +306,7 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .u-upload {
+	::v-deep .u-upload {
 		flex-wrap: nowrap;
 	}
 
@@ -322,7 +322,7 @@
 
 	}
 
-	/deep/ .tab-div-bg {
+	::v-deep .tab-div-bg {
 		border-radius: 0;
 		z-index: 11;
 	}
@@ -335,7 +335,7 @@
 		background: #eeeeee;
 	}
 
-	/deep/ .u-list-item:first-child {
+	::v-deep .u-list-item:first-child {
 		margin-left: 0;
 	}
 
@@ -387,7 +387,7 @@
 
 		.nav {
 
-			/deep/ .header {
+			::v-deep .header {
 				grid-template-columns: repeat(3, 20% 60% 20%);
 
 				.u-item-bg {
@@ -629,15 +629,15 @@
 			width: calc(100% - 28rpx);
 			border-color: var(--theme-auxiliary-color-default) !important;
 
-			/deep/ .uni-textarea-wrapper {
+			::v-deep .uni-textarea-wrapper {
 				min-height: 160rpx;
 			}
 
-			/deep/ .uni-textarea-placeholder {
+			::v-deep .uni-textarea-placeholder {
 				color: var(--theme-font-default-shallow-color) !important;
 			}
 
-			/deep/ .u-input__input {
+			::v-deep .u-input__input {
 				padding: 0;
 				height: 100%;
 			}
@@ -657,12 +657,12 @@
 		.upload {
 			margin-bottom: 20rpx;
 
-			/deep/ .uicon-plus {
+			::v-deep .uicon-plus {
 				font-size: 140rpx !important;
 				color: rgba(192, 192, 192, 1) !important;
 			}
 
-			/deep/ .u-list-item {
+			::v-deep .u-list-item {
 				border: 1px dashed #cccccc;
 				border-radius: 30rpx;
 

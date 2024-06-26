@@ -211,7 +211,7 @@
 			z-index: 11;
 			gap: 20rpx;
 
-			/deep/ .uni-stat__select {
+			::v-deep .uni-stat__select {
 				background: unset !important;
 			}
 
@@ -237,7 +237,7 @@
 				align-items: center;
 				justify-content: space-between;
 
-				/deep/ .uni-select {
+				::v-deep .uni-select {
 					border: none;
 					padding: 0 20rpx;
 					font-size: 26rpx;
@@ -280,7 +280,7 @@
 				}
 			}
 
-			/deep/ .uni-searchbar {
+			::v-deep .uni-searchbar {
 				padding: 0;
 
 				.uni-searchbar__box {
@@ -314,7 +314,7 @@
 			flex: 1;
 			font-size: 26rpx;
 
-			/deep/ .u-content {
+			::v-deep .u-content {
 				padding: 0 !important;
 
 				.u-icon-wrap {

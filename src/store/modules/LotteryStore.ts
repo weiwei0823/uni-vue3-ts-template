@@ -4,7 +4,7 @@ import { config } from '@/config/config'
 // const LOCAL_STORE_KEYS={
 //     KEY_IN_LOTTERY_NAME:"inLotteryName"
 // }
-const LotteryStore = defineStore('LotteryStore', {
+const LotteryStore = defineStore('Lottery', {
   state: {
     // 当前所在彩票游戏Id
     inLotteryId: -1,

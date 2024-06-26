@@ -69,7 +69,7 @@ export default {
     height: 100%;
     width: 100%;
 
-    /deep/ .lazy-image {
+    ::v-deep .lazy-image {
       width: 100%;
       height: 100%;
 

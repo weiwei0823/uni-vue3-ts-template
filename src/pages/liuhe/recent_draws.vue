@@ -128,7 +128,7 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .uni-list--border-top {
+	::v-deep .uni-list--border-top {
 		background-color: transparent !important;
 	}
 
@@ -163,7 +163,7 @@
 			overflow: hidden;
 			height: calc(var(--vh) - 100rpx);
 
-			/deep/ .border--left {
+			::v-deep .border--left {
 				display: none;
 			}
 
@@ -174,7 +174,7 @@
 					border-radius: 24rpx;
 					margin-bottom: 20rpx;
 
-					/deep/ .uni-list-item__container {
+					::v-deep .uni-list-item__container {
 						padding: 20rpx 28rpx;
 					}
 

@@ -514,7 +514,7 @@ export default {
 	};
 </script>
 <style lang="scss" scoped>
-	/deep/ .uni-list-item__content-title {
+	::v-deep .uni-list-item__content-title {
 		font-size: 30rpx;
 		padding-left: 30rpx;
 	}
@@ -684,7 +684,7 @@ export default {
 		.list-item-odd {
 			background: var(--theme-auxiliary-color-default) !important;
 
-			/deep/ .uni-switch-input {
+			::v-deep .uni-switch-input {
 				&::before {
 					background-color: #DFDFDF !important;
 				}

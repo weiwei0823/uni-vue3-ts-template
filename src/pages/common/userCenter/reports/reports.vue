@@ -125,7 +125,7 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ table {
+	::v-deep table {
 		min-width: 100% !important;
 	}
 

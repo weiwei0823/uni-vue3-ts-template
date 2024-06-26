@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { paramKeySort } from '@/utils/common'
+import { paramKeySort } from '@/utils/common.ts'
 import { config } from '@/config/config'
 import requestCache from '@/utils/requestCache/requestCache'
 
@@ -13,7 +13,7 @@ const _paramKeySort = (query) => {
   return `query_${paramKeySort(query)}`
 }
 
-const MemObStore = defineStore('MemObStore', {
+const MemObStore = defineStore('MemOb', {
   state: {
     pathPreloadedMap: {},
     willShowFeedBackDetail: null,

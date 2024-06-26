@@ -62,11 +62,11 @@ import LHInput from '@/components/common/LHInput/index.vue';
 import {
 	login,
 	getVCode
-} from "../../../utils/common/index.js";
+} from "@/utils/common/index.js";
 import {
 	checkPhone,
 	codeCheck
-} from "../../../utils/common.js";
+} from "@/utils/common.ts";
 import {
 	mapGetters
 } from 'pinia';
@@ -390,7 +390,7 @@ export default {
 	}
 }
 
-/deep/ .uni-forms-item {
+::v-deep .uni-forms-item {
 	border: 1px solid var(--theme-auxiliary-color-default);
 	border-radius: 20rpx;
 	margin-bottom: 32rpx;

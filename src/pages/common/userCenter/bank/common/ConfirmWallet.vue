@@ -186,7 +186,7 @@
 						.input-item {
 							text-align: left;
 
-							/deep/ .uni-icons {
+							::v-deep .uni-icons {
 								columns: var(--theme-color) !important;
 							}
 						}

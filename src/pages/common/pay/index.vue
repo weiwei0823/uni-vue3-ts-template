@@ -365,11 +365,11 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .empty-box {
+	::v-deep .empty-box {
 		height: calc(var(--vh) - 524rpx);
 	}
 
-	/deep/ .bank-div {
+	::v-deep .bank-div {
 		max-width: 480px !important;
 		// height: calc(var(--vh) - 100rpx) !important;
 		margin: 0 auto;
@@ -412,11 +412,11 @@
 			display: flex;
 			align-items: center;
 
-			/deep/ .fiterIcon {
+			::v-deep .fiterIcon {
 				min-width: 48rpx;
 			}
 
-			/deep/ .u-notice-bar {
+			::v-deep .u-notice-bar {
 				padding: 0 0 0 20rpx !important;
 			}
 
@@ -600,11 +600,11 @@
 		// height: calc(var(--vh) - 110rpx);
 	}
 
-	/deep/ .uni-icon-wrapper {
+	::v-deep .uni-icon-wrapper {
 		padding: 0;
 	}
 
-	/deep/ .uni-list--border:after {
+	::v-deep .uni-list--border:after {
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -649,7 +649,7 @@
 					gap: 66rpx;
 					box-sizing: border-box;
 
-					/deep/ .uni-icon-wrapper {
+					::v-deep .uni-icon-wrapper {
 						font-size: 40rpx !important;
 						color: #404040 !important
 					}
@@ -765,19 +765,19 @@
 		}
 	}
 
-	/deep/ .uni-list-item__container {
+	::v-deep .uni-list-item__container {
 		align-items: center;
 	}
 
-	/deep/ .uni-list--border-top {
+	::v-deep .uni-list--border-top {
 		display: none;
 	}
 
-	/deep/ .uni-list--border {
+	::v-deep .uni-list--border {
 		display: none;
 	}
 
-	/deep/ .header {
+	::v-deep .header {
 		border-radius: 0 0 20rpx 20rpx;
 		overflow: hidden;
 

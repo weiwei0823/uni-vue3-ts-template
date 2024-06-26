@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
-import utlilCommons from '@/utils/common'
+import utlilCommons from '@/utils/common.ts'
 
-const systemInfoStore = defineStore('systemInfoStore', {
+const systemInfoStore = defineStore('systemInfo', {
   state: {
     windowTop: 0,
     windowBottom: 0,

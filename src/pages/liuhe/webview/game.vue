@@ -280,7 +280,7 @@ export default {
 </style>
 
 <style lang="scss" scoped>
-/deep/ body {
+::v-deep body {
 	width: 100%;
 	height: calc(100vh);
 	position: fixed;
@@ -298,7 +298,7 @@ export default {
 	/*background: #ffffff;*/
 }
 
-/deep/ body {
+::v-deep body {
 	width: 100%;
 	height: calc(100vh);
 	position: fixed;
@@ -308,7 +308,7 @@ export default {
 }
 
 
-/deep/ .pop-box {
+::v-deep .pop-box {
 	height: 294rpx !important;
 }
 

@@ -281,7 +281,7 @@
 
 	}
 
-	/deep/ .tab-div-bg {
+	::v-deep .tab-div-bg {
 		border-radius: 0;
 		z-index: 11;
 	}
@@ -332,7 +332,7 @@
 
 
 
-		/deep/ .header {
+		::v-deep .header {
 			grid-template-columns: repeat(3, 20% 60% 20%);
 
 			.u-item-bg {

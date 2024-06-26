@@ -94,7 +94,7 @@
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
 	import {
 		setPickerStyle
-	} from "@/utils/common.js";
+	} from "@/utils/common.ts";
 	import {
 		mapGetters
 	} from 'pinia';
@@ -339,15 +339,15 @@
 			transition: all .3s;
 		}
 
-		/deep/ .uni-collapse-item-border {
+		::v-deep .uni-collapse-item-border {
 			border-bottom: 1px solid var(--theme-auxiliary-color-default);
 		}
 
-		/deep/ .is-open .uni-collapse-item__wrap {
+		::v-deep .is-open .uni-collapse-item__wrap {
 			height: fit-content !important;
 		}
 
-		/deep/ .is-open {
+		::v-deep .is-open {
 			border-bottom: none;
 
 			.svg-img {

@@ -504,7 +504,7 @@
 					line-height: 52rpx;
 				}
 
-				/deep/ {
+				::v-deep {
 					.uni-switch-input {
 						border: none;
 						background: #f5f5f5;

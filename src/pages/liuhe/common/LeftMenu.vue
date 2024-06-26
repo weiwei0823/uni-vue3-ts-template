@@ -150,7 +150,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/deep/ .u-mask {
+::v-deep .u-mask {
 	background-color: rgba(0, 0, 0, 0.3) !important;
 
 }
@@ -189,15 +189,15 @@ export default {
 		padding: 0 28rpx;
 	}
 
-	/deep/ .collapseItemOpen .u-collapse-head {
+	::v-deep .collapseItemOpen .u-collapse-head {
 		border-bottom: none !important;
 	}
 
-	/deep/ .u-collapse-head {
+	::v-deep .u-collapse-head {
 		border-bottom: 1px solid var(--theme-auxiliary-color-default);
 	}
 
-	/deep/.u-arrow-down-icon {
+	::v-deep.u-arrow-down-icon {
 		margin-right: 0;
 	}
 

@@ -73,7 +73,7 @@
 	import {
 		checkPhone,
 		codeCheck
-	} from "@/utils/common.js"
+	} from "@/utils/common.ts"
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue";
 	import LHInput from '@/components/common/LHInput/index.vue';
 	import {
@@ -278,7 +278,7 @@
 		margin-top: 40rpx !important;
 	}
 
-	/deep/ .uni-forms-item {
+	::v-deep .uni-forms-item {
 		border: 1px solid var(--theme-auxiliary-color-default);
 		border-radius: 20rpx;
 		margin-bottom: 32rpx;

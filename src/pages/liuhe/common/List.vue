@@ -92,7 +92,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/deep/ .uni-section-header {
+::v-deep .uni-section-header {
 	height: 88rpx;
 	box-sizing: border-box;
 	padding: 20rpx 0 !important;

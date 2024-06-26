@@ -301,7 +301,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/deep/ .uni-drawer__content {
+::v-deep .uni-drawer__content {
 	background: var(--theme-auxiliary-color-default);
 
 }

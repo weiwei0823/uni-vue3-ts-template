@@ -236,10 +236,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-/deep/ .header-content-box {
+::v-deep .header-content-box {
   z-index: 9999 !important;
 }
-/deep/ .header-box {
+::v-deep .header-box {
   z-index: 99999 !important;
 }
 .all-reg {
@@ -275,7 +275,7 @@ export default {
     padding: 0 32rpx;
 
     .item {
-      /deep/ .lh-input {
+      ::v-deep .lh-input {
         height: 88rpx;
       }
 

@@ -107,7 +107,7 @@
 	} from 'pinia';
 	import {
 		setPickerStyle
-	} from "@/utils/common.js";
+	} from "@/utils/common.ts";
 	export default {
 		name: "lover",
 		components: {

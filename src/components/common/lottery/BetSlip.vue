@@ -250,7 +250,7 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .zp-l-text{
+	::v-deep .zp-l-text{
 		color: var(--theme-font-default-shallow-color) !important;
 	}
 

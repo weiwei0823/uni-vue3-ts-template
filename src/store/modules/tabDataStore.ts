@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-const tabDataStore = defineStore('tabDataStore', {
+const tabDataStore = defineStore('tabData', {
   state: {
     historyData: [],
     collectList: [],

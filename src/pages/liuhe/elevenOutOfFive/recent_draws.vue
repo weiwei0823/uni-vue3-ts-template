@@ -121,7 +121,7 @@
 </script>
 
 <style lang="scss" scoped>
-	/deep/ .uni-list--border {
+	::v-deep .uni-list--border {
 		display: none;
 	}
 
@@ -136,11 +136,11 @@
 		border-top-right-radius: 24rpx;
 	}
 
-	/deep/ .tab-div-bg {
+	::v-deep .tab-div-bg {
 		border-radius: 0;
 	}
 
-	/deep/ .uni-list--border-top {
+	::v-deep .uni-list--border-top {
 		background-color: transparent !important;
 	}
 
@@ -176,7 +176,7 @@
 			overflow: hidden;
 			margin-top: 20rpx;
 
-			/deep/ .border--left {
+			::v-deep .border--left {
 				display: none;
 			}
 

@@ -153,7 +153,7 @@
 		z-index: 1;
 	}
 
-	/deep/ .header {
+	::v-deep .header {
 		border-radius: 0px !important;
 		top: 0px !important;
 		border: none !important;
@@ -183,7 +183,7 @@
 			border-radius: 16rpx;
 			overflow: hidden;
 
-			/deep/ .uni-searchbar {
+			::v-deep .uni-searchbar {
 				height: 76rpx;
 				padding: 0px !important;
 

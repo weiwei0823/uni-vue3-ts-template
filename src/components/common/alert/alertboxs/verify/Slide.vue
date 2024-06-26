@@ -52,7 +52,7 @@ export default {
 		height: 480rpx;
 	}
 
-	/deep/ #tcaptcha_transform_dy{
+	::v-deep #tcaptcha_transform_dy{
 		width: 100% !important;
 		height: 100% !important;
 	}
