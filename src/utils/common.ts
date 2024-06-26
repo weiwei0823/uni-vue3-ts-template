@@ -162,7 +162,7 @@ export function caculationRpxToPx(rpxsize) {
  如age在city前
  */
 export function paramKeySort(array) {
-  if (!array || array === undefined) return ''
+  if (!array) return ''
   // 先用Object内置类的keys方法获取要排序对象的属性名数组，
   // 再利用Array的sort方法进行排序
   const newKey = Object.keys(array).sort()

@@ -1,4 +1,5 @@
 import CryptoJS from 'crypto-js'
+import global from 'global'
 import { config } from '@/config/config'
 import EncryptUtils from '@/utils/common/encryptUtils.js'
 import $store from '@/store/index'
