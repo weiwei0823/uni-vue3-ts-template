@@ -7,7 +7,7 @@
 // import pceggSelector from "./PcEggTemplateSelector.js";
 // import luckyfarmSelector from "./LuckyFarmTemplateSelector.js";
 // import arrangementThreeSelector from "./arrangementThreeSelector.js"
-import { config } from '../config.js'
+import { config } from '../config'
 import $store from '@/store/index.js'
 
 /**

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import {
     config
-} from '../config/config.js'
+} from '@/config/config'
 import CryptoJS from "@/utils/common/crypto-js";
 import EncryptUtils from '@/utils/common/encryptUtils.js';
 import $store from '@/store/index';

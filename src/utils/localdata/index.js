@@ -1,4 +1,4 @@
-import { config } from '@/config/config.js'
+import { config } from '@/config/config'
 import $store from '@/store/index.js'
 // localstore 读取器
 import localStoreFactory from './localstore/index.js'

@@ -2,7 +2,7 @@ import { createSSRApp } from 'vue'
 import * as Pinia from 'pinia'
 import uView from 'vk-uview-ui'
 import App from './App.vue'
-import { config } from '@/config/config.js'
+import { config } from '@/config/config'
 // unocss
 import 'uno.css'
 

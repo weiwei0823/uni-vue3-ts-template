@@ -1,10 +1,11 @@
-import { config } from '@/config/config.js'
+import { defineStore } from 'pinia'
+import { config } from '@/config/config'
 import { showUserBalance, getChatRoomInfoByTab } from '@/utils/lottery/betting'
 import defaultTemplate from '@/utils/defaultTemplate'
 
 import {
   demoLogin as apiDemoLogin,
-  doBindUserDeviceToken,
+  doBindUserDeviceToken
 } from '@/utils/common/index'
 import { info } from '@/utils/user/index.js'
 import { configs } from '@/utils/common/index.js'
@@ -14,7 +15,7 @@ import { formatterColor } from '@/utils/common/theme.js'
 import coreUtils from '@/utils/core/index'
 import { detailInfo } from '@/utils/lottery/mine'
 
-const AppInfoStore = {
+const AppInfoStore = defineStore('AppInfoStore', {
   state: {
     configs: null,
     chatRoomUrl: '',
@@ -581,6 +582,6 @@ const AppInfoStore = {
       })
     }
   }
-}
+})
 
 export default AppInfoStore

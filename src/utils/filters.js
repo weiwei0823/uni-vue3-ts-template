@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import store from '@/store'
-import { config } from '@/config/config.js'
+import { config } from '@/config/config'
 
 const i18n = config.configLanguage.init(Vue, store)
 

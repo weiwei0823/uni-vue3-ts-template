@@ -1,5 +1,5 @@
 import { apiRequest, apiRequestBase64, apiLoginRequest } from '../request'
-import { config } from '@/config/config.js'
+import { config } from '@/config/config'
 // 获取年列表
 export const listYear = (query = {}) => {
   // query.lotteryType = uni.getStorageSync("lotteryType") || 1;

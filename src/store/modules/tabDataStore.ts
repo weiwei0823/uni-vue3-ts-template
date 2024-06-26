@@ -1,4 +1,6 @@
-const tabDataStore = {
+import { defineStore } from 'pinia'
+
+const tabDataStore = defineStore('tabDataStore', {
   state: {
     historyData: [],
     collectList: [],
@@ -15,4 +17,6 @@ const tabDataStore = {
       state.historyData = data
     }
   }
-}
+})
+
+export default tabDataStore
