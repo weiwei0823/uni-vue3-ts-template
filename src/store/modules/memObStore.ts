@@ -67,9 +67,6 @@ const useMemObStore = defineStore('MemOb', {
 
     /**
      * 使用队列形式加载paths 预防加载进程过大卡顿掉帧
-     * @param commit
-     * @param dispatch
-     * @param state
      * @param paths
      * @returns {Promise<void>}
      */
@@ -80,9 +77,6 @@ const useMemObStore = defineStore('MemOb', {
     },
     /**
      * 加载paths
-     * @param commit
-     * @param dispatch
-     * @param state
      * @param paths
      * @returns {Promise<void>}
      */
@@ -99,7 +93,9 @@ const useMemObStore = defineStore('MemOb', {
         cacheTime: cacheTime || 0,
         data
       }
-      if (this.hasOwnProperty(key)) state[key] = saveInfo
+      if (this.hasOwnProperty(key)) {
+        this[key] = saveInfo
+      }
     },
 
     bindEnterGameDetaildMesssage(resp) {

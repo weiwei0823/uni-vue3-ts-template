@@ -11,11 +11,11 @@ const usePlayingStore = defineStore('playing', {
     isHideUserRebetaNum: false
   }),
   getters: {
-    lotteryRabetaInfo(state) {
+    lotteryRabetaInfo() {
       return this.inLotteryRebateInfosMap[this.inLotteryId]
     },
-    inLotteryUserRabetaNum: (state) => this.inLotteryUserRabetaNum,
-    isHideUserRebetaNum: (state) => this.isHideUserRebetaNum
+    inLotteryUserRabetaNum: () => this.inLotteryUserRabetaNum,
+    isHideUserRebetaNum: () => this.isHideUserRebetaNum
   },
   actions: {
     SET_ORDER_LIST: (obj) => (this.orderList = obj),
@@ -36,7 +36,6 @@ const usePlayingStore = defineStore('playing', {
     },
     /**
      * 更新用户有返点数 预留id 避免后续按游戏类型记录数据更新
-     * @param state
      * @param id
      * @param num
      */

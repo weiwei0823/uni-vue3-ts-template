@@ -20,7 +20,7 @@ const useSystemInfoStore = defineStore('systemInfo', {
   }),
   getters: {
     windowTop: () => uni.getStorageSync('windowTop') || this.windowTop,
-    downloadShow: (state) => {
+    downloadShow: () => {
       // APP环境下不打开
       // if (window && window['isApp'] && isApp instanceof Function) {
       //     uni.setStorageSync('downloadShow', false)

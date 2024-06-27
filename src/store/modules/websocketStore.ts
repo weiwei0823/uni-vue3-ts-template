@@ -14,8 +14,8 @@ const useWebsocketStore = defineStore('Websocket', {
     webSocketLogs: []
   }),
   getters: {
-    websocketTimeInterval: (state) => this.timeInterval,
-    debugWebsocketTimeInterval(state) {
+    websocketTimeInterval: () => this.timeInterval,
+    debugWebsocketTimeInterval() {
       return Math.abs(
           Math.ceil(this.timeInterval * (Math.random() * 0.3 + 0.7)) +
           (-50 + Math.ceil(50 * Math.random()))

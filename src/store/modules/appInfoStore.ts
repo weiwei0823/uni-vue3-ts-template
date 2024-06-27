@@ -82,7 +82,7 @@ const useAppInfoStore = defineStore('AppInfo', {
         let userSaveKey = config.enumMgr.APP_LOCALSTORE_KEYS.MEM_USER_THEME_ID
         // 如果区分用户存储 则添加ID 区分存储键
         if (config.saveThemeColorByUserId && this.userInfo)
-          userSaveKey = `${userSaveKey}:${state.userInfo.id}`
+          userSaveKey = `${userSaveKey}:${this.userInfo.id}`
         userSetId = uni.getStorageSync(userSaveKey)
         if ((!!userSetId || userSetId === 0) && !isNaN(userSetId)) {
           userSetId = parseInt(userSetId)
@@ -158,7 +158,6 @@ const useAppInfoStore = defineStore('AppInfo', {
     },
     /**
      * 设置用户当前皮肤配置id
-     * @param state
      * @param id
      * @constructor
      */
@@ -393,9 +392,6 @@ const useAppInfoStore = defineStore('AppInfo', {
     },
     /**
      * 从接口更新用户剩余额度到内存中
-     * @param commit
-     * @param dispatch
-     * @param state
      * @returns {Promise<any> | Promise}
      */
     updateUserBalanceFromServer() {
