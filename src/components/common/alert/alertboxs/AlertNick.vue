@@ -19,9 +19,8 @@
 </template>
 
 <script>
-	import {
-		mapGetters
-	} from 'pinia';
+import {mapState} from 'pinia';
+import AppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		props: {
 			zIndex: {
@@ -41,7 +40,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(['themeColor'])
+      ...mapState(AppInfoStore, ['themeColor']),
 		},
 		watch: {
 			show(val) {

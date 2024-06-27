@@ -40,6 +40,7 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "luck",
 		components: {
@@ -47,7 +48,7 @@
 			Header
 		},
 		computed: {
-			...mapGetters(["uWindowHeight"]),
+      ...mapState(useSystemInfoStore, ["uWindowHeight"])
 		},
 		data() {
 			return {

@@ -67,6 +67,8 @@
 		mapGetters
 	} from 'pinia';
 	import ltLoading from "@/components/common/loading/LuntanLoading.vue";
+  import AppInfoStore from "@/store/modules/appInfoStore";
+  import SystemInfoStore from "@/store/modules/systemInfoStore";
 
 	export default {
 		name: "index",
@@ -117,7 +119,8 @@
 			}
 		},
 		computed: {
-			...mapGetters(["themeColor", "uWindowHeight"]),
+      ...mapState(AppInfoStore, ["themeColor"]),
+      ...mapState(SystemInfoStore, ["uWindowHeight"]),
 		},
 		mounted() {
 			uni.$emit("on_page_mounted", this)

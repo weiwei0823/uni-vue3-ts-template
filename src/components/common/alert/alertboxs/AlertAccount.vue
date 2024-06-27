@@ -22,8 +22,9 @@
 <script>
 	import defaultTemplate from '../../../../utils/defaultTemplate'
 	import {
-		mapGetters
+    mapState
 	} from 'pinia';
+  import AppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		name: "Account",
 		props: {
@@ -47,7 +48,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(['themeColor']),
+      ...mapState(AppInfoStore, ['themeColor']),
 		},
 		methods: {
 			open(data, {

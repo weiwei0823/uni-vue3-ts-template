@@ -50,8 +50,9 @@
 <script>
 import Ball from "./ball";
 import TextBall from "./text-ball";
-import { mapGetters } from 'pinia';
+import {mapGetters, mapState} from 'pinia';
 import Playing from "@/utils/common/playing";
+import usePlayingStore from "@/store/modules/playIngStore";
 export default {
   name: "index",
   props: {
@@ -65,7 +66,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['orderList'])
+    ...mapState(usePlayingStore, ["orderList"]),
   },
   components: {
     Ball,

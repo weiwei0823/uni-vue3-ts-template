@@ -125,7 +125,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(["themeColor"]),
+			...mapState(AppInfoStore, ['themeColor']),
 			fontColor(){
 				return this.themeColor.themeColor
 			}

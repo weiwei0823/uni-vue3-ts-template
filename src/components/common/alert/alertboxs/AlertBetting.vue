@@ -60,8 +60,9 @@ import Playing from '../../../../utils/common/playing';
 
 import defaultTemplate from '../../../../utils/defaultTemplate'
 import {
-	mapGetters
+	mapState
 } from 'pinia';
+import AppInfoStore from "@/store/modules/appInfoStore";
 export default {
 	name: "Betting",
 	props: {
@@ -82,7 +83,7 @@ export default {
 		}
 	},
 	computed: {
-		...mapGetters(['themeColor'])
+    ...mapState(AppInfoStore, ['themeColor']),
 	},
 	methods: {
 		open(data, {

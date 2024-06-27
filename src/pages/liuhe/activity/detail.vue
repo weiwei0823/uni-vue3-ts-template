@@ -97,6 +97,8 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import AppInfoStore from "@/store/modules/appInfoStore";
+  import systemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "detail",
 		components: {
@@ -140,7 +142,8 @@
 		},
 
 		computed: {
-			...mapGetters(['themeColor', "uWindowHeight"]),
+			...mapState(AppInfoStore, ["themeColor"]),
+      ...mapState(systemInfoStore, ["uWindowHeight"]),
 			theme() {
 				return getApp().globalData.themeMap[this.$config.station]
 			},

@@ -317,7 +317,7 @@
 			/*this.getList();*/
 		},
 		computed: {
-			...mapGetters(['themeColor']),
+			...mapState(AppInfoStore, ['themeColor']),
 			showTime() {
 				let start = new Date(this.startTime.replace(/\./g, '/'))
 				let end = new Date(this.endTime.replace(/\./g, '/'))

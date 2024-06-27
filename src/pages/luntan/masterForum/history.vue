@@ -162,6 +162,8 @@ import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
 import {
 	mapGetters
 } from 'pinia';
+import AppInfoStore from "@/store/modules/appInfoStore";
+import SystemInfoStore from "@/store/modules/systemInfoStore";
 
 export default {
 	name: "history",
@@ -193,7 +195,8 @@ export default {
 		uni.$emit("on_page_mounted", this)
 	},
 	computed: {
-		...mapGetters(["themeColor", "uWindowHeight"]),
+    ...mapState(AppInfoStore, ["themeColor"]),
+    ...mapState(SystemInfoStore, ["uWindowHeight"]),
 	},
 	onLoad(option) {
 		this.userId = option.userId

@@ -62,6 +62,8 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import AppInfoStore from "@/store/modules/appInfoStore";
+  import systemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "MiPai",
 		props: {
@@ -75,7 +77,8 @@
 			}
 		},
 		computed: {
-			...mapGetters(['themeColor', "uWindowHeight"])
+			...mapState(AppInfoStore, ["themeColor"]),
+      ...mapState(systemInfoStore, ["uWindowHeight"]),
 		},
 		data() {
 			return {

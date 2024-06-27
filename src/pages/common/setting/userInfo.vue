@@ -190,9 +190,7 @@
 		logout
 	} from "@/utils/common/index";
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
-	import {
-		mapGetters
-	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 
 	export default {
 		name: "index",
@@ -222,7 +220,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(["userHeadImageUrl", 'themeColor'])
+      ...mapState(useAppInfoStore, ["themeColor", "userHeadImageUrl"]),
 		},
 
 		onLoad(option) {

@@ -93,6 +93,8 @@ import TimePicker from "@/components/common/time-picker-earn";
 import {
 	mapGetters
 } from 'pinia';
+import AppInfoStore from "@/store/modules/appInfoStore";
+import SystemInfoStore from "@/store/modules/systemInfoStore";
 export default {
 	components: {
 		TimePicker
@@ -136,7 +138,8 @@ export default {
 		};
 	},
 	computed: {
-		...mapGetters(["themeColor", "uWindowHeight"]),
+    ...mapState(AppInfoStore, ["themeColor"]),
+    ...mapState(SystemInfoStore, ["uWindowHeight"]),
 		zpageUIConfig() {
 			return this.$config.configUIMgr.z_page_loading['t1'];
 		}

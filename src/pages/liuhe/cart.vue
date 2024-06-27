@@ -154,6 +154,11 @@ import {
 } from '@/utils/websocet/websocet.js';
 import BalanceModel from '@/pages/liuhe/common/BalanceModal.vue'
 import OrderComfirm from "./common/orderComfirm.vue";
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
+import useLotteryStore from "@/store/modules/LotteryStore";
+import usePlayingStore from "@/store/modules/playIngStore";
+import useWebsocketStore from "@/store/modules/websocketStore";
 
 export default {
 	name: "index",
@@ -247,7 +252,10 @@ export default {
 		},
 	},
 	computed: {
-		...mapGetters(['orderList', 'inLotteryId', 'inLotteryGameName', 'themeColor', "uWindowHeight"]),
+    ...mapState(useAppInfoStore, ["themeColor"]),
+    ...mapState(useSystemInfoStore, ['uWindowHeight']),
+    ...mapState(useLotteryStore, ["inLotteryGameName", "inLotteryId"]),
+    ...mapState(usePlayingStore, ["orderList"]),
 		showRoundInfo() {
 			return this.isClientRun ? this.headInfo['nextRound'] : this.headInfo;
 		},

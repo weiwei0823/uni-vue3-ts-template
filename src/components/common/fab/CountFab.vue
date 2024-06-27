@@ -214,7 +214,7 @@
 		    this.statusBarHeight = uni.getSystemInfoSync().statusBarHeight;
 		  },
 		computed: {
-			...mapGetters(["themeColor"]),
+			...mapState(AppInfoStore, ['themeColor']),
 			// 全文本所占总行数
 
 		},

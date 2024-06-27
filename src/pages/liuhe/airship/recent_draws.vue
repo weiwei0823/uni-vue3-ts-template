@@ -53,6 +53,9 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
+  import useLotteryStore from "@/store/modules/LotteryStore";
 	export default {
 		name: "recent_draws",
 		components: {
@@ -89,7 +92,9 @@
 			this.lists()
 		},
 		computed: {
-			...mapGetters(["inLotteryGameName", "themeColor", "uWindowHeight"]),
+      ...mapState(useAppInfoStore, ['themeColor']),
+      ...mapState(useSystemInfoStore, ['uWindowHeight']),
+      ...mapState(useLotteryStore, ['inLotteryGameName']),
 		},
 		mounted() {
 			uni.$emit("on_page_mounted", this)

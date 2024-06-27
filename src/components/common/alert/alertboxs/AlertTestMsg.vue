@@ -22,9 +22,8 @@
 
 <script>
 	import defaultTemplate from '../../../../utils/defaultTemplate'
-	import {
-		mapGetters
-	} from 'pinia';
+  import {mapState} from 'pinia';
+  import AppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		name: "Logout",
 		props: {
@@ -36,7 +35,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(['themeColor']),
+      ...mapState(AppInfoStore, ['themeColor']),
 		},
 		data() {
 			return {

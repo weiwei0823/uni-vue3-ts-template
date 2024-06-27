@@ -147,6 +147,11 @@
 	} from 'pinia';
 	import Header from "../../components/common/header/index.vue";
 	import filterIcon from "@/components/common/filterIcon"
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
+  import useLotteryStore from "@/store/modules/LotteryStore";
+  import usePlayingStore from "@/store/modules/playIngStore";
+  import useWebsocketStore from "@/store/modules/websocketStore";
 
 	export default {
 		name: "betting_results",
@@ -201,9 +206,11 @@
 			userInfo() {
 				return this.$store.state.appInfoStore.userInfo
 			},
-			...mapGetters(['orderList', "websocketTimeInterval", "inLotteryId", "inLotteryGameName", "themeColor",
-				"uWindowHeight"
-			]),
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useSystemInfoStore, ['uWindowHeight']),
+      ...mapState(useLotteryStore, ["inLotteryGameName", "inLotteryId"]),
+      ...mapState(usePlayingStore, ["orderList"]),
+      ...mapState(useWebsocketStore, ["websocketTimeInterval"]),
 		},
 		mounted() {
 			uni.$emit("on_page_mounted", this)

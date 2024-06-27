@@ -536,7 +536,7 @@
   </view>
 </template>
 <script>
-import { mapGetters } from 'pinia'
+import {mapGetters, mapState} from 'pinia'
 import topicon from '@/components/gwh-backTopIcon/gwh-backTopIcon.vue'
 import TabBarLuntan from '@/components/Tabbar/Luntan'
 import TabBarAll from '@/components/common/tabbar/TabBar'
@@ -561,6 +561,8 @@ import {
 import { listLatest } from '@/utils/forum/index.js'
 import { concern } from '@/utils/user/index.js'
 import { config } from '@/config/config'
+import AppInfoStore from "@/store/modules/appInfoStore";
+import SystemInfoStore from "@/store/modules/systemInfoStore";
 
 export default {
   name: 'LuntanIndex01',
@@ -747,7 +749,8 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['webSiteConfig', 'themeColor', 'downloadShow']),
+    ...mapState(AppInfoStore, ["themeColor", "webSiteConfig"]),
+    ...mapState(SystemInfoStore, ["downloadShow"]),
     onlineShow() {
       return this.webSiteConfig.website_online_switch === 1
     },

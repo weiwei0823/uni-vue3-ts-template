@@ -119,7 +119,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(["themeColor"]),
+			...mapState(AppInfoStore, ['themeColor']),
 
 		},
 		onLoad() {

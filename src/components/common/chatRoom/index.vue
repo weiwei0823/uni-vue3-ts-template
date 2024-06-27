@@ -6,6 +6,7 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import LotteryStore from "@/store/modules/LotteryStore";
 
 	export default {
 		props: {
@@ -33,9 +34,7 @@
 		},
 
 		computed:{
-			...mapGetters(["lotteryMapIdToInfo","inLotteryId"]),
-
-
+      ...mapState(LotteryStore, ["lotteryMapIdToInfo", "inLotteryId"]),
 		},
 
 

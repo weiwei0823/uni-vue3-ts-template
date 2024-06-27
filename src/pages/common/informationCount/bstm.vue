@@ -95,7 +95,7 @@
 			uni.$emit("on_page_mounted", this)
 		},
 		computed: {
-			...mapGetters(["themeColor"]),
+			...mapState(AppInfoStore, ['themeColor']),
 		},
 		onShow() {
 			this.winHeight = uni.getSystemInfoSync().windowHeight;

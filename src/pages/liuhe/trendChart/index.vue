@@ -177,6 +177,8 @@
 	import KuaisanCmp from "./kuaisanCmp.vue";
 	import PcEggCmp from "./pcEggCmp.vue";
 	import LowRateCmp from "./lowRateCmp.vue";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		components: {
 			Header,
@@ -213,7 +215,8 @@
 			}
 		},
 		computed: {
-			...mapGetters(['themeColor','uWindowHeight']),
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useSystemInfoStore, ["uWindowHeight"]),
 			showRoundInfo() {
 				return this.isClientRun ? this.headInfo['nextRound'] : this.headInfo;
 			},

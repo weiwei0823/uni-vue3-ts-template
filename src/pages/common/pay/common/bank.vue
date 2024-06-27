@@ -150,6 +150,8 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import AppInfoStore from "@/store/modules/appInfoStore";
+  import SystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "bank",
 		components: {
@@ -169,8 +171,8 @@
 			}
 		},
 		computed: {
-			...mapGetters(["themeColor", "uWindowHeight"]),
-
+      ...mapState(AppInfoStore, ["themeColor"]),
+      ...mapState(SystemInfoStore, ["uWindowHeight"]),
 		},
 		mounted() {
 			this.isApp = browserPlatform() == browserPlatform.FLUTTER_App;

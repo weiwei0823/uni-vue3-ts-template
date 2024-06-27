@@ -55,7 +55,7 @@ export default {
 		}
 	},
 	computed: {
-		...mapGetters(['themeColor']),
+		...mapState(AppInfoStore, ['themeColor']),
 	},
 	methods: {
 		catchTouchMove: function () {

@@ -53,6 +53,7 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import usePlayingStore from "@/store/modules/playIngStore";
 	export default {
 		name: "index",
 		props: {
@@ -91,7 +92,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(['orderList'])
+      ...mapState(usePlayingStore, ["orderList"])
 		},
 		watch: {
 			orderList() {

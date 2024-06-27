@@ -41,10 +41,9 @@ import {
 	categoryData
 } from "@/utils/lottery/betting";
 import defaultTemplate from "@/utils/defaultTemplate";
-import {
-	mapGetters
-} from 'pinia';
 import imageSvgUrl from '@/components/common/imageSvgUrl'
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
 export default {
 	components: {
 		imageSvgUrl
@@ -56,7 +55,8 @@ export default {
 		}
 	},
 	computed: {
-		...mapGetters(["themeColor", "windowTop"]),
+    ...mapState(useAppInfoStore, ['themeColor']),
+    ...mapState(useSystemInfoStore, ['windowTop']),
 	},
 	watch: {
 		show(nv, ov) {

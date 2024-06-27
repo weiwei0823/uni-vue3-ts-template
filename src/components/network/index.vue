@@ -39,12 +39,15 @@
 		lineList
 	} from "@/utils/line";
 	import defaultTemplate from "@/utils/defaultTemplate";
-	import {
-		mapGetters
-	} from 'pinia';
+  import {
+    mapGetters, mapState
+  } from 'pinia';
 	import {
 		config
 	} from '@/config/config'
+  import AppInfoStore from "@/store/modules/appInfoStore";
+  import SystemInfoStore from "@/store/modules/systemInfoStore";
+  import useWebsocketStore from "@/store/modules/websocketStore";
 	export default {
 		props: {
 			lineName: ''
@@ -58,7 +61,8 @@
 			}
 		},
 		computed: {
-			...mapGetters(["debugWebsocketTimeInterval", 'themeColor']),
+      ...mapState(AppInfoStore, ["themeColor"]),
+      ...mapState(useWebsocketStore, ["debugWebsocketTimeInterval"]),
 		},
 		watch: {
 			show(nv, ov) {

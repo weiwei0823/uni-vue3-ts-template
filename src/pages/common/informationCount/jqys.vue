@@ -153,7 +153,7 @@
 			this.animalAnalyze()
 		},
 		computed: {
-			...mapGetters(["themeColor"]),
+			...mapState(AppInfoStore, ['themeColor']),
 		},
 		methods: {
 			iconClick() {

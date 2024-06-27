@@ -95,7 +95,7 @@ export default {
 		}
 	},
 	computed: {
-		...mapGetters(["themeColor"]),
+		...mapState(AppInfoStore, ['themeColor']),
 		webViewHeight() {
 			let winHeight = this.winHeight;
 			// let winHeight = this.winHeight;

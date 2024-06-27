@@ -84,9 +84,9 @@
 </template>
 
 <script>
-	import {
-		mapGetters
-	} from 'pinia';
+import {
+  mapGetters, mapState
+} from 'pinia';
 	import {
 		login,
 		getVCode
@@ -99,6 +99,8 @@
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue";
 
 	import LHInput from '@/components/common/LHInput/index.vue';
+import AppInfoStore from "@/store/modules/appInfoStore";
+import SystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "Login",
 		components: {
@@ -107,7 +109,8 @@
 			LHInput
 		},
 		computed: {
-			...mapGetters(["themeColor","uWindowHeight"]),
+      ...mapState(AppInfoStore, ["themeColor"]),
+      ...mapState(SystemInfoStore, ["uWindowHeight"]),
 			logoUrl() {
 				let configInfo = this.$store.state.appInfoStore.contantsConfigTypeMap['22'];
 				if (!configInfo) {

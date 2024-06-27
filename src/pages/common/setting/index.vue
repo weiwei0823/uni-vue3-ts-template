@@ -239,6 +239,8 @@
 		mapGetters
 	} from 'pinia';
   import {config} from "../../../config/config";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "index",
 		components: {
@@ -247,7 +249,8 @@
 		},
 
 		computed: {
-			...mapGetters(['userInfo', 'themeColor', 'language','flutterAppVersionInfo']),
+      ...mapState(useAppInfoStore, ["themeColor", "language", "userInfo"]),
+      ...mapState(useSystemInfoStore, ["flutterAppVersionInfo"]),
       showUserInfoItemMenu(){
         return this.userInfo&&!['demo'].includes(this.userInfo.userType);
       },

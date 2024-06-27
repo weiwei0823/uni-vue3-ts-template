@@ -65,7 +65,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(["themeColor"]),
+			...mapState(AppInfoStore, ['themeColor']),
 		},
 		onShow() {
 			this.winHeight = uni.getSystemInfoSync().windowHeight;

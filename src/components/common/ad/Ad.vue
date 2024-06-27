@@ -35,8 +35,9 @@
 		buttonInfo
 	} from '../../../utils/common/index.js'
 	import {
-		mapGetters
+    mapState
 	} from 'pinia';
+  import AppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		name: "Ad",
 		props: {
@@ -58,8 +59,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(["themeColor"]),
-
+      ...mapState(AppInfoStore, ['themeColor']),
 			lotteryTypeText() {
 				if (this.bindLotteryType == -1 || this.bindLotteryType == undefined) {
 					console.error("ad compoment bindLotteryId is undefined")

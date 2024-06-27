@@ -55,17 +55,18 @@
 	import {
 		aboutUs
 	} from "@/utils/user";
-	import {
-		mapGetters
-	} from 'pinia';
+  import {
+    mapGetters, mapState
+  } from 'pinia';
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		components: {
 			AlertInjectLayer,
 			Header
 		},
 		computed: {
-			...mapGetters(["themeColor","contantsConfigTypeMap"]),
+      ...mapState(useAppInfoStore, ["themeColor", "contantsConfigTypeMap"]),
 			serviceUrl() {
 				return this.$store?.state?.appInfoStore?.contantsConfigs?.find(item => item.type === '1')?.url
 			}

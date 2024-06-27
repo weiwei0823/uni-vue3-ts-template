@@ -19,7 +19,7 @@ import TabBarLiuhe from '@/components/Tabbar/Liuhe';
 import TabBarAll from '@/components/common/tabbar/TabBar';
 import headerDrawer from '@/components/CommonPages/pages-liuhe/components/drawer.vue';
 import ColorSwitch from '@/components/common/colorSwitch/index.vue';
-import { mapGetters } from 'pinia';
+import useAppInfoStore from "@/store/modules/appInfoStore";
 export default {
 	components: {
 		// LiuheIndex_01,
@@ -50,7 +50,7 @@ export default {
 	},
 
 	computed: {
-		...mapGetters(['webSiteConfig'])
+    ...mapState(useAppInfoStore, ['webSiteConfig']),
 	},
 	onShow() {
 		this.nextShow();

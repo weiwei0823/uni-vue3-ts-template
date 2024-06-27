@@ -82,6 +82,8 @@
 	} from 'pinia';
 	import Header from '@/components/common/header/index.vue';
 	import BodyImage from '@/components/CommonPages/pages-luntan/BodyImage.vue';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "Index",
 		components: {
@@ -249,7 +251,8 @@
 			uni.$emit("on_page_mounted", this)
 		},
 		computed: {
-			...mapGetters(["webSiteConfig", "themeColor", "uWindowHeight"]),
+      ...mapState(useAppInfoStore, ["themeColor", "webSiteConfig"]),
+      ...mapState(useSystemInfoStore, ["uWindowHeight"]),
 			onlineShow() {
 				return website_online_switch
 			},

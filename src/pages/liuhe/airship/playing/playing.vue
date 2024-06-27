@@ -49,6 +49,7 @@
 		mapGetters
 	} from 'pinia';
 	import Playing from "@/utils/common/playing";
+  import usePlayingStore from "@/store/modules/playIngStore";
 	export default {
 		name: "index",
 		props: {
@@ -66,7 +67,7 @@
 			TextBall
 		},
 		computed: {
-			...mapGetters(['orderList'])
+      ...mapState(usePlayingStore, ["orderList"])
 		},
 		data() {
 			return {

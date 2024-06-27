@@ -151,7 +151,7 @@
 			this.tailBigSmall()
 		},
 		computed: {
-			...mapGetters(["themeColor"]),
+			...mapState(AppInfoStore, ['themeColor']),
 		},
 		methods: {
 			iconClick() {

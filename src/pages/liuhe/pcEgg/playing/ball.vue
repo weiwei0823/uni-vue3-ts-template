@@ -22,7 +22,8 @@
 import UniRow from "@/uni_modules/uni-row/components/uni-row/uni-row";
 import UniCol from "@/uni_modules/uni-row/components/uni-col/uni-col";
 import Playing from "@/utils/common/playing";
-import {mapGetters} from 'pinia';
+import {mapGetters, mapState} from 'pinia';
+import usePlayingStore from "@/store/modules/playIngStore";
 
 export default {
   name: "index",
@@ -38,7 +39,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['orderList'])
+    ...mapState(usePlayingStore, ["orderList"]),
   },
   data () {
     return {

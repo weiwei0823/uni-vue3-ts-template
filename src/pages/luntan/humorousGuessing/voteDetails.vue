@@ -144,7 +144,7 @@ export default {
 		ReplyComment
 	},
 	computed: {
-		...mapGetters(["themeColor"]),
+		...mapState(AppInfoStore, ['themeColor']),
 		yearRangeList() {
 			return this.yearList.map(item => {
 				return {

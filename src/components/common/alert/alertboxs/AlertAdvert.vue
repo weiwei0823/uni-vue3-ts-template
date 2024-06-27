@@ -18,9 +18,10 @@
 </template>
 
 <script>
-import { mapGetters } from 'pinia';
+import { mapState } from 'pinia';
 import { advertList } from "@/utils/common/index.js"
 import defaultTemplate from '@/utils/defaultTemplate'
+import AppInfoStore from "@/store/modules/appInfoStore";
 export default {
     props: {
         zIndex: {
@@ -40,7 +41,7 @@ export default {
         }
     },
     computed: {
-        ...mapGetters(['themeColor'])
+      ...mapState(AppInfoStore, ['themeColor']),
     },
     watch: {
         show(val) {

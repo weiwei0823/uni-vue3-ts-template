@@ -110,6 +110,10 @@ import {cp_init} from '@/utils/home/index.js';
 import {mapGetters, mapMutations, mapState} from 'pinia';
 import defaultTemplate from '@/utils/defaultTemplate';
 import HomePop from '@/pages/liuhe/common/HomePop';
+import AppInfoStore from "@/store/modules/appInfoStore";
+import SystemInfoStore from "@/store/modules/systemInfoStore";
+import preloadDataStore from "@/store/modules/preloadDataStore";
+import usePreloadDataStore from "@/store/modules/preloadDataStore";
 
 export default {
 	components: {
@@ -200,9 +204,9 @@ export default {
 		};
 	},
 	computed: {
-		...mapGetters(['webSiteConfig', 'themeColor', 'uWindowHeight']),
-
-		...mapState('preloadDataStore', ['liuhePreload']),
+    ...mapState(AppInfoStore, ["themeColor", "webSiteConfig"]),
+    ...mapState(SystemInfoStore, ["uWindowHeight"]),
+		...mapState(usePreloadDataStore, ['liuhePreload']),
 		isAllPaageScrollData() {
 			let swiperTopDataType = this.swiperTopDateType;
 			return false;

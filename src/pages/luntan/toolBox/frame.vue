@@ -60,7 +60,7 @@ export default {
     };
   },
   computed: {
-    ...mapGetters(["themeColor"]),
+    ...mapState(AppInfoStore, ['themeColor']),
     disabled() {
       return !this.value || parseFloat(this.value) > parseFloat(this.gold);
     },

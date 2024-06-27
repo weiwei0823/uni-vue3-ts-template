@@ -24,12 +24,10 @@
 	</uni-popup>
 </template>
 <script>
-	import {
-		mapGetters
-	} from 'pinia';
+	import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		computed: {
-			...mapGetters(["themeColor", "userInfo"]),
+      ...mapState(useAppInfoStore, ['themeColor', 'userInfo']),
 		},
 		mounted() {
 			uni.$emit("on_page_mounted", this)

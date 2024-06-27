@@ -254,6 +254,11 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
+  import useLotteryStore from "@/store/modules/LotteryStore";
+  import usePlayingStore from "@/store/modules/playIngStore";
+  import useWebsocketStore from "@/store/modules/websocketStore";
 	export default {
 		components: {
 			Header,
@@ -311,7 +316,11 @@
 			}
 		},
 		computed: {
-			...mapGetters(['orderList', "debugWebsocketTimeInterval", "inLotteryId", 'themeColor','uWindowHeight']),
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useSystemInfoStore, ['uWindowHeight']),
+      ...mapState(useLotteryStore, [ "inLotteryId"]),
+      ...mapState(usePlayingStore, ["orderList"]),
+      ...mapState(useWebsocketStore, ["debugWebsocketTimeInterval"]),
 			hasLogin(){
 				return isLogin()
 			},

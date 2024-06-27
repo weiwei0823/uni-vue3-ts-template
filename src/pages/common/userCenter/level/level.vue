@@ -162,6 +162,8 @@
 		mapGetters
 	} from 'pinia';
 	import Header from "@/components/common/header/index";
+  import AppInfoStore from "@/store/modules/appInfoStore";
+  import SystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "level",
 		components: {
@@ -185,7 +187,8 @@
 			uni.$emit("on_page_mounted", this)
 		},
 		computed: {
-			...mapGetters(["themeColor", "uWindowHeight"]),
+      ...mapState(AppInfoStore, ["themeColor"]),
+      ...mapState(SystemInfoStore, ["uWindowHeight"]),
 		},
 		onLoad() {
 			this.getUserLevelList()

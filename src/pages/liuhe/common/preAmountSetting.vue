@@ -63,9 +63,8 @@
 </template>
 
 <script>
-	import {
-		mapGetters
-	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import usePlayingStore from "@/store/modules/playIngStore";
 	export default {
 		data() {
 			return {
@@ -82,7 +81,8 @@
 			}
 		},
 		computed: {
-			...mapGetters(['orderList', "themeColor"]),
+      ...mapState(useAppInfoStore, ['themeColor']),
+      ...mapState(usePlayingStore, ["orderList"])
 		},
 		methods: {
 			open() {

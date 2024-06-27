@@ -92,6 +92,7 @@
 	} from 'pinia';
 	import Playing from "@/utils/common/playing";
 	import CenterTab from "../../common/CenterTab";
+  import usePlayingStore from "@/store/modules/playIngStore";
 
 	export default {
 		name: "index",
@@ -106,7 +107,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(['orderList'])
+      ...mapState(usePlayingStore, ["orderList"])
 		},
 
 		components: {

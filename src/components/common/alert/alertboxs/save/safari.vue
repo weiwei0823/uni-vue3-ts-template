@@ -39,9 +39,8 @@
 </template>
 
 <script>
-	import {
-		mapGetters
-	} from 'pinia';
+	import {mapState} from 'pinia';
+  import AppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		name: "Account",
 		props: {
@@ -65,7 +64,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(['themeColor']),
+			...mapState(AppInfoStore, ['themeColor']),
 			contantsConfigs() {
 				return this.$store?.state?.appInfoStore?.contantsConfigs || []
 			},

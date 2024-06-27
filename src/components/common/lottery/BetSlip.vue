@@ -137,6 +137,8 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import AppInfoStore from "@/store/modules/appInfoStore";
+  import SystemInfoStore from "@/store/modules/systemInfoStore";
 	// import ZPaging from "../../../uni_modules/z-paging/components/z-paging/js/z-paging-main";
 	export default {
 		name: "BetSlip",
@@ -197,7 +199,8 @@
 			this.getList()
 		},
 		computed: {
-			...mapGetters(['uWindowHeight', 'windowBottom',"themeColor"]),
+      ...mapState(AppInfoStore, ["themeColor"]),
+      ...mapState(SystemInfoStore, ["uWindowHeight", "windowBottom"]),
 			zpageUIConfig() {
 				return this.$config.configUIMgr.z_page_loading['t1'];
 			},

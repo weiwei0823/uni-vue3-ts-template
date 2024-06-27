@@ -80,6 +80,8 @@
 		mapGetters
 	} from 'pinia';
 	import Empty from "@/components/common/empty/empty";
+  import AppInfoStore from "@/store/modules/appInfoStore";
+  import SystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "serachassistant",
 		components: {
@@ -88,7 +90,8 @@
 			Empty
 		},
 		computed: {
-			...mapGetters(["themeColor", "uWindowHeight"]),
+      ...mapState(AppInfoStore, ["themeColor"]),
+      ...mapState(SystemInfoStore, ["uWindowHeight"]),
 		},
 		mounted() {
 			uni.$emit("on_page_mounted", this)

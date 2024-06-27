@@ -85,9 +85,9 @@
 </template>
 
 <script>
-	import {
-		mapGetters
-	} from 'pinia';
+import {
+  mapGetters, mapState
+} from 'pinia';
 	import {
 		logout
 	} from "@/utils/common/index.js";
@@ -102,6 +102,7 @@
 		info
 	} from "@/utils/user";
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
+import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		components: {
 			UniFilePicker,
@@ -125,7 +126,7 @@
 			this.current = this.language
 		},
 		computed: {
-			...mapGetters(['language', 'themeColor']),
+      ...mapState(useAppInfoStore, ["themeColor", "language"]),
 			userInfo() {
 				return this.$store.state.appInfoStore.userInfo || null;
 			},

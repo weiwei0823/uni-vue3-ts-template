@@ -83,6 +83,7 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 
 	export default {
 		name: "setHead",
@@ -91,7 +92,7 @@
 			AlertInjectLayer
 		},
 		computed: {
-			...mapGetters(['userHeadImageUrl', 'themeColor'])
+      ...mapState(useAppInfoStore, ["themeColor", "userHeadImageUrl"]),
 		},
 		watch: {
 			show(val) {

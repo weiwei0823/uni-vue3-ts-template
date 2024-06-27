@@ -16,9 +16,11 @@
 </template>
 
 <script>
-	import {
-		mapGetters
-	} from 'pinia';
+import {
+  mapGetters, mapState
+} from 'pinia';
+import AppInfoStore from "@/store/modules/appInfoStore";
+import SystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		data() {
 			return {
@@ -69,7 +71,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(["themeColor", "chatRoomUrl"]),
+      ...mapState(AppInfoStore, ["themeColor", "chatRoomUrl"]),
 			styles() {
 				return {
 					'--activeColor': this.activeColor,

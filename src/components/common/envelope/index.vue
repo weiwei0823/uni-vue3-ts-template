@@ -13,6 +13,7 @@ import themeColors from '@/config/models/configUIMgr.js'
 import {
   mapGetters
 } from 'pinia';
+import AppInfoStore from "@/store/modules/appInfoStore";
 export default {
   name: "envelope",
   data() {
@@ -28,7 +29,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(["webSiteConfig"]),
+    ...mapState(AppInfoStore, ["webSiteConfig"]),
   },
   mounted() {
     if (themeColors.themeColors) this.themeList = themeColors.themeColors

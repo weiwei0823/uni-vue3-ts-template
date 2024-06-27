@@ -77,7 +77,7 @@ export default {
 
   },
   computed: {
-    ...mapGetters(["themeColor"]),
+    ...mapState(AppInfoStore, ['themeColor']),
     sortLotteryTypeTabs() {
       let buildAr = [];
       for (let key in this.lotteryTime) {

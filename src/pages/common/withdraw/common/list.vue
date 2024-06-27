@@ -201,6 +201,8 @@ import { bankCardList, unbindBank } from "@/utils/lottery/mine";
 import PopItem from "@/components/common/PopItem/PopItem";
 import { mapGetters } from 'pinia';
 import SvgIcon from "@/components/svg-icon/index.vue";
+import AppInfoStore from "@/store/modules/appInfoStore";
+import SystemInfoStore from "@/store/modules/systemInfoStore";
 export default {
   name: "list",
   components: {
@@ -225,7 +227,8 @@ export default {
     izBindMk: Boolean,
   },
   computed: {
-    ...mapGetters(["themeColor", "uWindowHeight"]),
+    ...mapState(AppInfoStore, ["themeColor"]),
+    ...mapState(SystemInfoStore, ["uWindowHeight"]),
     MPayData() {
       let configData = this.$config.getStorageSync(
         this.$config.enumMgr.APP_LOCALSTORE_KEYS.LOCAL_STORE_CONFIG

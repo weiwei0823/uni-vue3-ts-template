@@ -22,6 +22,8 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import AppInfoStore from "@/store/modules/appInfoStore";
+  import SystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		props: {
 			onlyDownload: {
@@ -32,7 +34,8 @@
 			}
 		},
 		computed: {
-			...mapGetters(["themeColor", "downloadShow", "uWindowHeight", "webSiteConfig", "windowBottom"]),
+      ...mapState(AppInfoStore, ["themeColor", "webSiteConfig"]),
+      ...mapState(SystemInfoStore, ["downloadShow", "uWindowHeight", "windowBottom"]),
 			contantsConfigs() {
 				return this.$store?.state?.appInfoStore?.contantsConfigs || []
 			},

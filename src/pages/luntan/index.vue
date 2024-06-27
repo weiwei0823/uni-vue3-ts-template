@@ -10,9 +10,8 @@ import ColorSwitch from '@/components/common/colorSwitch/index.vue';
 
 import LuntanIndex_01 from '@/components/CommonPages/pages-luntan/LuntanIndex_01.vue'
 import LuntanIndex_02 from '@/components/CommonPages/pages-luntan/LuntanIndex_02.vue'
-import {
-	mapGetters
-} from 'pinia';
+
+import useAppInfoStore from "@/store/modules/appInfoStore";
 export default {
 	components: {
 		LuntanIndex_01,
@@ -34,7 +33,7 @@ export default {
 		}
 	},
 	computed: {
-		...mapGetters(["webSiteConfig"]),
+    ...mapState(useAppInfoStore, ["webSiteConfig"]),
 		componentId() {
 			const key = this.webSiteConfig.liuhe_setting;
 			this.lastStationKey != key && this.$nextTick(() => {

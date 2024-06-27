@@ -153,7 +153,7 @@
 			this.getBankList()
 		},
 		computed: {
-			...mapGetters(['themeColor']),
+			...mapState(AppInfoStore, ['themeColor']),
 			theme() {
 				return getApp().globalData.themeMap[this.$config.station]
 			},

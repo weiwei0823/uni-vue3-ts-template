@@ -83,7 +83,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(["themeColor"])
+			...mapState(AppInfoStore, ['themeColor'])
 		},
 		onLoad(option) {
 			this.formData.relatedId = option.relatedId

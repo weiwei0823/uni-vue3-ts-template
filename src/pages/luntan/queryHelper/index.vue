@@ -147,6 +147,8 @@ import Empty from '@/components/common/empty/empty'
 	import {
 		setPickerStyle
 	} from "@/utils/common.ts";
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "index",
 		components: {
@@ -247,7 +249,8 @@ import Empty from '@/components/common/empty/empty'
 			}
 		},
 		computed: {
-			...mapGetters(["themeColor", "uWindowHeight", "windowBottom"]),
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useSystemInfoStore, ["uWindowHeight", "windowBottom"]),
 			getHeight() {
 				const systemInfo = uni.getSystemInfoSync();
 				return `calc(${this.uWindowHeight}px - ${systemInfo.ua.indexOf('Andorid') != -1 ? 320 : 300}rpx - var(--safe-area-inset-bottom))`;

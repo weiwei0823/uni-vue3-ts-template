@@ -41,7 +41,7 @@
 			Empty
 		},
 		computed: {
-			...mapGetters(["themeColor"])
+			...mapState(AppInfoStore, ['themeColor'])
 		},
 		data() {
 			return {

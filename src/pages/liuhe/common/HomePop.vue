@@ -177,7 +177,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(["themeColor"]),
+			...mapState(AppInfoStore, ['themeColor']),
 			taskNum() {
 				return this.list.length || 0
 			},

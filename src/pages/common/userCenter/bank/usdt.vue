@@ -160,7 +160,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(["themeColor"]),
+			...mapState(AppInfoStore, ['themeColor']),
 			showBank() {
 				return this.bank.filter(item => item.name.toLowerCase().indexOf(this.keyword.toLowerCase()) > -1)
 			},

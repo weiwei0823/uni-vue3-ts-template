@@ -40,6 +40,8 @@ import {
 import {
 	addBankCard
 } from "@/utils/lottery/mine";
+import AppInfoStore from "@/store/modules/appInfoStore";
+import SystemInfoStore from "@/store/modules/systemInfoStore";
 export default {
 	name: "Confirm",
 	components: {
@@ -61,7 +63,8 @@ export default {
 		}
 	},
 	computed: {
-		...mapGetters(["themeColor", "uWindowHeight"]),
+    ...mapState(AppInfoStore, ["themeColor"]),
+    ...mapState(SystemInfoStore, ["uWindowHeight"]),
 	},
 	data() {
 		return {

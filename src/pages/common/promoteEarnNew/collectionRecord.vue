@@ -68,7 +68,7 @@
 			Header,
 		},
 		computed: {
-			...mapGetters(["themeColor"]),
+			...mapState(AppInfoStore, ['themeColor']),
 			zpageUIConfig() {
 				return this.$config.configUIMgr.z_page_loading['t1'];
 			}

@@ -20,6 +20,7 @@ import {
 	mapGetters
 } from 'pinia';
 import headerDrawer from '@/components/CommonPages/pages-liuhe/components/drawer.vue';
+import useAppInfoStore from "@/store/modules/appInfoStore";
 export default {
 	components: {
 		LiuheIndex_01,
@@ -48,7 +49,7 @@ export default {
 		}
 	},
 	computed: {
-		...mapGetters(["webSiteConfig"]),
+    ...mapState(useAppInfoStore, ["webSiteConfig"]),
 	},
 	mounted() {
 

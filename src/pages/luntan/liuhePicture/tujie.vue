@@ -211,7 +211,7 @@
 			uni.$emit("on_page_mounted", this)
 		},
 		computed: {
-			...mapGetters(["themeColor"]),
+			...mapState(AppInfoStore, ['themeColor']),
 		},
 		onLoad(option) {
 			this.pictureId = option.id;

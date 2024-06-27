@@ -72,6 +72,7 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		name: "upMobile",
 		components: {
@@ -131,7 +132,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(['themeColor'])
+      ...mapState(useAppInfoStore, ['themeColor'])
 		},
 		mounted() {
 			uni.$emit("on_page_mounted", this)

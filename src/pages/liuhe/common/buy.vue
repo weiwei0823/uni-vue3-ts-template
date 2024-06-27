@@ -175,12 +175,14 @@
 </template>
 
 <script>
-import { mapGetters } from 'pinia'
+import {mapGetters, mapState} from 'pinia'
 import USlider from 'vk-uview-ui/components/u-slider/u-slider.vue'
 import UniRow from '@/uni_modules/uni-row/components/uni-row/uni-row'
 import UniCol from '@/uni_modules/uni-row/components/uni-col/uni-col'
 import Playing from '@/utils/common/playing'
 import { getLotteryType } from '@/utils/lottery/betting'
+import AppInfoStore from "@/store/modules/appInfoStore";
+import usePlayingStore from "@/store/modules/playIngStore";
 
 export default {
   name: 'buy',
@@ -203,7 +205,8 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['orderList', 'themeColor', 'isHideUserRebetaNum']),
+    ...mapState(AppInfoStore, ["themeColor"]),
+    ...mapState(usePlayingStore, ["orderList", "isHideUserRebetaNum"]),
     menuListStoregeKey() {
       return `menuList:${this.lotteryId}`
     },

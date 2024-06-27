@@ -204,6 +204,8 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "lottery",
 		components: {
@@ -254,7 +256,8 @@
 			};
 		},
 		computed: {
-			...mapGetters(["themeColor", "uWindowHeight", "downloadShow"]),
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useSystemInfoStore, ["uWindowHeight", "downloadShow"]),
 			zpageUIConfig() {
 				return this.$config.configUIMgr.z_page_loading['t1'];
 			},

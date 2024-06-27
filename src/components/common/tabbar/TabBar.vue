@@ -26,13 +26,11 @@
 
 <script>
 	import sheetAnimation from "../sheetAnimation/SheetAnimation"
-	import {
-		mapGetters
-	} from 'pinia';
+  import AppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		name: "TabBar",
 		computed: {
-			...mapGetters(["themeColor", "contantsConfigTypeMap"]),
+      ...mapState(AppInfoStore, ["themeColor", "contantsConfigTypeMap"]),
 
 			firstTabbarText() {
 				if (this.contantsConfigTypeMap && this.contantsConfigTypeMap[this.$config.enumMgr.CONTANTS_CONFIGS_ID

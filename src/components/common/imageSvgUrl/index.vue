@@ -42,7 +42,7 @@ export default {
 
 
 	computed: {
-		...mapGetters(["themeColor"]),
+		...mapState(AppInfoStore, ['themeColor']),
 		isSvg() {
 			return this.url && this.url.indexOf(".svg") > -1;
 		},

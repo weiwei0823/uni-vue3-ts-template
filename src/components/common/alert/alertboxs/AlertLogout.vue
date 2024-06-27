@@ -22,7 +22,8 @@
 
 <script>
 import defaultTemplate from '../../../../utils/defaultTemplate'
-import { mapGetters } from 'pinia';
+import { mapState } from 'pinia';
+import AppInfoStore from "@/store/modules/appInfoStore";
 
 export default {
     name: "Logout",
@@ -35,7 +36,7 @@ export default {
         }
     },
     computed: {
-        ...mapGetters(['userInfo', 'themeColor']),
+      ...mapState(AppInfoStore, ['themeColor']),
     },
     data() {
         return {

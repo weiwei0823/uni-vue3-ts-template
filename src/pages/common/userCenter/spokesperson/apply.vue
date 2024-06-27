@@ -48,10 +48,12 @@ import {
 	getActiveRule
 } from "@/utils/user";
 import {
-	mapGetters
+  mapGetters, mapState
 } from 'pinia';
 import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue";
 import Header from "@/components/common/header/index";
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import SystemInfoStore from "@/store/modules/systemInfoStore";
 export default {
 	name: "apply",
 	components: {
@@ -59,7 +61,8 @@ export default {
 		Header
 	},
 	computed: {
-		...mapGetters(["themeColor", "uWindowHeight", "downloadShow"]),
+    ...mapState(useAppInfoStore, ["themeColor"]),
+    ...mapState(SystemInfoStore, ["uWindowHeight", "downloadShow"]),
 		customStyle() {
 			return {
 				// marginTop: "-100rpx",

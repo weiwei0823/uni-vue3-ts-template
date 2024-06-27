@@ -28,6 +28,7 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		name: "setNickname",
 		components: {
@@ -50,7 +51,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(['themeColor'])
+      ...mapState(useAppInfoStore, ['themeColor'])
 		},
 		mounted() {
 

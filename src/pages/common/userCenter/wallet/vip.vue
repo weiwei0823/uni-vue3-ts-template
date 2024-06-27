@@ -40,7 +40,7 @@
 			uni.$emit("on_page_mounted", this)
 		},
 		computed: {
-			...mapGetters(['themeColor']),
+			...mapState(AppInfoStore, ['themeColor']),
 		},
 		data() {
 			return {

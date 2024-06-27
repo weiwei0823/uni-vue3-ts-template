@@ -61,6 +61,8 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import AppInfoStore from "@/store/modules/appInfoStore";
+  import SystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "index",
 		components: {
@@ -95,7 +97,8 @@
 			// this.search();
 		},
 		computed: {
-			...mapGetters(["themeColor", "uWindowHeight"]),
+      ...mapState(AppInfoStore, ["themeColor"]),
+      ...mapState(SystemInfoStore, ["uWindowHeight"]),
 		},
 		methods: {
 			//搜索

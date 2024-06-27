@@ -18,8 +18,9 @@
 
 <script>
 import {
-	mapGetters
+	mapState
 } from 'pinia';
+import AppInfoStore from "@/store/modules/appInfoStore";
 export default {
 	name: "Betting",
 	props: {
@@ -46,7 +47,7 @@ export default {
 		}
 	},
 	computed: {
-		...mapGetters(['themeColor']),
+    ...mapState(AppInfoStore, ['themeColor']),
 		theme() {
 			return getApp().globalData.themeMap[this.$config.station]
 		},

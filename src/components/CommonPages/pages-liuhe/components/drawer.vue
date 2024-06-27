@@ -112,10 +112,12 @@
 <script>
 import {updateUsername} from "@/utils/user/index";
 import {bindStatus} from "@/utils/lottery/mine";
-import {mapGetters} from 'pinia';
+import {mapGetters, mapState} from 'pinia';
 import {logout} from "@/utils/common/index";
 import {limitstr} from "@/utils/function";
 import imageSvgUrl from '@/components/common/imageSvgUrl'
+import AppInfoStore from "@/store/modules/appInfoStore";
+import SystemInfoStore from "@/store/modules/systemInfoStore";
 
 export default {
 		components: {
@@ -267,8 +269,8 @@ export default {
 			// })
 		},
 		computed: {
-			...mapGetters(['userInfo', 'themeColor', "uWindowHeight"]),
-
+      ...mapState(AppInfoStore, ["themeColor", "userInfo"]),
+      ...mapState(SystemInfoStore, ["uWindowHeight"]),
 			theme() {
 				return getApp().globalData.themeMap[this.$config.station];
 			},

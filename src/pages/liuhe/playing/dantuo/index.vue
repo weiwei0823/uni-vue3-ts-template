@@ -53,6 +53,7 @@
 		mapGetters
 	} from 'pinia';
 	import Playing from "@/utils/common/playing";
+  import usePlayingStore from "@/store/modules/playIngStore";
 	export default {
 		name: "index",
 		props: {
@@ -88,7 +89,7 @@
 
 		},
 		computed: {
-			...mapGetters(['orderList']),
+      ...mapState(usePlayingStore, ["orderList"]),
 			selectIdsFromStoreOrder() {
 				let selectedIds = this.orderList.length ? this.orderList[0].content.split(',').map(i => Number(i)) : [];
 				return selectedIds;

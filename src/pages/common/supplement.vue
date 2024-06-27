@@ -91,7 +91,8 @@ import LHInput from "@/components/common/LHInput/index.vue";
 import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue";
 
 import { signUserAppendInfo, getVCode, checkCode } from "@/utils/common/index";
-import { mapGetters } from 'pinia';
+import {mapGetters, mapState} from 'pinia';
+import AppInfoStore from "@/store/modules/appInfoStore";
 export default {
   components: {
     AlertInjectLayer,
@@ -157,7 +158,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(["themeColor", "webSiteConfig"]),
+    ...mapState(AppInfoStore, ["themeColor", "webSiteConfig"]),
     showReg() {
       return this.webSiteConfig.website_register_phone_check === 1;
     },

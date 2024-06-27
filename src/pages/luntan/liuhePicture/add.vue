@@ -67,7 +67,7 @@
 			};
 		},
 		computed: {
-			...mapGetters(["themeColor"]),
+			...mapState(AppInfoStore, ['themeColor']),
 		},
 		onLoad(option) {
 			uni.setNavigationBarTitle({

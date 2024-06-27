@@ -103,6 +103,8 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import AppInfoStore from "@/store/modules/appInfoStore";
+  import LotteryStore from "@/store/modules/LotteryStore";
 	export default {
 		name: "Lottery",
 		data: function() {
@@ -197,7 +199,8 @@
 			// this.countDownSendWs();
 		},
 		computed: {
-			...mapGetters(["themeColor", "openLottery", "openLiveLotteryMsg"]),
+      ...mapState(AppInfoStore, ["themeColor", "openLiveLotteryMsg"]),
+      ...mapState(LotteryStore, ["openLottery"]),
 
 			numberList() {
 				if (this.listenNumberListAction && this.animationNumberList) {

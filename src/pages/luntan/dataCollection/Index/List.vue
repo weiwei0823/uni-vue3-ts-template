@@ -217,6 +217,8 @@
 	import {
 		setPickerStyle
 	} from "@/utils/common.ts";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "list",
 		components: {
@@ -247,7 +249,8 @@
 			});
 		},
 		computed: {
-			...mapGetters(["themeColor", "uWindowHeight", "windowBottom"]),
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useSystemInfoStore, ["uWindowHeight", "windowBottom"]),
 			zpageUIConfig() {
 				return this.$config.configUIMgr.z_page_loading['t1'];
 			},

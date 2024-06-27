@@ -214,6 +214,8 @@ import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
 import {
 	mapGetters
 } from 'pinia';
+import AppInfoStore from "@/store/modules/appInfoStore";
+import SystemInfoStore from "@/store/modules/systemInfoStore";
 export default {
 	name: "Live",
 	components: {
@@ -297,7 +299,8 @@ export default {
 		uni.$emit("on_page_mounted", this)
 	},
 	computed: {
-		...mapGetters(["themeColor", "uWindowHeight"]),
+    ...mapState(AppInfoStore, ["themeColor"]),
+    ...mapState(SystemInfoStore, ["uWindowHeight"]),
 		showWaitHtml() {
 			let ar1 = this.lotteryType == 1 ? this.$t("liuhe.live.live.liuheHongkong") : this.$t(
 				"liuhe.live.live.liuheAomen");

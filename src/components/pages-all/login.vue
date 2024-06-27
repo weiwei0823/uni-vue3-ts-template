@@ -76,7 +76,7 @@
 
 <script>
 import {
-	mapGetters
+  mapGetters, mapState
 } from 'pinia';
 import Header from '@/components/common/header/index.vue';
 import LHInput from '@/components/common/LHInput/index.vue';
@@ -89,6 +89,8 @@ import {
 import {
 	formartObjectToQueryString
 } from "@/utils/dataFormartter"
+import AppInfoStore from "@/store/modules/appInfoStore";
+import SystemInfoStore from "@/store/modules/systemInfoStore";
 
 export default {
 	components: {
@@ -144,7 +146,8 @@ export default {
 		followKeybordSetInputStyle(this.$refs.header);
 	},
 	computed: {
-		...mapGetters(["themeColor", "windowTop", 'uWindowHeight']),
+    ...mapState(AppInfoStore, ["themeColor"]),
+    ...mapState(SystemInfoStore, ["uWindowHeight", "windowTop"]),
 		theme() {
 			return getApp().globalData.themeMap[this.$config.station]
 		},

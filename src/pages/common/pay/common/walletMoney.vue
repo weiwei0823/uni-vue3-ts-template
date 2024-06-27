@@ -144,7 +144,7 @@ export default {
 		uni.$emit("on_page_mounted", this)
 	},
 	computed: {
-		...mapGetters(["themeColor"]),
+		...mapState(AppInfoStore, ['themeColor']),
 
 		getMoney() {
 			if (this.money > 0) {

@@ -291,6 +291,8 @@
 		concern,
 		thumbUp
 	} from '@/utils/user/index.js'
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "index",
 		components: {
@@ -308,7 +310,8 @@
 		},
 
 		computed: {
-			...mapGetters(["themeColor", "downloadShow","uWindowHeight"]),
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useSystemInfoStore, ["uWindowHeight", "downloadShow"]),
 			logoUrl() {
 				let configInfo = this.$store.state.appInfoStore.contantsConfigTypeMap[this.$config.enumMgr
 					.CONTANTS_CONFIGS_ID.LOGO_BIG];

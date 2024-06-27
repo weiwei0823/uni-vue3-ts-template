@@ -110,7 +110,7 @@
 			ltLoading
 		},
 		computed: {
-			...mapGetters(["themeColor"]),
+			...mapState(AppInfoStore, ['themeColor']),
 			pageLoadingConfig() {
 				return this.$config.configUIMgr.page_loading_row['t1'];
 			}

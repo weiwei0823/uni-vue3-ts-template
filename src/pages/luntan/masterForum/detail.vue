@@ -394,6 +394,8 @@ import {
 	mapGetters
 } from 'pinia';
 import Watermark from '@/components/common/watermark/index.vue';
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
 export default {
 	name: "detail",
 	components: {
@@ -495,7 +497,8 @@ export default {
 	},
 
 	computed: {
-		...mapGetters(["themeColor", "userInfo", "uWindowHeight", "downloadShow"]),
+    ...mapState(useAppInfoStore, ["themeColor", "userInfo"]),
+    ...mapState(useSystemInfoStore, ["uWindowHeight", "downloadShow"]),
 	},
 	methods: {
 		handleChange({

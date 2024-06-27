@@ -44,11 +44,9 @@
 import Ball from "./ball";
 import TextBall from "./text-ball";
 import RulesDialog from "@/pages/liuhe/common/rulesDialog";
-import {
-	mapGetters
-} from 'pinia';
 import Playing from "@/utils/common/playing";
 import CenterTab from "@/pages/liuhe/common/CenterTab";
+import usePlayingStore from "@/store/modules/playIngStore";
 
 export default {
 	name: "index",
@@ -69,7 +67,7 @@ export default {
 		CenterTab
 	},
 	computed: {
-		...mapGetters(['orderList'])
+    ...mapState(usePlayingStore, ["orderList"])
 	},
 	watch: {
 		ballList: {

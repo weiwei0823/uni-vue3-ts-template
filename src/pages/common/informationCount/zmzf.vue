@@ -162,7 +162,7 @@
 			uni.$emit("on_page_mounted", this)
 		},
 		computed: {
-			...mapGetters(["themeColor"]),
+			...mapState(AppInfoStore, ['themeColor']),
 		},
 		onLoad(option) {
 			this.chartDataHot.series[0].itemStyle.color = this.themeColor.themeColor

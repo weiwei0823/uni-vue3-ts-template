@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'pinia';
+import usePlayingStore from "@/store/modules/playIngStore";
 
 export default {
   name: "BetOddsNum",
@@ -51,7 +51,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['lotteryRabetaInfo', 'inLotteryUserRabetaNum']),
+    ...mapState(usePlayingStore, ["lotteryRabetaInfo", "inLotteryUserRabetaNum"]),
     ballOddsValue() {
       if (this.lotteryRabetaInfo && this.inLotteryUserRabetaNum > 0) {
         let maxRabeta = parseFloat(this.lotteryRabetaInfo.maxRebate);

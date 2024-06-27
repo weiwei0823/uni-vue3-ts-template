@@ -33,6 +33,7 @@ import {
 	mapGetters
 } from 'pinia';
 import Playing from "@/utils/common/playing";
+import usePlayingStore from "@/store/modules/playIngStore";
 export default {
 	name: "index",
 	props: {
@@ -52,7 +53,7 @@ export default {
 		UniRow,
 	},
 	computed: {
-		...mapGetters(['orderList']),
+    ...mapState(usePlayingStore, ["orderList"]),
     ballChildren(){
         try {
           return  this.playData.children[0].children[0].children

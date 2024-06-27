@@ -508,6 +508,8 @@ import {
 	thumbUp
 } from "@/utils/user/index.js"
 import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
 
 export default {
 	name: "detail",
@@ -525,7 +527,8 @@ export default {
 		AlertInjectLayer,
 	},
 	computed: {
-		...mapGetters(["themeColor", "uWindowHeight", "windowBottom", "downloadShow"]),
+    ...mapState(useAppInfoStore, ["themeColor"]),
+    ...mapState(useSystemInfoStore, ["uWindowHeight", "downloadShow", "windowBottom"]),
 		pageUiLoading() {
 			return this.$config.configUIMgr.page_loading_row['t1'];
 		},

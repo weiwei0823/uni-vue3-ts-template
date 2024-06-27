@@ -234,6 +234,11 @@
 	import NavMenu from "./common/navMenu.vue";
 	import PreSetAmount from "./common/preAmountSetting.vue";
 	import ChanglongOrderComfirm from "./common/changlongOrderComfirm.vue";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
+  import useLotteryStore from "@/store/modules/LotteryStore";
+  import usePlayingStore from "@/store/modules/playIngStore";
+  import useWebsocketStore from "@/store/modules/websocketStore";
 	const navMenu = new Playing().menuList;
 	export default {
 		components: {
@@ -362,9 +367,11 @@
 			}
 		},
 		computed: {
-			...mapGetters(['orderList', "websocketTimeInterval", "inLotteryId", "inLotteryGameName", "themeColor",
-				"windowTop", "uWindowHeight"
-			]),
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useSystemInfoStore, ["windowTop", 'uWindowHeight']),
+      ...mapState(useLotteryStore, ["inLotteryGameName", "inLotteryId"]),
+      ...mapState(usePlayingStore, ["orderList"]),
+      ...mapState(useWebsocketStore, ["websocketTimeInterval"]),
 			keyBoardHeight() {
 				return this.windowTop + this.isOpenHeight
 			},

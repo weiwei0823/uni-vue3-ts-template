@@ -30,7 +30,7 @@
 
 <script>
 import {
-	mapGetters
+  mapGetters, mapState
 } from 'pinia';
 import Header from '@/components/common/header/index.vue';
 import NavBar from "@/components/common/navBar/navBar";
@@ -38,6 +38,8 @@ import {
 	detail
 } from '@/utils/forum/index.js'
 import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
 
 export default {
 	name: "homepage",
@@ -69,8 +71,8 @@ export default {
 		}
 	},
 	computed: {
-		...mapGetters(['uWindowHeight', 'windowBottom', 'themeColor']),
-
+    ...mapState(useAppInfoStore, ["themeColor"]),
+    ...mapState(useSystemInfoStore, ["uWindowHeight", "windowBottom"]),
 	},
 	onLoad(option) {
 		this.articleId = option.id

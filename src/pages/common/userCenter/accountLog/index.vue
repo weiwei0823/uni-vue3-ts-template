@@ -201,6 +201,8 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import AppInfoStore from "@/store/modules/appInfoStore";
+  import SystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "index",
 		components: {
@@ -265,7 +267,8 @@
 			/*this.getList();*/
 		},
 		computed: {
-			...mapGetters(['themeColor', 'uWindowHeight']),
+      ...mapState(AppInfoStore, ["themeColor"]),
+      ...mapState(SystemInfoStore, ["uWindowHeight"]),
 			showTime() {
 				const formatText =
 					`yyyy ${this.$t('pages.common.userCenter.accountLog.Years')} mm ${this.$t('pages.common.userCenter.accountLog.Months')} dd ${this.$t('pages.common.userCenter.accountLog.Days')}`

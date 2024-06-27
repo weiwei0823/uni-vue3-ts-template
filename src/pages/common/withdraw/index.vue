@@ -311,6 +311,7 @@
 		draw
 	} from "@/utils/lottery/mine";
 	import Playing from '@/utils/common/playing';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 
 	export default {
 		name: "index",
@@ -392,7 +393,7 @@
 			uni.$emit("on_page_mounted", this)
 		},
 		computed: {
-			...mapGetters(["themeColor", "webSiteConfig"]),
+      ...mapState(useAppInfoStore, ["themeColor", "webSiteConfig"]),
 			dzUSDT() {
 				if (!this.money || !this.info.exchangeRatio) {
 					return 0

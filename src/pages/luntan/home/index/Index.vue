@@ -14,6 +14,8 @@ import {
 	mapGetters
 } from 'pinia';
 import stores from "@/store"
+import AppInfoStore from "@/store/modules/appInfoStore";
+import SystemInfoStore from "@/store/modules/systemInfoStore";
 /**
  * 2023-08-16:修改一些调用onshow等逻辑BUG 避免组件载入后重复调用非必要生命周期时间。诱发一些获取数据重复请求未做去重的BUG
  */
@@ -38,7 +40,7 @@ export default {
 		}
 	},
 	computed: {
-		// ...mapGetters(["webSiteConfig"]),
+    ...mapState(AppInfoStore, ["webSiteConfig"]),
 		componentId() {
 			const key = this.webSiteConfig.liuhe_setting;
 			this.lastComponentKey != key && this.$nextTick(() => {

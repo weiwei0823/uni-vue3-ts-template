@@ -116,9 +116,8 @@
 		delMessage,
 	} from "@/utils/user";
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue";
-	import {
-		mapGetters
-	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "index",
 		components: {
@@ -156,7 +155,8 @@
 			}
 		},
 		computed: {
-			...mapGetters(["themeColor", 'uWindowHeight','windowBottom']),
+      ...mapState(useAppInfoStore, ['themeColor']),
+      ...mapState(useSystemInfoStore, ['uWindowHeight', 'windowBottom']),
 			zpageUIConfig() {
 				return this.$config.configUIMgr.z_page_loading['t1'];
 			},

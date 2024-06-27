@@ -75,6 +75,8 @@ import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue";
 import ColorSwitch from '@/components/common/colorSwitch/index.vue';
 
 import { mapGetters } from 'pinia';
+import AppInfoStore from "@/store/modules/appInfoStore";
+import SystemInfoStore from "@/store/modules/systemInfoStore";
 
 export default {
   components: {
@@ -149,7 +151,8 @@ export default {
     });
   },
   computed: {
-    ...mapGetters(["themeColor", "uWindowHeight"]),
+    ...mapState(AppInfoStore, ["themeColor"]),
+    ...mapState(SystemInfoStore, ["uWindowHeight"]),
     title() {
       return this.$config.configLotties.getLotteryTypePlantNameByLotteryTypeId(this.lotteryType) + this.$t('pages.luntan.find.index.Title')
     },

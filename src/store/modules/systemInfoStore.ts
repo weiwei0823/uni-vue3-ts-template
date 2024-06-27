@@ -29,7 +29,8 @@ const useSystemInfoStore = defineStore('systemInfo', {
       const val = uni.getStorageSync('downloadShow')
       return typeof val === 'boolean' ? val : this.downloadShow
     },
-
+    uWindowHeight: () => this.windowHeight,
+    uWindowWidth: () => this.windowWidth,
     uSystemInfo() {
       if (!this.systemInfo) {
         this.systemInfo = uni.getSystemInfoSync()

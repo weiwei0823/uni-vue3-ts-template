@@ -94,6 +94,8 @@
 	import {
 		getCodePicking
 	} from "../../../utils/toolbox/index";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 
 	export default {
 		components: {
@@ -145,7 +147,8 @@
 			this.isApp = browserPlatform() == browserPlatform.FLUTTER_App;
 		},
 		computed: {
-			...mapGetters(["themeColor", "uWindowHeight", "downloadShow"]),
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useSystemInfoStore, ["uWindowHeight", "downloadShow"]),
 			renderCodes() {
 				let selecodes = [];
 				let caculatedGroups = {};

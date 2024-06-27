@@ -158,6 +158,8 @@
 		myPromotion
 	} from "@/utils/ptp";
 	import defaultTemplate from '@/utils/defaultTemplate';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "invite",
 		components: {
@@ -168,9 +170,9 @@
 			Header
 		},
 		computed: {
-			...mapGetters(["themeColor", "uWindowHeight", "downloadShow"]),
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useSystemInfoStore, ["uWindowHeight", "downloadShow"]),
 			userInfo() {
-
 				return this.$store.state.appInfoStore.userInfo;
 			},
 			linkText() {

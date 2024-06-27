@@ -53,6 +53,9 @@
 		mapGetters
 	} from 'pinia';
 	import Playing from "../../../utils/common/playing";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
+  import useLotteryStore from "@/store/modules/LotteryStore";
 	export default {
 		name: "recent_draws",
 		components: {
@@ -92,7 +95,9 @@
 			uni.$emit("on_page_mounted", this)
 		},
 		computed: {
-			...mapGetters(["inLotteryGameName", "themeColor", "uWindowHeight"]),
+      ...mapState(useAppInfoStore, ['themeColor']),
+      ...mapState(useSystemInfoStore, ['uWindowHeight']),
+      ...mapState(useLotteryStore, ['inLotteryGameName']),
 		},
 		methods: {
 			formatDate(currentDate) { //定义日期格式化函数

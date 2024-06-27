@@ -132,7 +132,9 @@ import { list, lt_init } from '@/utils/home/index.js';
 import { lastLotteryRecord, lastLotteryRecordWithCalculate } from "@/utils/lottery/index.js"
 import { concern } from '@/utils/user/index.js'
 import { config } from '@/config/config'
-import { mapGetters } from 'pinia';
+import {mapGetters, mapState} from 'pinia';
+import AppInfoStore from "@/store/modules/appInfoStore";
+import SystemInfoStore from "@/store/modules/systemInfoStore";
 
 export default {
 	name: "LuntanIndex02",
@@ -293,7 +295,8 @@ export default {
 		}
 	},
 	computed: {
-		...mapGetters(["webSiteConfig", "themeColor", "uWindowHeight", 'downloadShow']),
+    ...mapState(AppInfoStore, ["themeColor", "webSiteConfig"]),
+    ...mapState(SystemInfoStore, ["uWindowHeight", "downloadShow"]),
 		onlineShow() {
 			return this.webSiteConfig.website_online_switch
 		},

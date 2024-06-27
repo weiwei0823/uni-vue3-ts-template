@@ -102,7 +102,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(["themeColor"])
+			...mapState(AppInfoStore, ['themeColor'])
 		},
 		watch: {
 			isShowMenu(val) {

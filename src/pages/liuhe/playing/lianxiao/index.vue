@@ -59,6 +59,7 @@
 		mapGetters
 	} from 'pinia';
 	import CenterTab from "@/pages/liuhe/common/CenterTab";
+  import usePlayingStore from "@/store/modules/playIngStore";
 
 	export default {
 		name: "index",
@@ -78,7 +79,7 @@
 			CenterTab
 		},
 		computed: {
-			...mapGetters(['orderList'])
+      ...mapState(usePlayingStore, ["orderList"])
 		},
 		data() {
 			return {

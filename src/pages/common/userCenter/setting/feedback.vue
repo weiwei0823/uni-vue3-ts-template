@@ -62,7 +62,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(["themeColor"]),
+			...mapState(AppInfoStore, ['themeColor']),
 		},
 		methods: {
 			bindTextAreaBlur: function(e) {},

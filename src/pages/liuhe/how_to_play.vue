@@ -33,6 +33,8 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "how_to_play",
 		components: {
@@ -56,8 +58,8 @@
 			}
 		},
 		computed: {
-			...mapGetters(['themeColor', 'safeHeight', 'uWindowHeight']),
-
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useSystemInfoStore, ["safeHeight", "uWindowHeight"]),
 		},
 		onShow() {
 			this.winHeight = uni.getSystemInfoSync().windowHeight;

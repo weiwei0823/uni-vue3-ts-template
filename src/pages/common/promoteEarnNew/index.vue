@@ -105,6 +105,8 @@ import {
 } from '@/utils/ptp/index'
 import defaultTemplate from "@/utils/defaultTemplate";
 import { setNavigationBarColor, hideTabBar, lockOrientation } from '@/utils/common.ts';
+import AppInfoStore from "@/store/modules/appInfoStore";
+import SystemInfoStore from "@/store/modules/systemInfoStore";
 
 export default {
 	components: {
@@ -127,7 +129,8 @@ export default {
 		uni.$emit("on_page_mounted", this)
 	},
 	computed: {
-		...mapGetters(["themeColor", "uWindowHeight"]),
+    ...mapState(AppInfoStore, ["themeColor"]),
+    ...mapState(SystemInfoStore, ["uWindowHeight"]),
 		getVip() {
 			return parseInt(this.$store.state.appInfoStore.userInfo?.liuheVipSpeedInfo?.level || 0)
 		},

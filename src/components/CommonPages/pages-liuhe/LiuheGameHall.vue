@@ -48,6 +48,8 @@ import {advertList, demoLogin} from "@/utils/common/index";
 import {cp_init} from '@/utils/home/index.js';
 import defaultTemplate from "@/utils/defaultTemplate";
 import {mapGetters} from 'pinia';
+import AppInfoStore from "@/store/modules/appInfoStore";
+import SystemInfoStore from "@/store/modules/systemInfoStore";
 
 export default {
 	components: {
@@ -92,7 +94,8 @@ export default {
 	},
 
 	computed: {
-		...mapGetters(["webSiteConfig", "themeColor", "uWindowHeight"]),
+    ...mapState(AppInfoStore, ["themeColor", "webSiteConfig"]),
+    ...mapState(SystemInfoStore, ["uWindowHeight"]),
 		theme() {
 			return getApp().globalData.themeMap[this.$config.station]
 		},

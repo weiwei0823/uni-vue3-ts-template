@@ -106,6 +106,7 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		name: "betting_results",
 		components: {
@@ -138,7 +139,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(['themeColor'])
+      ...mapState(useAppInfoStore, ['themeColor'])
 		},
 		onLoad(param) {
 			if (param.lotteryNo) {

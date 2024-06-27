@@ -37,9 +37,11 @@
 		feedbackDetail
 	} from '@/utils/user';
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
-	import {
-		mapGetters
-	} from 'pinia';
+  import {
+    mapGetters, mapState
+  } from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useMemObStore from "@/store/modules/memObStore";
 
 	export default {
 		name: "feedbackDetail",
@@ -53,7 +55,8 @@
 			}
 		},
 		computed: {
-			...mapGetters(["MEM_WILL_SHOW_FEED_BACK_DETAIL"]),
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useMemObStore, ["MEM_WILL_SHOW_FEED_BACK_DETAIL"]),
 		},
 
 		components: {

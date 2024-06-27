@@ -143,9 +143,11 @@
 		yebDetailStat
 	} from '@/utils/yeb'
 	import defaultTemplate from "@/utils/defaultTemplate";
-	import {
-		mapGetters
-	} from 'pinia';
+  import {
+    mapGetters, mapState
+  } from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import SystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		components: {
 			Header
@@ -154,7 +156,8 @@
 			uni.$emit("on_page_mounted", this)
 		},
 		computed: {
-			...mapGetters(['themeColor', "uWindowHeight", "downloadShow"]),
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(SystemInfoStore, ["uWindowHeight", "downloadShow"]),
 			zpageUIConfig() {
 				return this.$config.configUIMgr.z_page_loading['t1'];
 			},

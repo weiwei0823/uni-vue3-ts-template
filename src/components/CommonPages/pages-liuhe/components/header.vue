@@ -87,7 +87,7 @@
 			return {}
 		},
 		computed: {
-			...mapGetters(['themeColor']),
+			...mapState(AppInfoStore, ['themeColor']),
 
 			//是否登录
 			isLogin() {

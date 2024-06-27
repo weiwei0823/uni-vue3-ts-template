@@ -366,7 +366,7 @@ import TabBar from "@/components/common/tabbar/TabBar";
 import SetLottery from "@/components/common/setLottery/setLottery";
 import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
 import {
-	mapGetters
+  mapGetters, mapState
 } from 'pinia';
 import ColorSwitch from '@/components/common/colorSwitch/index.vue';
 
@@ -380,6 +380,8 @@ import {
 import Playing from "@/utils/common/playing";
 import defaultTemplate from "@/utils/defaultTemplate";
 import AccountMess from "@/components/common/userCenter/account-mess.vue"
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
 export default {
 	name: "index",
 	components: {
@@ -393,7 +395,8 @@ export default {
 		uni.$emit("on_page_mounted", this)
 	},
 	computed: {
-		...mapGetters(["themeColor", "userInfo", "uWindowHeight"]),
+    ...mapState(useAppInfoStore, ["themeColor", "userInfo"]),
+    ...mapState(useSystemInfoStore, ["uWindowHeight"]),
 	},
 	data() {
 		return {

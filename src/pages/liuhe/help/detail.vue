@@ -58,6 +58,8 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "detail",
 		components: {
@@ -84,7 +86,8 @@
 			}
 		},
 		computed: {
-			...mapGetters(["themeColor", "windowTop"]),
+      ...mapState(useAppInfoStore, ['themeColor']),
+      ...mapState(useSystemInfoStore, ['windowTop']),
 		},
 		onLoad(option) {
 			this.id = option.id

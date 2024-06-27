@@ -12,8 +12,10 @@
 	import {
 		getChatRoomInfoByTab
 	} from "@/utils/lottery/betting";
-	import { mapGetters } from 'pinia';
+  import {mapGetters, mapState} from 'pinia';
 	import defaultTemplate from '@/utils/defaultTemplate'
+  import AppInfoStore from "@/store/modules/appInfoStore";
+  import SystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		components: {
 			Header,
@@ -26,7 +28,7 @@
 			};
 		},
 		computed: {
-			...mapGetters(["themeColor", "chatRoomUrl"]),
+      ...mapState(AppInfoStore, ["themeColor", "chatRoomUrl"]),
 		},
 		mounted() {
 			uni.$emit("on_page_mounted", this)

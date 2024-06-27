@@ -27,6 +27,8 @@
 		mapGetters
 	} from 'pinia';
 	import Download from "./download.vue";
+  import AppInfoStore from "@/store/modules/appInfoStore";
+  import SystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		components: {
 			Download
@@ -100,7 +102,8 @@
 			}
 		},
 		computed: {
-			...mapGetters(["themeColor", "downloadShow"]),
+      ...mapState(AppInfoStore, ["themeColor"]),
+      ...mapState(SystemInfoStore, ["downloadShow"]),
 			theme() {
 				return getApp().globalData.themeMap[this.$config.station]
 			},

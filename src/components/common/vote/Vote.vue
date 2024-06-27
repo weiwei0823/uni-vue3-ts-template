@@ -56,7 +56,7 @@ export default {
     };
   },
   computed: {
-    ...mapGetters(["themeColor"]),
+    ...mapState(AppInfoStore, ['themeColor']),
   },
   methods: {
     //投票

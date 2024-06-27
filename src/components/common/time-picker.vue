@@ -133,8 +133,10 @@
 </template>
 
 <script>
-import { mapGetters } from 'pinia'
+import { mapState } from 'pinia'
 import Header from '@/components/common/header/index.vue'
+import AppInfoStore from "@/store/modules/appInfoStore";
+import systemInfoStore from "@/store/modules/systemInfoStore";
 
 export default {
   components: {
@@ -189,7 +191,8 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['themeColor', 'uWindowHeight']),
+    ...mapState(AppInfoStore, ['themeColor']),
+    ...mapState(systemInfoStore, ["uWindowHeight"]),
     theme() {
       return getApp().globalData.themeMap[this.$config.station]
     },

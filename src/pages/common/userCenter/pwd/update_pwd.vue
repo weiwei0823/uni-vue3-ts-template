@@ -69,7 +69,7 @@ import { nextTick } from 'vue';
 			}
 		},
 		computed: {
-			...mapGetters(['themeColor']),
+			...mapState(AppInfoStore, ['themeColor']),
 		},
 		mounted() {
 			uni.$emit("on_page_mounted", this)

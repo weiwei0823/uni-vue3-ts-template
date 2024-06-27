@@ -33,6 +33,8 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import AppInfoStore from "@/store/modules/appInfoStore";
+  import SystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "bank",
 		components: {
@@ -72,7 +74,8 @@
 			}
 		},
 		computed: {
-			...mapGetters(["themeColor", "uWindowHeight"]),
+      ...mapState(AppInfoStore, ["themeColor"]),
+      ...mapState(SystemInfoStore, ["uWindowHeight"]),
 			headerStyle() {
 				return {
 					backgroundColor: this.themeColor.themeAuxiliaryColorDefault,
