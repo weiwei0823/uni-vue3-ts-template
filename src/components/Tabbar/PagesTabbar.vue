@@ -19,8 +19,8 @@
 import {
   mapGetters, mapState
 } from 'pinia';
-import AppInfoStore from "@/store/modules/appInfoStore";
-import SystemInfoStore from "@/store/modules/systemInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		data() {
 			return {
@@ -71,7 +71,7 @@ import SystemInfoStore from "@/store/modules/systemInfoStore";
 			}
 		},
 		computed: {
-      ...mapState(AppInfoStore, ["themeColor", "chatRoomUrl"]),
+      ...mapState(useAppInfoStore, ["themeColor", "chatRoomUrl"]),
 			styles() {
 				return {
 					'--activeColor': this.activeColor,

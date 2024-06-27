@@ -35,7 +35,7 @@
 			}
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 			menulist() {
 				let data = [{
 						icon: '@/static/img/index/kaijiangxianchang.svg',

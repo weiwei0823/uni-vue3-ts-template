@@ -37,7 +37,7 @@
 	import {
     mapState
 	} from 'pinia';
-  import AppInfoStore from "@/store/modules/appInfoStore";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		name: "Ad",
 		props: {
@@ -59,7 +59,7 @@
 			}
 		},
 		computed: {
-      ...mapState(AppInfoStore, ['themeColor']),
+      ...mapState(useAppInfoStore, ['themeColor']),
 			lotteryTypeText() {
 				if (this.bindLotteryType == -1 || this.bindLotteryType == undefined) {
 					console.error("ad compoment bindLotteryId is undefined")

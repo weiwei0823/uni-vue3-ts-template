@@ -185,7 +185,7 @@ import { nextTick } from 'vue';
 			imageSvgUrl
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 			showBankList(){
 				if (!this.bankList.length) {
 					return []

@@ -181,7 +181,7 @@ import UniRow from '@/uni_modules/uni-row/components/uni-row/uni-row'
 import UniCol from '@/uni_modules/uni-row/components/uni-col/uni-col'
 import Playing from '@/utils/common/playing'
 import { getLotteryType } from '@/utils/lottery/betting'
-import AppInfoStore from "@/store/modules/appInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
 import usePlayingStore from "@/store/modules/playIngStore";
 
 export default {
@@ -205,7 +205,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(AppInfoStore, ["themeColor"]),
+    ...mapState(useAppInfoStore, ["themeColor"]),
     ...mapState(usePlayingStore, ["orderList", "isHideUserRebetaNum"]),
     menuListStoregeKey() {
       return `menuList:${this.lotteryId}`

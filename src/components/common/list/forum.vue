@@ -196,8 +196,8 @@ import UniRow from "../../../uni_modules/uni-row/components/uni-row/uni-row";
 import {
 	mapGetters
 } from 'pinia';
-import AppInfoStore from "@/store/modules/appInfoStore";
-import SystemInfoStore from "@/store/modules/systemInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
 export default {
 	name: "forum",
 	components: {
@@ -246,8 +246,8 @@ export default {
 		}
 	},
 	computed: {
-    ...mapState(AppInfoStore, ["themeColor"]),
-    ...mapState(SystemInfoStore, ["uWindowHeight"]),
+    ...mapState(useAppInfoStore, ["themeColor"]),
+    ...mapState(useSystemInfoStore, ["uWindowHeight"]),
 	},
 	mounted() {
 

@@ -92,7 +92,7 @@ import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue";
 
 import { signUserAppendInfo, getVCode, checkCode } from "@/utils/common/index";
 import {mapGetters, mapState} from 'pinia';
-import AppInfoStore from "@/store/modules/appInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
 export default {
   components: {
     AlertInjectLayer,
@@ -158,7 +158,7 @@ export default {
   },
 
   computed: {
-    ...mapState(AppInfoStore, ["themeColor", "webSiteConfig"]),
+    ...mapState(useAppInfoStore, ["themeColor", "webSiteConfig"]),
     showReg() {
       return this.webSiteConfig.website_register_phone_check === 1;
     },

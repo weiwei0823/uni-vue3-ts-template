@@ -52,8 +52,8 @@ import {
 import {
 	mapGetters
 } from 'pinia';
-import AppInfoStore from "@/store/modules/appInfoStore";
-import SystemInfoStore from "@/store/modules/systemInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
 export default {
 	name: "ReplyComment",
 	components: {
@@ -113,8 +113,8 @@ export default {
 		}
 	},
 	computed: {
-    ...mapState(AppInfoStore, ["themeColor"]),
-    ...mapState(SystemInfoStore, ["uWindowHeight", "windowBottom"]),
+    ...mapState(useAppInfoStore, ["themeColor"]),
+    ...mapState(useSystemInfoStore, ["uWindowHeight", "windowBottom"]),
 	},
 	methods: {
 		closed: function (type = 1) {

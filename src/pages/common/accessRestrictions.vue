@@ -36,7 +36,7 @@
 			}
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 			host() {
 				return location.host
 			}

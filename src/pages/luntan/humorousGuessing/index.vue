@@ -407,8 +407,8 @@ import {
 	mapGetters
 } from 'pinia';
 import {config} from "@/config/config";
-import AppInfoStore from "@/store/modules/appInfoStore";
-import SystemInfoStore from "@/store/modules/systemInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
 export default {
 	name: "index",
 	components: {
@@ -491,8 +491,8 @@ export default {
 		this.lower()
 	},
 	computed: {
-    ...mapState(AppInfoStore, ["themeColor"]),
-    ...mapState(SystemInfoStore, ["uWindowHeight"]),
+    ...mapState(useAppInfoStore, ["themeColor"]),
+    ...mapState(useSystemInfoStore, ["uWindowHeight"]),
 	},
 	methods: {
 		scroll(e) {

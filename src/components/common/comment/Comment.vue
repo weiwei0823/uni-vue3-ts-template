@@ -272,7 +272,7 @@ export default {
 		// this.listLatest();
 	},
 	computed: {
-		...mapState(AppInfoStore, ['themeColor']),
+		...mapState(useAppInfoStore, ['themeColor']),
 	},
 	methods: {
 		//用户主页

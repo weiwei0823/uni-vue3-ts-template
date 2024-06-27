@@ -66,7 +66,7 @@
 			this.winHeight = uni.getSystemInfoSync().windowHeight;
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor'])
+			...mapState(useAppInfoStore, ['themeColor'])
 		},
 		onLoad() {
 			let date = new Date();

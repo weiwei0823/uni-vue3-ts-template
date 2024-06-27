@@ -32,7 +32,7 @@
 
 <script>
 import { mapState } from 'pinia';
-import AppInfoStore from "@/store/modules/appInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
 export default {
     props: {
         zIndex: {
@@ -52,7 +52,7 @@ export default {
         }
     },
     computed: {
-      ...mapState(AppInfoStore, ['themeColor']),
+      ...mapState(useAppInfoStore, ['themeColor']),
         userInfo() {
             return this.$store.state.appInfoStore?.userInfo || {}
         },

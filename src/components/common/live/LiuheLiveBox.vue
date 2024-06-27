@@ -84,7 +84,7 @@
         },
 
         computed:{
-            ...mapState(AppInfoStore, ['themeColor']),
+            ...mapState(useAppInfoStore, ['themeColor']),
             liveStatus(){
                 if(!this.liveInfo) return this.LiuHeBoxStatus.unloading;
                 if(!this.liveInfo.isLive && (this.liveInfo.startLiveCountdown>0||this.liveInfo.endLiveCountdown<0)){

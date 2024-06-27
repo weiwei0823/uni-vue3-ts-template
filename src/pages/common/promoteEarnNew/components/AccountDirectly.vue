@@ -161,7 +161,7 @@
 			};
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 			url() {
 				return location.host
 			}

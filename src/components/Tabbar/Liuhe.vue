@@ -41,7 +41,7 @@ export default {
     sheetAnimation,
   },
   computed: {
-    ...mapState(AppInfoStore, ['themeColor']),
+    ...mapState(useAppInfoStore, ['themeColor']),
     bar() {
       return [
         {

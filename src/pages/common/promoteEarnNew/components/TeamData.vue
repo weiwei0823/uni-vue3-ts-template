@@ -162,7 +162,7 @@ export default {
 		};
 	},
 	computed: {
-		...mapState(AppInfoStore, ['themeColor']),
+		...mapState(useAppInfoStore, ['themeColor']),
 		zpageUIConfig() {
 			return this.$config.configUIMgr.z_page_loading['t1'];
 		}

@@ -5,7 +5,7 @@
 <script>
 import {mapState} from 'pinia';
 import Safari from './save/safari.vue';
-import AppInfoStore from "@/store/modules/appInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
 
 export default {
 		name: "SaveH5",
@@ -28,7 +28,7 @@ export default {
 			}
 		},
 		computed: {
-      ...mapState(AppInfoStore, ['themeColor', 'contantsConfigTypeMap']),
+      ...mapState(useAppInfoStore, ['themeColor', 'contantsConfigTypeMap']),
 		},
 		methods: {
 			broName() {

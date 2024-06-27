@@ -69,7 +69,7 @@ export default {
     Empty,
   },
   computed: {
-    ...mapState(AppInfoStore, ['themeColor']),
+    ...mapState(useAppInfoStore, ['themeColor']),
     count() {
       return this.records.reduce((total, item) => {
         return total + (item.type === 1 ? item.goldNum : -item.goldNum);

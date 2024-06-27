@@ -66,7 +66,7 @@
 
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 			color() {
 				return this.setColor ? this.setColor : this.useThemeColor ? this.themeColor.themeColor : this.fillColor;
 			}

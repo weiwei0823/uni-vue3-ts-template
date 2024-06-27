@@ -99,7 +99,7 @@ export default {
 		}
 	},
 	computed: {
-		...mapState(AppInfoStore, ['themeColor']),
+		...mapState(useAppInfoStore, ['themeColor']),
 	},
 	mounted() {
 		let configData = this.$config.getStorageSync(this.$config.enumMgr.APP_LOCALSTORE_KEYS.LOCAL_STORE_CONFIG)

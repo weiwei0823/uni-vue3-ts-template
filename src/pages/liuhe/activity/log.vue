@@ -74,8 +74,8 @@ import Playing from "../../../utils/common/playing";
 import {
 	mapGetters
 } from 'pinia';
-import AppInfoStore from "@/store/modules/appInfoStore";
-import SystemInfoStore from "@/store/modules/systemInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
 
 function getStartEndDaysAgo(daysAgo) {
 	var today = new Date(); // 获取当前日期和时间
@@ -114,8 +114,8 @@ export default {
 		AlertInjectLayer,
 	},
 	computed: {
-    ...mapState(AppInfoStore, ["themeColor"]),
-    ...mapState(SystemInfoStore, ["uWindowHeight"]),
+    ...mapState(useAppInfoStore, ["themeColor"]),
+    ...mapState(useSystemInfoStore, ["uWindowHeight"]),
 		zpageUIConfig() {
 			return this.$config.configUIMgr.z_page_loading['t1'];
 		},

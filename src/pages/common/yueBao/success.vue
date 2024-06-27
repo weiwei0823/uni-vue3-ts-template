@@ -29,7 +29,7 @@
 			oneInput
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 		},
 		data() {
 			return {

@@ -74,8 +74,8 @@
   import {
     mapGetters, mapState
   } from 'pinia';
-  import AppInfoStore from "@/store/modules/appInfoStore";
-  import SystemInfoStore from "@/store/modules/systemInfoStore";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		components: {
 			AlertInjectLayer,
@@ -169,12 +169,12 @@
 		},
 
 		computed: {
-      ...mapState(AppInfoStore, ["themeColor"]),
-      ...mapState(SystemInfoStore, ["uWindowHeight"]),
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useSystemInfoStore, ["uWindowHeight"]),
 			theme() {
 				return getApp().globalData.themeMap[this.$config.station]
 			},
-      ...mapState(AppInfoStore, ["webSiteConfig"]),
+      ...mapState(useAppInfoStore, ["webSiteConfig"]),
 			showReg() {
 				return this.webSiteConfig.website_register_phone_check === 1
 			},

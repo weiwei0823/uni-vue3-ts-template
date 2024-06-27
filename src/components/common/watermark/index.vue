@@ -49,7 +49,7 @@
 
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 			contantsConfigs() {
 				return this.$store?.state?.appInfoStore?.contantsConfigs || []
 			},

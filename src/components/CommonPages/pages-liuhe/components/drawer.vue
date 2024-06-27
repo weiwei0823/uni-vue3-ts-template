@@ -116,8 +116,8 @@ import {mapGetters, mapState} from 'pinia';
 import {logout} from "@/utils/common/index";
 import {limitstr} from "@/utils/function";
 import imageSvgUrl from '@/components/common/imageSvgUrl'
-import AppInfoStore from "@/store/modules/appInfoStore";
-import SystemInfoStore from "@/store/modules/systemInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
 
 export default {
 		components: {
@@ -269,8 +269,8 @@ export default {
 			// })
 		},
 		computed: {
-      ...mapState(AppInfoStore, ["themeColor", "userInfo"]),
-      ...mapState(SystemInfoStore, ["uWindowHeight"]),
+      ...mapState(useAppInfoStore, ["themeColor", "userInfo"]),
+      ...mapState(useSystemInfoStore, ["uWindowHeight"]),
 			theme() {
 				return getApp().globalData.themeMap[this.$config.station];
 			},

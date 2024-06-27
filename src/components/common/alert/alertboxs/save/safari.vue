@@ -40,7 +40,7 @@
 
 <script>
 	import {mapState} from 'pinia';
-  import AppInfoStore from "@/store/modules/appInfoStore";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		name: "Account",
 		props: {
@@ -64,7 +64,7 @@
 			}
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 			contantsConfigs() {
 				return this.$store?.state?.appInfoStore?.contantsConfigs || []
 			},

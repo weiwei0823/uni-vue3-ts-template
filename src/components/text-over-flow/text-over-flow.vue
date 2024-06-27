@@ -124,7 +124,7 @@
 			this.placeholder = "";
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 			// 全文本所占总行数
 			lines() {
 				if (!this.enableButton) {

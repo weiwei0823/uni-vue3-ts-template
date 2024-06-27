@@ -123,7 +123,7 @@
 			}, 600);
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 		},
 		methods: {
 			//返回

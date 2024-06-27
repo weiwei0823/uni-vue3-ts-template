@@ -205,7 +205,7 @@
 			if (dataType) this.dataType = parseInt(dataType)
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 			zpageUIConfig() {
 				return this.$config.configUIMgr.z_page_loading['t1'];
 			},

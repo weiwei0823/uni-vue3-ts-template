@@ -26,11 +26,11 @@
 
 <script>
 	import sheetAnimation from "../sheetAnimation/SheetAnimation"
-  import AppInfoStore from "@/store/modules/appInfoStore";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		name: "TabBar",
 		computed: {
-      ...mapState(AppInfoStore, ["themeColor", "contantsConfigTypeMap"]),
+      ...mapState(useAppInfoStore, ["themeColor", "contantsConfigTypeMap"]),
 
 			firstTabbarText() {
 				if (this.contantsConfigTypeMap && this.contantsConfigTypeMap[this.$config.enumMgr.CONTANTS_CONFIGS_ID

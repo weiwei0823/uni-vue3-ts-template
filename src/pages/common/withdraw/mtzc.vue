@@ -190,7 +190,7 @@ export default {
 		this.winHeight = uni.getSystemInfoSync().windowHeight;
 	},
 	computed: {
-		...mapState(AppInfoStore, ['themeColor']),
+		...mapState(useAppInfoStore, ['themeColor']),
 
 		dz() {
 			if (this.money != '') {

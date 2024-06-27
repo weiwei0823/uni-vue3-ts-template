@@ -15,13 +15,13 @@
 		courseImage,
 		courseVideo
 	} from '@/utils/ptp'
-  import AppInfoStore from "@/store/modules/appInfoStore";
-  import SystemInfoStore from "@/store/modules/systemInfoStore";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		components: {},
 		computed: {
-      ...mapState(AppInfoStore, ["themeColor"]),
-      ...mapState(SystemInfoStore, ["uWindowHeight"]),
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useSystemInfoStore, ["uWindowHeight"]),
 			imagePath() {
 				let course_id = this.$config.enumMgr.CONTANTS_CONFIGS_ID.COURSE_ID;
 				let info = this.$store.state.appInfoStore.contantsConfigTypeMap ? this.$store.state.appInfoStore

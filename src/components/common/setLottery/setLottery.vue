@@ -29,8 +29,8 @@
 	import {
 		lotteryTime
 	} from '../../../utils/lottery/index'
-  import AppInfoStore from "@/store/modules/appInfoStore";
-  import systemInfoStore from "@/store/modules/systemInfoStore";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "setLottery",
 		mounted() {
@@ -47,8 +47,8 @@
 			}
 		},
 		computed: {
-      ...mapState(AppInfoStore, ["themeColor"]),
-      ...mapState(systemInfoStore, ["uWindowHeight"]),
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useSystemInfoStore, ["uWindowHeight"]),
       sortLotteryTypeTabs(){
         let buildAr = [];
         for(let key in this.list){

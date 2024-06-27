@@ -87,7 +87,7 @@ import Empty from '@/components/common/empty/empty'
 import {clearUserNewlyPlay, gameCollect} from "@/utils/lottery/list";
 import {mapState} from 'pinia';
 import lazyImage from "@/components/lazy-image/index.vue";
-import AppInfoStore from "@/store/modules/appInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
 
 export default {
 		components: {
@@ -141,7 +141,7 @@ export default {
 			this.initDetailInfo();
 		},
 		computed: {
-      ...mapState(AppInfoStore, ["themeColor", "userInfo"]),
+      ...mapState(useAppInfoStore, ["themeColor", "userInfo"]),
 			isLogin() {
 				return !!this.userInfo;
 			}

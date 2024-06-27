@@ -16,7 +16,7 @@
 			value: Boolean
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 			theme() {
 				return getApp().globalData.themeMap[this.$config.station]
 			},

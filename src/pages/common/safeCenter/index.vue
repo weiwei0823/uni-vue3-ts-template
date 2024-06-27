@@ -172,7 +172,7 @@
 			this.$nativeBridge.setStatusBarColor('#BFE0FF')
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 		},
 		mounted() {
 			uni.$emit("on_page_mounted", this)

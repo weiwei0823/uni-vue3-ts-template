@@ -56,7 +56,7 @@
 			AlertInjectLayer
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 		},
 		mounted() {
 			uni.$emit("on_page_mounted", this)

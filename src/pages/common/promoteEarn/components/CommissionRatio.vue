@@ -88,7 +88,7 @@
 			Empty
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 			pageLoadingConfig() {
 				return this.$config.configUIMgr.page_loading_row['t1'];
 			}

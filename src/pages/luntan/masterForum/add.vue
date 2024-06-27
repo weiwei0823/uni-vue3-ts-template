@@ -168,8 +168,8 @@
   import {
     lotteryTime
   } from '@/utils/lottery/index'
-  import AppInfoStore from "@/store/modules/appInfoStore";
-  import SystemInfoStore from "@/store/modules/systemInfoStore";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "add",
 		components: {
@@ -258,8 +258,8 @@
 			}
 		},
 		computed: {
-      ...mapState(AppInfoStore, ["themeColor"]),
-      ...mapState(SystemInfoStore, ["uWindowHeight"]),
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useSystemInfoStore, ["uWindowHeight"]),
 		},
 		async onLoad(option) {
 			if (option.id) {

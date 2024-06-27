@@ -102,8 +102,8 @@
 		mapGetters
 	} from 'pinia';
 	import imageSvgUrl from '@/components/common/imageSvgUrl'
-  import AppInfoStore from "@/store/modules/appInfoStore";
-  import SystemInfoStore from "@/store/modules/systemInfoStore";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 
 		data() {
@@ -361,8 +361,8 @@
 			logo() {
 				return this.$store?.state?.appInfoStore?.contantsConfigs?.filter(item => item.type == '26')[0].url
 			},
-      ...mapState(AppInfoStore, ["themeColor"]),
-      ...mapState(SystemInfoStore, ["uWindowHeight"]),
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useSystemInfoStore, ["uWindowHeight"]),
 			theme() {
 				return getApp().globalData.themeMap[this.$config.station]
 			},

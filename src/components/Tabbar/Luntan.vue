@@ -21,7 +21,7 @@ export default {
 		},
 	},
 	computed: {
-		...mapState(AppInfoStore, ['themeColor']),
+		...mapState(useAppInfoStore, ['themeColor']),
 		barList() {
 			return [
 				{

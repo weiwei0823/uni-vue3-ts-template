@@ -45,8 +45,8 @@
 	import {
 		config
 	} from '@/config/config'
-  import AppInfoStore from "@/store/modules/appInfoStore";
-  import SystemInfoStore from "@/store/modules/systemInfoStore";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
   import useWebsocketStore from "@/store/modules/websocketStore";
 	export default {
 		props: {
@@ -61,7 +61,7 @@
 			}
 		},
 		computed: {
-      ...mapState(AppInfoStore, ["themeColor"]),
+      ...mapState(useAppInfoStore, ["themeColor"]),
       ...mapState(useWebsocketStore, ["debugWebsocketTimeInterval"]),
 		},
 		watch: {

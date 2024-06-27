@@ -14,8 +14,8 @@
 	} from "@/utils/lottery/betting";
   import {mapGetters, mapState} from 'pinia';
 	import defaultTemplate from '@/utils/defaultTemplate'
-  import AppInfoStore from "@/store/modules/appInfoStore";
-  import SystemInfoStore from "@/store/modules/systemInfoStore";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		components: {
 			Header,
@@ -28,7 +28,7 @@
 			};
 		},
 		computed: {
-      ...mapState(AppInfoStore, ["themeColor", "chatRoomUrl"]),
+      ...mapState(useAppInfoStore, ["themeColor", "chatRoomUrl"]),
 		},
 		mounted() {
 			uni.$emit("on_page_mounted", this)

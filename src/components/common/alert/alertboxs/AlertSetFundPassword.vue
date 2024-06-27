@@ -24,7 +24,7 @@
 
 <script>
 import {mapState} from 'pinia';
-import AppInfoStore from "@/store/modules/appInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		name: "Logout",
 		props: {
@@ -42,7 +42,7 @@ import AppInfoStore from "@/store/modules/appInfoStore";
 			}
 		},
 		computed: {
-      ...mapState(AppInfoStore, ['themeColor']),
+      ...mapState(useAppInfoStore, ['themeColor']),
 		},
 		methods: {
 			open(data, {

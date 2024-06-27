@@ -204,7 +204,7 @@
 			}
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor'])
+			...mapState(useAppInfoStore, ['themeColor'])
 		},
 		onLoad() {
 			let date = new Date();

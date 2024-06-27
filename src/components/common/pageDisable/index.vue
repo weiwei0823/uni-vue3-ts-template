@@ -28,7 +28,7 @@
 			headInfo: {}
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 
 		},
 		methods: {

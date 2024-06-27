@@ -199,7 +199,7 @@
 			uni.$emit("on_page_mounted", this)
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 			getText() {
 				if (this.detail.type == this.$t('pages.common.userCenter.accountLog.detail.Recharge')) {
 					if (this.detail.status == 1) {

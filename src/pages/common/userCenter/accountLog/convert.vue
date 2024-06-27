@@ -227,8 +227,8 @@
 	import {
 		mapGetters
 	} from 'pinia';
-  import AppInfoStore from "@/store/modules/appInfoStore";
-  import systemInfoStore from "@/store/modules/systemInfoStore";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "convert",
 		components: {
@@ -297,8 +297,8 @@
 			}
 		},
 		computed: {
-			...mapState(AppInfoStore, ["themeColor"]),
-      ...mapState(systemInfoStore, ["uWindowHeight"]),
+			...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useSystemInfoStore, ["uWindowHeight"]),
 			showTime() {
 				let start = new Date(this.startTime.replace(/\./g, '/'))
 				let end = new Date(this.endTime.replace(/\./g, '/'))

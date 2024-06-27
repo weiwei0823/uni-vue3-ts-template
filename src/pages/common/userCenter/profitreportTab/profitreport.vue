@@ -197,7 +197,7 @@ export default {
 
 	},
 	computed: {
-		...mapState(AppInfoStore, ['themeColor']),
+		...mapState(useAppInfoStore, ['themeColor']),
 		showTime() {
 			let start = new Date(this.startTime.replace(/\./g, '/'))
 			let end = new Date(this.endTime.replace(/\./g, '/'))

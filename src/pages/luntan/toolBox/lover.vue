@@ -140,7 +140,7 @@
 			this.winHeight = uni.getSystemInfoSync().windowHeight;
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 			startDate() {
 				return this.getDate('start');
 			},

@@ -39,7 +39,7 @@
 	import {
 		mapGetters
 	} from 'pinia';
-  import AppInfoStore from "@/store/modules/appInfoStore";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 
 	export default {
 		name: "Verify",
@@ -57,7 +57,7 @@
 			}
 		},
 		computed: {
-      ...mapState(AppInfoStore, ["themeColor", "webSiteConfig"]),
+      ...mapState(useAppInfoStore, ["themeColor", "webSiteConfig"]),
 		},
 		data() {
 			return {

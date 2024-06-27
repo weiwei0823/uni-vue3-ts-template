@@ -99,8 +99,8 @@ import {
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue";
 
 	import LHInput from '@/components/common/LHInput/index.vue';
-import AppInfoStore from "@/store/modules/appInfoStore";
-import SystemInfoStore from "@/store/modules/systemInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "Login",
 		components: {
@@ -109,8 +109,8 @@ import SystemInfoStore from "@/store/modules/systemInfoStore";
 			LHInput
 		},
 		computed: {
-      ...mapState(AppInfoStore, ["themeColor"]),
-      ...mapState(SystemInfoStore, ["uWindowHeight"]),
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useSystemInfoStore, ["uWindowHeight"]),
 			logoUrl() {
 				let configInfo = this.$store.state.appInfoStore.contantsConfigTypeMap['22'];
 				if (!configInfo) {

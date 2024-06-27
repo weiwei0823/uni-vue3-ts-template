@@ -49,7 +49,7 @@
 import { underOpenAccountUpdatePwd } from '@/utils/ptp'
 import { info } from '@/utils/user/index.js'
 import { mapGetters } from 'pinia';
-import AppInfoStore from "@/store/modules/appInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
 export default {
     name: "Account",
     props: {
@@ -99,7 +99,7 @@ export default {
         }
     },
     computed: {
-        ...mapState(AppInfoStore, ["openAlert"]),
+        ...mapState(useAppInfoStore, ["openAlert"]),
     },
     watch: {
         '$store.state.appInfoStore.userInfo.createType': {

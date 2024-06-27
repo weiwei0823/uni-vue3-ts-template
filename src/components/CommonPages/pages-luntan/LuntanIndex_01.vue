@@ -561,8 +561,8 @@ import {
 import { listLatest } from '@/utils/forum/index.js'
 import { concern } from '@/utils/user/index.js'
 import { config } from '@/config/config'
-import AppInfoStore from "@/store/modules/appInfoStore";
-import SystemInfoStore from "@/store/modules/systemInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
 
 export default {
   name: 'LuntanIndex01',
@@ -749,8 +749,8 @@ export default {
     }
   },
   computed: {
-    ...mapState(AppInfoStore, ["themeColor", "webSiteConfig"]),
-    ...mapState(SystemInfoStore, ["downloadShow"]),
+    ...mapState(useAppInfoStore, ["themeColor", "webSiteConfig"]),
+    ...mapState(useSystemInfoStore, ["downloadShow"]),
     onlineShow() {
       return this.webSiteConfig.website_online_switch === 1
     },

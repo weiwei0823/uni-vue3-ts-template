@@ -85,7 +85,7 @@
 			uni.$emit("on_page_mounted", this)
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 			disabled() {
 				return !this.money || this.money <= 0
 			}

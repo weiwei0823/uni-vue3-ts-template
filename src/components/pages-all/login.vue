@@ -89,8 +89,8 @@ import {
 import {
 	formartObjectToQueryString
 } from "@/utils/dataFormartter"
-import AppInfoStore from "@/store/modules/appInfoStore";
-import SystemInfoStore from "@/store/modules/systemInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
 
 export default {
 	components: {
@@ -146,8 +146,8 @@ export default {
 		followKeybordSetInputStyle(this.$refs.header);
 	},
 	computed: {
-    ...mapState(AppInfoStore, ["themeColor"]),
-    ...mapState(SystemInfoStore, ["uWindowHeight", "windowTop"]),
+    ...mapState(useAppInfoStore, ["themeColor"]),
+    ...mapState(useSystemInfoStore, ["uWindowHeight", "windowTop"]),
 		theme() {
 			return getApp().globalData.themeMap[this.$config.station]
 		},

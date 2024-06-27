@@ -151,7 +151,7 @@
 			this.consecutiveStat()
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 		},
 		methods: {
 			iconClick() {

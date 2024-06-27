@@ -23,7 +23,7 @@
 <script>
 import defaultTemplate from '../../../../utils/defaultTemplate'
 import { mapState } from 'pinia';
-import AppInfoStore from "@/store/modules/appInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
 
 export default {
     name: "Logout",
@@ -36,7 +36,7 @@ export default {
         }
     },
     computed: {
-      ...mapState(AppInfoStore, ['themeColor']),
+      ...mapState(useAppInfoStore, ['themeColor']),
     },
     data() {
         return {

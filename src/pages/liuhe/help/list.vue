@@ -55,8 +55,8 @@
 	import {
 		mapGetters
 	} from 'pinia';
-  import AppInfoStore from "@/store/modules/appInfoStore";
-  import SystemInfoStore from "@/store/modules/systemInfoStore";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		name: "index",
 		components: {
@@ -89,8 +89,8 @@
 			uni.$emit("on_page_mounted", this)
 		},
 		computed: {
-      ...mapState(AppInfoStore, ["themeColor"]),
-      ...mapState(SystemInfoStore, ["uWindowHeight"]),
+      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useSystemInfoStore, ["uWindowHeight"]),
 		},
 		onLoad(option) {
 			this.id = option.id;

@@ -208,8 +208,8 @@ import categoryOtherHot from './categoryOtherHot.vue';
 import {userNewlyPlay} from '@/utils/lottery/mine';
 import {style2GameCollectList} from '@/utils/lottery/list';
 import {mapGetters, mapState} from 'pinia';
-import AppInfoStore from "@/store/modules/appInfoStore";
-import SystemInfoStore from "@/store/modules/systemInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
 
 export default {
   props: {
@@ -299,8 +299,8 @@ export default {
     categoryOtherHot
   },
   computed: {
-    ...mapState(AppInfoStore, ["themeColor"]),
-    ...mapState(SystemInfoStore, ["uWindowHeight"]),
+    ...mapState(useAppInfoStore, ["themeColor"]),
+    ...mapState(useSystemInfoStore, ["uWindowHeight"]),
     //数据类型 热门 以及彩票 滚动容器似乎与其它游戏类型不一致 所以特殊处理
     isLockedHeight() {
       return true;

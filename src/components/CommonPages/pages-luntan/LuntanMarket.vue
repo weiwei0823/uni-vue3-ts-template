@@ -210,7 +210,7 @@
 			});
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 			componentTabBar() {
 				const nameMap = {
 					ALL: 'TabBarAll',

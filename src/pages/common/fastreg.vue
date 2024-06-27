@@ -83,8 +83,8 @@ import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue";
 
 import { fastRegister } from "@/utils/common/index";
 import {mapGetters, mapState} from 'pinia';
-import AppInfoStore from "@/store/modules/appInfoStore";
-import SystemInfoStore from "@/store/modules/systemInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
 export default {
   components: {
     AlertInjectLayer,
@@ -152,11 +152,11 @@ export default {
   },
 
   computed: {
-    ...mapState(AppInfoStore, ['themeColor']),
+    ...mapState(useAppInfoStore, ['themeColor']),
     theme() {
       return getApp().globalData.themeMap[this.$config.station];
     },
-    ...mapState(AppInfoStore, ["webSiteConfig"]),
+    ...mapState(useAppInfoStore, ["webSiteConfig"]),
     logo() {
       let contantLogoAndNameId =
         this.$config.enumMgr.CONTANTS_CONFIGS_ID.LOGO_HAD_NAME;

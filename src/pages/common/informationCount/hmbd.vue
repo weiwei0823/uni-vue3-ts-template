@@ -93,7 +93,7 @@
 			this.winHeight = uni.getSystemInfoSync().windowHeight;
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 		},
 		onLoad(option) {
 			// #ifdef APP-NVUE

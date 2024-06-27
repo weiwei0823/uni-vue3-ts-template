@@ -223,7 +223,7 @@
 			uni.$emit("on_page_mounted", this)
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 			title(){
 			return this.$config.configLotties.getLotteryTypePlantNameByLotteryTypeId(this.lotteryType) + this.$t('pages.luntan.find.index.Title')
 			},

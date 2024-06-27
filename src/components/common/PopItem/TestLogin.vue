@@ -32,7 +32,7 @@
 	export default {
 		name: "TestLogin",
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 		},
 		methods: {
 			handleChange({show}){

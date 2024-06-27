@@ -155,7 +155,7 @@
 				let shareUrl = btoa(this.agentDefaultRedirectAddress + "/pages/common/login")
 				return `?domain=${shareUrl}`
 			},
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 			qrcodeImg() {
 				let qrcodeKey = this.$config.enumMgr.CONTANTS_CONFIGS_ID
 					.QR_CODE;

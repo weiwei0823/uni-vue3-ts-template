@@ -56,7 +56,7 @@ export default {
     };
   },
   computed: {
-    ...mapState(AppInfoStore, ['themeColor']),
+    ...mapState(useAppInfoStore, ['themeColor']),
   },
   methods: {
     //投票

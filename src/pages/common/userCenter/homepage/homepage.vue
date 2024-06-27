@@ -178,8 +178,8 @@ import cusPreviewImg from '@/components/cus-previewImg/cus-previewImg.vue'
 import {
 	lotteryTime
 } from '@/utils/lottery/index'
-import AppInfoStore from "@/store/modules/appInfoStore";
-import SystemInfoStore from "@/store/modules/systemInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
 export default {
 	name: "homepage",
 	components: {
@@ -200,8 +200,8 @@ export default {
 		uni.$emit("on_page_mounted", this);
 	},
 	computed: {
-    ...mapState(AppInfoStore, ["themeColor"]),
-    ...mapState(SystemInfoStore, ["uWindowHeight"]),
+    ...mapState(useAppInfoStore, ["themeColor"]),
+    ...mapState(useSystemInfoStore, ["uWindowHeight"]),
 		searchTitle() {
 			console.log(this.activeType);
 			return this.activeType.label;

@@ -42,7 +42,7 @@
 			}
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 		},
 		onLoad(opt) {
 			this.betNum = opt.num

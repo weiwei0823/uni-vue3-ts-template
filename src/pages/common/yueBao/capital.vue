@@ -147,7 +147,7 @@
     mapGetters, mapState
   } from 'pinia';
   import useAppInfoStore from "@/store/modules/appInfoStore";
-  import SystemInfoStore from "@/store/modules/systemInfoStore";
+  import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		components: {
 			Header
@@ -157,7 +157,7 @@
 		},
 		computed: {
       ...mapState(useAppInfoStore, ["themeColor"]),
-      ...mapState(SystemInfoStore, ["uWindowHeight", "downloadShow"]),
+      ...mapState(useSystemInfoStore, ["uWindowHeight", "downloadShow"]),
 			zpageUIConfig() {
 				return this.$config.configUIMgr.z_page_loading['t1'];
 			},

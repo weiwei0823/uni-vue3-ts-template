@@ -97,7 +97,7 @@ export default {
 		}
 	},
 	computed: {
-		...mapState(AppInfoStore, ['themeColor']),
+		...mapState(useAppInfoStore, ['themeColor']),
 		userInfo() {
 			return this.$store.state.appInfoStore.userInfo
 		},

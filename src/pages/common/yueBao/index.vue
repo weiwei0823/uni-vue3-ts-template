@@ -121,7 +121,7 @@
 			uni.$emit("on_page_mounted", this)
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 		},
 		onShow() {
 			this.initData()

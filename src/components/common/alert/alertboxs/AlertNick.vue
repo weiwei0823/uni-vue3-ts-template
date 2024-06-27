@@ -20,7 +20,7 @@
 
 <script>
 import {mapState} from 'pinia';
-import AppInfoStore from "@/store/modules/appInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		props: {
 			zIndex: {
@@ -40,7 +40,7 @@ import AppInfoStore from "@/store/modules/appInfoStore";
 			}
 		},
 		computed: {
-      ...mapState(AppInfoStore, ['themeColor']),
+      ...mapState(useAppInfoStore, ['themeColor']),
 		},
 		watch: {
 			show(val) {

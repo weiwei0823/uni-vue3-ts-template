@@ -90,7 +90,7 @@ export default {
     this.getBankCardList();
   },
   computed: {
-    ...mapState(AppInfoStore, ['themeColor']),
+    ...mapState(useAppInfoStore, ['themeColor']),
   },
   methods: {
     async getBankCardList() {

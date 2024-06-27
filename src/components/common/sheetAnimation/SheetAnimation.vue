@@ -23,7 +23,7 @@ export default {
         },
 
         computed:{
-            ...mapState(AppInfoStore, ['themeColor']),
+            ...mapState(useAppInfoStore, ['themeColor']),
 
             sheetAnimatioStyles(){
                 let styles={

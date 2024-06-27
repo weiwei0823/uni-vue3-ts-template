@@ -211,7 +211,7 @@ import defaultTemplate from "@/utils/defaultTemplate";
 import { mapGetters } from 'pinia';
 import { details, sign, keepSignReceive } from "@/utils/user/gold.js";
 import { pop } from "../../../utils/common";
-import AppInfoStore from "@/store/modules/appInfoStore";
+import useAppInfoStore from "@/store/modules/appInfoStore";
 export default {
   components: {
     Header,
@@ -228,7 +228,7 @@ export default {
     };
   },
   computed: {
-    ...mapState(AppInfoStore, ['themeColor']),
+    ...mapState(useAppInfoStore, ['themeColor']),
     userInfo() {
       return this.$store.state.appInfoStore?.userInfo || {};
     },

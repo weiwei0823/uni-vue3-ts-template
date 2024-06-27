@@ -219,7 +219,7 @@
 			}
 		},
 		computed: {
-			...mapState(AppInfoStore, ['themeColor']),
+			...mapState(useAppInfoStore, ['themeColor']),
 			qrcodeAddress() {
 				let qrcodeKey = this.$config.enumMgr.CONTANTS_CONFIGS_ID
 					.QR_CODE;

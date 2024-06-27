@@ -1,6 +1,6 @@
 import playingStore from './modules/playIngStore'
 import websocketStore from './modules/websocketStore'
-import appInfoStore from './modules/appInfoStore'
+import useAppInfoStore from './modules/appInfoStore'
 import memObStore from './modules/memObStore'
 import lotteryStore from './modules/LotteryStore'
 import systemInfo from './modules/systemInfoStore'
