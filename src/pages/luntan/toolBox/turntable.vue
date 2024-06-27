@@ -87,70 +87,70 @@
 					[{
 							name: '马',
 							keys: 'ma',
-							img: '/static/img/toolbox/turntable/ma.png'
+							img: '@/static/img/toolbox/turntable/ma.png'
 						},
 						{
 							name: '猴',
 							keys: 'hou',
-							img: '/static/img/toolbox/turntable/hou.png'
+							img: '@/static/img/toolbox/turntable/hou.png'
 						},
 						{
 							name: '牛',
 							keys: 'niu',
-							img: '/static/img/toolbox/turntable/niu.png'
+							img: '@/static/img/toolbox/turntable/niu.png'
 						},
 						{
 							name: '鸡',
 							keys: 'ji',
-							img: '/static/img/toolbox/turntable/ji.png'
+							img: '@/static/img/toolbox/turntable/ji.png'
 						},
 					],
 					[{
 							name: '龙',
 							keys: 'long',
-							img: '/static/img/toolbox/turntable/long.png'
+							img: '@/static/img/toolbox/turntable/long.png'
 						},
 						{
 							name: '龙',
 							keys: 'long',
-							img: '/static/img/toolbox/turntable/long.png'
+							img: '@/static/img/toolbox/turntable/long.png'
 						},
 						{
 							name: '羊',
 							keys: 'yang',
-							img: '/static/img/toolbox/turntable/yang.png'
+							img: '@/static/img/toolbox/turntable/yang.png'
 						},
 					],
 					[{
 							name: '鼠',
 							keys: 'shu',
-							img: '/static/img/toolbox/turntable/shu.png'
+							img: '@/static/img/toolbox/turntable/shu.png'
 						},
 						{
 							name: '兔',
 							keys: 'tu',
-							img: '/static/img/toolbox/turntable/tu.png'
+							img: '@/static/img/toolbox/turntable/tu.png'
 						},
 					],
 					[{
 							name: '虎',
 							keys: 'hu',
-							img: '/static/img/toolbox/turntable/hu.png'
+							img: '@/static/img/toolbox/turntable/hu.png'
 						},
 						{
 							name: '蛇',
 							keys: 'she',
-							img: '/static/img/toolbox/turntable/she.png'
+							img: '@/static/img/toolbox/turntable/she.png'
 						},
 						{
 							name: '猪',
 							keys: 'zhu',
-							img: '/static/img/toolbox/turntable/zhu.png'
+							img: '@/static/img/toolbox/turntable/zhu.png'
 						},
 						{
 							name: '狗',
 							keys: 'gou',
-							img: '/static/img/toolbox/turntable/gou.png'
+							img: '@/static/img/toolbox/turntable/gou.png'
 						},
 					]
 				],
@@ -237,20 +237,20 @@
 		position: relative;
 		min-height: calc(var(--vh) - 96rpx);
 		box-sizing: border-box;
-		background-image: url('/static/img/toolbox/turntable/bg3.png');
+		background-image: url('@/static/img/toolbox/turntable/bg3.png');
 		background-size: 100% 100%;
 		padding: 28rpx 0;
 		border-radius: 24rpx 24rpx 0 0;
 
 		.title-box {
-			background: url('/static/img/toolbox/luck/luck-top-v1.png') no-repeat;
+			background: url('@/static/img/toolbox/luck/luck-top-v1.png') no-repeat;
 			background-size: 100% 100%;
 			margin: 0 28rpx;
 			height: 200rpx;
 		}
 
 		.content {
-			background-image: url('/static/img/toolbox/turntable/content-bg.png');
+			background-image: url('@/static/img/toolbox/turntable/content-bg.png');
 			background-size: 100% 100%;
 			width: 700rpx;
 			height: 1000rpx;

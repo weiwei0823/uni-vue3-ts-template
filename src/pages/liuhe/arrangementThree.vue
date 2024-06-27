@@ -1173,13 +1173,13 @@
 			setBoardStyle() {
 				if (this.lotteryId == 33) {
 					return {
-						backgroundImage: 'url("/static/img/liuhe/three/bg-3d.png")',
+						backgroundImage: 'url("@/static/img/liuhe/three/bg-3d.png")',
 						backgroundRepeat: 'no-repeat',
 						backgroundSize: '100% 100%'
 					}
 				} else {
 					return {
-						backgroundImage: 'url("/static/img/liuhe/three/bg.png")',
+						backgroundImage: 'url("@/static/img/liuhe/three/bg.png")',
 						backgroundRepeat: 'no-repeat',
 						backgroundSize: '100% 100%'
 					}

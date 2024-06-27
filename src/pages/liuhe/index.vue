@@ -74,14 +74,14 @@
 				<view class="notice-box">
 					<view class="notice">
 						<!-- <uni-icons type="sound" size="24" color="#1794FF"></uni-icons> -->
-						<image src="/static/img/liuhe/index/yinliang.png" style="width: 40rpx;
+						<image src="@/static/img/liuhe/index/yinliang.png" style="width: 40rpx;
 height: 34rpx;"></image>
 						<view class="text">
 							<u-notice-bar mode="horizontal" color="#1794FF" :list="noticeInfoTexts"
 								:volume-icon="false"></u-notice-bar>
 						</view>
 						<view class="kf" @click="goToUrl('/pages/common/userCenter/service/index')">
-							<image src="/static/img/liuhe/index/kefu.png"></image>
+							<image src="@/static/img/liuhe/index/kefu.png"></image>
 							<text class="text">客服</text>
 						</view>
 					</view>
@@ -150,18 +150,18 @@ height: 34rpx;"></image>
 
 						</view>
 						<topicon :startPostion="isHand ? 2 : 3" :iconWidth="110" :iconHeight="100"
-							iconPath="/static/img/top2.png" :marginBottom="0" :marginTop="50" :marginLeft="10"
+							iconPath="@/static/img/top2.png" :marginBottom="0" :marginTop="50" :marginLeft="10"
 							:marginRight="10" @tapIcon="top" v-show="isTopNav && category.styleType == 2"></topicon>
 						<!-- <view class="goTop" :class="{ left: isHand }" v-show="isTopNav && category.styleType == 2"
                             @click="top">
-                            <image src="/static/img/top.png"></image>
+                            <image src="@/static/img/top.png"></image>
                         </view> -->
 						<view class="loding" v-if="isLoadMore">
-							<image src="/static/img/liuhe/load.gif"></image>
+							<image src="@/static/img/liuhe/load.gif"></image>
 							<text class="text">正在加载更多数据...</text>
 						</view>
 
-						<empty img="/static/img/img_none_jl 1.png" size="400"
+						<empty img="@/static/img/img_none_jl 1.png" size="400"
 							style="height: fit-content;margin-top: 200rpx;" v-else-if="!isLoadMore && !data.length">
 						</empty>
 					</view>
@@ -284,31 +284,31 @@ height: 34rpx;"></image>
 				},
 				//菜单
 				menus: [{
-						icon: '/static/img/liuhe/index/cun.png',
+						icon: '@/static/img/liuhe/index/cun.png',
 						name: '充值',
 						islogin: true,
 						url: '/pages/common/pay/index'
 					},
 					{
-						icon: '/static/img/liuhe/index/qu.png',
+						icon: '@/static/img/liuhe/index/qu.png',
 						name: '提现',
 						islogin: true,
 						url: '/pages/common/withdraw/index'
 					},
 					{
-						icon: '/static/img/liuhe/index/dating.png',
+						icon: '@/static/img/liuhe/index/dating.png',
 						name: '游戏大厅',
 						islogin: false,
 						url: './list'
 					},
 					{
-						icon: '/static/img/liuhe/index/jilu.png',
+						icon: '@/static/img/liuhe/index/jilu.png',
 						name: '优惠',
 						islogin: false,
 						url: '/pages/liuhe/activity/index'
 					},
 					{
-						icon: '/static/img/liuhe/index/qianbao.png',
+						icon: '@/static/img/liuhe/index/qianbao.png',
 						name: '钱包',
 						islogin: true,
 						url: '/pages/common/userCenter/wallet/index'

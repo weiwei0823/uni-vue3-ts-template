@@ -12,7 +12,7 @@
               <u-count-to class="balance" :decimals="2" :start-val="0" :end-val="balance" v-if="!loading"></u-count-to>
               <u-loading :show="loading" size="24"></u-loading>
             </view>
-            <image class="refshs" :class="{ run: loading }" src="/static/img/user/wallet/refsh.png" @click="getInit()">
+            <image class="refshs" :class="{ run: loading }" src="@/static/img/user/wallet/refsh.png" @click="getInit()">
             </image>
           </view>
           <view class="tip">仅可拉回整数余额</view>
@@ -41,7 +41,7 @@
 
           <Empty v-if="!loading && !list.length" />
           <view class="loding" v-if="loading">
-            <image src="/static/img/liuhe/load.gif"></image>
+            <image src="@/static/img/liuhe/load.gif"></image>
             <text class="text">加载中...</text>
           </view>
           <view class="list" v-else>
@@ -50,7 +50,7 @@
                 <image class="img" :src="item.logo"></image>
                 <view class="name">{{ item.platformName }}</view>
                 <image class="img" :class="{ run: curr === item.platformId || currAll }"
-                  src="/static/img/user/wallet/refshs.png" @click="rollInBack(item)"></image>
+                  src="@/static/img/user/wallet/refshs.png" @click="rollInBack(item)"></image>
               </view>
               <view class="divider"></view>
               <view class="tip" :class="{ tip1: item.text === '已回收' }">{{ item.text }}</view>

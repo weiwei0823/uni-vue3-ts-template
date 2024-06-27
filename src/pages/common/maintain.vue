@@ -1,7 +1,7 @@
 <template>
 	<view class="maintain-page">
 		<view class="maintain-content">
-			<image src="/static/img/common/maintain/maintain.png" mode="widthFix"></image>
+			<image src="@/static/img/common/maintain/maintain.png" mode="widthFix"></image>
 			<view class="title">
 				系统正在维护...
 			</view>

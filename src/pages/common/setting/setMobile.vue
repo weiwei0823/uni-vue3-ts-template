@@ -8,7 +8,7 @@
 						<template #itemImg="item">
 							<view class="item-img">
 								<image class="img" v-if="item.value === rangeValue"
-									src="/static/imgs-liuhe/activity/item-selected.png">
+									src="@/static/imgs-liuhe/activity/item-selected.png">
 								</image>
 							</view>
 						</template>
@@ -18,7 +18,7 @@
 					:placeholder="$t('common.setting.setMobile.mobilePlaceholder')" />
 			</view>
 			<view class="code-box">
-				<image class="security" src="/static/img/liuhe/setting/security.png"></image>
+				<image class="security" src="@/static/img/liuhe/setting/security.png"></image>
 				<input class="uni-input" placeholder-style="color: #C9C9C9;" v-model="formData.code"
 					:placeholder="$t('common.setting.setMobile.codePlaceholder')" />
 				<view class="getCode" v-show="!isSend" @click="getCode">{{ codeText }}</view>

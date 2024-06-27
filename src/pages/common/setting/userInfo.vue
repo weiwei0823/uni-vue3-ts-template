@@ -121,7 +121,7 @@
 
 			<!-- <view class="list-item">
 				<view class="left">
-					<filterIcon src="/static/img/liuhe/setting/lock stroke.png" :width="44" :height="44" />
+					<filterIcon src="@/static/img/liuhe/setting/lock stroke.png" :width="44" :height="44" />
 					<view class="title">{{$t("common.setting.userInfo.list10")}} </view>
 				</view>
 				<view class="right" @click="toUrl('/pages/common/userCenter/pwd/update_pwd')"
@@ -137,7 +137,7 @@
 
 			<!-- <view class="list-item">
 				<view class="left">
-					<filterIcon src="/static/img/liuhe/setting/finger lock.png" :width="44" :height="44" />
+					<filterIcon src="@/static/img/liuhe/setting/finger lock.png" :width="44" :height="44" />
 					<view class="title">{{$t("common.setting.userInfo.list12")}}</view>
 				</view>
 				<view class="right" @click="updateSafe">
@@ -148,7 +148,7 @@
 
 			<!-- <view class="list-item" style="border:none">
 				<view class="left">
-					<filterIcon src="/static/img/liuhe/setting/device lock.png" :width="44" :height="44" />
+					<filterIcon src="@/static/img/liuhe/setting/device lock.png" :width="44" :height="44" />
 					<view class="title">{{$t("common.setting.userInfo.list13")}}</view>
 				</view>
 				<view class="right" @click="updateSafe">

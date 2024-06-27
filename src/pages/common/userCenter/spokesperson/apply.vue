@@ -75,8 +75,8 @@ export default {
 			safeHeight: this.$config.getStorageSync(this.$config.enumMgr.APP_LOCALSTORE_KEYS.SYSTEM_INFO).safeArea
 				.top + "px",
 			title: this.$t('pages.common.userCenter.spokesperson.text3'),
-			src1: "/static/img/user/sqdyr-title.png",
-			src2: "/static/img/user/sqdyr.png",
+			src1: "@/static/img/user/sqdyr-title.png",
+			src2: "@/static/img/user/sqdyr.png",
 			applyConditionList: [],
 			isApp: false
 		}
@@ -233,7 +233,7 @@ export default {
 		box-sizing: border-box;
 
 		.new-sub-btn {
-			background-image: url("/static/img/user/yqhybtn.png");
+			background-image: url("@/static/img/user/yqhybtn.png");
 			background-size: 100% 100%;
 			height: 116rpx;
 			line-height: 116rpx;

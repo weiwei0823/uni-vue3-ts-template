@@ -18,7 +18,7 @@ export default {
     img: {
       type: String,
       default: () => {
-        return '/static/imgs-liuhe/activity/empty.png'
+        return '@/static/imgs-liuhe/activity/empty.png'
       }
     },
     size: {

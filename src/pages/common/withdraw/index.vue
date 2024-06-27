@@ -17,7 +17,7 @@
 			:style="{ height: `calc(${winHeight}px - 88rpx)`, marginTop: '20rpx', borderTopLeftRadius: '24rpx', borderTopRightRadius: '24rpx' }"
 			:enhanced="true" :bounces="false" :show-scrollbar="false">
 			<view v-show="current === '1'" v-if="bankList.length" class="bank-row" @click="onClick()">
-				<image class="image" :src="info.logoMobile || '/static/img/user/bank/usdt.png'" mode="widthFix">
+				<image class="image" :src="info.logoMobile || '@/static/img/user/bank/usdt.png'" mode="widthFix">
 				</image>
 				<view class="center">
 					{{ info.bankName }}
@@ -36,7 +36,7 @@
 			</view>
       <view v-else class="bank-row"  @click="toPage('/pages/common/userCenter/bank/index')">
         <view class="center center-add">
-          <imageSvgUrl style="margin-right:20rpx;" url="/static/img/user/bank/svgs/1.svg" :width="48"
+          <imageSvgUrl style="margin-right:20rpx;" url="@/static/img/user/bank/svgs/1.svg" :width="48"
                         :height="48" replaceThemeTargetColor="#07C160" />
           <view class="center-add-txt">{{ $t('pages.common.withdraw.index.WithdrawAmountAdd') }}</view>
         </view>
@@ -93,7 +93,7 @@
 						<template #default="option">
 							<view class="way-item">
 								<view class="left">
-									<image class="logo" :src="option.logoMobile || '/static/img/user/bank/usdt.png'">
+									<image class="logo" :src="option.logoMobile || '@/static/img/user/bank/usdt.png'">
 									</image>
 									<view class="groupName">{{ option.type === 1 ? '银行卡' : option.type ===
 										3 ? option.bankName.split('-')[0] : option.bankName }}</view>
@@ -272,7 +272,7 @@
 			<view class="bank-title">收款卡选择</view>
 			<view class="bank-list">
 				<view class="item" v-for="item in BankList2" @click="handleChangeBank(item)">
-					<image class="image" :src="item.logoPc || '/static/img/user/bank/usdt.png'" mode="widthFix"></image>
+					<image class="image" :src="item.logoPc || '@/static/img/user/bank/usdt.png'" mode="widthFix"></image>
 					<view class="right">
 						<view class="card-title">{{ item.bankName + ' ' + item.realName }}</view>
 						<view class="card-id">
@@ -1020,7 +1020,7 @@
 			font-size: 28rpx;
 
 			.ratio {
-				background: url('/static/img/index/Vector.png');
+				background: url('@/static/img/index/Vector.png');
 				color: #fff;
 				background-size: 100% 100%;
 				padding: 4rpx 10rpx 4rpx 16rpx;

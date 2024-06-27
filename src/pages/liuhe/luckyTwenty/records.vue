@@ -35,7 +35,7 @@
 
 				</view>
 				<view class="top-btn" @click="top" v-show="isShowRecords">
-					<image src="/static/img/top.png"></image>
+					<image src="@/static/img/top.png"></image>
 				</view>
 			</view>
 		</scroll-view>

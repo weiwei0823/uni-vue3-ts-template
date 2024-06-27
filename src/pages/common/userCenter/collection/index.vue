@@ -120,8 +120,8 @@
 					// {
 					//   label: this.$t('pages.common.userCenter.index.collection.worldCup'),
 					//   name: "zc",
-					//   url: "/static/img/user/collection/collection-zq.gif",
-					//   active: "/static/img/user/collection/collection-zq2.gif",
+					//   url: "@/static/img/user/collection/collection-zq.gif",
+					//   active: "@/static/img/user/collection/collection-zq2.gif",
 					// },
 				],
         typeArrConfig:[
@@ -226,15 +226,15 @@
         }
         switch (type) {
 					case 1:
-						return "/static/img/menu/2.png"
+						return "@/static/img/menu/2.png"
 					case 2:
-						return "/static/img/menu/1.png"
+						return "@/static/img/menu/1.png"
 					case 3:
-						return "/static/img/menu/3.png"
+						return "@/static/img/menu/3.png"
 					case 4:
-						return "/static/img/menu/4.png"
+						return "@/static/img/menu/4.png"
           case 5:
-            return "/static/img/menu/5.png"
+            return "@/static/img/menu/5.png"
 				}
 			},
 			getClass(type) {

@@ -1,6 +1,6 @@
 <template>
 	<view class="notice" :class="['theme-' + themeColor.name]">
-		<filterIcon src="/static/imgs-liuhe/index_02/blue/speaker.png" :width="48" :height="48" />
+		<filterIcon src="@/static/imgs-liuhe/index_02/blue/speaker.png" :width="48" :height="48" />
 		<view class="notice-bar">
 			<u-notice-bar mode="horizontal" color="#A1A1A1" :list="list" :volume-icon="false"></u-notice-bar>
 		</view>

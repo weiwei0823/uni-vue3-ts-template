@@ -104,7 +104,7 @@
 							<uni-search-bar placeholder-style="color:#A1A1A1;" v-model="searchValue" :placeholder="searchTitle"
 								bgColor="#fff" cancelButton="always" :cancelText="$t('pages.common.userCenter.homepage.search')"
 								@confirm="search" @cancel="search" @clear="clear">
-								<image slot="searchIcon" class="search-icon" src="/static/img/common/userCenter/search.png" mode="">
+								<image slot="searchIcon" class="search-icon" src="@/static/img/common/userCenter/search.png" mode="">
 								</image>
 
 							</uni-search-bar>
@@ -116,7 +116,7 @@
 		<LuntanLoading class="loading" :style="{ top: `calc(${otherHeight}px + 300rpx)` }" v-if="loading" />
 		<z-paging class="paging" :style="{ height: getHeight }" ref="paging" v-model="dataList" @query="listLatest"
 			:refresher-enabled="false" :hide-empty-view="false" :empty-view-center="true"
-			:empty-view-text="$t('pages.luntan.masterForum.noData')" :empty-view-img="'/static/imgs-liuhe/activity/empty.png'"
+			:empty-view-text="$t('pages.luntan.masterForum.noData')" :empty-view-img="'@/static/imgs-liuhe/activity/empty.png'"
 			:fixed="false" :empty-view-img-style="{ 'width': '398rpx', 'height': '398rpx' }"
 			:empty-view-title-style="{ 'color': ' #d8d8d8', 'font-size': '32rpx', 'line-height': '44rpx', 'margin-top': '0rpx' }">
 			<view class="list-bd" v-if="!loading">
@@ -259,23 +259,23 @@ export default {
 				lotteryType: 0,
 			},
 			findTypeList: [{
-				img: "/static/img/menu/1.png",
-				act: "/static/img/menu/act-1.png",
+				img: "@/static/img/menu/1.png",
+				act: "@/static/img/menu/act-1.png",
 				name: this.$t('pages.common.userCenter.homepage.australia'),
 			},
 			{
-				img: "/static/img/menu/2.png",
-				act: "/static/img/menu/act-2.png",
+				img: "@/static/img/menu/2.png",
+				act: "@/static/img/menu/act-2.png",
 				name: this.$t('pages.common.userCenter.homepage.hongkong'),
 			},
 			{
-				img: "/static/img/menu/3.png",
-				act: "/static/img/menu/act-3.png",
+				img: "@/static/img/menu/3.png",
+				act: "@/static/img/menu/act-3.png",
 				name: this.$t('pages.common.userCenter.homepage.taiwan'),
 			},
 			{
-				img: "/static/img/menu/4.png",
-				act: "/static/img/menu/act-4.png",
+				img: "@/static/img/menu/4.png",
+				act: "@/static/img/menu/act-4.png",
 				name: this.$t('pages.common.userCenter.homepage.new'),
 			},
 			],

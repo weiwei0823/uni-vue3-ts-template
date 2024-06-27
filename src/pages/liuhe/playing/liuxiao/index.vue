@@ -12,7 +12,7 @@
 
 				<view class="type-name">
 					{{currentName}}
-					<image src="./@/static/img/liuhe/desc.png" @click="showRule" />
+					<image src="@/static/img/liuhe/desc.png" @click="showRule" />
 					<rules-dialog ref="rules" :example-str="exampleStr" :help-str="helpStr"
 						:tips-str="tipsStr"></rules-dialog>
 				</view>

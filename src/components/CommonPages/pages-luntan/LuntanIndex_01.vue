@@ -67,7 +67,7 @@
           </uni-swiper-dot>
           <view class="noticeBlock">
             <view class="notice_list">
-              <!-- <filterIcon src="/static/imgs-liuhe/index_02/blue/speaker.png" :width="48" :height="48" /> -->
+              <!-- <filterIcon src="@/static/imgs-liuhe/index_02/blue/speaker.png" :width="48" :height="48" /> -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -369,13 +369,13 @@
                   <view class="van-col">
                     <img
                       v-if="item.thumbUpCount > 0"
-                      src="/static/img/zan-fill.png"
+                      src="@/static/img/zan-fill.png"
                       alt=""
                       class="zan-img"
                     />
                     <img
                       v-else
-                      src="/static/img/zan-stroke.png"
+                      src="@/static/img/zan-stroke.png"
                       alt=""
                       class="zan-img"
                     />
@@ -387,13 +387,13 @@
                     <img
                       v-if="item.clickCount > 0"
                       style="width: 30rpx; height: 30rpx"
-                      src="/static/img/opened eye2.png"
+                      src="@/static/img/opened eye2.png"
                       alt=""
                     />
                     <img
                       v-else
                       style="width: 30rpx; height: 30rpx"
-                      src="/static/img/closed eye.png"
+                      src="@/static/img/closed eye.png"
                       alt=""
                     />
                     <span class="num">
@@ -596,7 +596,7 @@ export default {
       }px`,
       current: 0,
       scrollTop: 0,
-      loadingImg: '/static/img/zw.png',
+      loadingImg: '@/static/img/zw.png',
       title: this.$t('components.luntan.index.sixGallery'),
       swiperHeight: 180,
       old: {
@@ -624,7 +624,7 @@ export default {
       menulist: [
         [
           {
-            icon: '/static/img/index/kaijiangxianchang.svg',
+            icon: '@/static/img/index/kaijiangxianchang.svg',
             text: this.$t(
               'components.CommonPages.pages-luntan.LuntanIndex_02.liveDraw'
             ),
@@ -637,7 +637,7 @@ export default {
             type: 1
           },
           {
-            icon: '/static/img/index/jiaoliudating.svg',
+            icon: '@/static/img/index/jiaoliudating.svg',
             text: this.$t(
               'components.CommonPages.pages-luntan.LuntanIndex_02.masterForum'
             ),
@@ -645,7 +645,7 @@ export default {
             type: 1
           },
           {
-            icon: '/static/img/index/ziliaodaquan.svg',
+            icon: '@/static/img/index/ziliaodaquan.svg',
             text: this.$t(
               'components.CommonPages.pages-luntan.LuntanIndex_02.dataCollection'
             ),
@@ -653,7 +653,7 @@ export default {
             type: 1
           },
           {
-            icon: '/static/img/index/chaxunzhushou.svg',
+            icon: '@/static/img/index/chaxunzhushou.svg',
             text: this.$t(
               'components.CommonPages.pages-luntan.LuntanIndex_02.queryAssistant'
             ),
@@ -663,7 +663,7 @@ export default {
         ],
         [
           {
-            icon: '/static/img/index/ymjc.svg',
+            icon: '@/static/img/index/ymjc.svg',
             text: this.$t(
               'components.CommonPages.pages-luntan.LuntanIndex_02.humorousGuess'
             ),
@@ -671,7 +671,7 @@ export default {
             type: 1
           },
           {
-            icon: '/static/img/index/liuhetuku.svg',
+            icon: '@/static/img/index/liuhetuku.svg',
             text: this.$t(
               'components.CommonPages.pages-luntan.LuntanIndex_02.sixGallery'
             ),
@@ -679,7 +679,7 @@ export default {
             type: 1
           },
           {
-            icon: '/static/img/index/zixuntongji.svg',
+            icon: '@/static/img/index/zixuntongji.svg',
             text: this.$t(
               'components.CommonPages.pages-luntan.LuntanIndex_02.infoStats'
             ),
@@ -687,7 +687,7 @@ export default {
             type: 1
           },
           {
-            icon: '/static/img/index/gongjubaoxiang.svg',
+            icon: '@/static/img/index/gongjubaoxiang.svg',
             text: this.$t(
               'components.CommonPages.pages-luntan.LuntanIndex_02.toolbox'
             ),

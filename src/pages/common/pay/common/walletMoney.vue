@@ -393,7 +393,7 @@ export default {
 					background: #FFFFFF;
 					border: 1px solid var(--theme-color);
 					position: relative;
-					background: url('/static/imgs-liuhe/activity/selected.png') no-repeat;
+					background: url('@/static/imgs-liuhe/activity/selected.png') no-repeat;
 					background-size: 62rpx 62rpx;
 					background-position: right bottom;
 				}
@@ -402,7 +402,7 @@ export default {
 					background: #FFFFFF;
 					border: 1px solid var(--theme-color);
 					position: relative;
-					background: url('/static/imgs-liuhe/activity/selected-blue.png') no-repeat;
+					background: url('@/static/imgs-liuhe/activity/selected-blue.png') no-repeat;
 					background-size: 62rpx 62rpx;
 					background-position: right bottom;
 				}

@@ -1,22 +1,21 @@
-import { defineStore } from 'pinia'
-import { config } from '@/config/config'
-import { showUserBalance, getChatRoomInfoByTab } from '@/utils/lottery/betting'
+import {defineStore} from 'pinia'
+import useLotteryStore from './LotteryStore'
+import {config} from '@/config/config'
+import {getChatRoomInfoByTab, showUserBalance} from '@/utils/lottery/betting'
 import defaultTemplate from '@/utils/defaultTemplate'
-
-import {
-  demoLogin as apiDemoLogin,
-  doBindUserDeviceToken
-} from '@/utils/common/index'
-import { info } from '@/utils/user/index.js'
-import { configs } from '@/utils/common/index.js'
+import {demoLogin as apiDemoLogin, doBindUserDeviceToken} from '@/utils/common/index'
+import {info} from '@/utils/user/index.js'
+import {configs} from '@/utils/common/index.js'
 import language from '@/config/models/configLanguage.js'
-import { vipSpeed } from '@/utils/user/vip'
-import { formatterColor } from '@/utils/common/theme.js'
+import {vipSpeed} from '@/utils/user/vip'
+import {formatterColor} from '@/utils/common/theme.js'
 import coreUtils from '@/utils/core/index'
-import { detailInfo } from '@/utils/lottery/mine'
+import {detailInfo} from '@/utils/lottery/mine'
+import useSystemInfoStore from "@/store/modules/systemInfoStore";
+import global from 'global'
 
-const AppInfoStore = defineStore('AppInfo', {
-  state: {
+const useAppInfoStore = defineStore('AppInfo', {
+  state: () => ({
     configs: null,
     chatRoomUrl: '',
     chatRoomLastSync: 0,
@@ -71,26 +70,18 @@ const AppInfoStore = defineStore('AppInfo', {
     openLottery: {},
     openLiveLotteryMsg: {},
     openGameIntercept: true
-  },
+  }),
   getters: {
-    openGameIntercept: (state) => state.openGameIntercept,
-    openLottery: (state) => state.openLottery,
-    configs: (state) => state.configs,
-    chatRoomUrl: (state) => state.chatRoomUrl,
-    userInfo: (state) => state.userInfo,
-    userHeadImageUrl: (state) =>
-      state.userInfo
-        ? state.userInfo.headImgUrl
-        : '/static/img/user/Frame21.png',
-    webSiteConfig: (state) => state.webSiteConfig,
-    themeColor: (state) => {
-      const defaultSkinId = state.webSiteConfig?.skin_setting
-      let userSetId = state.userSetSkinId
+    userHeadImageUrl: () =>
+       this.userInfo ? this.userInfo.headImgUrl : '@/static/img/user/Frame21.png',
+    themeColor: () => {
+      const defaultSkinId = this.webSiteConfig?.skin_setting
+      let userSetId = this.userSetSkinId
       if (userSetId === -1) {
         // 不同站点 域名不同 不需要按站点分开存储信息
         let userSaveKey = config.enumMgr.APP_LOCALSTORE_KEYS.MEM_USER_THEME_ID
         // 如果区分用户存储 则添加ID 区分存储键
-        if (config.saveThemeColorByUserId && state.userInfo)
+        if (config.saveThemeColorByUserId && this.userInfo)
           userSaveKey = `${userSaveKey}:${state.userInfo.id}`
         userSetId = uni.getStorageSync(userSaveKey)
         if ((!!userSetId || userSetId === 0) && !isNaN(userSetId)) {
@@ -108,47 +99,44 @@ const AppInfoStore = defineStore('AppInfo', {
       )
       // return formatterColor(defaultSkinId)
     },
-    language: (state) => {
+    language: () => {
       return uni.getLocale()
     },
-    openAlert: (state) => state.openAlert,
-    openLiveLotteryMsg: (state) => state.openLiveLotteryMsg,
-    contantsConfigTypeMap: (state) => state.contantsConfigTypeMap
   },
-  mutations: {
-    SET_OPEN_LOTTERY: (state, lotteryInfo) => {
-      const lotteryMsg = state.openLottery
-      state.openLottery = {}
+  actions: {
+    SET_OPEN_LOTTERY: (lotteryInfo) => {
+      const lotteryMsg = this.openLottery
+      this.openLottery = {}
       const keyName = 'type'
       lotteryMsg[keyName + lotteryInfo.lotteryType] = lotteryInfo
-      state.openLottery = lotteryMsg
+      this.openLottery = lotteryMsg
     },
-    SET_WEBSITE_CONFIG: (state, config) => (state.webSiteConfig = config),
-    SET_OPENLIVELOTTERYMSG: (state, livemsgs) => {
+    SET_WEBSITE_CONFIG: (config) => (this.webSiteConfig = config),
+    SET_OPENLIVELOTTERYMSG: (livemsgs) => {
       const mapOfLotteryType = {}
       if (livemsgs instanceof Array == false) return
       livemsgs.forEach((lotteryMsg) => {
         mapOfLotteryType[lotteryMsg.lotteryType] = lotteryMsg
       })
-      state.openLiveLotteryMsg = mapOfLotteryType
+      this.openLiveLotteryMsg = mapOfLotteryType
     },
-    SET_CONFIGS: (state, obj) => (state.configs = obj),
-    SET_CHAT_ROOM_URL: (state, url) => (state.chatRoomUrl = url),
-    SET_USERINFO: (state, userInfo) => (state.userInfo = userInfo),
-    SET_USERINFO_NULL: (state) => (state.userInfo = null),
+    SET_CONFIGS: (obj) => (this.configs = obj),
+    SET_CHAT_ROOM_URL: (url) => (this.chatRoomUrl = url),
+    SET_USERINFO: (userInfo) => (this.userInfo = userInfo),
+    SET_USERINFO_NULL: () => (this.userInfo = null),
     // 更新用户某个属性
-    SET_USERINFO_PROPERTY: (state, properties) => {
-      if (state.userInfo) {
-        const userInfoCopy = { ...state.userInfo }
+    SET_USERINFO_PROPERTY: (properties) => {
+      if (this.userInfo) {
+        const userInfoCopy = {...this.userInfo}
         const localStoreUserInfo = config.getStorageSync(
-          config.enumMgr.APP_LOCALSTORE_KEYS.LOCAL_STORE_USERINFO
+            config.enumMgr.APP_LOCALSTORE_KEYS.LOCAL_STORE_USERINFO
         )
         let rewriteLocalStore = false
         for (const property in properties) {
           userInfoCopy[property] = properties[property]
           if (
-            localStoreUserInfo &&
-            localStoreUserInfo[property] != properties[property]
+              localStoreUserInfo &&
+              localStoreUserInfo[property] != properties[property]
           ) {
             localStoreUserInfo[property] = properties[property]
             rewriteLocalStore = true
@@ -156,17 +144,17 @@ const AppInfoStore = defineStore('AppInfo', {
         }
         rewriteLocalStore && uni.setStorageSync('userInfo', localStoreUserInfo)
         // 使用备份重新赋值 避免Object形式更新扫描不到更新
-        state.userInfo = userInfoCopy
+        this.userInfo = userInfoCopy
       }
     },
-    SET_CONSTANTS_CONFIG: (state, constantsList) => {
-      state.contantsConfigs = constantsList
+    SET_CONSTANTS_CONFIG: (constantsList) => {
+      this.contantsConfigs = constantsList
       const map = {}
       for (const index in constantsList) {
         const constantItem = constantsList[index]
         map[constantItem.type] = constantItem
       }
-      state.contantsConfigTypeMap = map
+      this.contantsConfigTypeMap = map
     },
     /**
      * 设置用户当前皮肤配置id
@@ -174,53 +162,48 @@ const AppInfoStore = defineStore('AppInfo', {
      * @param id
      * @constructor
      */
-    SET_USER_THEME_ID: (state, id) => {
+    SET_USER_THEME_ID: (id) => {
       console.log(id)
       const numId = parseInt(id)
       if (isNaN(numId))
         return console.error('SET_USER_THEME_ID id is Not Number')
       let userSaveKey = config.enumMgr.APP_LOCALSTORE_KEYS.MEM_USER_THEME_ID
-      if (config.saveThemeColorByUserId && state.userInfo)
-        userSaveKey = `${userSaveKey}:${state.userInfo.id}`
+      if (config.saveThemeColorByUserId && this.userInfo)
+        userSaveKey = `${userSaveKey}:${this.userInfo.id}`
       uni.setStorageSync(userSaveKey, numId)
-      state.userSetSkinId = numId
+      this.userSetSkinId = numId
     },
-    SET_OPEN_ALERT: (state, config) => (state.openAlert = config)
-  },
-  actions: {
+    SET_OPEN_ALERT: (config) => (this.openAlert = config),
     // 调配到单个函数 在APP onLaunch 生命周期行数中调用 。
-    async appInfoStoreInit({ commit, dispatch, state }) {
-      dispatch('initConfig')
-      dispatch('initUserInfo')
-      dispatch('initWebSiteConfig')
-      dispatch('initLotteryStore')
-      dispatch('initUniSystemInfo')
+    async appInfoStoreInit() {
+      this.initConfig()
+      this.initUserInfo()
+      this.initWebSiteConfig()
+      const lotteryStore = useLotteryStore()
+      lotteryStore.initLotteryStore()
+      const systemInfoStore = useSystemInfoStore()
+      systemInfoStore.initUniSystemInfo()
     },
 
-    initConfig: ({ commit }, type) => {
-      commit('SET_CONFIGS', config)
-      // return new Promise((resolve => {
-      // 	// setTimeout(function() {
-      // 	// 	resolve(1);
-      // 	// }, 10000)
-      // }))
+    initConfig: (type) => {
+      this.SET_CONFIGS(config)
     },
     /**
      * 用户退出登录调用
      * @param commit
      */
-    userLoginOut: ({ commit, state }, from) => {
+    userLoginOut: (from) => {
       // MR 20231218 按照需求 暂时移除掉登出调用logout接口逻辑 。暂时不删除怕以后有新的需求逻辑点
       // doLogout({});
       setTimeout(() => {
         uni.removeStorageSync('token')
         uni.removeStorageSync('userInfo')
         uni.$emit('loginUpdate', {})
-        commit('SET_USERINFO_NULL')
+        this.SET_USERINFO_NULL()
       })
     },
 
-    initUserInfo: ({ commit, dispatch, state }) => {
+    initUserInfo: () => {
       const localStoreUserInfo = config.getStorageSync(
         config.enumMgr.APP_LOCALSTORE_KEYS.LOCAL_STORE_USERINFO
       )
@@ -228,24 +211,24 @@ const AppInfoStore = defineStore('AppInfo', {
       return new Promise(async (resolve) => {
         // 使用阻塞形式 后续可以扩展检测token是否已经失效问题
         if (localStoreUserInfo) {
-          await dispatch('updateUserInfo', localStoreUserInfo)
-          await dispatch('updateUserBalanceFromServer')
+          await this.updateUserInfo(localStoreUserInfo)
+          await this.updateUserBalanceFromServer()
           return resolve(true)
         }
         resolve(false)
       })
     },
 
-    initWebSiteConfig: ({ commit }) => {
+    initWebSiteConfig: () => {
       const _config = config.getStorageSync(
         config.enumMgr.APP_LOCALSTORE_KEYS.LOCAL_STORE_WEBSITECONFIG
       )
       if (_config) {
-        commit('SET_WEBSITE_CONFIG', _config)
+        this.SET_WEBSITE_CONFIG(_config)
       }
       const contantsConfigs = uni.getStorageSync('config')
       if (contantsConfigs && contantsConfigs instanceof Array) {
-        commit('SET_CONSTANTS_CONFIG', contantsConfigs)
+        this.SET_CONSTANTS_CONFIG(contantsConfigs)
       }
       return new Promise(async (resolve) => {
         let res = config.getStorageSync(
@@ -265,10 +248,9 @@ const AppInfoStore = defineStore('AppInfo', {
         )
         // @mrz 给home index页面发送config加载完成通知
         uni.$emit('on-homepage-freshbyconfig')
-
-        commit('SET_WEBSITE_CONFIG', webSiteConfig)
-        commit('SET_CONSTANTS_CONFIG', constants)
-        commit('SET_OPENLIVELOTTERYMSG', lotteryLiveConfigList)
+        this.SET_WEBSITE_CONFIG(webSiteConfig)
+        this.SET_CONSTANTS_CONFIG(constants)
+        this.SET_OPENLIVELOTTERYMSG(lotteryLiveConfigList)
         config.setStorageSync(
           config.enumMgr.APP_LOCALSTORE_KEYS.LOCAL_STORE_WEBSITECONFIG,
           webSiteConfig
@@ -296,18 +278,15 @@ const AppInfoStore = defineStore('AppInfo', {
      * @param commit
      * @param userInfo
      */
-    updateUserInfo({ commit, dispatch }, userInfo) {
+    updateUserInfo(userInfo) {
       if (!userInfo) {
         console.warn('appinfo store updateUserInfo input is null')
       }
 
-      commit(
-        'SET_USERINFO',
-        Object.assign(userInfo, {
+      this.SET_USERINFO(Object.assign(userInfo, {
           userBalance: 0
-        })
-      )
-      dispatch('initThemeConfig')
+      }))
+      this.initThemeConfig()
     },
     /**
      * 使用INFO 接口从服务端获取拉取用户新并且更新到localstore中
@@ -315,7 +294,7 @@ const AppInfoStore = defineStore('AppInfo', {
      * @param dispatch
      * @returns {Promise<any> | Promise|void}
      */
-    updateUserInfoFromServer({ commit, dispatch }) {
+    updateUserInfoFromServer() {
       if (this.userInfoInSync) return console.warn('userinfo is do freshing')
       this.userInfoInSync = true
       const that = this
@@ -381,7 +360,7 @@ const AppInfoStore = defineStore('AppInfo', {
                 config.enumMgr.APP_LOCALSTORE_KEYS.LOCAL_STORE_USERINFO
               )
               uni.$emit('loginUpdate', {})
-              commit('SET_USERINFO_NULL')
+              this.SET_USERINFO_NULL()
               return
             }
             config.setStorageSync(
@@ -389,8 +368,8 @@ const AppInfoStore = defineStore('AppInfo', {
               userInfo,
               true
             )
-            dispatch('updateUserInfo', userInfo)
-            dispatch('updateUserBalanceFromServer')
+            this.updateUserInfo(userInfo)
+            this.updateUserBalanceFromServer()
             resolve(userInfo)
           })
           .catch((err) => {
@@ -405,12 +384,12 @@ const AppInfoStore = defineStore('AppInfo', {
      * @param commit
      * @param propertiesMap
      */
-    updateUserInfoProperties({ commit }, propertiesMap) {
+    updateUserInfoProperties(propertiesMap) {
       if (!propertiesMap) {
         console.warn('appinfo store propertiesMap input is null')
         return
       }
-      commit('SET_USERINFO_PROPERTY', propertiesMap)
+      this.SET_USERINFO_PROPERTY(propertiesMap)
     },
     /**
      * 从接口更新用户剩余额度到内存中
@@ -419,7 +398,7 @@ const AppInfoStore = defineStore('AppInfo', {
      * @param state
      * @returns {Promise<any> | Promise}
      */
-    updateUserBalanceFromServer({ commit, dispatch, state }) {
+    updateUserBalanceFromServer() {
       return new Promise(async (resolve) => {
         const balanceResult = await showUserBalance()
         if (balanceResult.code == 200) {
@@ -439,7 +418,7 @@ const AppInfoStore = defineStore('AppInfo', {
             },
             balanceResult.result
           )
-          commit('SET_USERINFO_PROPERTY', {
+          this.SET_USERINFO_PROPERTY({
             userBalance: result.userBalance,
             gameLockBalance: result.gameLockBalance,
             yebAmount: result.yebAmount,
@@ -456,19 +435,19 @@ const AppInfoStore = defineStore('AppInfo', {
      * @param commit
      * @param moneyNum
      */
-    updateUserInfoBalance({ commit }, moneyNum) {
+    updateUserInfoBalance(moneyNum) {
       const formartNum = parseFloat(moneyNum)
       if (!isNaN(formartNum)) {
         return console.warn('updateUserInfoBalance userMoeny is null')
       }
 
-      commit('SET_USERINFO_PROPERTY', {
+      this.SET_USERINFO_PROPERTY({
         userBalance: moneyNum
       })
     },
 
-    async updateUserInfoLiuheVip({ commit, dispatch, state }) {
-      if (!state.userInfo)
+    async updateUserInfoLiuheVip() {
+      if (!this.userInfo)
         return console.warn('try to Update vip speed. but user dont login')
       const res = await vipSpeed()
       if (res.code == 200) {
@@ -485,7 +464,7 @@ const AppInfoStore = defineStore('AppInfo', {
           },
           res.result
         )
-        commit('SET_USERINFO_PROPERTY', {
+        this.SET_USERINFO_PROPERTY({
           liuheVipSpeedInfo: vipSpeedInfo
         })
       }
@@ -497,7 +476,7 @@ const AppInfoStore = defineStore('AppInfo', {
      * @param dispatch
      * @returns {Promise<Promise<*> | Promise>}
      */
-    async doUserLoginDemo({ commit, dispatch }) {
+    async doUserLoginDemo() {
       const sys = uni.getSystemInfoSync()
       const prams = {
         deviceId: sys.deviceId,
@@ -514,7 +493,7 @@ const AppInfoStore = defineStore('AppInfo', {
               config.enumMgr.APP_LOCALSTORE_KEYS.LOCAL_STORE_TOKEN,
               res.result.token
             )
-            dispatch('initUserInfo')
+            this.initUserInfo()
             resolve(true)
           } else {
             reject(res)
@@ -523,7 +502,7 @@ const AppInfoStore = defineStore('AppInfo', {
       })
     },
 
-    async doBindUserDeviceToken({ commit, state }, deviceToken) {
+    async doBindUserDeviceToken(deviceToken) {
       if (!deviceToken) return console.warn('deviceToken 为空')
       const systemInfo = uni.getSystemInfoSync()
       doBindUserDeviceToken({
@@ -535,16 +514,16 @@ const AppInfoStore = defineStore('AppInfo', {
       })
     },
 
-    initThemeConfig({ commit, dispatch, state }) {
+    initThemeConfig() {
       let userSaveKey = config.enumMgr.APP_LOCALSTORE_KEYS.MEM_USER_THEME_ID
-      if (state.userInfo) userSaveKey = `${userSaveKey}:${state.userInfo.id}`
+      if (this.userInfo) userSaveKey = `${userSaveKey}:${this.userInfo.id}`
       const userSetId = parseInt(uni.getStorageSync(userSaveKey))
-      if (!isNaN(userSetId)) state.userSetSkinId = userSetId
+      if (!isNaN(userSetId)) this.userSetSkinId = userSetId
     },
 
     // 获取充值金额 如果未充值 进入游戏时显示拦截提示
-    async initDetailInfo({ state }) {
-      if (!isLogin()) {
+    async initDetailInfo() {
+      if (!global.isLogin()) {
         return
       }
       let openGameIntercept = uni.getStorageSync('openGameIntercept')
@@ -554,18 +533,18 @@ const AppInfoStore = defineStore('AppInfo', {
       const res = await detailInfo()
       openGameIntercept = res?.result?.rechargeAmount <= 0
       uni.getStorageSync('openGameIntercept', openGameIntercept)
-      state.openGameIntercept = openGameIntercept
+      this.openGameIntercept = openGameIntercept
     },
 
-    async initOrGetChatRoomInfo({ state }) {
+    async initOrGetChatRoomInfo() {
       return new Promise(async (resolve) => {
         const nowtimestamp = Date.now()
         // 超过60秒换成内容失效
         if (
-          state.chatRoomUrl &&
-          nowtimestamp - state.chatRoomLastSync <= 60 * 1000
+            this.chatRoomUrl &&
+            nowtimestamp - this.chatRoomLastSync <= 60 * 1000
         ) {
-          resolve(state.chatRoomUrl)
+          resolve(this.chatRoomUrl)
           return
         }
         const ChatRoomInfo = await getChatRoomInfoByTab()
@@ -576,12 +555,12 @@ const AppInfoStore = defineStore('AppInfo', {
         const urlMap = { LIUHE: cpUrl, LUNTAN: ltUrl }
         const url = urlMap[config.station]
         // // 判断是否包含https或http的url
-        state.chatRoomUrl = url
-        state.chatRoomLastSync = nowtimestamp
+        this.chatRoomUrl = url
+        this.chatRoomLastSync = nowtimestamp
         resolve(url)
       })
     }
   }
 })
 
-export default AppInfoStore
+export default useAppInfoStore

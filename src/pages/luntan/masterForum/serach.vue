@@ -117,7 +117,7 @@
                     }}</span>
 									</view>
 									<view class="van-col">
-										<img style="width: 30rpx; height: 30rpx" src="/static/img/opened eye.png"
+										<img style="width: 30rpx; height: 30rpx" src="@/static/img/opened eye.png"
 											alt="" />
 										<span class="num">{{ item.clickCount | moneyFormat }}</span>
 									</view>

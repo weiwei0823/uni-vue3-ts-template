@@ -23,7 +23,7 @@
 		<z-paging v-show="!loading" class="z-paging" :height="`calc(var(--vh) - 100rpx)`" ref="paging"
 			v-model="dataList" @query="myConcern" :refresher-enabled="false" :hide-empty-view="false"
 			:empty-view-center="true" :empty-view-text="$t('pages.luntan.masterForum.noData')"
-			:hide-no-more-inside="true" :empty-view-img="'/static/imgs-liuhe/activity/empty.png'" :fixed="false"
+			:hide-no-more-inside="true" :empty-view-img="'@/static/imgs-liuhe/activity/empty.png'" :fixed="false"
 			:empty-view-img-style="{ 'width': '443rpx', 'height': '443rpx' }"
 			:empty-view-title-style="{ 'color': ' #D8D8D8', 'font-size': '32rpx', 'line-height': '44rpx', 'margin-top': '28rpx' }">
 			<view class="list-box" v-if="!loading">

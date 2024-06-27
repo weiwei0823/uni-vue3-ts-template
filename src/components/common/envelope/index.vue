@@ -3,7 +3,7 @@
   <view v-if="this.khurl.status===1">
 	  <view class="color-switch" @click="goURL" @touchstart="drag_start" @touchmove.prevent="drag_hmove"
 	    :style="{ top: isMove ? y + 'px' : '1160rpx', left: isMove ? x + 'px' : '580rpx' }">
-	    <image src="/static/img/redEnv.png" class="btn-img"></image>
+	    <image src="@/static/img/redEnv.png" class="btn-img"></image>
 	  </view>
   </view>
 </template>

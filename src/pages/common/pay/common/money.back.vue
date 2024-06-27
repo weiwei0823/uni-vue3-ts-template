@@ -5,12 +5,12 @@
 				:bg-color="headerStyle.backgroundColor" :font-color="fontColor" :title-style="titleStyle">
 				<block slot="left">
 					<view class="" @click="back">
-						<filterIcon src="/static/imgs-liuhe/activity/back.png" :width="24" :height="42" />
+						<filterIcon src="@/static/imgs-liuhe/activity/back.png" :width="24" :height="42" />
 					</view>
 					<!-- <image @click="back" :style="{
             width: '24rpx',
             height: '42rpx',
-          }" src="/static/imgs-liuhe/activity/back.png"></image> -->
+          }" src="@/static/imgs-liuhe/activity/back.png"></image> -->
 				</block>
 			</NavBar>
 			<view class="new-money-list" v-if="info.type == 4">
@@ -77,9 +77,9 @@
 				<view class="payConfirm-box">
 					<view class="close-img" @click="closePay">
 
-						<filterIcon src="/static/img/common/close.png" :width="80" :height="80" />
+						<filterIcon src="@/static/img/common/close.png" :width="80" :height="80" />
 					</view>
-					<image class="rocket-img" src="/static/img/common/rocket.png" mode=""></image>
+					<image class="rocket-img" src="@/static/img/common/rocket.png" mode=""></image>
 					<view class="payConfirm-box-title">
 						存款订单等待支付中...
 					</view>

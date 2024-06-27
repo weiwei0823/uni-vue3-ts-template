@@ -14,19 +14,19 @@ export default {
     t1: {
       'refresher-default-text': '继续下拉刷新',
       'show-refresher-update-time': false,
-      'refresher-pulling-img': '/static/img/loading_v1.gif',
+      'refresher-pulling-img': '@/static/img/loading_v1.gif',
       'refresher-pulling-text': '加载中..',
       'refresher-title-style': {
         color: '#D8D8D8'
       },
-      'refresher-refreshing-img': '/static/img/load.gif',
+      'refresher-refreshing-img': '@/static/img/load.gif',
       'refresher-img-style': {
         width: '120rpx',
         height: '80rpx',
         transform: 'rotate(0deg)'
       },
       'refresher-refreshing-text': '加载中..',
-      'loading-more-loading-icon-custom-image': '/static/img/loading_v1.gif',
+      'loading-more-loading-icon-custom-image': '@/static/img/loading_v1.gif',
       'loading-more-loading-icon-custom-style': {
         width: '120rpx',
         height: '80rpx'
@@ -46,7 +46,7 @@ export default {
   // 页面中其它零散的loading 样式 图标与字并排
   page_loading_row: {
     t1: {
-      img: '/static/img/loading_v1.gif',
+      img: '@/static/img/loading_v1.gif',
       img_style: {
         width: '100rpx',
         height: '65rpx',

@@ -4,7 +4,7 @@
 	<!-- <view class="collectionItem"> -->
 	<!-- v-for="item in data" -->
 	<view class="item" @click="detail(item)">
-		<image class="tuijian" src="/static/imgs-liuhe/index_02/categorys/item/tuijian.png" v-if="item.izHot">
+		<image class="tuijian" src="@/static/imgs-liuhe/index_02/categorys/item/tuijian.png" v-if="item.izHot">
 		</image>
 		<view class="logo">
 			<image mode="widthFix" class="img" :src="item.logo"></image>

@@ -4,9 +4,9 @@
 			<image class="image" mode="heightFix" :src="item.logo" @click.stop="detail(item)"></image>
 			<view class="name">{{ item.name }}</view>
 			<image v-if="isShow && item.collectStatus == 0" @click="collect(item)" class="collect"
-				src="/static/img/liuhe/list/nsc.png"></image>
+				src="@/static/img/liuhe/list/nsc.png"></image>
 			<image v-if="isShow && item.collectStatus == 1" @click="collect(item)" class="collect"
-				src="/static/img/liuhe/list/ysc.png"></image>
+				src="@/static/img/liuhe/list/ysc.png"></image>
 		</view>
 	</view>
 </template>

@@ -140,7 +140,7 @@
 			position: relative;
 			height: 1448rpx;
 			background: #fff;
-			background-image: url('/static/img/toolbox/luck/luck-bg.png');
+			background-image: url('@/static/img/toolbox/luck/luck-bg.png');
 			background-size: 100% 100%;
 
 			.luck-title {
@@ -155,7 +155,7 @@
 				position: relative;
 				width: 654rpx;
 				height: 164rpx;
-				background-image: url('/static/img/toolbox/luck/luck-top.svg');
+				background-image: url('@/static/img/toolbox/luck/luck-top.svg');
 				background-size: 100% 100%;
 				margin: 10rpx auto;
 				padding: 0 40rpx;

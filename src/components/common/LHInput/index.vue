@@ -10,9 +10,9 @@
 						@blur="handleBlur" @input="handleInput" />
 					<view class="" v-if="close && value && focus" style="margin-left:20rpx;line-height:0;"
 						@click="handleClose">
-						<filterIcon src="/static/img/all/lh-input/close.png" :width="30" :height="30" />
+						<filterIcon src="@/static/img/all/lh-input/close.png" :width="30" :height="30" />
 					</view>
-					<!-- <image  class="close" src="/static/img/all/lh-input/close.png"
+					<!-- <image  class="close" src="@/static/img/all/lh-input/close.png"
 						@click="handleClose">
 					</image> -->
 				</view>

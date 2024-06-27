@@ -1,6 +1,6 @@
 <template>
     <view class="websocket-error-alert" v-if="webSocketError!=1">
-<!--        <image  class="loading-image" src="/static/img/loading.gif"></image>-->
+<!--        <image  class="loading-image" src="@/static/img/loading.gif"></image>-->
         <text class="net-error-txt01">
            <span v-if="webSocketError==-1">网络异常</span>
            <span v-else>网络优化中</span>

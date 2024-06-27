@@ -11,7 +11,7 @@
 		<!--评论详情-->
 		<z-paging class="" :height="'85vh'" ref="paging" v-model="dataList" @query="listSecondComment"
 			:refresher-enabled="false" :hide-empty-view="false" :empty-view-center="true" :empty-view-text="'暂无数据'"
-			:hide-no-more-inside="false" :empty-view-img="'/static/img/wu.png'" :fixed="false"
+			:hide-no-more-inside="false" :empty-view-img="'@/static/img/wu.png'" :fixed="false"
 			:empty-view-style="{ 'margin-bottom': '170px' }"
 			:empty-view-img-style="{ 'width': '128rpx', 'height': '130rpx' }"
 			:empty-view-title-style="{ 'color': ' #a0a0a0', 'font-size': '32rpx', 'line-height': '44rpx', 'margin-top': '28rpx' }">

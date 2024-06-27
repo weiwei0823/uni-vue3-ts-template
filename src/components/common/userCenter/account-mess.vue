@@ -5,8 +5,8 @@
 			@change="handleChange">
 			<view class="dialog__content">
 				<view class="qrcode-top" @click="closeDialog">
-					<filterIcon src="/static/img/common/userCenter/close.png" :width="30" :height="30" />
-					<!-- <image @click="closeDialog" mode="widthFix" src="/static/img/common/userCenter/close.png" /> -->
+					<filterIcon src="@/static/img/common/userCenter/close.png" :width="30" :height="30" />
+					<!-- <image @click="closeDialog" mode="widthFix" src="@/static/img/common/userCenter/close.png" /> -->
 				</view>
 				<view id="qrcode">
 					<uqrcode size="200" sizeUnit="rpx" class="code" ref="uqrcode" canvas-id="qrcode"
@@ -43,7 +43,7 @@
 				<view class="header-left-mess">
 					<view class="header-left-mess-name" :class="userInfo.userType==='reality'?'':'topMargin'">
 						<view class="name">
-							<image src="/static/img/common/userCenter/level.png" mode=""></image>
+							<image src="@/static/img/common/userCenter/level.png" mode=""></image>
 							<view class="name-level">
 								<!--								{{userInfo.userLevel?userInfo.userLevel.toString().split(".")[0]:0}}级-->
 								{{userInfo.userLevelName?userInfo.userLevelName.toString():""}}
@@ -69,7 +69,7 @@
 			</view>
 			<view class="header-left" style="align-items: center;" v-else @click="toLogin">
 				<view class="header-left-avatar">
-					<image src="/static/img/common/userCenter/no-login.png" mode="" />
+					<image src="@/static/img/common/userCenter/no-login.png" mode="" />
 
 				</view>
 				<view class="no-login">
@@ -78,8 +78,8 @@
 				</view>
 			</view>
 			<view class="header-right" v-if="isOpreation">
-				<image src="/static/img/common/userCenter/qr_code.png" mode="" @click="openQrcode"></image>
-				<image src="/static/img/common/userCenter/setting.png" mode=""
+				<image src="@/static/img/common/userCenter/qr_code.png" mode="" @click="openQrcode"></image>
+				<image src="@/static/img/common/userCenter/setting.png" mode=""
 					@click="toUrl('/pages/common/setting/index')"></image>
 			</view>
 		</view>
@@ -491,7 +491,7 @@
 					position: absolute;
 					bottom: 0;
 					left: 0;
-					background: url("/static/img/common/userCenter/levelBack.png");
+					background: url("@/static/img/common/userCenter/levelBack.png");
 					background-size: 100% 100%;
 					background-repeat: no-repeat;
 					color: #FFF;

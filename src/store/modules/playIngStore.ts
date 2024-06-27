@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 
-const playingStore = defineStore('playing', {
-  state: {
+const usePlayingStore = defineStore('playing', {
+  state: () => ({
     orderList: [], //
     onlineNum: 0,
     inLotteryId: -1,
@@ -9,35 +9,29 @@ const playingStore = defineStore('playing', {
     inLotteryRebateInfosMap: {},
     inLotteryUserRabetaNum: 0,
     isHideUserRebetaNum: false
-  },
+  }),
   getters: {
-    orderList: (state) => state.orderList,
-    onlineNum: (state) => state.onlineNum,
-
     lotteryRabetaInfo(state) {
-      return state.inLotteryRebateInfosMap[state.inLotteryId]
+      return this.inLotteryRebateInfosMap[this.inLotteryId]
     },
-    inLotteryUserRabetaNum: (state) => state.inLotteryUserRabetaNum,
-    isHideUserRebetaNum: (state) => state.isHideUserRebetaNum
-  },
-  mutations: {
-    SET_ORDER_LIST: (state, obj) => (state.orderList = obj),
-    SET_TEMA_LIST: (state, obj) => (state.orderList.tema = obj),
-    SET_LIANMA_LIST: (state, obj) => (state.orderList.lianma = obj),
-    SET_ONLINE_NUM: (state, obj) => (state.onlineNum = obj),
-    SET_LOTTERY_IN_ID: (state, id) => (state.inLotteryId = id),
-    SET_ISHIDEUSERREBETANUM: (state, isHide) =>
-      (state.isHideUserRebetaNum = isHide)
+    inLotteryUserRabetaNum: (state) => this.inLotteryUserRabetaNum,
+    isHideUserRebetaNum: (state) => this.isHideUserRebetaNum
   },
   actions: {
-    setOrderList: ({ commit }, obj) => commit('SET_ORDER_LIST', obj),
-    setTemaList: ({ commit }, obj) => commit('SET_TEMA_LIST', obj),
-    setLianmaList: ({ commit }, obj) => commit('SET_LIANMA_LIST', obj),
-    setOnlineNum: ({ commit }, obj) => commit('SET_ONLINE_NUM', obj),
-    setLotteryRebateInfos: ({ state }, { id, rabateInfo }) => {
-      state.inLotteryRebateInfosMap[id] = rabateInfo
-      state.inLotteryRebateInfosMap = {
-        ...state.inLotteryRebateInfosMap
+    SET_ORDER_LIST: (obj) => (this.orderList = obj),
+    SET_TEMA_LIST: (obj) => (this.orderList.tema = obj),
+    SET_LIANMA_LIST: (obj) => (this.orderList.lianma = obj),
+    SET_ONLINE_NUM: (obj) => (this.onlineNum = obj),
+    SET_LOTTERY_IN_ID: (id) => (this.inLotteryId = id),
+    SET_ISHIDEUSERREBETANUM: (isHide) => (this.isHideUserRebetaNum = isHide),
+    setOrderList: (obj) => this.SET_ORDER_LIST(obj),
+    setTemaList: (obj) => this.SET_TEMA_LIST(obj),
+    setLianmaList: (obj) => this.SET_LIANMA_LIST(obj),
+    setOnlineNum: (obj) => this.SET_ONLINE_NUM(obj),
+    setLotteryRebateInfos: ({ id, rabateInfo }) => {
+      this.inLotteryRebateInfosMap[id] = rabateInfo
+      this.inLotteryRebateInfosMap = {
+        ...this.inLotteryRebateInfosMap
       }
     },
     /**
@@ -46,10 +40,10 @@ const playingStore = defineStore('playing', {
      * @param id
      * @param num
      */
-    setLotteryUserRebateMum: ({ state }, { id, num }) => {
-      state.inLotteryUserRabetaNum = num
+    setLotteryUserRebateMum: ({ id, num }) => {
+      this.inLotteryUserRabetaNum = num
     }
   }
 })
 
-export default playingStore
+export default usePlayingStore

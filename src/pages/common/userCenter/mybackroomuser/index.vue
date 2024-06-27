@@ -24,7 +24,7 @@
 				:height="'calc( 100vh - 224rpx )'" ref="paging" v-model="list" @query="getListPaeg"
 				:lower-threshold="10" :refresher-enabled="true" :hide-empty-view="false" :empty-view-center="true"
 				:empty-view-text="$t('pages.luntan.masterForum.noData')" :hide-no-more-inside="true"
-				:empty-view-img="'/static/imgs-liuhe/activity/empty.png'" :fixed="false"
+				:empty-view-img="'@/static/imgs-liuhe/activity/empty.png'" :fixed="false"
 				:empty-view-style="{ 'margin-bottom': '170px' }"
 				:empty-view-img-style="{ 'width': '443rpx', 'height': '443rpx' }"
 				:empty-view-title-style="{ 'color': ' #D8D8D8', 'font-size': '32rpx', 'line-height': '44rpx', 'margin-top': '28rpx' }">

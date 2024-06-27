@@ -48,7 +48,7 @@
 				:loading-more-no-more-text="$t('components.CommonPages.pages-liuhe.LiuheActivity.NoMoreData')"
 				:hide-empty-view="false" :empty-view-center="true"
 				:empty-view-text="$t('components.CommonPages.pages-liuhe.LiuheActivity.NoRecords')"
-				:empty-view-img="'/static/imgs-liuhe/activity/empty.png'" :fixed="false"
+				:empty-view-img="'@/static/imgs-liuhe/activity/empty.png'" :fixed="false"
 				:empty-view-style="{ 'margin-bottom': '170px' }"
 				:empty-view-img-style="{ 'width': '260rpx', 'height': '260rpx' }"
 				:empty-view-title-style="{ 'color': ' #999999', 'font-size': '30rpx', 'line-height': '44rpx', 'margin-top': '10rpx' }">

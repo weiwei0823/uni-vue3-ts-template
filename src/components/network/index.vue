@@ -8,7 +8,7 @@
 						<u-radio class="radio" :class="{ checked: value === item.id }" active-color="#FF9900"
 							v-for="(item, index) in list" :key="index" :name="item.id">
 							<view class="item">
-								<image class="network" src="/static/img/network1.png" />
+								<image class="network" src="@/static/img/network1.png" />
 								<view class="name">{{ item.name }}</view>
 								<view class="ms" :class="item.ping < 150 ? 'green-text' :
                                     item.ping > 150 && item.ping < 300 ? 'orange-text' :

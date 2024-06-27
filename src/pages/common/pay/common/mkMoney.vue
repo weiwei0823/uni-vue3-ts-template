@@ -8,7 +8,7 @@
 				:bg-color="headerStyle.backgroundColor" :font-color="fontColor" :title-style="titleStyle">
 				<block slot="left">
 					<view class="" @click="back">
-						<filterIcon src="/static/imgs-liuhe/activity/back.png" :width="24" :height="42" />
+						<filterIcon src="@/static/imgs-liuhe/activity/back.png" :width="24" :height="42" />
 					</view>
 
 				</block>
@@ -20,7 +20,7 @@
 					:to-bottom-loading-more-enabled="true" :show-loading-more-no-more-view="false" :fixed="false"
 					:hide-empty-view="false" :empty-view-center="true"
 					:empty-view-text="$t('pages.luntan.masterForum.noData')"
-					:empty-view-img="'/static/imgs-liuhe/activity/empty.png'"
+					:empty-view-img="'@/static/imgs-liuhe/activity/empty.png'"
 					:empty-view-img-style="{ 'width': '400rpx', 'height': '400rpx' }">
 					<view class="new-money-list">
 						<view class="new-money-list-item" v-for="(item, index) in payList" :key="index">
@@ -67,9 +67,9 @@
 				<view class="payConfirm-box">
 					<view class="close-img" @click="closePay">
 
-						<filterIcon src="/static/img/common/close.png" :width="80" :height="80" />
+						<filterIcon src="@/static/img/common/close.png" :width="80" :height="80" />
 					</view>
-					<image class="rocket-img" src="/static/img/common/rocket.png" mode=""></image>
+					<image class="rocket-img" src="@/static/img/common/rocket.png" mode=""></image>
 					<view class="payConfirm-box-title">
 						存款订单等待支付中...
 					</view>

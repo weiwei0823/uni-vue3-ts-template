@@ -173,9 +173,9 @@
 						v-for="(item, index) in $config.configUIMgr.themeColors" @click="changeTheme(item)">
 						{{$t(`common.setting.${item.name}`)}}
 						<!-- {{ item.title }} -->
-						<filterIcon v-if="item.id === themeColor.id" src="/static/img/liuhe/setting/selected.png"
+						<filterIcon v-if="item.id === themeColor.id" src="@/static/img/liuhe/setting/selected.png"
 							:width="48" :height="48" />
-						<!-- <image class="img" src="/static/img/liuhe/setting/selected.png"
+						<!-- <image class="img" src="@/static/img/liuhe/setting/selected.png"
 							v-if="item.id === themeColor.id">
 						</image> -->
 					</view>
@@ -207,9 +207,9 @@
 					<view class="item" :class="{ active: item.value === current }"
 						v-for="(item, index) in $config.configLanguage.languageSelect" @click="current = item.value">
 						{{ item.name }}
-						<filterIcon v-if="current === item.value" src="/static/img/liuhe/setting/selected.png"
+						<filterIcon v-if="current === item.value" src="@/static/img/liuhe/setting/selected.png"
 							:width="48" :height="48" />
-						<!-- <image class="img" src="/static/img/liuhe/setting/selected.png" v-if="current === item.value">
+						<!-- <image class="img" src="@/static/img/liuhe/setting/selected.png" v-if="current === item.value">
 						</image> -->
 					</view>
 				</view>

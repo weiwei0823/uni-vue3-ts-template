@@ -128,7 +128,7 @@
 				<view class="detail-item">
 					<view class="title">{{ $t('pages.common.userCenter.accountLog.detail.OrderSource') }}</view>
 					<view class="right">
-						<image src="/static/img/user/accountlog/h5.png"></image>
+						<image src="@/static/img/user/accountlog/h5.png"></image>
 					</view>
 				</view>
 			</view>

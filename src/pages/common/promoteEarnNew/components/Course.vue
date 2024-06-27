@@ -24,7 +24,7 @@
 				let course_id = this.$config.enumMgr.CONTANTS_CONFIGS_ID.COURSE_ID;
 				let info = this.$store.state.appInfoStore.contantsConfigTypeMap ? this.$store.state.appInfoStore
 					.contantsConfigTypeMap[course_id] : null;
-				if (!info) return '/static/img/ptp/course2.png';
+				if (!info) return '@/static/img/ptp/course2.png';
 				return info.url;
 
 			}

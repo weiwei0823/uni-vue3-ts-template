@@ -39,7 +39,7 @@
               <view class="top" :class="{ 'is-qrcode': item.type == 3 }">
                 <view class="img">
                   <image
-                    :src="item.logoMobile || '/static/img/user/bank/usdt.png'"
+                    :src="item.logoMobile || '@/static/img/user/bank/usdt.png'"
                   ></image>
                 </view>
                 <view class="title">

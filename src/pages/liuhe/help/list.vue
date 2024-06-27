@@ -31,11 +31,11 @@
 			">
 			<view class="footer">
 				<view class="ts" @click="toUrl('/pages/common/userCenter/feedback/index')">
-					<image src="/static/img/liuhe/help/ts.png"></image>
+					<image src="@/static/img/liuhe/help/ts.png"></image>
 					<text class="text">有奖反馈</text>
 				</view>
 				<view class="kf" @click="toUrl('/pages/common/userCenter/service/index')">
-					<image src="/static/img/liuhe/help/kf.png"></image>
+					<image src="@/static/img/liuhe/help/kf.png"></image>
 					<text class="text">联系客服</text>
 				</view>
 			</view>

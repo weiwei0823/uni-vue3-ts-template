@@ -46,7 +46,7 @@
 			</view>
 		</scroll-view>
 		<view :class="{showTopClass:isTopIconY > 100,isAppShowTop:isApp}">
-			<topicon :iconWidth="110" :iconHeight="100" iconPath="/static/img/top2.png" :marginBottom="50"
+			<topicon :iconWidth="110" :iconHeight="100" iconPath="@/static/img/top2.png" :marginBottom="50"
 				:marginLeft="130" :marginRight="0" @tapIcon="backTop"> </topicon>
 		</view>
 

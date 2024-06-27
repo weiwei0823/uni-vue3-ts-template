@@ -7,15 +7,15 @@
 					@input="onInput" :placeholder='placeholder' :password="showPassword" :disabled="disabled" />
 			</view>
 			<view class="show">
-				<image v-show="val != '' && showClear" src="/static/img/liuhe/login/close.png" @click="clearVal()">
+				<image v-show="val != '' && showClear" src="@/static/img/liuhe/login/close.png" @click="clearVal()">
 				</image>
 				<image @click="changePassword" v-show="isPassword && showPassword"
-					src="/static/img/liuhe/login/baneye.png">
+					src="@/static/img/liuhe/login/baneye.png">
 				</image>
 				<image @click="changePassword" v-show="isPassword && !showPassword"
-					src="/static/img/liuhe/login/eye.png"></image>
-				<image v-show="showTipsIcon && succ" src="/static/img/liuhe/login/succ.png"></image>
-				<image v-show="showTipsIcon && err" src="/static/img/liuhe/login/err.png"></image>
+					src="@/static/img/liuhe/login/eye.png"></image>
+				<image v-show="showTipsIcon && succ" src="@/static/img/liuhe/login/succ.png"></image>
+				<image v-show="showTipsIcon && err" src="@/static/img/liuhe/login/err.png"></image>
 				<view class="text" v-show="requied">必填</view>
 				<view class="text" v-show="optional">选填</view>
 				<view class="text" v-show="code" @click="getCode">{{ codeText }}</view>

@@ -52,64 +52,64 @@
 					'box-sizing': 'border-box',
 					padding: '0 20rpx'
 				},
-				defaultImg: '/static/img/toolbox/card.png',
+				defaultImg: '@/static/img/toolbox/card.png',
 				cardList: [{
-						img: '/static/img/toolbox/turntable/gou.png',
+						img: '@/static/img/toolbox/turntable/gou.png',
 						show: 0,
 						name: this.$t('pages.luntan.toolBox.cnzodiac.text0')
 					},
 					{
-						img: '/static/img/toolbox/turntable/hou.png',
+						img: '@/static/img/toolbox/turntable/hou.png',
 						show: 0,
 						name: this.$t('pages.luntan.toolBox.cnzodiac.text1')
 					},
 					{
-						img: '/static/img/toolbox/turntable/hu.png',
+						img: '@/static/img/toolbox/turntable/hu.png',
 						show: 0,
 						name: this.$t('pages.luntan.toolBox.cnzodiac.text2')
 					},
 					{
-						img: '/static/img/toolbox/turntable/ji.png',
+						img: '@/static/img/toolbox/turntable/ji.png',
 						show: 0,
 						name: this.$t('pages.luntan.toolBox.cnzodiac.text3')
 					},
 					{
-						img: '/static/img/toolbox/turntable/long.png',
+						img: '@/static/img/toolbox/turntable/long.png',
 						show: 0,
 						name: this.$t('pages.luntan.toolBox.cnzodiac.text4')
 					},
 					{
-						img: '/static/img/toolbox/turntable/ma.png',
+						img: '@/static/img/toolbox/turntable/ma.png',
 						show: 0,
 						name: this.$t('pages.luntan.toolBox.cnzodiac.text5')
 					},
 					{
-						img: '/static/img/toolbox/turntable/niu.png',
+						img: '@/static/img/toolbox/turntable/niu.png',
 						show: 0,
 						name: this.$t('pages.luntan.toolBox.cnzodiac.text6')
 					},
 					{
-						img: '/static/img/toolbox/turntable/she.png',
+						img: '@/static/img/toolbox/turntable/she.png',
 						show: 0,
 						name: this.$t('pages.luntan.toolBox.cnzodiac.text7')
 					},
 					{
-						img: '/static/img/toolbox/turntable/shu.png',
+						img: '@/static/img/toolbox/turntable/shu.png',
 						show: 0,
 						name: this.$t('pages.luntan.toolBox.cnzodiac.text8')
 					},
 					{
-						img: '/static/img/toolbox/turntable/tu.png',
+						img: '@/static/img/toolbox/turntable/tu.png',
 						show: 0,
 						name: this.$t('pages.luntan.toolBox.cnzodiac.text9')
 					},
 					{
-						img: '/static/img/toolbox/turntable/yang.png',
+						img: '@/static/img/toolbox/turntable/yang.png',
 						show: 0,
 						name: this.$t('pages.luntan.toolBox.cnzodiac.text10')
 					},
 					{
-						img: '/static/img/toolbox/turntable/zhu.png',
+						img: '@/static/img/toolbox/turntable/zhu.png',
 						show: 0,
 						name: this.$t('pages.luntan.toolBox.cnzodiac.text11')
 					},

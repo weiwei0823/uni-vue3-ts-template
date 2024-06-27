@@ -38,14 +38,14 @@
 					</view>
 					<view class="right">
 						<view class="btn">
-							<image v-if="item.status == 2" src="/static/img/liuhe/activity/ylq2.png"></image>
+							<image v-if="item.status == 2" src="@/static/img/liuhe/activity/ylq2.png"></image>
 							<image v-else-if="getProgress(item) >= 100" @click="getReceive(item)"
-								src="/static/imgs-liuhe/activity/lqbtn.png">
+								src="@/static/imgs-liuhe/activity/lqbtn.png">
 							</image>
 							<view v-else class="btn-go" @click="goUrl(item)">
 								前往
 							</view>
-							<!-- <image v-else @click="goUrl(item)" src="/static/imgs-liuhe/activity/go-btn.png"></image> -->
+							<!-- <image v-else @click="goUrl(item)" src="@/static/imgs-liuhe/activity/go-btn.png"></image> -->
 						</view>
 						<view class="coin">
 							<text class="coin-text">¥{{ item.rewardMoney }}</text>
@@ -341,7 +341,7 @@
 					left: 0;
 					width: 106rpx;
 					height: 32rpx;
-					background: url('/static/imgs-liuhe/activity/bg.png') no-repeat;
+					background: url('@/static/imgs-liuhe/activity/bg.png') no-repeat;
 					background-size: 100%;
 					font-size: 22rpx;
 					font-weight: 500;

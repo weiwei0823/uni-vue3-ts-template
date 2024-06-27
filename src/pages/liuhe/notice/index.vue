@@ -33,7 +33,7 @@
 			:loading-more-loading-animated="false" :loading-more-default-as-loading="true"
 			:show-loading-more-no-more-view="true" :loading-more-no-more-text="$t('pages.liuhe.notice.index.text2')"
 			:hide-empty-view="false" :empty-view-center="true" :empty-view-text="$t('pages.luntan.masterForum.noData')"
-			:empty-view-img="'/static/imgs-liuhe/activity/empty.png'" :fixed="false"
+			:empty-view-img="'@/static/imgs-liuhe/activity/empty.png'" :fixed="false"
 			:empty-view-style="{ 'margin-bottom': '170px' }"
 			:empty-view-img-style="{ 'width': '400rpx', 'height': '400rpx' }"
 			:empty-view-title-style="{ 'color': ' #999999', 'font-size': '30rpx', 'line-height': '44rpx', 'margin-top': '10rpx' }"
@@ -41,10 +41,10 @@
 			<view class="list-row" :class="{ 'list-flex': current == 2 && isEdit }" v-for="(item, index) in noticeList">
 				<view class="checkbox-item" v-show="current == 2 && isEdit">
 					<view @click="choseInfo(item.id)" v-if="checkData.indexOf(item.id) !== -1">
-						<image src="/static/img/liuhe/notice/check.png"></image>
+						<image src="@/static/img/liuhe/notice/check.png"></image>
 					</view>
 					<view @click="choseInfo(item.id)" v-else>
-						<image src="/static/img/liuhe/notice/ncheck.png"></image>
+						<image src="@/static/img/liuhe/notice/ncheck.png"></image>
 					</view>
 				</view>
 				<view class="list-item" :class="{ 'list-item-rigth': current == 2 && isEdit }">
@@ -75,13 +75,13 @@
 								</clipPath>
 							</defs>
 						</svg>
-						<!-- <image v-if="current == 1" src="/static/img/liuhe/notice/laba_n.png"></image>
-						<image v-else src="/static/img/liuhe/notice/msg_n.png"></image> -->
+						<!-- <image v-if="current == 1" src="@/static/img/liuhe/notice/laba_n.png"></image>
+						<image v-else src="@/static/img/liuhe/notice/msg_n.png"></image> -->
 						<view class="title-text">
 							{{ item.title }}
 						</view>
 						<view v-if="current == 1" class="top-lable">
-							<image src="/static/img/liuhe/notice/top.png" mode="widthFix"></image>
+							<image src="@/static/img/liuhe/notice/top.png" mode="widthFix"></image>
 						</view>
 						<view v-else :class="item.isRead ? 'red' : 'not-red'">
 							{{ item.isRead ? $t('pages.liuhe.notice.index.text3') : $t('pages.liuhe.notice.index.text4') }}

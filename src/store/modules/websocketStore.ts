@@ -1,7 +1,7 @@
-import { defineStore } from 'pinia'
+import {defineStore} from 'pinia'
 
-const WebsocketStore = defineStore('Websocket', {
-  state: {
+const useWebsocketStore = defineStore('Websocket', {
+  state: () => ({
     status: 0,
     ping: 0,
     last_server_time: 0,
@@ -12,39 +12,37 @@ const WebsocketStore = defineStore('Websocket', {
     lastBeatClientTime: -1,
 
     webSocketLogs: []
-  },
+  }),
   getters: {
-    websocketTimeInterval: (state) => state.timeInterval,
+    websocketTimeInterval: (state) => this.timeInterval,
     debugWebsocketTimeInterval(state) {
       return Math.abs(
-        Math.ceil(state.timeInterval * (Math.random() * 0.3 + 0.7)) +
+          Math.ceil(this.timeInterval * (Math.random() * 0.3 + 0.7)) +
           (-50 + Math.ceil(50 * Math.random()))
       )
     }
   },
-  mutations: {
-    setWebsocketStatus: (state, status) => (state.status = status),
-    setLastServerTime: (state, time) => (state.last_server_time = time),
-    setLastClientTime: (state, time) => (state.last_client_time = time),
-    setTimeInterval: (state, time) =>
-      (state.timeInterval = time > 0 ? time : 0),
-    setLastBeatServerTime: (state, time) => (state.lastBeatServerTime = time),
-    setLastBeatClientTime: (state, time) => (state.lastBeatClientTime = time),
-    addOneWebsocketLog: (state, logMsg) => {
-      state.webSocketLogs.push({ time: Date.now(), msg: logMsg })
-      if (state.webSocketLogs.length > 1000) {
-        state.webSocketLogs.shift()
-      }
-    }
-  },
   actions: {
-    updateWebscoketPing: ({ commit }, serverTime) => {
+    setWebsocketStatus: (status) => (this.status = status),
+    setLastServerTime: (time) => (this.last_server_time = time),
+    setLastClientTime: (time) => (this.last_client_time = time),
+    setTimeInterval: (time) =>
+        (this.timeInterval = time > 0 ? time : 0),
+    setLastBeatServerTime: (time) => (this.lastBeatServerTime = time),
+    setLastBeatClientTime: (time) => (this.lastBeatClientTime = time),
+    addOneWebsocketLog: (logMsg) => {
+      this.webSocketLogs.push({time: Date.now(), msg: logMsg})
+      if (this.webSocketLogs.length > 1000) {
+        this.webSocketLogs.shift()
+      }
+    },
+    updateWebscoketPing: (serverTime) => {
       const clientTime = Date.now()
-      commit('setLastServerTime', serverTime)
-      commit('setLastClientTime', clientTime)
-      commit('setTimeInterval', clientTime - serverTime) // serverTime - clientTime
+      this.setLastServerTime(serverTime)
+      this.setLastClientTime(clientTime)
+      this.setTimeInterval(clientTime - serverTime) // serverTime - clientTime
     }
   }
 })
 
-export default WebsocketStore
+export default useWebsocketStore

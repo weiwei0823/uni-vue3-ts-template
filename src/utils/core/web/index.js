@@ -25,7 +25,7 @@ export default {
       return
     }
     const iconUrl = icoMsg.url
-    // <link rel="shortcut icon" href="/static/ico.png" type="image/x-icon">
+    // <link rel="shortcut icon" href="@/static/ico.png" type="image/x-icon">
     const s = document.getElementsByTagName('script')[0]
 
     var hm = document.createElement('link')

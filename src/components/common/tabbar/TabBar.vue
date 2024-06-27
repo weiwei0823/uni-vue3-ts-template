@@ -10,7 +10,7 @@
 						<image class="img" v-if="item.activeImg&&item.img" :lazy-load="true"
 							:src="current == key ? item.activeImg : item.img"></image>
 						<image class="hot" v-show="key===0 && current==2" :lazy-load="true"
-							src="/static/img/tabbar/hot.png"></image>
+							src="@/static/img/tabbar/hot.png"></image>
 						<view class="hot-point" v-show="key===0 && current!=2 &&current!=0"></view>
 					</view>
 					<view class="item-text" :class="{ 'item-text-color': key == current,'center-text': key === 2 }">
@@ -62,38 +62,38 @@
 				// 	.bottom + "px",
 				bar: [{
 						id: 1,
-						sheetImage: "/static/img/tabbar/sheet_picture_luntan_{#theme}.png",
+						sheetImage: "@/static/img/tabbar/sheet_picture_luntan_{#theme}.png",
 						text: this.$t("components.common.tabbar.Tabbar.text1"),
 						path: '/pages/luntan/home/index/Index'
 					},
 					{
 						id: 2,
-						sheetImage: "/static/img/tabbar/sheet_picture_taoliao_{#theme}.png",
+						sheetImage: "@/static/img/tabbar/sheet_picture_taoliao_{#theme}.png",
 						// text: '淘料',
 						text: this.$t("components.common.tabbar.Tabbar.text2"),
 						path: '/pages/luntan/market/index',
 					},
 					{
 						id: 3,
-						// img: "/static/img/tabbar/bar3_new.png",
-						// activeImg: "/static/img/tabbar/icon_home.gif",
-						sheetImage: "/static/img/tabbar/sheet_picture_liuhe_hall.png",
+						// img: "@/static/img/tabbar/bar3_new.png",
+						// activeImg: "@/static/img/tabbar/icon_home.gif",
+						sheetImage: "@/static/img/tabbar/sheet_picture_liuhe_hall.png",
 						// text: '购彩大厅',
 						text: this.$t("components.common.tabbar.Tabbar.text3"),
 						path: '/pages/liuhe/home/index',
 					},
 					{
 						id: 4,
-						// img: "/static/img/tabbar/bar4.png",
-						// activeImg: "/static/img/tabbar/icon_discover.gif",
-						sheetImage: "/static/img/tabbar/sheet_picture_faxian_{#theme}.png",
+						// img: "@/static/img/tabbar/bar4.png",
+						// activeImg: "@/static/img/tabbar/icon_discover.gif",
+						sheetImage: "@/static/img/tabbar/sheet_picture_faxian_{#theme}.png",
 						// text: '发现',
 						text: this.$t("components.common.tabbar.Tabbar.text4"),
 						path: '/pages/luntan/find/index'
 					},
 					{
 						id: 5,
-						sheetImage: "/static/img/tabbar/sheet_picture_user_01_{#theme}.png",
+						sheetImage: "@/static/img/tabbar/sheet_picture_user_01_{#theme}.png",
 						text: this.$t("components.common.tabbar.Tabbar.text5"),
 						path: '/pages/common/userCenter/index'
 					},
@@ -204,7 +204,7 @@
 		height: var(--tabBarHeight);
 		height: 104rpx;
 		width: 100%;
-		background: url('/static/img/tabbar/new-bar-230905.png');
+		background: url('@/static/img/tabbar/new-bar-230905.png');
 		background-size: 100% 100%;
 
 		.tab-item {

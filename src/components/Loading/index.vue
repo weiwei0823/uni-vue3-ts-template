@@ -2,7 +2,7 @@
     <view class="loading_box" v-if="is_loading" @click="switch_loading">
         <view class="loading">
             <view class="loader loader-17">
-              <image src="/static/img/loading_v2.gif"></image>
+              <image src="@/static/img/loading_v2.gif"></image>
               <view class="text">
                   {{loadingText}}
               </view>
@@ -15,7 +15,7 @@
     export default {
         data() {
             return {
-                
+
             };
         },
         methods:{

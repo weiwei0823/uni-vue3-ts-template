@@ -6,10 +6,10 @@
 			@touchmove.prevent="drag_hmove" :style="{top:isMove ?y+'px':'80rpx', left:isMove ?x+'px':'28rpx'}">
 			<view class="left" @click="backConfrim">
 				<view class="home-img" @click="backConfrim">
-					<image src="/static/imgs-liuhe/game_back.png" mode=""
+					<image src="@/static/imgs-liuhe/game_back.png" mode=""
 						style="width:72rpx;height:72rpx;margin-left:0;margin-right:0;">
 					</image>
-					<image src="/static/imgs-liuhe/game_back_text.png" mode=""
+					<image src="@/static/imgs-liuhe/game_back_text.png" mode=""
 						style="width:68rpx;height:36rpx;margin-left:0;">
 					</image>
 				</view>
@@ -36,9 +36,9 @@
 			<view v-if="isShow && !pageLoaded" class="uni-async-loading "
 				style="background-color: #fff; z-index:9999; position:fixed; top:0;">
 			</view>
-			<!-- <image class="load-image uni-async-loading" src="/static/img/loading_v2.gif"></image> -->
+			<!-- <image class="load-image uni-async-loading" src="@/static/img/loading_v2.gif"></image> -->
 
-			<!-- <image v-if="isShow && !pageLoaded" class="load-image" src="/static/img/loading_v2.gif" mode="widthFix"
+			<!-- <image v-if="isShow && !pageLoaded" class="load-image" src="@/static/img/loading_v2.gif" mode="widthFix"
 				style="top:600rpx"></image> -->
 		</view>
 
@@ -50,7 +50,7 @@
           <view>大</view>
           <view>厅</view>
         </view>
-        <image @click="backHome" src="/static/home.png"></image>
+        <image @click="backHome" src="@/static/home.png"></image>
       </movable-view>
     </movable-area>-->
 

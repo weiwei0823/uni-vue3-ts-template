@@ -75,7 +75,7 @@
 		</view>
 		<view class="history-box" v-if="history.length > 0">
 			<view class="title-name">
-				<image src="/static/img/liuhe/564.png"></image>
+				<image src="@/static/img/liuhe/564.png"></image>
 			</view>
 			<view class="history-list">
 				<view class="history-item" v-for="(item, index) in history" @click="detail(item)">
@@ -105,7 +105,7 @@
 
 		</view>
 		<view class="goTop" v-show="isTop" @click="top">
-			<image src="/static/img/top.png"></image>
+			<image src="@/static/img/top.png"></image>
 		</view>
 		<!--    <view class="lottery" v-show="select == 0">
       <lottery-list :data="hotData"></lottery-list>
@@ -249,32 +249,32 @@
 					selectedBorder: '0px rgba(255, 255, 153, 0.9) solid'
 				},
 				menus: [{
-						icon: '/static/img/liuhe/index/cun.png',
+						icon: '@/static/img/liuhe/index/cun.png',
 						name: '存款充值',
 						islogin: true,
 						url: '/pages/common/pay/index'
 					},
 					{
-						icon: '/static/img/liuhe/index/qu.png',
+						icon: '@/static/img/liuhe/index/qu.png',
 						name: '取款提现',
 						islogin: true,
 						url: '/pages/common/withdraw/index'
 					},
 					{
-						icon: '/static/img/liuhe/index/dating.png',
+						icon: '@/static/img/liuhe/index/dating.png',
 						name: '游戏大厅',
 						islogin: false,
 						url: './list'
 					},
 					{
-						icon: '/static/img/liuhe/index/jilu.png',
+						icon: '@/static/img/liuhe/index/jilu.png',
 						name: '优惠活动',
 						islogin: false,
 						url: ''
 					},
 					/*{icon:'@/static/img/liuhe/index/jilu.png',name:'购彩记录',islogin:false,url:'/pages/liuhe/history/index'},*/
 					{
-						icon: '/static/img/liuhe/index/qianbao.png',
+						icon: '@/static/img/liuhe/index/qianbao.png',
 						name: '钱包管理',
 						islogin: true,
 						url: '/pages/common/userCenter/wallet/index'

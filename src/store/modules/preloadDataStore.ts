@@ -2,9 +2,8 @@ import { defineStore } from 'pinia'
 import { cp_init, lt_init } from '@/utils/home/index.js'
 import { listLatest } from '@/utils/forum/index.js'
 
-const preloadDataStore = defineStore('preloadData', {
-  namespaced: true,
-  state: {
+const usePreloadDataStore = defineStore('preloadData', {
+  state: () => ({
     liuhePreload: {
       isGettingData: false,
       homeInit: null
@@ -13,17 +12,16 @@ const preloadDataStore = defineStore('preloadData', {
       isGettingData: false,
       homeInit: null
     }
-  },
-  mutations: {},
+  }),
   actions: {
     // 获取购彩大厅tab数据
-    async getLiuheHomeTab(context) {
+    async getLiuheHomeTab() {
       const res = await cp_init()
       // 需要做数据深度复制
       uni.$emit('preloadLiuheHomeData', JSON.parse(JSON.stringify(res)))
     },
     // 获取论坛首页数据
-    async getLuntanHomeTab(context) {
+    async getLuntanHomeTab() {
       const prams = {
         lotteryType: 2
       }
@@ -33,7 +31,7 @@ const preloadDataStore = defineStore('preloadData', {
     },
 
     // 获取论坛01首页下方高手论坛列表
-    async getLuntanArticleList(context) {
+    async getLuntanArticleList() {
       const prams = {
         lotteryType: 2,
         type: 3,
@@ -48,4 +46,4 @@ const preloadDataStore = defineStore('preloadData', {
     }
   }
 })
-export default preloadDataStore
+export default usePreloadDataStore

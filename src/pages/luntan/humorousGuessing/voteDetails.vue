@@ -9,7 +9,7 @@
 					:localdata="yearRangeList" coustIcon @change="listPeriod">
 					<template #itemImg="item">
 						<view class="item-img">
-							<image class="img" v-if="item.value === curr" src="/static/imgs-liuhe/activity/item-selected.png">
+							<image class="img" v-if="item.value === curr" src="@/static/imgs-liuhe/activity/item-selected.png">
 							</image>
 						</view>
 					</template>
@@ -22,7 +22,7 @@
 							d="M18 10C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10ZM20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10ZM9.09091 5.45455C9.09091 4.95247 9.49792 4.54545 10 4.54545C10.5021 4.54545 10.9091 4.95247 10.9091 5.45455V10.3879L13.6226 11.9545C14.0574 12.2056 14.2064 12.7616 13.9554 13.1964C13.7043 13.6312 13.1483 13.7802 12.7135 13.5291L9.56433 11.711C9.52438 11.6879 9.48684 11.6622 9.4518 11.6344C9.23256 11.4684 9.09091 11.2053 9.09091 10.9091V5.45455Z"
 							:fill="themeColor.themeColor" />
 					</svg>
-					<!-- <filterIcon src="/static/img/picture/lis.png" :width="40" :height="40" /> -->
+					<!-- <filterIcon src="@/static/img/picture/lis.png" :width="40" :height="40" /> -->
 					<span class="descs">{{ $t('pages.luntan.liuhePicture.detail.lotteryRecords') }}</span>
 				</view>
 				<view class="item">
@@ -35,7 +35,7 @@
 							:fill="themeColor.themeColor" />
 					</svg>
 
-					<!-- <filterIcon src="/static/img/picture/pl2.png" :width="40" :height="40" /> -->
+					<!-- <filterIcon src="@/static/img/picture/pl2.png" :width="40" :height="40" /> -->
 					<span class="descs" @click="replyComment">{{
 						$t('pages.luntan.liuhePicture.detail.postComment') }}</span>
 				</view>

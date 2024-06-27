@@ -45,9 +45,9 @@
 					<view class="item" :class="{ active: item.value === current }"
 						v-for="(item, index) in $config.configLanguage.languageSelect" @click="current = item.value">
 						{{ item.name }}
-						<filterIcon :width="48" :height="48" src="/static/img/liuhe/setting/selected.png"
+						<filterIcon :width="48" :height="48" src="@/static/img/liuhe/setting/selected.png"
 							v-if="current === item.value" />
-						<!-- <image class="img" src="/static/img/liuhe/setting/selected.png" v-if="current === item.value"> -->
+						<!-- <image class="img" src="@/static/img/liuhe/setting/selected.png" v-if="current === item.value"> -->
 						</image>
 					</view>
 				</view>
@@ -67,9 +67,9 @@
 						{{$t(`common.setting.${item.name}`)}}
 						<!-- {{ item.title }} -->
 
-						<filterIcon :width="48" :height="48" src="/static/img/liuhe/setting/selected.png"
+						<filterIcon :width="48" :height="48" src="@/static/img/liuhe/setting/selected.png"
 							v-if="item.id === themeColor.id" />
-						<!-- <image class="img" src="/static/img/liuhe/setting/selected.png"
+						<!-- <image class="img" src="@/static/img/liuhe/setting/selected.png"
 							v-if="item.id === themeColor.id">
 						</image> -->
 					</view>

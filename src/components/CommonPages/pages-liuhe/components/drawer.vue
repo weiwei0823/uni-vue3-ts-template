@@ -1,17 +1,17 @@
 <template>
 	<view name="drawer" class="scroll-view-box header-draw" :class="['theme-' + themeColor.name]">
 		<view :class="isLogin ? 'user-info-box' : 'user-info-box whiteBg'">
-			<!-- <image class="logo" v-if="!isLogin" src="/static/imgs-liuhe/menu/logo.png"></image> -->
+			<!-- <image class="logo" v-if="!isLogin" src="@/static/imgs-liuhe/menu/logo.png"></image> -->
 			<imageSvgUrl class="logo" :width="268" :height="60" v-if="!isLogin" :url="logo"
 				replaceThemeTargetColor="#07C160"></imageSvgUrl>
 			<view class="user-box" v-if="isLogin">
 				<view class="avatar">
 					<image :src="isLogin
 						? $store.state.appInfoStore.userInfo.headImgUrl
-						: '/static/img/user/touxiang.png'
+						: '@/static/img/user/touxiang.png'
 						"></image>
 					<view class="vip" v-if="userInfo.userType !== 'demo'">
-						<image src="/static/imgs-liuhe/menu/subtract.png"></image>
+						<image src="@/static/imgs-liuhe/menu/subtract.png"></image>
 						<text>VIP{{ vipLevel }}</text>
 					</view>
 				</view>
@@ -23,7 +23,7 @@
 							<image v-if="userInfo.userType !== 'demo'" @click="
 								nickname = userInfo.nickname;
 							isEdit = !isEdit;
-							" style="cursor: pointer" src="/static/imgs-liuhe/menu/edit_files.png"></image>
+							" style="cursor: pointer" src="@/static/imgs-liuhe/menu/edit_files.png"></image>
 						</view>
 						<input v-else class="uni-input" autofocus v-model="nickname" @confirm="confirmEditName"
 							@input="onInput" />
@@ -69,7 +69,7 @@
 				<view class="list-item list-item-odd">
 					<view class="left">
 						<imageSvgUrl style="margin-right:30rpx;" :width="46" :height="46"
-							url="/static/imgs-liuhe/menu/svgs/10.svg" replaceThemeTargetColor="#07C160">
+							url="@/static/imgs-liuhe/menu/svgs/10.svg" replaceThemeTargetColor="#07C160">
 						</imageSvgUrl>
 						<view class="title" style="font-size: 30rpx;">
 							{{ $t("common.setting.list4") }}
@@ -95,7 +95,7 @@
 					<view class="left" style="justify-content: center;">
 						<view class="exit-btn" @click="loginOut">
 							<imageSvgUrl style="margin-right:30rpx;" :width="46" :height="46"
-								url="/static/imgs-liuhe/menu/svgs/11.svg" replaceThemeTargetColor="#a0aaa5">
+								url="@/static/imgs-liuhe/menu/svgs/11.svg" replaceThemeTargetColor="#a0aaa5">
 							</imageSvgUrl>
 							<view class="title" style="color:#a0aaa5;">
 								{{ $t("components.CommonPages.pages-liuhe.components.drawer.text16") }}
@@ -132,40 +132,40 @@ export default {
 				balanceEnd: false,
 				menuList: [{
 						title: this.$t("components.CommonPages.pages-liuhe.components.drawer.text3"),
-						icon: "/static/imgs-liuhe/menu/svgs/12.svg",
+						icon: "@/static/imgs-liuhe/menu/svgs/12.svg",
 						url: "/pages/common/login",
 						code: "login"
 					},
 					{
 						title: this.$t("components.CommonPages.pages-liuhe.components.drawer.text4"),
-						icon: "/static/imgs-liuhe/menu/svgs/13.svg",
+						icon: "@/static/imgs-liuhe/menu/svgs/13.svg",
 						url: "/pages/common/reg",
 						code: "register"
 					},
 					{
 						title: this.$t("components.CommonPages.pages-liuhe.components.drawer.text5"),
-						icon: "/static/imgs-liuhe/menu/svgs/14.svg",
+						icon: "@/static/imgs-liuhe/menu/svgs/14.svg",
 						url: "/pages/liuhe/home/index?isTest=1",
 						demo: true,
 						code: "demo"
 					},
 					// {
 					//     title:'APP下载',
-					//     icon:'/static/imgs-liuhe/menu/app_download.png',
+					//     icon:'@/static/imgs-liuhe/menu/app_download.png',
 					//     url:'/pages/common/userCenter/downloadPage',
 					//     login: true,
 					//     code: "download"
 					// },
 					{
 						title: this.$t("components.CommonPages.pages-liuhe.components.drawer.text6"),
-						icon: "/static/imgs-liuhe/menu/svgs/1.svg",
+						icon: "@/static/imgs-liuhe/menu/svgs/1.svg",
 						url: "/pages/common/userCenter/service/index",
 						show: true,
 						code: "customer"
 					},
 					{
 						title: this.$t("components.CommonPages.pages-liuhe.components.drawer.text7"),
-						icon: "/static/imgs-liuhe/menu/svgs/2.svg",
+						icon: "@/static/imgs-liuhe/menu/svgs/2.svg",
 						url: "/pages/common/pay/index",
 						show: true,
 						islogin: true,
@@ -173,7 +173,7 @@ export default {
 					},
 					{
 						title: this.$t("components.CommonPages.pages-liuhe.components.drawer.text8"),
-						icon: "/static/imgs-liuhe/menu/svgs/3.svg",
+						icon: "@/static/imgs-liuhe/menu/svgs/3.svg",
 						url: "/pages/common/withdraw/index",
 						show: true,
 						islogin: true,
@@ -181,7 +181,7 @@ export default {
 					},
 					{
 						title: this.$t("components.CommonPages.pages-liuhe.components.drawer.text9"),
-						icon: "/static/imgs-liuhe/menu/svgs/4.svg",
+						icon: "@/static/imgs-liuhe/menu/svgs/4.svg",
 						url: "/pages/common/promoteEarn/index",
 						show: true,
 						islogin: true,
@@ -190,7 +190,7 @@ export default {
 					},
 					{
 						title: this.$t("components.CommonPages.pages-liuhe.components.drawer.text11"),
-						icon: "/static/imgs-liuhe/menu/svgs/5.svg",
+						icon: "@/static/imgs-liuhe/menu/svgs/5.svg",
 						url: "/pages/liuhe/game_hall",
 						mouduleId: 5,
 						show: true,
@@ -198,7 +198,7 @@ export default {
 					},
 					{
 						title: this.$t("components.CommonPages.pages-liuhe.components.drawer.text12"),
-						icon: "/static/imgs-liuhe/menu/svgs/6.svg",
+						icon: "@/static/imgs-liuhe/menu/svgs/6.svg",
 						url: "/pages/liuhe/game_hall",
 						mouduleId: 3,
 						show: true,
@@ -206,7 +206,7 @@ export default {
 					},
 					{
 						title: this.$t("components.CommonPages.pages-liuhe.components.drawer.text13"),
-						icon: "/static/imgs-liuhe/menu/svgs/7.svg",
+						icon: "@/static/imgs-liuhe/menu/svgs/7.svg",
 						url: "/pages/liuhe/game_hall",
 						mouduleId: 6,
 						show: true,
@@ -214,7 +214,7 @@ export default {
 					},
 					{
 						title: this.$t("components.CommonPages.pages-liuhe.components.drawer.text14"),
-						icon: "/static/imgs-liuhe/menu/svgs/8.svg",
+						icon: "@/static/imgs-liuhe/menu/svgs/8.svg",
 						url: "/pages/liuhe/game_hall",
 						mouduleId: 4,
 						show: true,
@@ -222,7 +222,7 @@ export default {
 					},
 					{
 						title: this.$t("components.CommonPages.pages-liuhe.components.drawer.text15"),
-						icon: "/static/imgs-liuhe/menu/svgs/9.svg",
+						icon: "@/static/imgs-liuhe/menu/svgs/9.svg",
 						url: "/pages/liuhe/game_hall",
 						mouduleId: 7,
 						show: true,
@@ -230,7 +230,7 @@ export default {
 					},
 					// {
 					// 	title: this.$t("components.CommonPages.pages-liuhe.components.drawer.text16"),
-					// 	icon: "/static/imgs-liuhe/menu/logout.png",
+					// 	icon: "@/static/imgs-liuhe/menu/logout.png",
 					// 	url: "/pages/common/login",
 					// 	show: true,
 					// 	code: "loginOut",

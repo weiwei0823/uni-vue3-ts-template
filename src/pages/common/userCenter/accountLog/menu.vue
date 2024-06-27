@@ -53,27 +53,27 @@
 					color: "#FFFFFF"
 				},
 				menu: [{
-						img: '/static/img/all/accountLog/svgs/1.svg',
+						img: '@/static/img/all/accountLog/svgs/1.svg',
 						title: this.$t('pages.common.userCenter.accountLog.totalTitle'),
 						url: './accountlog'
 					},
 					{
-						img: '/static/img/all/accountLog/svgs/2.svg',
+						img: '@/static/img/all/accountLog/svgs/2.svg',
 						title: this.$t('pages.common.userCenter.accountLog.profitreport.title'),
 						url: '/pages/common/userCenter/profitreport/profitreport'
 					},
 					{
-						img: '/static/img/all/accountLog/svgs/3.svg',
+						img: '@/static/img/all/accountLog/svgs/3.svg',
 						title: this.$t('pages.common.userCenter.accountLog.index.AccountLog'),
 						url: '/pages/common/userCenter/accountLog/index'
 					},
 					{
-						img: '/static/img/all/accountLog/svgs/4.svg',
+						img: '@/static/img/all/accountLog/svgs/4.svg',
 						title: this.$t('pages.common.userCenter.accountLog.menu.title2'),
 						url: './convert'
 					},
 					{
-						img: '/static/img/all/accountLog/svgs/5.svg',
+						img: '@/static/img/all/accountLog/svgs/5.svg',
 						title: this.$t('pages.common.userCenter.accountLog.menu.title3'),
 						url: './gift_money'
 					}

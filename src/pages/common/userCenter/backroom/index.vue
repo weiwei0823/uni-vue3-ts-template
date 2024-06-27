@@ -18,7 +18,7 @@
 					<view class="user">
 						<view class="img">
 							<image style="width: 100rpx;height: 100rpx"
-								:src="userinfo.headImgUrl ? userinfo.headImgUrl : '/static/img/user/Frame21.png'">
+								:src="userinfo.headImgUrl ? userinfo.headImgUrl : '@/static/img/user/Frame21.png'">
 							</image>
 						</view>
 						<view class="right-info">
@@ -102,7 +102,7 @@
 										</view>
 									</view>
 									<view class="tag">
-										<image src="/static/img/wg.png"></image>
+										<image src="@/static/img/wg.png"></image>
 									</view>
 								</view>
 							</view>

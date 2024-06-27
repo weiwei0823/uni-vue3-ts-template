@@ -169,7 +169,7 @@
 					:show-loading-more-no-more-view="true"
 					:loading-more-no-more-text="$t('pages.liuhe.history.detail.index.text4')" :hide-empty-view="false"
 					:empty-view-center="true" :empty-view-text="$t('pages.liuhe.history.detail.index.text5')"
-					:empty-view-img="'/static/img/empty.png'" :fixed="false"
+					:empty-view-img="'@/static/img/empty.png'" :fixed="false"
 					:empty-view-style="{ 'margin-bottom': '170px' }"
 					:empty-view-img-style="{ 'width': '260rpx', 'height': '260rpx' }"
 					:empty-view-title-style="{ 'color': ' #999999', 'font-size': '30rpx', 'line-height': '44rpx', 'margin-top': '10rpx' }">
@@ -212,7 +212,7 @@
 				</z-paging>
 
 				<view v-if="loading && recordList.length < 1" class="loading">
-					<image src="/static/img/loading_v1.gif" style="width:100rpx;height:65rpx;"></image>
+					<image src="@/static/img/loading_v1.gif" style="width:100rpx;height:65rpx;"></image>
 
 					<!-- <image :src="pageLoadingConfig['img']" :style="pageLoadingConfig['img_style']"></image> -->
 					<view :style="pageLoadingConfig['text_style']">
@@ -221,7 +221,7 @@
 				</view>
 
 				<view class="list-empty" v-else-if="!loading && recordList.length == 0">
-					<image src="/static/imgs-liuhe/activity/empty.png"></image>
+					<image src="@/static/imgs-liuhe/activity/empty.png"></image>
 					<view class="text">{{ $t('pages.luntan.masterForum.noData') }}</view>
 				</view>
 				<view class="bottom-box" :style="currentStyle">

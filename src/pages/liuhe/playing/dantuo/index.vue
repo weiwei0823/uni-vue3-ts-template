@@ -15,7 +15,7 @@
 						<view v-if="item.showType == 1">
 							<view class="type-name">
 								{{ currentName }}
-								<image src="./@/static/img/liuhe/desc.png" @click="showRule(item)" />
+								<image src="@/static/img/liuhe/desc.png" @click="showRule(item)" />
 							</view>
 							<ball :missOrMatch="missOrMatch" ref="balssl" :ballChildren="item.children" :ball="item"
 								:dataIndex="index" :ballMaps="mapBallIDToInfo" @changeData="changeChildren" />
@@ -23,7 +23,7 @@
 						<view v-if="item.showType == 2">
 							<view class="type-name">
 								{{ currentName }}
-								<image src="./@/static/img/liuhe/desc.png" @click="showRule(item)" />
+								<image src="@/static/img/liuhe/desc.png" @click="showRule(item)" />
 							</view>
 							<text-ball :missOrMatch="missOrMatch" :ballChildren="item.children" :ball="item"
 								:dataIndex="index" :ballMaps="mapBallIDToInfo" @changeData="changeChildren"></text-ball>
@@ -31,7 +31,7 @@
 						<view v-if="item.showType == 3">
 							<view class="type-name">
 								{{ currentName }}
-								<image src="./@/static/img/liuhe/desc.png" @click="showRule(item)" />
+								<image src="@/static/img/liuhe/desc.png" @click="showRule(item)" />
 							</view>
 							<Zodiac :missOrMatch="missOrMatch" :ballChildren="item.children" :ball="item"
 								:dataIndex="index" :ballMaps="mapBallIDToInfo" @changeData="changeChildren"></Zodiac>

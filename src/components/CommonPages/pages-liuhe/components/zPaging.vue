@@ -15,7 +15,7 @@
 		:loading-more-loading-icon-custom-image="zpageUIConfig['loading-more-loading-icon-custom-image']"
 		:loading-more-custom-style="{ 'padding-top': '20rpx', }" :loading-more-loading-animated="false"
 		:loading-more-no-more-text="'没有更多数据了'" :empty-view-text="$t('pages.luntan.masterForum.noData')"
-		:empty-view-img="'/static/imgs-liuhe/activity/empty.png'" :empty-view-style="{ 'margin-bottom': '170px' }"
+		:empty-view-img="'@/static/imgs-liuhe/activity/empty.png'" :empty-view-style="{ 'margin-bottom': '170px' }"
 		:empty-view-img-style="{ 'width': '199px', 'height': '199px' }"
 		:empty-view-title-style="{ 'min-height': '100px', 'color': ' #999999', 'font-size': '30rpx', 'line-height': '44rpx', 'margin-top': '10rpx' }"
 		:loading-more-enabled="loadingMoreEnabled" :fixed="fixed" :paging-style="pageStyle"

@@ -4,7 +4,7 @@
 		<view class="kf-box-body">
 			<view class="tips">
 				<view class="img">
-					<image style="width: 100%;height: 100%;" src="/static/img/kefu.png"></image>
+					<image style="width: 100%;height: 100%;" src="@/static/img/kefu.png"></image>
 				</view>
 				<view class="text">
 					<view class="pro">
@@ -19,14 +19,14 @@
 				<button v-for="(item, index) in qqList"
 					style="background: #fff;font-size: 30rpx;width: 100%;height: 88rpx;line-height: 88rpx;display: flex; align-items: center; justify-content: center;"
 					type="success" @click="handleQq">
-					<image style="height: 40rpx;width: 40rpx;margin-right: 10rpx;" src="/static/img/qq.png"></image>
+					<image style="height: 40rpx;width: 40rpx;margin-right: 10rpx;" src="@/static/img/qq.png"></image>
 					{{$t("pages.common.userCenter.service.luntan.text3")}}{{ index + 1 }}
 				</button>
 				<uni-link :href="serviceUrl" :text="$t('pages.common.userCenter.service.luntan.text4')"
 					showUnderLine="false" color="#fff"><button
 						style="background: var(--theme-color);color: #fff;font-size: 30rpx;width: 100%;height: 88rpx;line-height: 88rpx;;display: flex; align-items: center; justify-content: center;"
 						type="default" @click="handleZx">
-						<image style="height: 40rpx;width: 40rpx;margin-right: 10rpx;" src="/static/img/kf.png"></image>
+						<image style="height: 40rpx;width: 40rpx;margin-right: 10rpx;" src="@/static/img/kf.png"></image>
 						{{$t("pages.common.userCenter.service.luntan.text4")}}
 					</button></uni-link>
 

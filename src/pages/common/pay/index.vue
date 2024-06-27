@@ -47,8 +47,8 @@
 						</svg>
 
 
-						<image v-if="item.hotType == 1" class="pay_item_hot" src="/static/img/pay/hot.png" />
-						<!-- <image v-if="item.hotType ==2" class="pay_item_hot" src="/static/img/pay/recommend.png" /> -->
+						<image v-if="item.hotType == 1" class="pay_item_hot" src="@/static/img/pay/hot.png" />
+						<!-- <image v-if="item.hotType ==2" class="pay_item_hot" src="@/static/img/pay/recommend.png" /> -->
 						<svg v-if="item.hotType == 2" class="pay_item_hot" width="37" height="14" viewBox="0 0 37 14"
 							fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd"
@@ -443,7 +443,7 @@
 			.pay_list_items_item {
 				border-radius: 16rpx;
 				border: 1px solid transparent;
-				background-image: url('/static/img/pay/item-bg.png');
+				background-image: url('@/static/img/pay/item-bg.png');
 				background-size: 100% 100%;
 				background-repeat: no-repeat;
 				display: flex;
@@ -584,7 +584,7 @@
 	.ratio {
 		height: 48rpx;
 		line-height: 48rpx;
-		background: url('/static/img/index/Vector.png');
+		background: url('@/static/img/index/Vector.png');
 		color: #fff;
 		background-size: 100% 100%;
 		padding: 4rpx 10rpx 4rpx 16rpx;

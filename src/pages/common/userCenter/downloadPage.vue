@@ -7,7 +7,7 @@
 			</view>
 			<!-- <image :src="logoUrl.url" mode="widthFix" class="logo-img"></image> -->
 		</view>
-		<image src="/static/img/Group 1420068469.png" mode="widthFix" class="logo-img-2"></image>
+		<image src="@/static/img/Group 1420068469.png" mode="widthFix" class="logo-img-2"></image>
 		<view class="line">
 			<view class="title">
 				{{ $t("pages.common.userCenter.downloadPage.text2") }}
@@ -112,52 +112,52 @@
 				tabsList: [{
 					name: this.$t("pages.common.userCenter.downloadPage.text5"),
 					items: [{
-							imgPath: "/static/img/download/1.png",
+							imgPath: "@/static/img/download/1.png",
 							url: "https://www.baidu.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text6")
 						},
 						{
-							imgPath: "/static/img/download/2.png",
+							imgPath: "@/static/img/download/2.png",
 							url: "https://www.qq.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text7")
 						},
 						{
-							imgPath: "/static/img/download/3.png",
+							imgPath: "@/static/img/download/3.png",
 							url: "https://www.ifeng.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text8")
 						},
 						{
-							imgPath: "/static/img/download/4.png",
+							imgPath: "@/static/img/download/4.png",
 							url: "https://www.sohu.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text9")
 						},
 						{
-							imgPath: "/static/img/download/5.png",
+							imgPath: "@/static/img/download/5.png",
 							url: "https://www.163.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text10")
 						},
 						{
-							imgPath: "/static/img/download/6.png",
+							imgPath: "@/static/img/download/6.png",
 							url: "https://www.youku.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text11")
 						},
 						{
-							imgPath: "/static/img/download/7.png",
+							imgPath: "@/static/img/download/7.png",
 							url: "https://www.jd.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text12")
 						},
 						{
-							imgPath: "/static/img/download/8.png",
+							imgPath: "@/static/img/download/8.png",
 							url: "https://www.12306.cn/",
 							name: this.$t("pages.common.userCenter.downloadPage.text13")
 						},
 						{
-							imgPath: "/static/img/download/9.png",
+							imgPath: "@/static/img/download/9.png",
 							url: "https://gz.58.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text14")
 						},
 						{
-							imgPath: "/static/img/download/10.png",
+							imgPath: "@/static/img/download/10.png",
 							url: "https://www.ctrip.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text15")
 						}
@@ -165,53 +165,53 @@
 				}, {
 					name: this.$t("pages.common.userCenter.downloadPage.text16"),
 					items: [{
-							imgPath: "/static/img/download/11.png",
+							imgPath: "@/static/img/download/11.png",
 							url: "https://www.boc.cn/",
 							name: this.$t("pages.common.userCenter.downloadPage.text17")
 						},
 						{
-							imgPath: "/static/img/download/12.png",
+							imgPath: "@/static/img/download/12.png",
 							url: "http://www.icbc.com.cn/icbc/",
 							name: this.$t("pages.common.userCenter.downloadPage.text18")
 						},
 
 						{
-							imgPath: "/static/img/download/13.png",
+							imgPath: "@/static/img/download/13.png",
 							url: "https://www.ccb.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text19")
 						},
 						{
-							imgPath: "/static/img/download/14.png",
+							imgPath: "@/static/img/download/14.png",
 							url: "https://www.abchina.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text20")
 						},
 						{
-							imgPath: "/static/img/download/15.png",
+							imgPath: "@/static/img/download/15.png",
 							url: "https://www.psbc.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text21")
 						},
 						{
-							imgPath: "/static/img/download/16.png",
+							imgPath: "@/static/img/download/16.png",
 							url: "https://market.cmbchina.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text22")
 						},
 						{
-							imgPath: "/static/img/download/17.png",
+							imgPath: "@/static/img/download/17.png",
 							url: "https://www.cebbank.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text23")
 						},
 						{
-							imgPath: "/static/img/download/18.png",
+							imgPath: "@/static/img/download/18.png",
 							url: "https://www.cib.com.cn/",
 							name: this.$t("pages.common.userCenter.downloadPage.text24")
 						},
 						{
-							imgPath: "/static/img/download/19.png",
+							imgPath: "@/static/img/download/19.png",
 							url: "https://www.bankcomm.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text25")
 						},
 						{
-							imgPath: "/static/img/download/20.png",
+							imgPath: "@/static/img/download/20.png",
 							url: "https://www.cgbchina.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text26")
 						}
@@ -219,61 +219,61 @@
 				}, {
 					name: this.$t("pages.common.userCenter.downloadPage.text27"),
 					items: [{
-							imgPath: "/static/img/download/21.png",
+							imgPath: "@/static/img/download/21.png",
 							url: "https://www.taobao.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text28")
 
 						},
 						{
-							imgPath: "/static/img/download/22.png",
+							imgPath: "@/static/img/download/22.png",
 							url: "https://www.jd.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text29")
 
 						},
 						{
-							imgPath: "/static/img/download/23.png",
+							imgPath: "@/static/img/download/23.png",
 							url: "https://www.tmall.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text30")
 
 						},
 						{
-							imgPath: "/static/img/download/24.png",
+							imgPath: "@/static/img/download/24.png",
 							url: "https://www.suning.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text31")
 
 						},
 						{
-							imgPath: "/static/img/download/25.png",
+							imgPath: "@/static/img/download/25.png",
 							url: "https://www.gome.com.cn/",
 							name: this.$t("pages.common.userCenter.downloadPage.text32")
 
 						},
 						{
-							imgPath: "/static/img/download/26.png",
+							imgPath: "@/static/img/download/26.png",
 							url: "http://book.dangdang.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text33")
 
 						},
 						{
-							imgPath: "/static/img/download/27.png",
+							imgPath: "@/static/img/download/27.png",
 							url: "https://ju.taobao.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text34")
 
 						},
 						{
-							imgPath: "/static/img/download/28.png",
+							imgPath: "@/static/img/download/28.png",
 							url: "http://www.meilishuo.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text35")
 
 						},
 						{
-							imgPath: "/static/img/download/29.png",
+							imgPath: "@/static/img/download/29.png",
 							url: "https://www.mogu.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text36")
 
 						},
 						{
-							imgPath: "/static/img/download/30.png",
+							imgPath: "@/static/img/download/30.png",
 							url: "https://www.vip.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text37")
 
@@ -282,61 +282,61 @@
 				}, {
 					name: this.$t("pages.common.userCenter.downloadPage.text38"),
 					items: [{
-							imgPath: "/static/img/download/31.png",
+							imgPath: "@/static/img/download/31.png",
 							url: "https://news.sina.com.cn/",
 							name: this.$t("pages.common.userCenter.downloadPage.text39")
 
 						},
 						{
-							imgPath: "/static/img/download/32.png",
+							imgPath: "@/static/img/download/32.png",
 							url: "https://news.ifeng.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text40")
 
 						},
 						{
-							imgPath: "/static/img/download/33.png",
+							imgPath: "@/static/img/download/33.png",
 							url: "http://www.uzaobao.com",
 							name: this.$t("pages.common.userCenter.downloadPage.text41")
 
 						},
 						{
-							imgPath: "/static/img/download/34.png",
+							imgPath: "@/static/img/download/34.png",
 							url: "http://www.people.com.cn/",
 							name: this.$t("pages.common.userCenter.downloadPage.text42")
 
 						},
 						{
-							imgPath: "/static/img/download/35.png",
+							imgPath: "@/static/img/download/35.png",
 							url: "https://news.qq.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text43")
 
 						},
 						{
-							imgPath: "/static/img/download/36.png",
+							imgPath: "@/static/img/download/36.png",
 							url: "http://news.sohu.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text44")
 
 						},
 						{
-							imgPath: "/static/img/download/37.png",
+							imgPath: "@/static/img/download/37.png",
 							url: "https://www.huanqiu.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text45")
 
 						},
 						{
-							imgPath: "/static/img/download/38.png",
+							imgPath: "@/static/img/download/38.png",
 							url: "https://news.163.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text46")
 
 						},
 						{
-							imgPath: "/static/img/download/39.png",
+							imgPath: "@/static/img/download/39.png",
 							url: "http://www.xinhuanet.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text47")
 
 						},
 						{
-							imgPath: "/static/img/download/40.png",
+							imgPath: "@/static/img/download/40.png",
 							url: "https://news.baidu.com/",
 							name: this.$t("pages.common.userCenter.downloadPage.text48")
 

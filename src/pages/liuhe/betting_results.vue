@@ -14,7 +14,7 @@
 						<!-- <text
 						class="balance-text">¥&nbsp;{{ this.playing.setAmount($store.state.appInfoStore.userInfo.userBalance) }}</text> -->
 						<!--            <image class="refresh-icon" src="@/static/img/liuhe/refresh.png"></image>-->
-						<!-- <filterIcon class="refresh-icon" :useThemeColor="false" src="/static/img/liuhe/refresh.png"
+						<!-- <filterIcon class="refresh-icon" :useThemeColor="false" src="@/static/img/liuhe/refresh.png"
 							:width="35" :height="35" /> -->
 						<svg class="refresh-icon" xmlns="http://www.w3.org/2000/svg"
 							style="width: 35rpx; height: 35rpx;" viewBox="0 0 20 20" fill="none">

@@ -154,7 +154,7 @@
 						</view>
 					</view>
 					<view class="img">
-						<image :src="'/static/img/menu/' + item.lotteryType + '.png'" alt="" />
+						<image :src="'@/static/img/menu/' + item.lotteryType + '.png'" alt="" />
 						<span class="num">{{ lotteryName(item.lotteryType) }}</span>
 					</view>
 
@@ -176,7 +176,7 @@
 						</uni-col>
 						<uni-col class="van-col ntool">
 							<view class="img">
-								<image :src="'/static/img/menu/' + item.lotteryType + '.png'" alt="" />
+								<image :src="'@/static/img/menu/' + item.lotteryType + '.png'" alt="" />
 								<span class="num">{{ lotteryName(item.lotteryType) }}</span>
 							</view>
 						</uni-col>
@@ -215,7 +215,7 @@ export default {
 	data() {
 		return {
 			remark: '',
-			loadingImg: '/static/img/zw.png',
+			loadingImg: '@/static/img/zw.png',
 			navList: [{
 				lotteryType: 0,
 				name: this.$t('components.common.list.forum.all')

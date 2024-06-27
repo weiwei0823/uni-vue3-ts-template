@@ -2,7 +2,7 @@
 	<view class="add-box" :style="{ marginTop: safeHeight }" :class="['theme-' + themeColor.name]">
 		<Header :title="title" />
 		<view class="title">
-			<image class="tan" src="/static/imgs-liuhe/bank/warning.png"></image>
+			<image class="tan" src="@/static/imgs-liuhe/bank/warning.png"></image>
 			{{ $t('pages.common.userCenter.bank.add.BindCard') }}
 		</view>
 		<view class="from">

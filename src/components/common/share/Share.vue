@@ -3,14 +3,14 @@
     <view class="van-row">
       <view class="van-col van-col--8" @click="shares(1)">
         <view class="icon-text"><view>
-          <image src="/static/img/wx.png"></image>
+          <image src="@/static/img/wx.png"></image>
         </view>
           <view class="text">{{$t('components.common.share.text3')}}</view><!---->
         </view>
       </view>
       <view class="van-col van-col--8"  @click="shares(2)">
         <view class="icon-text"><view>
-          <image src="/static/img/pyq.png"></image>
+          <image src="@/static/img/pyq.png"></image>
         </view>
           <view class="text">{{$t('components.common.share.text2')}}</view><!---->
         </view>
@@ -19,7 +19,7 @@
         <a :href="'sms:?body='+text">
           <view class="icon-text">
             <view>
-              <image src="/static/img/sms.png"></image>
+              <image src="@/static/img/sms.png"></image>
             </view>
             <view class="text">{{$t('components.common.share.text1')}}</view>
             <!---->

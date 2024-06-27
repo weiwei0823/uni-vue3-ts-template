@@ -4,14 +4,14 @@
 			:font-color="fontColor" :title-style="titleStyle" :isBack="false">
 			<block slot="left">
 				<view class="" @click="backPage">
-					<filterIcon src="/static/imgs-liuhe/activity/back.png" :width="24" :height="42" />
+					<filterIcon src="@/static/imgs-liuhe/activity/back.png" :width="24" :height="42" />
 				</view>
 
 			</block>
 		</NavBar> -->
 		<Header :title="title" />
 		<view class="title">
-			<image class="tan" src="/static/imgs-liuhe/bank/warning.png"></image>
+			<image class="tan" src="@/static/imgs-liuhe/bank/warning.png"></image>
 			{{ $t('pages.common.userCenter.bank.qrcode.UploadQRCode') }}
 		</view>
 		<view class="from">

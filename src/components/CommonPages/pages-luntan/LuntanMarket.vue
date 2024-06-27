@@ -48,7 +48,7 @@
 							</view>
 							<view class="items">
 								<view class="items1" @click="qidai">
-									<image src="/static/img/market/icon-1.png" mode=""></image>
+									<image src="@/static/img/market/icon-1.png" mode=""></image>
 									<!-- <view class="imgs img1"></view> -->
 									<view class="titles">
 										{{ $t('components.CommonPages.pages-luntan.LuntanMarket.liuheKing') }}
@@ -59,7 +59,7 @@
 									<view class="numbers">198</view>
 								</view>
 								<view class="items1" @click="qidai">
-									<image src="/static/img/market/icon-2.png" mode=""></image>
+									<image src="@/static/img/market/icon-2.png" mode=""></image>
 									<view class="titles">
 										{{ $t('components.CommonPages.pages-luntan.LuntanMarket.winStreakList') }}
 									</view>
@@ -69,7 +69,7 @@
 									<view class="numbers">49</view>
 								</view>
 								<view class="items1" @click="qidai">
-									<image src="/static/img/market/icon-3.png" mode=""></image>
+									<image src="@/static/img/market/icon-3.png" mode=""></image>
 									<view class="titles">
 										{{ $t('components.CommonPages.pages-luntan.LuntanMarket.historyChampion') }}
 									</view>
@@ -79,7 +79,7 @@
 									<view class="numbers">34</view>
 								</view>
 								<view class="items1" @click="qidai">
-									<image src="/static/img/market/icon-4.png" mode=""></image>
+									<image src="@/static/img/market/icon-4.png" mode=""></image>
 									<view class="titles">
 										{{ $t('components.CommonPages.pages-luntan.LuntanMarket.expertStatistics') }}
 									</view>
@@ -170,31 +170,31 @@
 				title: this.$t('components.CommonPages.pages-luntan.LuntanMarket.market'),
 				noticeInfo: [],
 				navArr: [{
-						leftImg: '/static/img/market/icon-5.png',
+						leftImg: '@/static/img/market/icon-5.png',
 						title: this.$t('components.CommonPages.pages-luntan.LuntanMarket.myFollow'),
 						url: '/pages/common/userCenter/mycare/index',
 					},
 					{
-						leftImg: '/static/img/market/icon-6.png',
+						leftImg: '@/static/img/market/icon-6.png',
 						title: this.$t('components.CommonPages.pages-luntan.LuntanMarket.myFans'),
 						url: '/pages/common/userCenter/fans/index',
 					},
 					// {
-					//     leftImg: '/static/img/market/gm.png',
+					//     leftImg: '@/static/img/market/gm.png',
 					//     title: this.$t('components.CommonPages.pages-luntan.LuntanMarket.purchaseRecords'),
 					//     url: '',
 					// }, {
-					//     leftImg: '/static/img/market/ml.png',
+					//     leftImg: '@/static/img/market/ml.png',
 					//     title: this.$t('components.CommonPages.pages-luntan.LuntanMarket.sellRecords'),
 					//     url: '',
 					// },
 					{
-						leftImg: '/static/img/market/icon-7.png',
+						leftImg: '@/static/img/market/icon-7.png',
 						title: this.$t('components.CommonPages.pages-luntan.LuntanMarket.myReports'),
 						url: '/pages/common/userCenter/reportRecord/index',
 					},
 					{
-						leftImg: '/static/img/market/icon-8.png',
+						leftImg: '@/static/img/market/icon-8.png',
 						title: this.$t('components.CommonPages.pages-luntan.LuntanMarket.helpInstructions'),
 						url: '/pages/liuhe/help/index',
 					}

@@ -11,7 +11,7 @@
 					</view>
 				</view>
 				<view class="right">
-					<image src="/static/img/common/userCenter/service/roboto.svg" mode="widthFix"></image>
+					<image src="@/static/img/common/userCenter/service/roboto.svg" mode="widthFix"></image>
 				</view>
 			</view>
 		</view>
@@ -19,7 +19,7 @@
 			<button v-for="(item, index) in qqList"
 				style="background: #fff;font-size: 30rpx;width: 100%;height: 88rpx;line-height: 88rpx;display: flex; align-items: center; justify-content: center;"
 				type="success" @click="handleQq">
-				<image style="height: 40rpx;width: 40rpx;margin-right: 10rpx;" src="/static/img/qq.png"></image>
+				<image style="height: 40rpx;width: 40rpx;margin-right: 10rpx;" src="@/static/img/qq.png"></image>
 				{{ $t("pages.common.userCenter.service.liuhe.text3") }}{{ index + 1 }}
 			</button>
 			<view  :text="$t('pages.common.userCenter.service.liuhe.text4')" showUnderLine="false"

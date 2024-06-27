@@ -3,7 +3,7 @@
 		<image v-show="status==statusEnum.success" :class="className" :style="caculStyles" @load="onImageLoadSuccess"
 			@error="onImageLoadError" :src="avatarUrl"></image>
 		<image v-show="status==statusEnum.error" :class="className" :style="caculStyles"
-			src="/static/img/common/userCenter/no-login.png"></image>
+			src="@/static/img/common/userCenter/no-login.png"></image>
 	</view>
 </template>
 

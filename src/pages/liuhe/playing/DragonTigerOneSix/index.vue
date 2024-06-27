@@ -7,7 +7,7 @@
 						<view v-if="item.showType == 1">
 							<view class="type-name">
 								{{playData.name}}
-								<image src="./@/static/img/liuhe/desc.png" @click="showRule" />
+								<image src="@/static/img/liuhe/desc.png" @click="showRule" />
 								<rules-dialog ref="rules" :helpStr="playData.children[0].children[0].helpStr"
 									:tipsStr="playData.children[0].children[0].tipsStr"></rules-dialog>
 							</view>
@@ -17,7 +17,7 @@
 						<view v-if="item.showType == 2">
 							<view class="type-name">
 								{{currentName}}
-								<image src="./@/static/img/liuhe/desc.png" @click="showRule" />
+								<image src="@/static/img/liuhe/desc.png" @click="showRule" />
 								<rules-dialog ref="rules" :exampleStr="item.exampleStr" :helpStr="item.helpStr"
 									:tipsStr="item.tipsStr"></rules-dialog>
 							</view>

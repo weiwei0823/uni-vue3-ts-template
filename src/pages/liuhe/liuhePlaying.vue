@@ -332,7 +332,7 @@ export default {
 				id: 6
 			},
 			],
-			navBg: '/static/img/liuhe/bg-nav.svg',
+			navBg: '@/static/img/liuhe/bg-nav.svg',
 			numbers: ["05", "45", "49", "39", "12", "40", "10"],
 			isShowRecords: false,
 			showImg: require('@/static/img/liuhe/show.png'),

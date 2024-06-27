@@ -15,7 +15,7 @@
       <view class="icon-text">
         <view :class="'slot-icon bg-amage-' + sixNumber.color">
           {{ sixNumber.number }}
-          <image src="/static/img/liuhe/detail/te.png"></image>
+          <image src="@/static/img/liuhe/detail/te.png"></image>
         </view>
         <view class="slot-text">
           {{ sixNumber.shengXiao }}
@@ -76,7 +76,7 @@ export default {
         border-radius: 50%;
         position: relative;
         color: #000;
-        
+
         font-size: 32rpx;
         font-weight: 600;
         image{

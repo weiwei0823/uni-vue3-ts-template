@@ -37,7 +37,7 @@
 			</view>
 			</NavBar> -->
 					<view class="main-body">
-						<image src="/static/img/user/yqhy-bg.png" mode="widthFix" class="tupian"></image>
+						<image src="@/static/img/user/yqhy-bg.png" mode="widthFix" class="tupian"></image>
 						<!-- <view class="tupian"></view> -->
 						<view class="code-info">
 							<view class="code">
@@ -65,12 +65,12 @@
 					</view>
 					<!-- <view class="bottom-btn-group">
 						<view class="bottom-btn-group-btn" @click="onShare">
-							<image src="/static/img/common/userCenter/wechat.png" mode=""></image>
+							<image src="@/static/img/common/userCenter/wechat.png" mode=""></image>
 
 							{{ $t('pages.common.userCenter.invite.WechatFriend') }}
 						</view>
 						<view class="bottom-btn-group-btn" @click="onShare">
-							<image src="/static/img/common/userCenter/frend.png" mode=""></image>
+							<image src="@/static/img/common/userCenter/frend.png" mode=""></image>
 							{{ $t('pages.common.userCenter.invite.WechatMoment') }}
 						</view>
 					</view> -->
@@ -118,8 +118,8 @@
 						:mask-background-color="'rgba(0, 0, 0, 0.3)'" @maskClick="clostPop">
 						<view class="pop-tip-box">
 							<view class="close" @click="clostPop">
-								<!-- <image src="/static/img/user/close.png" mode=""></image> -->
-								<filterIcon src="/static/img/user/close.png" :width="30" :height="30" />
+								<!-- <image src="@/static/img/user/close.png" mode=""></image> -->
+								<filterIcon src="@/static/img/user/close.png" :width="30" :height="30" />
 							</view>
 							<view class="title">{{ $t('pages.common.userCenter.invite.ShareReward') }}</view>
 							<view class="text-box">

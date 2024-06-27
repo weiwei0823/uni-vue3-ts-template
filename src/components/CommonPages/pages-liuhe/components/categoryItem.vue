@@ -19,7 +19,7 @@
           <lazy-image v-if="item.izHot"
                       class="lazy-image tuijian"
                       :scroll-top="scrollTop"
-                      src="/static/imgs-liuhe/index_02/categorys/item/tuijian.png"
+                      src="@/static/imgs-liuhe/index_02/categorys/item/tuijian.png"
                       :width="'100%'"
                       mode="widthFix">
             <template #loading>

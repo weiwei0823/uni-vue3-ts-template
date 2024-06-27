@@ -74,9 +74,9 @@
 				<view class="payConfirm-box">
 					<view class="close-img" @click="closePay">
 
-						<filterIcon src="/static/img/common/close.png" :width="80" :height="80" />
+						<filterIcon src="@/static/img/common/close.png" :width="80" :height="80" />
 					</view>
-					<image class="rocket-img" src="/static/img/common/rocket.png" mode=""></image>
+					<image class="rocket-img" src="@/static/img/common/rocket.png" mode=""></image>
 					<view class="payConfirm-box-title">
 						存款订单等待支付中...
 					</view>

@@ -3,7 +3,7 @@
 		<view class="title">
 			{{ $t("components.common.alert.alertboxs.verify.Input.text1") }}
 		</view>
-		<image class="loading" src="/static/img/loading_v1.gif" mode="heightFix" v-if="loading"></image>
+		<image class="loading" src="@/static/img/loading_v1.gif" mode="heightFix" v-if="loading"></image>
 		<image class="img" :src="imgUrl" v-else></image>
 		<input class="code" v-model="code" :placeholder="$t('components.common.alert.alertboxs.verify.Input.text2')" />
 		<u-button class="btn" @click="confirm">
@@ -28,7 +28,7 @@
 				verifyCode: "BZa4",
 				code: "",
 				loading: false,
-				imgUrl: "/static/img/loading_v1.gif",
+				imgUrl: "@/static/img/loading_v1.gif",
 			};
 		},
 		mounted() {

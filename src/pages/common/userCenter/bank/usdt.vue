@@ -4,14 +4,14 @@
 			:title-style="titleStyle" :isBack="false">
 			<block slot="left">
 				<view class="" @click="backPage">
-					<filterIcon src="/static/imgs-liuhe/activity/back.png" :width="24" :height="42" />
+					<filterIcon src="@/static/imgs-liuhe/activity/back.png" :width="24" :height="42" />
 				</view>
 
 			</block>
 		</NavBar> -->
 		<Header :title="title" />
 		<view class="title">
-			<image class="tan" src="/static/imgs-liuhe/bank/warning.png"></image>
+			<image class="tan" src="@/static/imgs-liuhe/bank/warning.png"></image>
 			{{ $t('pages.common.userCenter.bank.usdt.BindingInstructions') }}
 		</view>
 		<view class="from">
@@ -134,22 +134,22 @@
 				bank: [{
 						id: 1,
 						name: 'TRC20',
-						logoMobile: '/static/img/user/bank/virtual.png'
+						logoMobile: '@/static/img/user/bank/virtual.png'
 					},
 					{
 						id: 2,
 						name: 'ERC20',
-						logoMobile: '/static/img/user/bank/ethereum.png'
+						logoMobile: '@/static/img/user/bank/ethereum.png'
 					},
 					{
 						id: 3,
 						name: 'OMNI',
-						logoMobile: '/static/img/user/bank/bitcoin.png'
+						logoMobile: '@/static/img/user/bank/bitcoin.png'
 					},
 					{
 						id: 4,
 						name: 'BEP2',
-						logoMobile: '/static/img/user/bank/bian.png'
+						logoMobile: '@/static/img/user/bank/bian.png'
 					}
 				],
 				BankInfo: null,

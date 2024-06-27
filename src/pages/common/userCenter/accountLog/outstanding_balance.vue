@@ -84,7 +84,7 @@
 				:loading-more-loading-animated="false" :loading-more-default-as-loading="true"
 				:show-loading-more-no-more-view="true" :loading-more-no-more-text="'没有更多数据了'" :hide-empty-view="false"
 				:empty-view-center="true" :empty-view-text="$t('pages.luntan.masterForum.noData')"
-				:empty-view-img="'/static/imgs-liuhe/activity/empty.png'" :fixed="false"
+				:empty-view-img="'@/static/imgs-liuhe/activity/empty.png'" :fixed="false"
 				:empty-view-style="{ 'margin-bottom': '100rpx' }" show-refresher-when-reload
 				:empty-view-img-style="{ 'width': '400rpx', 'height': '400rpx' }">
 				<view style="border-radius: 0 0 24rpx 24rpx; overflow: hidden;">

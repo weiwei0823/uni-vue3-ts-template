@@ -442,7 +442,7 @@
 
 			.text {
 				width: 350rpx;
-				// background: url('/static/img/all/home-pop/header-bj.png') no-repeat;
+				// background: url('@/static/img/all/home-pop/header-bj.png') no-repeat;
 				background-position: center;
 				background-size: 100%;
 				font-weight: 400;
@@ -600,7 +600,7 @@
 							left: 0;
 							width: 106rpx;
 							height: 32rpx;
-							background: url('/static/imgs-liuhe/activity/bg.png') no-repeat;
+							background: url('@/static/imgs-liuhe/activity/bg.png') no-repeat;
 							background-size: 100%;
 							font-size: 22rpx;
 							font-weight: 500;

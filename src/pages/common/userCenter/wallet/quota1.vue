@@ -21,7 +21,7 @@
 					<view class="btn" @click="rollInOne(item, index)">
 						<view class="refsh">
 							<image :class="{ run: all || (isRef && curr == index) }"
-								src="/static/img/user/wallet/refshs.png"></image>
+								src="@/static/img/user/wallet/refshs.png"></image>
 						</view>
 						<view class="text">刷新</view>
 					</view>

@@ -1,22 +1,22 @@
 import { defineStore } from 'pinia'
 
-const tabDataStore = defineStore('tabData', {
-  state: {
+const useTabDataStore = defineStore('tabData', {
+  state: () => ({
     historyData: [],
     collectList: [],
     categoryData: []
-  },
-  mutations: {
-    setCollectList(state, data) {
-      state.collectList = data
+  }),
+  actions: {
+    setCollectList(data) {
+      this.collectList = data
     },
-    setCategoryData(state, data) {
-      state.categoryData = data
+    setCategoryData(data) {
+      this.categoryData = data
     },
-    setHistoryData(state, data) {
-      state.historyData = data
+    setHistoryData(data) {
+      this.historyData = data
     }
   }
 })
 
-export default tabDataStore
+export default useTabDataStore

@@ -3,7 +3,7 @@
 		<view class="bank-box" :style="{ marginTop: safeHeight,height:`${uWindowHeight}px` }">
 			<Header :title="title" :isBack="false" showBack @back="back" />
 			<view class="img-box">
-				<imageSvgUrl url="/static/imgs-liuhe/bank/ok.svg" :width="228" :height="228"
+				<imageSvgUrl url="@/static/imgs-liuhe/bank/ok.svg" :width="228" :height="228"
 					replaceThemeTargetColor="#07C160" />
 				<view class="msg">{{ $t('pages.common.userCenter.bank.common.BindSuccess') }}</view>
 			</view>

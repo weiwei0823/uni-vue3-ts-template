@@ -92,7 +92,7 @@
 				safeHeight: this.$config.getStorageSync(this.$config.enumMgr.APP_LOCALSTORE_KEYS.SYSTEM_INFO).safeArea
 					.top + "px",
 				title: '活动规则',
-				src: "/static/img/user/hdgz.png",
+				src: "@/static/img/user/hdgz.png",
 				rules: {
 					applyConditionList: [],
 					availableNewUserList: [],

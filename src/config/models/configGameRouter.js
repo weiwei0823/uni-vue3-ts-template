@@ -83,7 +83,7 @@ export default {
     filterRecharge = true,
     filterLogin = true
   ) {
-    const { openGameIntercept, userInfo } =
+    const { userInfo } =
       pageInstance.$store.state.appInfoStore
     const jumpType = (gameDateItem.jumpType || gameDateItem.type) ?? 2
     /**

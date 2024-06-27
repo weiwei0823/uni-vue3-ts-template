@@ -11,7 +11,7 @@
           style="width: 40rpx;height: 40rpx;margin-right: 10rpx">
         </image>
         <image v-else
-          :src="lotteryType == item.lotteryType ? '/static/img/menu/act-' + item.lotteryType + '.png' : '/static/img/menu/' + item.lotteryType + '.png'"
+          :src="lotteryType == item.lotteryType ? '@/static/img/menu/act-' + item.lotteryType + '.png' : '@/static/img/menu/' + item.lotteryType + '.png'"
           style="width: 40rpx;height: 40rpx;;margin-right: 10rpx;">
         </image>
       </template>

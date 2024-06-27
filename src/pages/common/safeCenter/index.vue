@@ -8,14 +8,14 @@
 		<scroll-view scroll-y class="scroll-y" :style="{height:`calc(${winHeight}px - 88rpx)`,marginTop:'-4rpx'}"
 			:enhanced="true" :bounces="false" :show-scrollbar="false">
 			<view class="img-box">
-				<!-- <filterIcon src="/static/img/safe/banner.png" :width="320" :height="350" /> -->
-				<image src="/static/img/safe/banner.png"></image>
+				<!-- <filterIcon src="@/static/img/safe/banner.png" :width="320" :height="350" /> -->
+				<image src="@/static/img/safe/banner.png"></image>
 				<view class="title">{{$t('common.safeCenter.text0')}}</view>
 			</view>
 			<view class="list-row">
 				<view class="list-item" @click="setMobile()">
 					<view class="left">
-						<imageSvgUrl url="/static/img/safe/svgs/1.svg" :width="44" :height="44"
+						<imageSvgUrl url="@/static/img/safe/svgs/1.svg" :width="44" :height="44"
 							replaceThemeTargetColor="#07C160" />
 						<view class="title">{{$t('common.safeCenter.text1')}}</view>
 					</view>
@@ -28,7 +28,7 @@
 
 				<view class="list-item" @click="setPwd()">
 					<view class="left">
-						<imageSvgUrl url="/static/img/safe/svgs/2.svg" :width="44" :height="44"
+						<imageSvgUrl url="@/static/img/safe/svgs/2.svg" :width="44" :height="44"
 							replaceThemeTargetColor="#07C160" />
 						<view class="title">{{$t('common.safeCenter.text3')}}</view>
 					</view>
@@ -40,7 +40,7 @@
 
 				<view class="list-item" @click="setPinCode()">
 					<view class="left">
-						<imageSvgUrl url="/static/img/safe/svgs/3.svg" :width="44" :height="44"
+						<imageSvgUrl url="@/static/img/safe/svgs/3.svg" :width="44" :height="44"
 							replaceThemeTargetColor="#07C160" />
 						<view class="title">{{$t('common.safeCenter.text5')}}</view>
 					</view>
@@ -53,7 +53,7 @@
 
 <!--				<view class="list-item">-->
 <!--					<view class="left">-->
-<!--						<imageSvgUrl url="/static/img/safe/svgs/4.svg" :width="44" :height="44"-->
+<!--						<imageSvgUrl url="@/static/img/safe/svgs/4.svg" :width="44" :height="44"-->
 <!--							replaceThemeTargetColor="#07C160" />-->
 <!--						<view class="title">{{$t('common.safeCenter.text6')}}</view>-->
 <!--					</view>-->
@@ -65,7 +65,7 @@
 
 <!--				<view class="list-item">-->
 <!--					<view class="left">-->
-<!--						<imageSvgUrl url="/static/img/safe/svgs/5.svg" :width="44" :height="44"-->
+<!--						<imageSvgUrl url="@/static/img/safe/svgs/5.svg" :width="44" :height="44"-->
 <!--							replaceThemeTargetColor="#07C160" />-->
 <!--						<view class="title">{{$t('common.safeCenter.text8')}}</view>-->
 <!--					</view>-->
@@ -88,7 +88,7 @@
 
 				<view class="list-item" @click="toPage('/pages/common/userCenter/bank/index')">
 					<view class="left">
-						<imageSvgUrl url="/static/img/safe/svgs/6.svg" :width="44" :height="44"
+						<imageSvgUrl url="@/static/img/safe/svgs/6.svg" :width="44" :height="44"
 							replaceThemeTargetColor="#07C160" />
 						<view class="title">{{$t('common.safeCenter.text9')}}</view>
 					</view>

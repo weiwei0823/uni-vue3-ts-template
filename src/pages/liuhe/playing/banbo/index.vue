@@ -12,7 +12,7 @@
 
 				<view class="type-name">
 					{{currentName}}
-					<image src="./@/static/img/liuhe/desc.png" @click="showRule" />
+					<image src="@/static/img/liuhe/desc.png" @click="showRule" />
 				</view>
 				<view class="balls">
 					<view :class="item.isSelected === true ? 'ball-item selected' :'ball-item'"

@@ -3,10 +3,10 @@
 	<view class="mi-pai" :class="['theme-' + themeColor.name]" v-if="isShowMiPai">
 		<view class="back"></view>
 		<view class="mi-pai-content" :style="{marginTop:`calc( ( ${this.uWindowHeight}px -  1006rpx )/2 ) `}">
-			<image class="header-img" src="/static/img/liuhe/mipai/header.png"></image>
-			<image class="close-img" src="/static/img/liuhe/mipai/close.png" @click="closeMiPai"></image>
+			<image class="header-img" src="@/static/img/liuhe/mipai/header.png"></image>
+			<image class="close-img" src="@/static/img/liuhe/mipai/close.png" @click="closeMiPai"></image>
 			<view class="yours">
-				<image class="yours-header-img" src="/static/img/liuhe/mipai/yours-header.png"></image>
+				<image class="yours-header-img" src="@/static/img/liuhe/mipai/yours-header.png"></image>
 				<view class="yours-title">
 					<view class="title">你的注单</view>
 					<view class="term">
@@ -24,7 +24,7 @@
 				</view>
 			</view>
 			<view class="result-content">
-				<image class="result-header-img" src="/static/img/liuhe/mipai/result-header.png"></image>
+				<image class="result-header-img" src="@/static/img/liuhe/mipai/result-header.png"></image>
 				<view class="result-title">
 					<view class="title">开奖结果</view>
 					<view class="term">
@@ -42,7 +42,7 @@
 									{{ item }}
 								</view>
 								<image class="plus" v-if="key === 5 && headInfo.lotteryTypeId === 4"
-									src="/static/img/liuhe/mipai/plus+.png"></image>
+									src="@/static/img/liuhe/mipai/plus+.png"></image>
 							</view>
 						</view>
 					</view>
@@ -380,7 +380,7 @@
 			.yours {
 				width: 540rpx;
 				height: 412rpx;
-				background: url('/static/img/liuhe/mipai/yours-bg.png') no-repeat;
+				background: url('@/static/img/liuhe/mipai/yours-bg.png') no-repeat;
 				background-size: 100% 100%;
 				position: relative;
 				padding: 20rpx 0;
@@ -463,7 +463,7 @@
 			}
 
 			.result-content {
-				background: url('/static/img/liuhe/mipai/result-bg.png') no-repeat;
+				background: url('@/static/img/liuhe/mipai/result-bg.png') no-repeat;
 				background-size: 100% 100%;
 				width: 540rpx;
 				height: 328rpx;
@@ -512,7 +512,7 @@
 				}
 
 				.result-box {
-					background: url('/static/img/liuhe/mipai/Vector.png') no-repeat;
+					background: url('@/static/img/liuhe/mipai/Vector.png') no-repeat;
 					background-size: 100% 100%;
 					//bottom: 78rpx;
 					width: 500rpx;

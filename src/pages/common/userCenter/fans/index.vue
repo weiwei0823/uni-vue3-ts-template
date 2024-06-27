@@ -38,7 +38,7 @@
 			:show-loading-more-no-more-view="false"
 			:loading-more-no-more-text="$t('components.CommonPages.pages - liuhe.LiuheActivity.NoMoreData')"
 			:hide-empty-view="false" :empty-view-center="true" :empty-view-text="$t('pages.luntan.masterForum.noData')"
-			:empty-view-img="'/static/imgs-liuhe/activity/empty.png'" :fixed="false"
+			:empty-view-img="'@/static/imgs-liuhe/activity/empty.png'" :fixed="false"
 			:empty-view-style="{ 'margin-bottom': '170px' }"
 			:empty-view-img-style="{ 'width': '443rpx', 'height': '443rpx' }"
 			:empty-view-title-style="{ 'color': ' #999999', 'font-size': '30rpx', 'line-height': '44rpx', 'margin-top': '10rpx' }">

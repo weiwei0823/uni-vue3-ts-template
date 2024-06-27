@@ -25,7 +25,7 @@
 					<view class="tip">{{$t("pages.common.userCenter.wallet.quota.desc")}}</view>
 				</view>
 				<view class="btn" @click="rollInBack()">
-					<image class="btn-icon" src="/static/img/liuhe/activity/quota/ico_hs_01.png"></image>
+					<image class="btn-icon" src="@/static/img/liuhe/activity/quota/ico_hs_01.png"></image>
 					{{$t("pages.common.userCenter.wallet.quota.Recycle")}}
 				</view>
 			</view>
@@ -56,7 +56,7 @@
 						:bounces="false" :show-scrollbar="false">
 						<Empty v-if="!loading && !list.length" />
 						<view class="loding" v-if="loading">
-							<image src="/static/img/loading_v1.gif"></image>
+							<image src="@/static/img/loading_v1.gif"></image>
 							<text class="text">
 								{{$t("pages.common.userCenter.wallet.quota.loading")}}
 							</text>
@@ -67,15 +67,15 @@
 									<image class="img" :src="item.logo"></image>
 									<view class="name">{{ item.platformName }}</view>
 									<!-- <filterIcon /> -->
-									<!-- <filterIcon src="/static/img/liuhe/activity/quota/ico_hs_02.png" :width="32"
+									<!-- <filterIcon src="@/static/img/liuhe/activity/quota/ico_hs_02.png" :width="32"
 									:height="32" /> -->
 									<view class="img-ico" @click="rollInBack(item)"
 										:class="{ run: curr === item.platformId || currAll }">
-										<filterIcon src="/static/img/liuhe/activity/quota/ico_hs_02.png" :width="32"
+										<filterIcon src="@/static/img/liuhe/activity/quota/ico_hs_02.png" :width="32"
 											:height="32" />
 									</view>
 									<!-- <image class="img-ico" :class="{ run: curr === item.platformId || currAll }"
-									src="/static/img/liuhe/activity/quota/ico_hs_02.png" @click="rollInBack(item)">
+									src="@/static/img/liuhe/activity/quota/ico_hs_02.png" @click="rollInBack(item)">
 								</image> -->
 								</view>
 								<view class="divider"></view>

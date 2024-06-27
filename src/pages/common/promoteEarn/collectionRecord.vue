@@ -8,7 +8,7 @@
 					<template #itemImg="item">
 						<view class="item-img">
 							<image class="img" v-if="item.value === timeRange"
-								src="/static/imgs-liuhe/activity/item-selected.png">
+								src="@/static/imgs-liuhe/activity/item-selected.png">
 							</image>
 						</view>
 					</template>
@@ -34,7 +34,7 @@
 				:loading-more-default-as-loading="true" :show-loading-more-no-more-view="true"
 				:loading-more-no-more-text='$t("pages.common.promoteEarn.index.noMore")' :hide-empty-view="false"
 				:empty-view-center="true" :empty-view-text="$t('pages.luntan.masterForum.noData')"
-				:empty-view-img="'/static/imgs-liuhe/activity/empty.png'" :fixed="false"
+				:empty-view-img="'@/static/imgs-liuhe/activity/empty.png'" :fixed="false"
 				:empty-view-style="{ 'margin-bottom': '170px' }"
 				:empty-view-img-style="{ 'width': '398rpx', 'height': '398rpx' }"
 				:empty-view-title-style="{ 'color': ' #999999', 'font-size': '30rpx', 'line-height': '44rpx', 'margin-top': '10rpx' }">

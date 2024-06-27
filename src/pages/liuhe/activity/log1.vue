@@ -7,7 +7,7 @@
 			<view class="pre" @click="pre()">{{ isShowPre ? '前一天' : '' }}</view>
 			<view class="time-item">
 				<view class="icon">
-					<image src="/static/img/user/accountlog/date.png"></image>
+					<image src="@/static/img/user/accountlog/date.png"></image>
 				</view>
 				<view class="time" @click="openTime">{{ showTime }}</view>
 			</view>
@@ -53,22 +53,22 @@
 				class="paging" ref="paging" v-model="list" @query="getList" :lower-threshold="10"
 				:refresher-enabled="true" :refresherAnimated="false" :show-refresher-update-time="true"
 				:refresher-default-text="'松开刷新...'" :refresher-pulling-text="'松开刷新...'"
-				:refresher-default-img="'/static/img/load.gif'" :refresher-pulling-img="'/static/img/load.gif'"
-				:refresher-refreshing-img="'/static/img/load.gif'" :refresher-default-style="'#EEEEEE'"
+				:refresher-default-img="'@/static/img/load.gif'" :refresher-pulling-img="'@/static/img/load.gif'"
+				:refresher-refreshing-img="'@/static/img/load.gif'" :refresher-default-style="'#EEEEEE'"
 				:refresher-background="'#EEEEEE'" :refresher-fixed-background="'#EEEEEE'"
 				:refresher-img-style="{ width: '100rpx', height: '100rpx', transform: 'rotate(0deg)' }"
 				:refresher-refreshing-text="'正在加载更多数据...'"
 				:loading-more-loading-icon-custom-style="{ width: '100rpx', height: '100rpx' }"
-				:loading-more-loading-icon-custom-image="'/static/img/load.gif'"
+				:loading-more-loading-icon-custom-image="'@/static/img/load.gif'"
 				:loading-more-custom-style="{ 'padding-top': '20rpx', 'background': '#EEEEEE' }"
 				:loading-more-loading-animated="false" :loading-more-default-as-loading="true"
 				:show-loading-more-no-more-view="true" :loading-more-no-more-text="'没有更多数据了'" :hide-empty-view="false"
-				:empty-view-center="true" :empty-view-text="'暂无记录'" :empty-view-img="'/static/img/empty.png'"
+				:empty-view-center="true" :empty-view-text="'暂无记录'" :empty-view-img="'@/static/img/empty.png'"
 				:fixed="false" :empty-view-style="{ 'margin-bottom': '170px' }"
 				:empty-view-img-style="{ 'width': '260rpx', 'height': '260rpx' }"
 				:empty-view-title-style="{ 'color': ' #999999', 'font-size': '30rpx', 'line-height': '44rpx', 'margin-top': '10rpx' }">
 				<view class="list-item" v-for="(item, index) in list" @click="detail(item)">
-					<image class="new" v-if="item.receiveTimeGapStr == '刚刚'" src="/static/img/user/accountlog/new.png">
+					<image class="new" v-if="item.receiveTimeGapStr == '刚刚'" src="@/static/img/user/accountlog/new.png">
 					</image>
 
 

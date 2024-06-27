@@ -11,7 +11,7 @@
 					<template #itemImg="item">
 						<view class="item-img">
 							<image class="img" v-if="item.value === curr"
-								src="/static/imgs-liuhe/activity/item-selected.png">
+								src="@/static/imgs-liuhe/activity/item-selected.png">
 							</image>
 						</view>
 					</template>

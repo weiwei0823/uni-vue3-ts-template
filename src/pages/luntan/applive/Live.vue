@@ -565,7 +565,7 @@
 		width: 334rpx;
 		height: 68rpx;
 		position: relative;
-		background: url("/static/imgs-liuhe/expend-bg.png");
+		background: url("@/static/imgs-liuhe/expend-bg.png");
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 		display: flex;

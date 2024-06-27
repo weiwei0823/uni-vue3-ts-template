@@ -11,13 +11,13 @@
         </view>
       </view>
       <view class="icon-text">
-        <image class="plus" src="/static/img/liuhe/detail/plus+.png"></image>
+        <image class="plus" src="@/static/img/liuhe/detail/plus+.png"></image>
       </view>
       <view class="icon-text">
         <view class="slot-icon"
           :style="{ background: `url(/static/img/liuhe/detail/bg-${sixNumber.color}.png)`, backgroundSize: '100% 100%' }">
           {{ sixNumber.number }}
-          <image src="/static/img/liuhe/detail/te.png"></image>
+          <image src="@/static/img/liuhe/detail/te.png"></image>
         </view>
         <view class="slot-text">
           {{ sixNumber.shengXiao }}

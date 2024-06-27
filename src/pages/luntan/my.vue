@@ -52,7 +52,7 @@
 
 							</view>
 							<view class="content_blance_top-li-right" @click="duihuan">
-								<image src="/static/img/common/userCenter/transaction.png" mode=""></image>
+								<image src="@/static/img/common/userCenter/transaction.png" mode=""></image>
 								{{ $t('pages.common.userCenter.index.exchange') }}
 							</view>
 						</view>
@@ -74,15 +74,15 @@
 
 					<view class="content_blance_bottom">
 						<view class="content_blance_bottom-btn" @click="qidai">
-							<image src="/static/img/common/userCenter/cz.png" mode=""></image>
+							<image src="@/static/img/common/userCenter/cz.png" mode=""></image>
 							{{ $t('pages.common.userCenter.index.recharge') }}
 						</view>
 						<view class="content_blance_bottom-btn" @click="qidai">
-							<image src="/static/img/common/userCenter/qk.png" mode=""></image>
+							<image src="@/static/img/common/userCenter/qk.png" mode=""></image>
 							{{ $t('pages.common.userCenter.index.withdraw') }}
 						</view>
 						<view class="content_blance_bottom-btn" @click="qidai">
-							<image src="/static/img/common/userCenter/mtzc.png" mode=""></image>
+							<image src="@/static/img/common/userCenter/mtzc.png" mode=""></image>
 							{{ $t('pages.common.userCenter.index.freeCharge') }}
 						</view>
 					</view>
@@ -96,14 +96,14 @@
 							<view class="box-center-content-item"
 								@click="toUrl('/pages/common/userCenter/spokesperson/apply')">
 								<view class="box-center-content-item-img">
-									<image src="/static/img/common/userCenter/icon-1.png" />
+									<image src="@/static/img/common/userCenter/icon-1.png" />
 								</view>
 								<view class="text">{{ $t('pages.common.userCenter.index.applyForSpokesperson') }}
 								</view>
 							</view>
 							<view class="box-center-content-item" @click="toUrl('/pages/luntan/activity')">
 								<view class="box-center-content-item-img">
-									<image mode="widthFix" src="/static/img/common/userCenter/icon-2.png" />
+									<image mode="widthFix" src="@/static/img/common/userCenter/icon-2.png" />
 									<label class="badge">4</label>
 								</view>
 								<view class="text">
@@ -113,7 +113,7 @@
 							</view>
 							<view class="box-center-content-item" @click="toUrl('/pages/common/userCenter/invite')">
 								<view class="box-center-content-item-img">
-									<image src="/static/img/common/userCenter/icon-3.png" />
+									<image src="@/static/img/common/userCenter/icon-3.png" />
 								</view>
 								<view class="text">{{ $t('pages.common.userCenter.index.inviteFriends') }}</view>
 							</view>
@@ -122,7 +122,7 @@
 							@click="toUrl('/pages/common/userCenter/reports/reports', [`${$config.enumMgr.STATION.ALL}`, `${$config.enumMgr.STATION.LUNTAN}`])">
 
 							<view class="box-center-content-item-img">
-								<image src="/static/img/common/userCenter/icon-4.png" />
+								<image src="@/static/img/common/userCenter/icon-4.png" />
 							</view>
 							<view class="text">{{ $t('pages.common.userCenter.index.monthlyReport') }}</view>
 
@@ -130,7 +130,7 @@
 							<view class="box-center-content-item"
 								@click="toUrl('/pages/common/userCenter/level/level')">
 								<view class="box-center-content-item-img">
-									<image src="/static/img/common/userCenter/icon-5.png" />
+									<image src="@/static/img/common/userCenter/icon-5.png" />
 								</view>
 								<view class="text">{{ $t('pages.common.userCenter.index.userLevel') }}</view>
 							</view>
@@ -138,7 +138,7 @@
 						</view>
 					</view>
 					<view class="advert-img" @click="toUrlSign('/pages/luntan/toolBox/vector')">
-						<image src="/static/img/common/userCenter/signBanner.png" mode="widthFix" />
+						<image src="@/static/img/common/userCenter/signBanner.png" mode="widthFix" />
 					</view>
 
 					<view class="box-center">
@@ -146,14 +146,14 @@
 						<view class="box-center-content">
 							<view class="box-center-content-item" @click="toUrl()">
 								<view class="box-center-content-item-img">
-									<image src="/static/img/common/userCenter/icon-6.png" />
+									<image src="@/static/img/common/userCenter/icon-6.png" />
 								</view>
 								<view class="text">{{ $t('pages.common.userCenter.index.myWallet') }}</view>
 							</view>
 							<view class="box-center-content-item"
 								@click="toUrl('/pages/common/userCenter/homepage/homepage')">
 								<view class="box-center-content-item-img">
-									<image src="/static/img/common/userCenter/icon-7.png" />
+									<image src="@/static/img/common/userCenter/icon-7.png" />
 								</view>
 								<view class="text">{{ $t('pages.common.userCenter.index.myHomepage') }}</view>
 							</view>
@@ -161,41 +161,41 @@
 							<!-- <view class="box-center-content-item"
 							@click="toUrl('/pages/common/userCenter/promotion/promotion', [`${$config.enumMgr.STATION.ALL}`, `${$config.enumMgr.STATION.LUNTAN}`])">
 							<view class="box-center-content-item-img">
-								<image src="/static/img/common/userCenter/icon-8.png" />
+								<image src="@/static/img/common/userCenter/icon-8.png" />
 							</view>
 							<view class="text">{{ $t('pages.common.userCenter.index.myPromotion') }}</view>
 						</view> -->
 							<view class="box-center-content-item"
 								@click="toUrl('/pages/common/userCenter/collection/index')">
 								<view class="box-center-content-item-img">
-									<image src="/static/img/common/userCenter/icon-9.png" />
+									<image src="@/static/img/common/userCenter/icon-9.png" />
 								</view>
 								<view class="text">{{ $t('pages.common.userCenter.index.myCollection') }}</view>
 							</view>
 							<view class="box-center-content-item"
 								@click="toUrl('/pages/common/userCenter/comment/index')">
 								<view class="box-center-content-item-img">
-									<image src="/static/img/common/userCenter/icon-10.png" />
+									<image src="@/static/img/common/userCenter/icon-10.png" />
 								</view>
 								<view class="text">{{ $t('pages.common.userCenter.index.myComment') }}</view>
 							</view>
 							<view class="box-center-content-item"
 								@click="toUrl('/pages/common/userCenter/mycare/index')">
 								<view class="box-center-content-item-img">
-									<image src="/static/img/common/userCenter/icon-11.png" />
+									<image src="@/static/img/common/userCenter/icon-11.png" />
 								</view>
 								<view class="text">{{ $t('pages.common.userCenter.index.myFollow') }}</view>
 							</view>
 							<view class="box-center-content-item" @click="toUrl('/pages/common/userCenter/fans/index')">
 								<view class="box-center-content-item-img">
-									<image src="/static/img/common/userCenter/icon-12.png" />
+									<image src="@/static/img/common/userCenter/icon-12.png" />
 								</view>
 								<view class="text">{{ $t('pages.common.userCenter.index.myFans') }}</view>
 
 							</view>
 							<view class="box-center-content-item" @click="toUrl('/pages/common/userCenter/like/index')">
 								<view class="box-center-content-item-img">
-									<image src="/static/img/common/userCenter/icon-13.png" />
+									<image src="@/static/img/common/userCenter/icon-13.png" />
 								</view>
 								<view class="text">{{ $t('pages.common.userCenter.index.myLikes') }}</view>
 
@@ -203,14 +203,14 @@
 							<view class="box-center-content-item"
 								@click="toUrl('/pages/common/userCenter/backroom/index')">
 								<view class="box-center-content-item-img">
-									<image src="/static/img/common/userCenter/icon-14.png" />
+									<image src="@/static/img/common/userCenter/icon-14.png" />
 								</view>
 								<view class="text">{{ $t('pages.common.userCenter.index.littleBlackHouse') }}</view>
 							</view>
 							<view class="box-center-content-item"
 								@click="toUrl('/pages/common/userCenter/mybackroomuser/index')">
 								<view class="box-center-content-item-img">
-									<image src="/static/img/common/userCenter/icon-15.png" />
+									<image src="@/static/img/common/userCenter/icon-15.png" />
 								</view>
 								<view class="text">{{ $t('pages.common.userCenter.index.blacklist') }}</view>
 
@@ -218,7 +218,7 @@
 						</view>
 					</view>
 					<view class="advert-img" @click="toUrl('/pages/common/userCenter/spokesperson/apply')">
-						<image src="/static/img/common/userCenter/applyBanner.png" mode="widthFix" />
+						<image src="@/static/img/common/userCenter/applyBanner.png" mode="widthFix" />
 					</view>
 
 
@@ -227,7 +227,7 @@
 						<view class="box-center-content">
 							<view class="box-center-content-item" @click="toUrl('/pages/liuhe/notice/index')">
 								<view class="box-center-content-item-img">
-									<image src="/static/img/common/userCenter/icon-16.png" />
+									<image src="@/static/img/common/userCenter/icon-16.png" />
 									<label class="badge-notext"></label>
 								</view>
 								<view class="text">{{ $t('pages.common.userCenter.index.inStationInformation') }}
@@ -237,7 +237,7 @@
 							<view class="box-center-content-item"
 								@click="toUrl2('/pages/common/userCenter/service/index')">
 								<view class="box-center-content-item-img">
-									<image src="/static/img/common/userCenter/icon-17.png" />
+									<image src="@/static/img/common/userCenter/icon-17.png" />
 								</view>
 								<view class="text">{{ $t('pages.common.userCenter.index.contactCustomerService') }}
 								</view>
@@ -245,28 +245,28 @@
 							<!-- <view class="box-center-content-item"
 							@click="toUrl('/pages/common/userCenter/setting/aboutUs')">
 							<view class="box-center-content-item-img">
-								<image src="/static/img/common/userCenter/icon-18.png" />
+								<image src="@/static/img/common/userCenter/icon-18.png" />
 							</view>
 							<view class="text">{{ $t('pages.common.userCenter.index.aboutUs') }}</view>
 						</view> -->
 							<view class="box-center-content-item"
 								@click="toUrl('/pages/common/userCenter/feedback/index?type=2')">
 								<view class="box-center-content-item-img">
-									<image src="/static/img/common/userCenter/icon-18.png" />
+									<image src="@/static/img/common/userCenter/icon-18.png" />
 								</view>
 								<view class="text">{{ $t('pages.common.userCenter.index.feedback') }}</view>
 							</view>
 							<view class="box-center-content-item"
 								@click="toUrl('/pages/common/userCenter/reportRecord/index')">
 								<view class="box-center-content-item-img">
-									<image src="/static/img/common/userCenter/icon-19.png" />
+									<image src="@/static/img/common/userCenter/icon-19.png" />
 								</view>
 								<view class="text">{{ $t('pages.common.userCenter.index.reportRecord') }}</view>
 
 							</view>
 							<view class="box-center-content-item" @click="clearCache">
 								<view class="box-center-content-item-img">
-									<image src="/static/img/common/userCenter/icon-20.png" />
+									<image src="@/static/img/common/userCenter/icon-20.png" />
 								</view>
 								<view class="text">{{ $t('pages.common.userCenter.index.clearCache') }}</view>
 							</view>
@@ -275,7 +275,7 @@
 								<!-- <uni-link href=""
 								text="/pages/common/userCenter/downloadPage" showUnderLine="false"> -->
 								<view class="box-center-content-item-img">
-									<image src="/static/img/common/userCenter/icon-21.png" />
+									<image src="@/static/img/common/userCenter/icon-21.png" />
 								</view>
 								<view class="text">{{ $t('pages.common.userCenter.index.downloadAPP') }}</view>
 
@@ -285,7 +285,7 @@
 
 							<view class="box-center-content-item" @click="isShow = true">
 								<view class="box-center-content-item-img">
-									<image src="/static/img/common/userCenter/icon-22.png" />
+									<image src="@/static/img/common/userCenter/icon-22.png" />
 								</view>
 								<view class="text">{{ $t('pages.common.userCenter.index.platformSetting') }}</view>
 							</view>
@@ -408,7 +408,7 @@
 			return {
       			totalGold: 0,
 				isEnd: false,
-				detailLogo: '/static/img/user/Frame21.png',
+				detailLogo: '@/static/img/user/Frame21.png',
 				playing: new Playing(),
 				isLogin: false,
 				userInfo: {},

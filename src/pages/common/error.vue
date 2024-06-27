@@ -3,7 +3,7 @@
 		<Header :title="title" />
 		<view class="img-box">
 			<view class="error-text">服务器忙，请稍后重试...</view>
-			<image src="/static/img/nodata.png" class="center-img"></image>
+			<image src="@/static/img/nodata.png" class="center-img"></image>
 		</view>
 		<view class="btns">
 			<view class="btn" @click="refresh"> 刷新 </view>

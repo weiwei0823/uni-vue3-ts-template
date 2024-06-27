@@ -50,7 +50,7 @@
 					</view>
 					<view class="header-left" style="align-items: center;" v-else @click="toLogin">
 						<view class="header-left-avatar">
-							<image src="/static/img/common/userCenter/no-login.png" mode="" />
+							<image src="@/static/img/common/userCenter/no-login.png" mode="" />
 
 						</view>
 						<view class="no-login">
@@ -287,21 +287,21 @@
 				rechargeWithdrawalList: [{
 					title: this.$t('components.common.pages-liuhe.LiuheWallet.recharge'),
 					color: '#FF5C00',
-					icon: '/static/img/all/wallet/chongzhi.png',
+					icon: '@/static/img/all/wallet/chongzhi.png',
 					type: 'CHONGZHI',
 					url: '/pages/common/pay/index',
 					isLogin: true
 				}, {
 					title: this.$t('components.common.pages-liuhe.LiuheWallet.withdraw'),
 					color: '#0390F5',
-					icon: '/static/img/all/wallet/tixian.png',
+					icon: '@/static/img/all/wallet/tixian.png',
 					type: 'TIXIAN',
 					url: '/pages/common/withdraw/index',
 					isLogin: true
 				}, {
 					title: this.$t('components.common.pages-liuhe.LiuheWallet.instantTopUp'),
 					color: '#B924FF',
-					icon: '/static/img/all/wallet/miantizhichong.png',
+					icon: '@/static/img/all/wallet/miantizhichong.png',
 					type: 'MIANTIZHICHONG',
 					url: '/pages/common/withdraw/mtzc',
 					isLogin: true
@@ -324,13 +324,13 @@
 						[{
 							title: this.$t('components.common.pages-liuhe.LiuheWallet.accountChangeDetail'),
 							subTitle: this.$t('components.common.pages-liuhe.LiuheWallet.viewAccountChanges'),
-							icon: '/static/img/all/wallet/zhangbian.png',
+							icon: '@/static/img/all/wallet/zhangbian.png',
 							url: '/pages/common/userCenter/accountLog/menu',
 							isLogin: true,
 						}, {
 							title: this.$t('components.common.pages-liuhe.LiuheWallet.messageCenter'),
 							subTitle: this.$t('components.common.pages-liuhe.LiuheWallet.viewAnnouncementsInbox'),
-							icon: '/static/img/all/wallet/speaker.png',
+							icon: '@/static/img/all/wallet/speaker.png',
 							url: '/pages/liuhe/notice/index',
 							isLogin: true,
 						}],
@@ -338,25 +338,25 @@
 							title: this.$t('components.common.pages-liuhe.LiuheWallet.securityCenter'),
 							subTitle: this.$t('components.common.pages-liuhe.LiuheWallet.protectYourAccount'),
 							subColor: this.themeColor.themeColor,
-							icon: '/static/img/all/wallet/anquanzhongxin.png',
+							icon: '@/static/img/all/wallet/anquanzhongxin.png',
 							url: '/pages/common/safeCenter/index',
 							isLogin: true,
 						}, {
 							title: this.$t('components.common.pages-liuhe.LiuheWallet.gameRecords'),
 							subTitle: this.$t('components.common.pages-liuhe.LiuheWallet.viewAccountChanges'),
-							icon: '/static/img/all/wallet/game.png',
+							icon: '@/static/img/all/wallet/game.png',
 							url: '/pages/common/userCenter/profitreport/profitreport',
 							isLogin: true,
 						}],
 						[{
 							title: this.$t('components.common.pages-liuhe.LiuheWallet.customerServiceCenter'),
 							subTitle: this.$t('components.common.pages-liuhe.LiuheWallet.contactCustomerService'),
-							icon: '/static/img/all/wallet/customers.png',
+							icon: '@/static/img/all/wallet/customers.png',
 							url: '/pages/common/userCenter/service/index'
 						}, {
 							title: this.$t('components.common.pages-liuhe.LiuheWallet.downloadApp'),
 							subTitle: this.$t('components.common.pages-liuhe.LiuheWallet.goToDownloadPage'),
-							icon: '/static/img/all/wallet/app-download.png',
+							icon: '@/static/img/all/wallet/app-download.png',
 							type: 'APPDOWNLOAD',
 							url: '/#/pages/common/userCenter/downloadPage'
 						}]
@@ -365,7 +365,7 @@
 						[{
 							title: this.$t('components.common.pages-liuhe.LiuheWallet.promotionEarnMoney'),
 							subTitle: this.$t('components.common.pages-liuhe.LiuheWallet.monthlyIncomeMillion'),
-							icon: '/static/img/all/wallet/tuiguang.png',
+							icon: '@/static/img/all/wallet/tuiguang.png',
 							type: 'TUIGUANG',
 							url: '/pages/common/promoteEarn/index',
 							isLogin: true,
@@ -375,33 +375,33 @@
 						[{
 							title: this.$t('components.common.pages-liuhe.LiuheWallet.bonusBalance'),
 							subTitle: this.$t('components.common.pages-liuhe.LiuheWallet.yesterdayEarnings'),
-							icon: '/static/img/all/wallet/huabei.png',
+							icon: '@/static/img/all/wallet/huabei.png',
 							type: 'YUEBAO',
 							url: '/pages/common/yueBao/index',
 							isLogin: true,
 						}, {
 							title: this.$t('components.common.pages-liuhe.LiuheWallet.creditRecovery'),
 							subTitle: this.$t('components.common.pages-liuhe.LiuheWallet.recoverBalance'),
-							icon: '/static/img/all/wallet/edu_n.png',
+							icon: '@/static/img/all/wallet/edu_n.png',
 							url: '/pages/common/userCenter/wallet/quota',
 							isLogin: true,
 						}],
 						[{
 							title: this.$t('components.common.pages-liuhe.LiuheWallet.helpCenter'),
 							subTitle: this.$t('components.common.pages-liuhe.LiuheWallet.answerVariousQuestions'),
-							icon: '/static/img/all/wallet/help.png',
+							icon: '@/static/img/all/wallet/help.png',
 							url: '/pages/liuhe/help/index'
 						}, {
 							title: this.$t('components.common.pages-liuhe.LiuheWallet.storeRecords'),
 							subTitle: this.$t('components.common.pages-liuhe.LiuheWallet.viewAccountChanges'),
-							icon: '/static/img/all/wallet/store-records.png',
+							icon: '@/static/img/all/wallet/store-records.png',
 							url: '/pages/common/userCenter/accountLog/index',
 							isLogin: true,
 						}],
 						[{
 							title: this.$t('components.common.pages-liuhe.LiuheWallet.rewardForFeedback'),
 							subTitle: this.$t('components.common.pages-liuhe.LiuheWallet.directlyRewardGift'),
-							icon: '/static/img/all/wallet/feedback.png',
+							icon: '@/static/img/all/wallet/feedback.png',
 							url: `/pages/common/userCenter/feedback/index?type=${this.$config.enumMgr.USER_FEEDBACK_TYPE.LOTTERY}`,
 							isLogin: true,
 						}, {
@@ -410,7 +410,7 @@
 							subColor: this.debugWebsocketTimeInterval < 150 ? '#5ac54c' : this
 								.debugWebsocketTimeInterval > 150 && this.debugWebsocketTimeInterval < 300 ?
 								'#ff7010' : '#ff0000',
-							icon: '/static/img/all/wallet/wangluozhuangtai.png',
+							icon: '@/static/img/all/wallet/wangluozhuangtai.png',
 							type: 'NETWORK',
 							url: 'NETWORK'
 						}]
@@ -739,7 +739,7 @@
 							height: 32rpx;
 							right: 0;
 							bottom: 0;
-							background: url('/static/img/all/wallet/level-bg1.png');
+							background: url('@/static/img/all/wallet/level-bg1.png');
 							background-size: 100% 100%;
 							color: #FFF;
 							display: grid;
@@ -1150,7 +1150,7 @@ infinite :规定动画应该无限次播放
 					position: absolute;
 					bottom: 0;
 					left: 0;
-					background: url("/static/img/common/userCenter/levelBack.png");
+					background: url("@/static/img/common/userCenter/levelBack.png");
 					background-size: 100% 100%;
 					background-repeat: no-repeat;
 					color: #FFF;

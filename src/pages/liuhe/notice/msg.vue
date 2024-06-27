@@ -51,7 +51,7 @@
 				</view>
 				<view style="width: 100%;">
 					<view class="title">
-						<imageSvgUrl style="flex-shrink: 0;" url="/static/img/liuhe/notice/msg_n.svg" :width="48"
+						<imageSvgUrl style="flex-shrink: 0;" url="@/static/img/liuhe/notice/msg_n.svg" :width="48"
 							:height="48" replaceThemeTargetColor="#07C160" />
 						<view class="title-text">
 							{{ info.title }}

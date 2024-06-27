@@ -8,7 +8,7 @@
 				<z-paging :style="{ height: `calc(${uWindowHeight}px - 110rpx)` }" ref="paging" v-model="dataList"
 					@query="listLatest" :refresher-enabled="false" :hide-empty-view="true" :empty-view-center="true"
 					:empty-view-text="$t('pages.luntan.masterForum.history.noData')" :hide-no-more-inside="true"
-					:empty-view-img="'/static/img/wu.png'" :fixed="false" :empty-view-style="{ 'margin-bottom': '170px' }"
+					:empty-view-img="'@/static/img/wu.png'" :fixed="false" :empty-view-style="{ 'margin-bottom': '170px' }"
 					:empty-view-img-style="{ 'width': '128rpx', 'height': '130rpx' }"
 					:empty-view-title-style="{ 'color': ' #a0a0a0', 'font-size': '32rpx', 'line-height': '44rpx', 'margin-top': '28rpx' }">
 					<li v-for="(item, index) in dataList">
@@ -102,7 +102,7 @@
 						</view>
 						<view class="tool-ft van-row">
 							<view class="van-col">
-								<img src="/static/img/zan-stroke.png" alt="" class="zan-img">
+								<img src="@/static/img/zan-stroke.png" alt="" class="zan-img">
 								<span class="num">{{ item.thumbUpCount | moneyFormat }}</span>
 							</view>
 							<view class="van-col">
@@ -176,7 +176,7 @@ export default {
 			safeHeight: this.$config.getStorageSync(this.$config.enumMgr.APP_LOCALSTORE_KEYS.SYSTEM_INFO).safeArea
 				.top + "px",
 			title: this.$t('pages.luntan.masterForum.history.historyPosts'),
-			loadingImg: '/static/img/zw.png',
+			loadingImg: '@/static/img/zw.png',
 			userId: 0,
 			type: 3,
 			speak: 0,

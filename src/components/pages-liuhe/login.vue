@@ -33,7 +33,7 @@
 		<uni-popup ref="confirm" type="center" background-color="#fff">
 			<view class="confirm-box">
 				<view class="img">
-					<image src="/static/img/liuhe/login/loginErr.png"></image>
+					<image src="@/static/img/liuhe/login/loginErr.png"></image>
 				</view>
 				<view class="btn-content">{{ errMsg }}</view>
 				<view class="btn-box" @click="known">我知道了！</view>

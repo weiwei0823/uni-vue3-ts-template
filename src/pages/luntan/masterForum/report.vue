@@ -27,7 +27,7 @@
             }" @onSuccess="onSuccess" @onError="onError">
 
 							<template v-slot:addImg>
-								<image class="newAddImg" src="/static/img/camera.png">
+								<image class="newAddImg" src="@/static/img/camera.png">
 
 								</image>
 							</template>

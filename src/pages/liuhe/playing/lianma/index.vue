@@ -14,7 +14,7 @@
 				</scroll-view>
 				<view class="type-name">
 					{{currentName}}
-					<image src="./@/static/img/liuhe/desc.png" @click="showRule" />
+					<image src="@/static/img/liuhe/desc.png" @click="showRule" />
 				</view>
 				<view class="balls" v-if="ballList.length">
 					<ball ref="ball" :ball="ball" :missOrMatch="missOrMatch" :ballChildren="ballList"

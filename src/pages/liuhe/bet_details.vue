@@ -3,7 +3,7 @@
 		<Header :title="title">
 			<block slot="right">
 				<view class="header-right-box" @click="toNav">
-					<image src="/static/img/liuhe/detail/qiu.png"></image>
+					<image src="@/static/img/liuhe/detail/qiu.png"></image>
 					{{ $t("pages.liuhe.betDetail.Number") }}
 				</view>
 			</block>
@@ -14,7 +14,7 @@
 					<span class="lottery-name">{{ detail.lotteryName }}</span>
 					<span class="period">{{ $t("pages.liuhe.betDetail.No") }}{{ detail.lotteryNo
 					}}{{ $t("pages.liuhe.betDetail.Period") }}</span>
-					<image src="/static/img/liuhe/detail/no.png"></image>
+					<image src="@/static/img/liuhe/detail/no.png"></image>
 				</view>
 				<view class="bottom">
 					<span class="content">{{ detail.playName }}</span>

@@ -2,7 +2,7 @@
     <u-popup v-model="show" mode="center" border-radius="24" :z-index="zIndex" @open="handleOpen" @close="handleClose">
         <view class="pop-box">
             <view class="top">
-                <image class="img" src="/static/img/reward.png" />
+                <image class="img" src="@/static/img/reward.png" />
                 <text class="content">您已盈利<text class="monty">{{ data }}</text>元，财源滚滚！\n 成为正式用户，赚取第一桶金。</text>
             </view>
             <view class="btn-box">
@@ -16,7 +16,7 @@
         </view>
     </u-popup>
 </template>
-  
+
 <script>
 
 export default {
@@ -70,7 +70,7 @@ export default {
     }
 }
 </script>
-  
+
 <style lang="scss" scoped>
 .pop-box {
     width: 600rpx;

@@ -11,7 +11,7 @@
 		</view>
 		<uni-link :href="serviceUrl">
 			<view :href="serviceUrl" class="btn">
-				<image src="/static/img/liuhe/kf.png"></image>
+				<image src="@/static/img/liuhe/kf.png"></image>
 				<text class="text">人工客服</text>
 			</view>
 		</uni-link>

@@ -7,7 +7,7 @@
 					:placeholder="timeRange.toString().indexOf('_') > -1 && timeRange.split('_').length == 2 ? timeRange.substring(5, 10).replaceAll('-', '.') + '-' + timeRange.substring(16, 21).replaceAll('-', '.') : '请选择'">
 					<template #itemImg="item">
 						<view class="item-img">
-							<image class="img" v-if="item.value === timeRange" src="/static/imgs-liuhe/activity/item-selected.png">
+							<image class="img" v-if="item.value === timeRange" src="@/static/imgs-liuhe/activity/item-selected.png">
 							</image>
 						</view>
 					</template>
@@ -48,7 +48,7 @@
 			:loading-more-default-as-loading="false" :show-loading-more-no-more-view="true"
 			:loading-more-no-more-text="$t('pages.common.promoteEarn.components.TeamData.text2')" :hide-empty-view="false"
 			:empty-view-center="true" :empty-view-text="$t('pages.common.promoteEarn.components.TeamData.text3')"
-			:empty-view-img="'/static/imgs-liuhe/activity/empty.png'" :fixed="false"
+			:empty-view-img="'@/static/imgs-liuhe/activity/empty.png'" :fixed="false"
 			:empty-view-style="{ 'margin-bottom': '170px' }" :empty-view-img-style="{ 'width': '398rpx', 'height': '398rpx' }"
 			:empty-view-title-style="{ 'color': ' #D8D8D8', 'font-size': '30rpx', 'line-height': '44rpx', 'margin-top': '10rpx' }">
 			<view class="item-box" v-show="list.length">

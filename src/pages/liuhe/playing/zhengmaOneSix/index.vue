@@ -9,14 +9,14 @@
 								<view v-if="item.showType == 1">
 									<view class="type-name">
 										{{item.name}}
-										<image src="./@/static/img/liuhe/desc.png" @click="showRule(item)" />
+										<image src="@/static/img/liuhe/desc.png" @click="showRule(item)" />
 									</view>
 									<ball :missOrMatch="missOrMatch" ref="ball" :data="item" />
 								</view>
 								<view v-if="item.showType == 2">
 									<view class="type-name">
 										{{item.name}}
-										<image src="./@/static/img/liuhe/desc.png" @click="showRule(item)" />
+										<image src="@/static/img/liuhe/desc.png" @click="showRule(item)" />
 									</view>
 									<text-ball :missOrMatch="missOrMatch" :ballChildren="item.children" :ball="item"
 										:dataIndex="index" @changeData="changeChildren"></text-ball>

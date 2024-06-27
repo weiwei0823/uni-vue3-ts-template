@@ -2,7 +2,7 @@
 	<u-popup v-model="show" mode="center" border-radius="10" :z-index="zIndex" @open="handleOpen" @close="handleClose">
 		<view class="logout" :class="['theme-' + themeColor.name]">
 			<view class="img">
-				<image src="/static/img/liuhe/user.png"></image>
+				<image src="@/static/img/liuhe/user.png"></image>
 			</view>
 			<view class="msg">
 				您还未登录账号

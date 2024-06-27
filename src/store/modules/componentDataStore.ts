@@ -1,29 +1,23 @@
 import { defineStore } from 'pinia'
 
-const ComponentsDataStore = defineStore('ComponentsData', {
-  state: {
+const useComponentsDataStore = defineStore('ComponentsData', {
+  state: () => ({
     uiGlobalLoading: false,
     uiGlobalLogindgText: '加载中'
-  },
-
-  getters: {
-    uiGlobalLoading: (state) => state.uiGlobalLoading,
-    uiGlobalLogindgText: (state) => state.uiGlobalLogindgText
-  },
-
-  mutations: {
-    SWITCH_LOADING(state, bool) {
+  }),
+  actions: {
+    SWITCH_LOADING(bool) {
       if (bool) {
-        state.uiGlobalLoading = true
+        this.uiGlobalLoading = true
       } else {
-        state.uiGlobalLoading = false
-        state.uiGlobalLogindgText = null
+        this.uiGlobalLoading = false
+        this.uiGlobalLogindgText = null
       }
     },
-    SWITCH_LOADING_TEXT(state, text) {
-      state.uiGlobalLogindgText = text
+    SWITCH_LOADING_TEXT(text) {
+      this.uiGlobalLogindgText = text
     }
   }
 })
 
-export default ComponentsDataStore
+export default useComponentsDataStore

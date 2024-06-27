@@ -4,7 +4,7 @@
 			<view class="tab-item">
 				<view class="type-name">
 					{{ playData.name }}
-					<image src="./@/static/img/liuhe/desc.png" @click="showRule" />
+					<image src="@/static/img/liuhe/desc.png" @click="showRule" />
 				</view>
 				<view class="balls">
             <view :style="setStyle(index,ballChildren.length)" v-for="(item, index) in ballChildren" :class="item.isSelected === true ? 'ball-item selected' : 'ball-item'" :key="item.id" @click="onClickItem(item)">

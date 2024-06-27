@@ -123,7 +123,7 @@
 			:loading-more-loading-animated="false" :loading-more-default-as-loading="true"
 			:show-loading-more-no-more-view="true" :loading-more-no-more-text="'没有更多数据了'" :hide-empty-view="false"
 			:empty-view-center="true" :empty-view-text="$t('pages.luntan.masterForum.noData')"
-			:empty-view-img="'/static/imgs-liuhe/activity/empty.png'" :fixed="false"
+			:empty-view-img="'@/static/imgs-liuhe/activity/empty.png'" :fixed="false"
 			:empty-view-style="{ 'margin-bottom': '170px' }"
 			:empty-view-img-style="{ 'width': '398rpx', 'height': '398rpx' }"
 			:empty-view-title-style="{ 'color': ' #A1A1A1', 'font-size': '28rpx', 'line-height': '44rpx', 'margin-top': '10rpx' }">
@@ -159,8 +159,8 @@
 					<template v-slot:footer>
 						<view class="operation-box clearfix" @click="detail(item)">
 							<view class="good">
-								<img v-if="item.thumbUpCount > 0" src="/static/img/zan-fill.png" alt="" class="zan-img">
-								<img v-else src="/static/img/zan-stroke.png" alt="" class="zan-img">
+								<img v-if="item.thumbUpCount > 0" src="@/static/img/zan-fill.png" alt="" class="zan-img">
+								<img v-else src="@/static/img/zan-stroke.png" alt="" class="zan-img">
 								{{ item.thumbUpCount }}点赞
 							</view>
 							<view class="comment">

@@ -68,7 +68,7 @@
 					.top + "px",
 				isActive: 0,
 				isShow: false,
-				logo: '/static/logo.png',
+				logo: '@/static/logo.png',
 				countDown: 60,
 				isSend: false,
 				sendText: '',

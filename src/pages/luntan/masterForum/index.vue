@@ -189,15 +189,15 @@
 							<view class="tool-ft tom-col van-row">
 								<view class="left">
 									<view class="van-col " @click.stop="thumbUp(item)">
-										<img v-if="item.thumbUp> 0" src="/static/img/zan-fill.png" alt=""
+										<img v-if="item.thumbUp> 0" src="@/static/img/zan-fill.png" alt=""
 											class="zan-img">
-										<img v-else src="/static/img/zan-stroke.png" alt="" class="zan-img">
+										<img v-else src="@/static/img/zan-stroke.png" alt="" class="zan-img">
 										<span class="num">{{ item.thumbUpCount | moneyFormat }}</span>
 									</view>
 									<view class="van-col ">
 										<img v-if="item.read > 0" style="width: 30rpx; height: 30rpx"
-											src="/static/img/opened eye2.png" alt="" />
-										<img v-else style="width: 30rpx; height: 30rpx" src="/static/img/closed eye.png"
+											src="@/static/img/opened eye2.png" alt="" />
+										<img v-else style="width: 30rpx; height: 30rpx" src="@/static/img/closed eye.png"
 											alt="" />
 										<span class="num">
 											{{ item.clickCount | moneyFormat }}
@@ -314,7 +314,7 @@
 					.CONTANTS_CONFIGS_ID.LOGO_BIG];
 				if (!configInfo) {
 					console.warn("警告：当前站点为配置LOGO");
-					return "/static/logo.png";
+					return "@/static/logo.png";
 				}
 				return configInfo.url;
 			},
@@ -347,7 +347,7 @@
 				title: this.$t('pages.luntan.masterForum.index.expertForum'),
 				scrollTop: 0,
 				isTop: 0, //吸附判断
-				loadingImg: '/static/img/zw.png',
+				loadingImg: '@/static/img/zw.png',
 				old: {
 					scrollTop: 0,
 					myScroll: 0,

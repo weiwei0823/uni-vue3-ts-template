@@ -82,7 +82,7 @@
 				:loading-more-loading-icon-custom-image="zpageUIConfig['loading-more-loading-icon-custom-image']"
 				:loading-more-loading-animated="false" :loading-more-default-as-loading="true"
 				:show-loading-more-no-more-view="false" :show-loading-more-no-more-line="false" :hide-empty-view="false"
-				:empty-view-center="true" :empty-view-text="''" :empty-view-img="'/static/img/null-empty.png'"
+				:empty-view-center="true" :empty-view-text="''" :empty-view-img="'@/static/img/null-empty.png'"
 				:fixed="false" :empty-view-style="{ 'margin-bottom': '170px', opacity: loading ? 0 : 1 }"
 				:empty-view-img-style="{ 'width': '398rpx', 'height': '398rpx' }"
 				:empty-view-title-style="{ 'color': ' #999999', 'font-size': '30rpx', 'line-height': '44rpx', 'margin-top': '10rpx' }">
@@ -119,7 +119,7 @@
 		</view>
 
 		<view class="pop_toast" v-show="showCommitSuccess && dataType == 1">
-			<image class="icon" src="/static/img/icon_breen_success.png"></image>
+			<image class="icon" src="@/static/img/icon_breen_success.png"></image>
 			<p class="icon-text">{{ $t("pages.common.userCenter.feedback.text12") }}</p>
 		</view>
 		<view class="bottom-button" v-show="dataType === 1">

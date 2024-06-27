@@ -6,14 +6,14 @@
     <scroll-view :scroll-y="useScrollLeft" class="cate-items" :style="{ height: height }" @scroll="onLeftMenuScroll">
       <view :style="{ paddingBottom: isGameHall ? 0 : $config.station === $config.enumMgr.STATION.ALL ? '120rpx' : '120rpx' }">
         <view class="item" @click="recommend">
-          <image class="icon" mode="aspectFit" src="/static/imgs-liuhe/index_02/reccomended.png"></image>
+          <image class="icon" mode="aspectFit" src="@/static/imgs-liuhe/index_02/reccomended.png"></image>
           <view class="name">本站推荐</view>
         </view>
         <view class="item" :class="{ selected: index === selected }" v-for="(item, index) in data" :key="index"
               @click="handleCateChange(index)">
           <image v-if="item.gameCategoryId === 0"
                  class="icon" mode="aspectFit"
-                 :src="index === selected ? '/static/imgs-liuhe/index_02/selectedIcon.png' : '/static/imgs-liuhe/index_02/unSelectedIcon.png'"
+                 :src="index === selected ? '@/static/imgs-liuhe/index_02/selectedIcon.png' : '@/static/imgs-liuhe/index_02/unSelectedIcon.png'"
           ></image>
           <lazy-image v-else
                       class="lazy-image icon"
@@ -44,7 +44,7 @@
       </view>
     </scroll-view>
     <view :class="{ showTopClass: isTopIconY > 100, isAppShowTop: isApp }">
-      <topicon :iconWidth="110" :iconHeight="100" iconPath="/static/img/top2.png" :marginBottom="50" :marginLeft="130"
+      <topicon :iconWidth="110" :iconHeight="100" iconPath="@/static/img/top2.png" :marginBottom="50" :marginLeft="130"
                :marginRight="0" @tapIcon="backTop"> </topicon>
     </view>
   </view>

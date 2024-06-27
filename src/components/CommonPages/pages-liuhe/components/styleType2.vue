@@ -1,7 +1,7 @@
 <template>
 	<view class="style-type-2">
 		<view class="item" name="style2-typpe-item" v-for="item in data" @click="detail(item)">
-			<image class="tuijian" src="/static/imgs-liuhe/index_02/categorys/item/tuijian.png" v-if="item.izHot">
+			<image class="tuijian" src="@/static/imgs-liuhe/index_02/categorys/item/tuijian.png" v-if="item.izHot">
 			</image>
 			<view class="icon">
         <lazy-image class="lazy-image img"
@@ -37,7 +37,7 @@ export default {
 	},
   data() {
     return {
-      loadingImg: '/static/img/zw.png',
+      loadingImg: '@/static/img/zw.png',
     }
   },
 	methods: {

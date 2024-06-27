@@ -25,7 +25,7 @@
 									</view>
 								</view>
 								<view class="tag">
-									<image style="width: 90rpx; height: 88rpx" src="/static/img/wg.png"></image>
+									<image style="width: 90rpx; height: 88rpx" src="@/static/img/wg.png"></image>
 								</view>
 							</view>
 						</view>

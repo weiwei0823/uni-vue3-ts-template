@@ -49,7 +49,7 @@ export default {
           path: "/pages/liuhe/indexNew",
           component: "Home",
           name: "主页",
-          img: "/static/imgs-liuhe/tabbar/Home.png",
+          img: "@/static/imgs-liuhe/tabbar/Home.png",
           selectedImg:
             '<svg width="48rpx" height="48rpx" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
             '<path d="M9.38177 1.06213C10.8973 -0.285019 13.1811 -0.285017 14.6967 1.06213L22.0367 7.58658C22.8906 8.34565 23.3792 9.43366 23.3792 10.5762V19.9C23.3792 22.1091 21.5884 23.9 19.3792 23.9H4.69922C2.49008 23.9 0.699219 22.1091 0.699219 19.9V10.5762C0.699219 9.43367 1.18781 8.34565 2.04176 7.58658L9.38177 1.06213Z" fill="url(#paint0_linear_23745_39070)"/>\n' +
@@ -140,7 +140,7 @@ export default {
           path: "/pages/liuhe/my",
           component: "My",
           name: this.$t("components.Tabbar.Liuhe.text4"),
-          img: "/static/imgs-liuhe/tabbar/My.png",
+          img: "@/static/imgs-liuhe/tabbar/My.png",
           selectedImg:
             '<svg width="48rpx" height="48rpx" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
             '<path fill-rule="evenodd" clip-rule="evenodd" d="M16.9494 11.8033C18.4039 10.5764 19.3278 8.74033 19.3278 6.68852C19.3278 2.99455 16.3332 0 12.6392 0C8.94526 0 5.9507 2.99455 5.9507 6.68852C5.9507 8.74033 6.87459 10.5764 8.32905 11.8033H7.47572C5.65154 11.8033 4.05844 13.0375 3.60261 14.8038L2.51959 19.0005C1.86621 21.5323 3.7779 24 6.3927 24H18.4923C21.1071 24 23.0188 21.5323 22.3654 19.0005L21.2824 14.8038C20.8266 13.0375 19.2335 11.8033 17.4093 11.8033H16.9494Z" fill="url(#paint0_linear_22292_73191)"/>\n' +

@@ -269,7 +269,7 @@ async function resquest(
     // Vue.prototype.$loading(true)
     // uni.showToast({
     //     title: "加载中...",
-    //     image: "/static/img/loading_v2.gif"
+    //     image: "@/static/img/loading_v2.gif"
     //   })
 
     const cacheResult = await $store.dispatch('getApiMemCache', prams)

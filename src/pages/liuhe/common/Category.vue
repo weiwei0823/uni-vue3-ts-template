@@ -33,7 +33,7 @@
 				</view>
 
 				<view class="loding" v-show="isLoadMore">
-					<image src="/static/img/liuhe/load.gif"></image>
+					<image src="@/static/img/liuhe/load.gif"></image>
 					<text class="text">正在加载更多数据...</text>
 				</view>
 				<view class="nomore" v-show="noMore && list.length > 15 && !loadText">

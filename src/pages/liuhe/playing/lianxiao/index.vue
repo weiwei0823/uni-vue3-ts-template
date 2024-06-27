@@ -14,7 +14,7 @@
 				</scroll-view>
 				<view class="type-name">
 					{{currentName}}
-					<image src="./@/static/img/liuhe/desc.png" @click="showRule" />
+					<image src="@/static/img/liuhe/desc.png" @click="showRule" />
 				</view>
 				<view class="balls">
 					<view v-for="(item, index) in ballList" :key="item.id" @click="onClickItem(item)">

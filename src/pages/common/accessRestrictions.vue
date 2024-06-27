@@ -1,6 +1,6 @@
 <template>
 	<view class="access-restrictions" :class="['theme-' + themeColor.name]">
-		<image class="header" mode="widthFix" src="/static/img/common/accessRestrictions/header.png" />
+		<image class="header" mode="widthFix" src="@/static/img/common/accessRestrictions/header.png" />
 		<view class="item">
 			<view class="title">访问限制</view>
 			<view class="en-title">ACCESS RESTRICTED</view>

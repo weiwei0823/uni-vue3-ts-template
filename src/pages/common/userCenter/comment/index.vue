@@ -171,15 +171,15 @@
 			getTypeIcon(type) {
 				switch (type) {
 					case 1:
-						return "/static/img/menu/act-2.png"
+						return "@/static/img/menu/act-2.png"
 					case 2:
-						return "/static/img/menu/act-1.png"
+						return "@/static/img/menu/act-1.png"
 					case 3:
-						return "/static/img/menu/act-3.png"
+						return "@/static/img/menu/act-3.png"
 					case 4:
-						return "/static/img/menu/act-4.png"
+						return "@/static/img/menu/act-4.png"
           case 5:
-            return "/static/img/menu/act-5.png"
+            return "@/static/img/menu/act-5.png"
 				}
 			},
 			getClass(type) {

@@ -83,7 +83,7 @@
 			<view class="list-item" v-for="(item, index) in list">
 				<view class="top">
 					<view class="item-top">
-						<image class="img" mode="aspectFit" :src="item.logo || '/static/img/lottery.png'"></image>
+						<image class="img" mode="aspectFit" :src="item.logo || '@/static/img/lottery.png'"></image>
 						<text class="title">{{ item.title }}</text>
 					</view>
 					<view class="item-top right-item" @click="toUrl(item)">

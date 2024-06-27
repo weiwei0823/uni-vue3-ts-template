@@ -4,7 +4,7 @@
 			<Header :title="title" />
 			<view>
 				<view class="title">
-					<image class="tan" src="/static/imgs-liuhe/bank/warning.png"></image>
+					<image class="tan" src="@/static/imgs-liuhe/bank/warning.png"></image>
 					{{ $t('pages.common.userCenter.bank.common.ConfirmBankCard') }}
 				</view>
 				<uni-list class="list-box">

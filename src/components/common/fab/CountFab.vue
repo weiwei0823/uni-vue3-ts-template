@@ -67,28 +67,28 @@
 							path: 'liuhe',
 							desc: this.$t('components.common.fab.CountFab.text1'),
 							prams: "",
-							icon: "/static/img/tabbar/count/svgs/1.svg"
+							icon: "@/static/img/tabbar/count/svgs/1.svg"
 						},
 						{
 							text: this.$t('components.common.fab.CountFab.text2'),
 							path: 'sxcc',
 							prams: "",
 							desc: this.$t('components.common.fab.CountFab.text3'),
-							icon: "/static/img/tabbar/count/svgs/2.svg"
+							icon: "@/static/img/tabbar/count/svgs/2.svg"
 						},
 						{
 							text: this.$t('components.common.fab.CountFab.text4'),
 							path: 'tmls',
 							prams: 'type=2',
 							desc: this.$t('components.common.fab.CountFab.text5'),
-							icon: "/static/img/tabbar/count/svgs/3.svg"
+							icon: "@/static/img/tabbar/count/svgs/3.svg"
 						},
 						{
 							text: this.$t('components.common.fab.CountFab.text7'),
 							path: 'zmls',
 							prams: "type=1",
 							desc: this.$t('components.common.fab.CountFab.text6'),
-							icon: "/static/img/tabbar/count/svgs/4.svg"
+							icon: "@/static/img/tabbar/count/svgs/4.svg"
 						},
 					],
 					[{
@@ -96,7 +96,7 @@
 							path: 'wsdx',
 							prams: "",
 							desc: this.$t('components.common.fab.CountFab.text9'),
-							icon: "/static/img/tabbar/count/svgs/5.svg",
+							icon: "@/static/img/tabbar/count/svgs/5.svg",
 
 						},
 						{
@@ -104,21 +104,21 @@
 							path: 'sxtm',
 							prams: "",
 							desc: this.$t('components.common.fab.CountFab.text10'),
-							icon: "/static/img/tabbar/count/svgs/6.svg"
+							icon: "@/static/img/tabbar/count/svgs/6.svg"
 						},
 						{
 							text: this.$t('components.common.fab.CountFab.text11'),
 							path: 'sxzm',
 							prams: "",
 							desc: this.$t('components.common.fab.CountFab.text13'),
-							icon: "/static/img/tabbar/count/svgs/7.svg"
+							icon: "@/static/img/tabbar/count/svgs/7.svg"
 						},
 						{
 							text: this.$t('components.common.fab.CountFab.text14'),
 							path: 'bstm',
 							prams: "",
 							desc: this.$t('components.common.fab.CountFab.text15'),
-							icon: "/static/img/tabbar/count/svgs/8.svg"
+							icon: "@/static/img/tabbar/count/svgs/8.svg"
 						},
 					],
 					[{
@@ -126,28 +126,28 @@
 							path: 'bszm',
 							prams: "",
 							desc: this.$t('components.common.fab.CountFab.text17'),
-							icon: "/static/img/tabbar/count/svgs/9.svg"
+							icon: "@/static/img/tabbar/count/svgs/9.svg"
 						},
 						{
 							text: this.$t('components.common.fab.CountFab.text18'),
 							path: 'tmlm',
 							prams: "",
 							desc: this.$t('components.common.fab.CountFab.text20'),
-							icon: "/static/img/tabbar/count/svgs/10.svg"
+							icon: "@/static/img/tabbar/count/svgs/10.svg"
 						},
 						{
 							text: this.$t('components.common.fab.CountFab.text19'),
 							path: 'tmws',
 							prams: "",
 							desc: this.$t('components.common.fab.CountFab.text21'),
-							icon: "/static/img/tabbar/count/svgs/11.svg"
+							icon: "@/static/img/tabbar/count/svgs/11.svg"
 						},
 						{
 							text: this.$t('components.common.fab.CountFab.text22'),
 							path: 'zmws',
 							prams: "",
 							desc: this.$t('components.common.fab.CountFab.text23'),
-							icon: "/static/img/tabbar/count/svgs/12.svg"
+							icon: "@/static/img/tabbar/count/svgs/12.svg"
 						},
 					],
 					[{
@@ -155,28 +155,28 @@
 							path: 'zmzf',
 							prams: "",
 							desc: this.$t('components.common.fab.CountFab.text24'),
-							icon: "/static/img/tabbar/count/svgs/13.svg"
+							icon: "@/static/img/tabbar/count/svgs/13.svg"
 						},
 						{
 							text: this.$t('components.common.fab.CountFab.text25'),
 							path: 'hmbd',
 							prams: "",
 							desc: this.$t('components.common.fab.CountFab.text27'),
-							icon: "/static/img/tabbar/count/svgs/14.svg"
+							icon: "@/static/img/tabbar/count/svgs/14.svg"
 						},
 						{
 							text: this.$t('components.common.fab.CountFab.text28'),
 							path: 'jqys',
 							prams: "",
 							desc: this.$t('components.common.fab.CountFab.text31'),
-							icon: "/static/img/tabbar/count/svgs/15.svg"
+							icon: "@/static/img/tabbar/count/svgs/15.svg"
 						},
 						{
 							text: this.$t('components.common.fab.CountFab.text29'),
 							path: 'lmzs',
 							prams: "",
 							desc: this.$t('components.common.fab.CountFab.text30'),
-							icon: "/static/img/tabbar/count/svgs/16.svg"
+							icon: "@/static/img/tabbar/count/svgs/16.svg"
 						},
 					],
 					[{
@@ -184,7 +184,7 @@
 						path: 'lxzs',
 						prams: "",
 						desc: this.$t('components.common.fab.CountFab.text33'),
-						icon: "/static/img/tabbar/count/svgs/17.svg"
+						icon: "@/static/img/tabbar/count/svgs/17.svg"
 					}, ],
 				]
 

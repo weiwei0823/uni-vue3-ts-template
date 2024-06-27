@@ -48,7 +48,7 @@
 							<uni-row>
 								<uni-col :span="4">
 									<view class="cell-top-img">
-										<image :src="item.headPic ? item.headPic : '/static/img/user/Frame21.png'" />
+										<image :src="item.headPic ? item.headPic : '@/static/img/user/Frame21.png'" />
 									</view>
 								</uni-col>
 								<uni-col :span="20">

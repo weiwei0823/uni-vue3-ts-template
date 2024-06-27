@@ -38,19 +38,19 @@ export default {
         [
           {
             name: this.$t("pages.luntan.toolBox.index.text0"),
-            img: "/static/img/toolbox/lrtm.svg",
+            img: "@/static/img/toolbox/lrtm.svg",
             url: "/pages/luntan/toolBox/lover",
             color: "#FF5592",
           },
           {
             name: this.$t("pages.luntan.toolBox.index.text1"),
-            img: "/static/img/toolbox/sxkp.svg",
+            img: "@/static/img/toolbox/sxkp.svg",
             url: "/pages/luntan/toolBox/cnzodiac",
             color: "#376EFF",
           },
           {
             name: this.$t("pages.luntan.toolBox.index.text2"),
-            img: "/static/img/toolbox/yyy.svg",
+            img: "@/static/img/toolbox/yyy.svg",
             url: "/pages/luntan/toolBox/shake",
             color: "#F16618",
           },
@@ -58,19 +58,19 @@ export default {
         [
           {
             name: this.$t("pages.luntan.toolBox.index.text3"),
-            img: "/static/img/toolbox/xjml.svg",
+            img: "@/static/img/toolbox/xjml.svg",
             url: "/pages/luntan/toolBox/silkbag",
             color: "#A717EB",
           },
           {
             name: this.$t("pages.luntan.toolBox.index.text4"),
-            img: "/static/img/toolbox/xycj.svg",
+            img: "@/static/img/toolbox/xycj.svg",
             url: "/pages/luntan/toolBox/luck",
             color: "#F16618",
           },
           {
             name: this.$t("pages.luntan.toolBox.index.text5"),
-            img: "/static/img/toolbox/bxzp.svg",
+            img: "@/static/img/toolbox/bxzp.svg",
             url: "/pages/luntan/toolBox/turntable",
             color: "#17C71E",
           },
@@ -78,19 +78,19 @@ export default {
         [
           {
             name: this.$t("pages.luntan.toolBox.index.text6"),
-            img: "/static/img/toolbox/jzrq.svg",
+            img: "@/static/img/toolbox/jzrq.svg",
             url: "/pages/luntan/toolBox/date",
             color: "#03A651",
           },
           {
             name: this.$t("pages.luntan.toolBox.index.text7"),
-            img: "/static/img/toolbox/tjcs.svg",
+            img: "@/static/img/toolbox/tjcs.svg",
             url: "/pages/luntan/toolBox/secret",
             color: "#376EFF",
           },
           {
             name: this.$t("pages.luntan.toolBox.index.text8"),
-            img: "/static/img/toolbox/tmzs.svg",
+            img: "@/static/img/toolbox/tmzs.svg",
             url: "/pages/luntan/toolBox/codePicking",
             color: "#A717EB",
           },
@@ -98,21 +98,21 @@ export default {
         [
           {
             name: this.$t("pages.luntan.toolBox.index.text9"),
-            img: "/static/img/toolbox/almanac.svg",
+            img: "@/static/img/toolbox/almanac.svg",
             url: "/pages/luntan/toolBox/almanac",
             color: "#ED2424",
           },
           {
             name: "签到",
             key: "vector",
-            img: "/static/img/toolbox/Vector.svg",
+            img: "@/static/img/toolbox/Vector.svg",
             url: "/pages/luntan/toolBox/vector",
             color: "#07C160",
           },
           {
             name: "兑换",
             key: "frame",
-            img: "/static/img/toolbox/Frame.svg",
+            img: "@/static/img/toolbox/Frame.svg",
             url: "/pages/luntan/toolBox/frame",
             color: "#F16618",
           },

@@ -4,7 +4,7 @@
 			<view class="tab-item">
 				<view class="type-name">
 					{{ playData.name }}
-					<image src="./@/static/img/liuhe/desc.png" @click="showRule" />
+					<image src="@/static/img/liuhe/desc.png" @click="showRule" />
 				</view>
 				<view class="balls">
 					<view v-for="(item, index) in playData.children[0].children[0].children" :key="item.id"

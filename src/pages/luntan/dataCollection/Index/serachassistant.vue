@@ -23,7 +23,7 @@
 			style="background: #fff;z-index: 1" ref="paging" v-model="list" @query="searchList"
 			:refresher-enabled="true" :hide-empty-view="true" :empty-view-center="true"
 			:empty-view-text="$t('pages.luntan.dataCollection.index.searchAssistant.notFound')"
-			:hide-no-more-inside="true" :empty-view-img="'/static/img/wu.png'" :fixed="false"
+			:hide-no-more-inside="true" :empty-view-img="'@/static/img/wu.png'" :fixed="false"
 			:empty-view-style="{ 'margin-bottom': '170px' }" :refresher-only="!prams.title" show-refresher-when-reload
 			refresher-fixed-bac-height="400" :empty-view-img-style="{ 'width': '128rpx', 'height': '130rpx' }"
 			:empty-view-title-style="{ 'color': ' #a0a0a0', 'font-size': '32rpx', 'line-height': '44rpx', 'margin-top': '28rpx' }">

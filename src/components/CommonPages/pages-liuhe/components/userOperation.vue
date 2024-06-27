@@ -4,7 +4,7 @@
 			<view class="title-box" v-if="isLogin">
 				<view class="name">{{ userInfo.nickname || userInfo.userName }}</view>
 				<view class="level-box">
-					<image class="img" src="/static/imgs-liuhe/index_02/vip_back.png"></image>
+					<image class="img" src="@/static/imgs-liuhe/index_02/vip_back.png"></image>
 					<view class="level">{{ parseInt(liuheVipSpeedInfo ? liuheVipSpeedInfo.level : "0") }}</view>
 				</view>
 			</view>
@@ -67,27 +67,27 @@ export default {
 			loading: false,
 			balanceEnd: false,
 			operationList: [{
-				icon: '/static/imgs-liuhe/index_02/cash-in.png',
+				icon: '@/static/imgs-liuhe/index_02/cash-in.png',
 				name: this.$t("components.CommonPages.pages-liuhe.components.userOperation.text4"),
 				islogin: true,
 				url: '/pages/common/pay/index'
 			},
 			{
-				icon: '/static/imgs-liuhe/index_02/cash-out.png',
+				icon: '@/static/imgs-liuhe/index_02/cash-out.png',
 				name: this.$t("components.CommonPages.pages-liuhe.components.userOperation.text5"),
 				islogin: true,
 				url: '/pages/common/withdraw/index',
 				code: "withdraw"
 			},
 			{
-				icon: '/static/imgs-liuhe/index_02/gift.png',
+				icon: '@/static/imgs-liuhe/index_02/gift.png',
 				name: this.$t("components.CommonPages.pages-liuhe.components.userOperation.text6"),
 				islogin: true,
 				url: '/pages/liuhe/activity/index',
 				code: 'favorable'
 			},
 			{
-				icon: '/static/imgs-liuhe/index_02/wallet.png',
+				icon: '@/static/imgs-liuhe/index_02/wallet.png',
 				name: this.$t("components.CommonPages.pages-liuhe.components.userOperation.text7"),
 				islogin: true,
 				url: '/pages/liuhe/my',

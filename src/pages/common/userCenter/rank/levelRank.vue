@@ -8,7 +8,7 @@
 				<view class="top-2">
 					<view class="user-img-top top2">
 						<image :src="rankList[1] ? rankList[1].headPic : ''" class="user-img" />
-						<image @click="toHomePage(rankList[1])" mode="widthFix" src="/static/img/user/top2.png"
+						<image @click="toHomePage(rankList[1])" mode="widthFix" src="@/static/img/user/top2.png"
 							class="user-img-xs" />
 					</view>
 					<view class="name">{{ rankList[1] ? rankList[1].nickname : '' }}</view>
@@ -19,7 +19,7 @@
 				<view class="top-1">
 					<view class="user-img-top top1">
 						<image :src="rankList[0] ? rankList[0].headPic : ''" class="user-img" />
-						<image @click="toHomePage(rankList[0])" mode="widthFix" src="/static/img/user/top1.png"
+						<image @click="toHomePage(rankList[0])" mode="widthFix" src="@/static/img/user/top1.png"
 							class="user-img-xs" />
 					</view>
 					<view class="name">{{ rankList[0] ? rankList[0].nickname : '' }}</view>
@@ -30,7 +30,7 @@
 				<view class="top-3">
 					<view class="user-img-top top3">
 						<image :src="rankList[2] ? rankList[2].headPic : ''" class="user-img" />
-						<image @click="toHomePage(rankList[2])" mode="widthFix" src="/static/img/user/top3.png"
+						<image @click="toHomePage(rankList[2])" mode="widthFix" src="@/static/img/user/top3.png"
 							class="user-img-xs" />
 					</view>
 					<view class="name">{{ rankList[2] ? rankList[2].nickname : '' }}</view>
@@ -67,7 +67,7 @@
 							<view class="czz">
 								<view class="user-top">
 									<image @click="toHomePage(item)"
-										:src="item.headPic ? item.headPic : '/static/img/user/Frame21.png'"
+										:src="item.headPic ? item.headPic : '@/static/img/user/Frame21.png'"
 										class="userImg" />
 									<view class="user-text">
 										<view class="name p-top">{{ item.nickname }}</view>

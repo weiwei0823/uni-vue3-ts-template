@@ -176,7 +176,7 @@
 						height: 70rpx;
 						color: #FFFFFF;
 						font-size: 28rpx;
-						background-image: url("./@/static/img/liuhe/ssc/ball.svg");
+						background-image: url("@/static/img/liuhe/ssc/ball.svg");
 						background-size: 100% 100%;
 						background-repeat: no-repeat;
 						background-position: center;

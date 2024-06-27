@@ -10,7 +10,7 @@
 			:enhanced="true" :bounces="false" :show-scrollbar="false">
 			<view class="info">
 				<view class="title">
-					<imageSvgUrl style="margin: 0 20rpx 0 28rpx;" url="/static/img/liuhe/notice/laba_n.svg" :width="48"
+					<imageSvgUrl style="margin: 0 20rpx 0 28rpx;" url="@/static/img/liuhe/notice/laba_n.svg" :width="48"
 						:height="48" replaceThemeTargetColor="#07C160" />
 					<view class="title-text">
 						{{ info.title }}

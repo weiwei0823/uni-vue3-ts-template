@@ -1,7 +1,7 @@
 <template>
 	<view class="maintain-page" :class="['theme-' + themeColor.name]" :style="{minHeight:`calc(${uWindowHeight}px)`}">
 		<view class="maintain-content">
-			<image src="/static/img/common/maintain/new.png" mode="widthFix"></image>
+			<image src="@/static/img/common/maintain/new.png" mode="widthFix"></image>
 			<view class="title">
 				{{title}}...
 			</view>

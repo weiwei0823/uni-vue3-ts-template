@@ -1,23 +1,23 @@
 <template>
     <view class="item" name="lottery-item" @click="onLotteryItemClick">
         <view class="label label-left" v-if="item.isNew || item.hot">
-            <image class="xin" src="/static/imgs-liuhe/index_02/categorys/item/xin.png" v-if="item.isNew && !item.hot">
+            <image class="xin" src="@/static/imgs-liuhe/index_02/categorys/item/xin.png" v-if="item.isNew && !item.hot">
             </image>
-            <image class="re" src="/static/imgs-liuhe/index_02/categorys/item/re.png" v-if="!item.isNew && item.hot">
+            <image class="re" src="@/static/imgs-liuhe/index_02/categorys/item/re.png" v-if="!item.isNew && item.hot">
             </image>
-            <image class="xin_1" src="/static/imgs-liuhe/index_02/categorys/item/xin_1.png" v-if="item.isNew && item.hot">
+            <image class="xin_1" src="@/static/imgs-liuhe/index_02/categorys/item/xin_1.png" v-if="item.isNew && item.hot">
             </image>
-            <image class="re_1" src="/static/imgs-liuhe/index_02/categorys/item/re_1.png" v-if="item.isNew && item.hot">
+            <image class="re_1" src="@/static/imgs-liuhe/index_02/categorys/item/re_1.png" v-if="item.isNew && item.hot">
             </image>
         </view>
         <view class="label label-right" v-if="item.isLive || item.isOpen">
-            <image class="zhibo" src="/static/imgs-liuhe/index_02/categorys/item/zhibo.png"
+            <image class="zhibo" src="@/static/imgs-liuhe/index_02/categorys/item/zhibo.png"
                 v-if="item.isLive && !item.showDraw"></image>
-            <image class="jrkj" src="/static/imgs-liuhe/index_02/categorys/item/jrkj.png"
+            <image class="jrkj" src="@/static/imgs-liuhe/index_02/categorys/item/jrkj.png"
                 v-if="!item.isLive && item.showDraw"></image>
-            <image class="zhibo_1" src="/static/imgs-liuhe/index_02/categorys/item/zhibo_1.png"
+            <image class="zhibo_1" src="@/static/imgs-liuhe/index_02/categorys/item/zhibo_1.png"
                 v-if="item.isLive && item.showDraw"></image>
-            <image class="jrkj_1" src="/static/imgs-liuhe/index_02/categorys/item/jrkj_1.png"
+            <image class="jrkj_1" src="@/static/imgs-liuhe/index_02/categorys/item/jrkj_1.png"
                 v-if="item.isLive && item.showDraw"></image>
         </view>
       <lazy-image class="lazy-image icon"

@@ -35,10 +35,10 @@
 							:class="item.resultDetail && item.resultDetail.split('_')[0].split(' ')[1] === '1' ? 'ball-red': ( item.resultDetail && item.resultDetail.split('_')[0].split(' ')[1] === '2' ? 'ball-blue' : ( item.resultDetail && item.resultDetail.split('_')[0].split(' ')[1]=== '3' ? 'ball-green' : 'ball-gray' ) )">
 							<text class="text">{{setResultBalls(item.resultDetail)[0]}}</text>
 						</view>
-					</view> 
+					</view>
 				</view>
 				<view class="top-btn" @click="top" v-show="isShowRecords">
-					<image src="/static/img/top.png"></image>
+					<image src="@/static/img/top.png"></image>
 				</view>
 			</view>
 		</scroll-view>

@@ -135,7 +135,7 @@
           </template>
         </u-tabs-swiper>
         <view class="loading" v-if="tabsList.length === 0">
-          <image src="/static/img/loading_v2.gif" mode=""></image>
+          <image src="@/static/img/loading_v2.gif" mode=""></image>
           <view class="">加载中...</view>
         </view>
         <view v-show="tabsList.length > 0" class="tbas-bar" :style="`--left: ${barLeft}`">
@@ -348,7 +348,7 @@ export default {
       swiperKey: 1,
       tabsMap: {
         0: {
-          img: '/static/imgs-liuhe/index_02/categorys/hot.png',
+          img: '@/static/imgs-liuhe/index_02/categorys/hot.png',
 
           style: {
             background: '#f4897e'
@@ -359,7 +359,7 @@ export default {
           }
         },
         2: {
-          img: '/static/imgs-liuhe/index_02/categorys/lottery.png',
+          img: '@/static/imgs-liuhe/index_02/categorys/lottery.png',
           style: {
             background: '#f5d17c'
           },
@@ -369,7 +369,7 @@ export default {
           }
         },
         3: {
-          img: '/static/imgs-liuhe/index_02/categorys/chess.png',
+          img: '@/static/imgs-liuhe/index_02/categorys/chess.png',
           style: {
             background: '#f989c6'
           },
@@ -379,7 +379,7 @@ export default {
           }
         },
         4: {
-          img: '/static/imgs-liuhe/index_02/categorys/beauty.png',
+          img: '@/static/imgs-liuhe/index_02/categorys/beauty.png',
           style: {
             background: '#f8829e'
           },
@@ -389,7 +389,7 @@ export default {
           }
         },
         6: {
-          img: '/static/imgs-liuhe/index_02/categorys/fishing.png',
+          img: '@/static/imgs-liuhe/index_02/categorys/fishing.png',
           style: {
             background: '#80acf9'
           },
@@ -399,7 +399,7 @@ export default {
           }
         },
         5: {
-          img: '/static/imgs-liuhe/index_02/categorys/game.png',
+          img: '@/static/imgs-liuhe/index_02/categorys/game.png',
           style: {
             background: '#f9a07a'
           },
@@ -409,7 +409,7 @@ export default {
           }
         },
         7: {
-          img: '/static/imgs-liuhe/index_02/categorys/sports.png',
+          img: '@/static/imgs-liuhe/index_02/categorys/sports.png',
           style: {
             background: '#60bef6'
           },
@@ -419,7 +419,7 @@ export default {
           }
         },
         8: {
-          img: '/static/imgs-liuhe/index_02/categorys/clark.png',
+          img: '@/static/imgs-liuhe/index_02/categorys/clark.png',
           style: {
             background: '#5ff2a3'
           },
@@ -429,7 +429,7 @@ export default {
           }
         },
         9: {
-          img: '/static/imgs-liuhe/index_02/categorys/colection.png',
+          img: '@/static/imgs-liuhe/index_02/categorys/colection.png',
           style: {
             background: '#f5a56b'
           },

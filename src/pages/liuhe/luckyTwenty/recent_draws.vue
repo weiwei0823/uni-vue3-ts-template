@@ -3,7 +3,7 @@
 		:class="['theme-' + themeColor.name]">
 		<Header :title="title" />
 		<view class="loding" v-if="loading">
-			<image src="/static/img/loading_v1.gif"></image>
+			<image src="@/static/img/loading_v1.gif"></image>
 			<text class="text">加载中...</text>
 		</view>
 		<scroll-view scroll-y class="record-list" :style="{height:`calc(${uWindowHeight}px - 148rpx)`}">

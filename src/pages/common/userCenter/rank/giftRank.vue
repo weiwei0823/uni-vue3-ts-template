@@ -119,7 +119,7 @@
 					color: "#ffffff"
 				},
 				userInfo: {},
-				detailLogo: '/static/img/user/Frame21.png',
+				detailLogo: '@/static/img/user/Frame21.png',
 				rankList: [{
 						num: 4,
 						img: "https://img.sycccf.com:4949/unite49files/user-small/2021/04/24/1409553/1619245006485-20210424141646-1619245007406917.jpg",

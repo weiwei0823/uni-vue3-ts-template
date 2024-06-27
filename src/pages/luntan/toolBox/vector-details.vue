@@ -16,7 +16,7 @@
                 <image
                   class="img"
                   v-if="item.value === searchValue"
-                  src="/static/imgs-liuhe/activity/item-selected.png"
+                  src="@/static/imgs-liuhe/activity/item-selected.png"
                 >
                 </image>
               </view>

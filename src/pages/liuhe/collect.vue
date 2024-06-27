@@ -21,9 +21,9 @@
 				<view class="list-item" name="collect-list-item">
 					<image :src="item.logo" @click="detail(item)"></image>
 					<image v-if="item.collectStatus == 0" @click="collect(item)" class="collect"
-						src="/static/img/liuhe/list/nsc.png"></image>
+						src="@/static/img/liuhe/list/nsc.png"></image>
 					<image v-if="item.collectStatus == 1" @click="collect(item)" class="collect"
-						src="/static/img/liuhe/list/ysc.png"></image>
+						src="@/static/img/liuhe/list/ysc.png"></image>
 				</view>
 			</uni-col>
 		</uni-row>

@@ -25,7 +25,7 @@
 			</view>
 			<view class="header" style="justify-content:flex-start;" v-else>
 				<view class="left" style="align-items: center;">
-					<image class="avatar" src="/static/imgs-liuhe/ava.png"></image>
+					<image class="avatar" src="@/static/imgs-liuhe/ava.png"></image>
 					<view class="goLogin" @click="alertLogin">立即登录/注册</view>
 					<!-- <view class="level">
 						VIP{{ getVip }}
@@ -408,7 +408,7 @@ export default {
 					height: 32rpx;
 					right: 0;
 					bottom: 0;
-					background: url('/static/img/all/wallet/level-bg1.png');
+					background: url('@/static/img/all/wallet/level-bg1.png');
 					background-size: 100% 100%;
 					color: #FFF;
 					display: grid;

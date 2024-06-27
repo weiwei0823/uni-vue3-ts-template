@@ -40,7 +40,7 @@
             padding: '0 28rpx'
           }" @onSuccess="onSuccess" @onError="onErrors">
 					<block slot="addImg">
-						<image style="width: 208rpx; height: 208rpx;" src="/static/img/add-bg.svg"></image>
+						<image style="width: 208rpx; height: 208rpx;" src="@/static/img/add-bg.svg"></image>
 					</block>
 
 					<template v-slot:delete>

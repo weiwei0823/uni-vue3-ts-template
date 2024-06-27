@@ -145,13 +145,13 @@
 				:loading-more-loading-animated="false" :loading-more-default-as-loading="true"
 				:show-loading-more-no-more-view="true" :loading-more-no-more-text="'没有更多数据了'" :hide-empty-view="false"
 				:empty-view-center="true" :empty-view-text="$t('pages.luntan.masterForum.noData')"
-				:empty-view-img="'/static/imgs-liuhe/activity/empty.png'" :fixed="false"
+				:empty-view-img="'@/static/imgs-liuhe/activity/empty.png'" :fixed="false"
 				:empty-view-style="{ 'margin-bottom': '0' }"
 				:empty-view-img-style="{ 'width': '398rpx', 'height': '398rpx' }"
 				:empty-view-title-style="{ 'color': ' #999999', 'font-size': '30rpx', 'line-height': '44rpx', 'margin-top': '10rpx' }">
 				<view class="list-item-box">
 					<view class="list-item" v-for="(item, index) in list" @click="detail(item)">
-						<!-- <image class="new" v-if="item.timeText == $t('pages.common.userCenter.accountLog.giftMoney.timeText')" src="/static/img/user/accountlog/new.png">
+						<!-- <image class="new" v-if="item.timeText == $t('pages.common.userCenter.accountLog.giftMoney.timeText')" src="@/static/img/user/accountlog/new.png">
 						</image> -->
 						<view class="new" v-if="item.timeText == '刚刚'">
 							<svg width="27" height="14" viewBox="0 0 27 14" fill="none"

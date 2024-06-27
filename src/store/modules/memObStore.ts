@@ -1,8 +1,8 @@
-import { defineStore } from 'pinia'
-import { paramKeySort } from '@/utils/common.ts'
-import { config } from '@/config/config'
+import {defineStore} from 'pinia'
+import {paramKeySort} from '@/utils/common.ts'
+import {config} from '@/config/config'
 import requestCache from '@/utils/requestCache/requestCache'
-
+import global from 'global'
 const API_CACHED_STRINGS = {
   SAVE_DATA_KEY_UPDATETIME: 'updateTime',
   SAVE_DATA_KEY_LIFECRICLE: 'lifeCricle',
@@ -13,8 +13,8 @@ const _paramKeySort = (query) => {
   return `query_${paramKeySort(query)}`
 }
 
-const MemObStore = defineStore('MemOb', {
-  state: {
+const useMemObStore = defineStore('MemOb', {
+  state: () => ({
     pathPreloadedMap: {},
     willShowFeedBackDetail: null,
     // 彩种打开弹出广告层内容缓存
@@ -27,38 +27,35 @@ const MemObStore = defineStore('MemOb', {
     apiMemCachePool: {},
 
     apiCountMap: {}
-  },
+  }),
   getters: {
-    MEM_WILL_SHOW_FEED_BACK_DETAIL: (state) => state.willShowFeedBackDetail,
-    LOTTERIES_ADVERMSG: (state) => state.pageLotteriesAdvers,
-
+    MEM_WILL_SHOW_FEED_BACK_DETAIL: () => this.willShowFeedBackDetail,
+    LOTTERIES_ADVERMSG: () => this.pageLotteriesAdvers,
     GET_API_CACHE(args) {
       console.log(args)
       return 0
     }
   },
-  mutations: {
-    bindWillShowFeedBackDetailInfo(state, detailInfo) {
-      state.willShowFeedBackDetail = detailInfo
-    }
-  },
   actions: {
+    bindWillShowFeedBackDetailInfo(detailInfo) {
+      this.willShowFeedBackDetail = detailInfo
+    },
     /**
      *  检测某个账号是否加载过
      * @param commit
      * @param dispatch
      * @returns {Promise<Promise<*> | Promise>}
      */
-    async preloadPageByPath({ commit, dispatch, state }, path) {
+    async preloadPageByPath(path) {
       const _that = this
       return new Promise((resolve, reject) => {
-        if (state.pathPreloadedMap[path]) {
+        if (this.pathPreloadedMap[path]) {
           return resolve(true)
         }
         uni.preloadPage({
           url: path,
           success: () => {
-            state.pathPreloadedMap[path] = true
+            this.pathPreloadedMap[path] = true
             resolve(true)
           },
           fail: () => {
@@ -76,9 +73,9 @@ const MemObStore = defineStore('MemOb', {
      * @param paths
      * @returns {Promise<void>}
      */
-    async preloadPagesByPathsQueue({ commit, dispatch, state }, paths) {
+    async preloadPagesByPathsQueue(paths) {
       while (paths.length > 0) {
-        await dispatch('preloadPageByPath', paths.pop())
+        await this.preloadPageByPath(paths.pop())
       }
     },
     /**
@@ -89,56 +86,50 @@ const MemObStore = defineStore('MemOb', {
      * @param paths
      * @returns {Promise<void>}
      */
-    async preloadPagesByPaths({ commit, dispatch, state }, paths) {
+    async preloadPagesByPaths(paths) {
       while (paths.length > 0) {
-        dispatch('preloadPageByPath', paths.pop())
+        this.preloadPageByPath(paths.pop())
       }
     },
 
-    updateCacheStore({ commit, dispatch, state }, { key, info }) {
+    updateCacheStore({key, info}) {
       const { syncTime, cacheTime, data } = info
       const saveInfo = {
         syncTime: syncTime || 0,
         cacheTime: cacheTime || 0,
         data
       }
-      if (state.hasOwnProperty(key)) state[key] = saveInfo
+      if (this.hasOwnProperty(key)) state[key] = saveInfo
     },
 
-    bindEnterGameDetaildMesssage({ commit, dispatch, state }, resp) {
-      state.apiEnterGameDetails = resp
+    bindEnterGameDetaildMesssage(resp) {
+      this.apiEnterGameDetails = resp
     },
 
-    doCountApiAndClearCacheAfterClear(
-      { commit, dispatch, state },
-      requestArgs
-    ) {
+    doCountApiAndClearCacheAfterClear(requestArgs) {
       const apiName = requestArgs.url
       if (!apiName) {
         console.warn(`${apiName} faild`)
       }
-      const oldNum = state.apiCountMap[apiName] || 0
-      state.apiCountMap[apiName] = oldNum + 1
+      const oldNum = this.apiCountMap[apiName] || 0
+      this.apiCountMap[apiName] = oldNum + 1
       // ApiCache 接口触发后 需要清理其它接口缓存配置 避免数据更新不更新的配置
       const afterClearApis = requestCache.getApiClearCachePointMap()
       const needClearCacehApis = afterClearApis[apiName]
       if (needClearCacehApis && Array.isArray(needClearCacehApis)) {
         needClearCacehApis.forEach((needClearApi) => {
-          printDebugLog(`缓存清理${needClearApi}`)
-          delete state.apiMemCachePool[needClearApi]
+          global.printDebugLog(`缓存清理${needClearApi}`)
+          delete this.apiMemCachePool[needClearApi]
         })
       }
     },
 
-    bindApiMemCache(
-      { commit, dispatch, state },
-      { requestArgs, result, callback }
-    ) {
+    bindApiMemCache({ requestArgs, result, callback }) {
       const cachedTime = requestArgs.cacheTime
       const { forceUpdateCache } = requestArgs
       if (!cachedTime && !forceUpdateCache) return
 
-      const cachePool = state.apiMemCachePool
+      const cachePool = this.apiMemCachePool
       const apiName = requestArgs.url
       const apiQueryString = _paramKeySort(requestArgs.query)
       if (!cachePool[apiName]) cachePool[apiName] = {}
@@ -162,7 +153,7 @@ const MemObStore = defineStore('MemOb', {
       cachePool[apiName][apiQueryString] = lastCacheDataSlice
     },
 
-    getApiMemCache({ commit, dispatch, state }, requestArgs) {
+    getApiMemCache(requestArgs) {
       const cachedTime = requestArgs.cacheTime
       const { forceUpdateCache } = requestArgs
       const STATUS = {
@@ -177,7 +168,7 @@ const MemObStore = defineStore('MemOb', {
           resolve({ status: STATUS.CLOSE, data: null })
           return
         }
-        const cachePool = state.apiMemCachePool
+        const cachePool = this.apiMemCachePool
         const apiName = requestArgs.url
         const apiQueryString = _paramKeySort(requestArgs.query)
         let cacheData = null
@@ -185,7 +176,7 @@ const MemObStore = defineStore('MemOb', {
           cacheData = cachePool[apiName][apiQueryString]
         }
         if (!cacheData) {
-          printDebugLog(`接口${apiName} queryString ${apiQueryString} 缓存为空`)
+          global.printDebugLog(`接口${apiName} queryString ${apiQueryString} 缓存为空`)
           resolve({ status: STATUS.NULL, data: null })
           return
         }
@@ -194,7 +185,7 @@ const MemObStore = defineStore('MemOb', {
         const lastVaildTime =
           cacheData[API_CACHED_STRINGS.SAVE_DATA_KEY_LIFECRICLE]
         if (timeNow > lastVaildTime && !forceUpdateCache) {
-          printDebugLog(
+          global.printDebugLog(
             `接口缓存失效 ${apiName}`,
             1,
             lastVaildTime,
@@ -212,8 +203,8 @@ const MemObStore = defineStore('MemOb', {
       })
     },
 
-    clearApiCacheDataAfterCbCallBack({ commit, dispatch, state }, requestArgs) {
-      const cachePool = state.apiMemCachePool
+    clearApiCacheDataAfterCbCallBack(requestArgs) {
+      const cachePool = this.apiMemCachePool
       const apiName = requestArgs.url
       const apiCache = cachePool[apiName]
       if (apiCache) {
@@ -232,4 +223,4 @@ const MemObStore = defineStore('MemOb', {
   }
 })
 
-export default MemObStore
+export default useMemObStore

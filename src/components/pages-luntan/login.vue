@@ -112,7 +112,7 @@
 				let configInfo = this.$store.state.appInfoStore.contantsConfigTypeMap['22'];
 				if (!configInfo) {
 					console.warn("警告：当前站点为配置LOGO");
-					return "/static/logo.png";
+					return "@/static/logo.png";
 				}
 				return configInfo.url;
 			}
@@ -126,7 +126,7 @@
 					.top + "px",
 				isActive: 0,
 				isShow: false,
-				logo: '/static/logo.png',
+				logo: '@/static/logo.png',
 				countDown: 60,
 				isSend: false,
 				sendText: '',

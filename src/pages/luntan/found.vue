@@ -70,7 +70,7 @@
 				:loading-more-default-as-loading="true" :show-loading-more-no-more-view="true"
 				:loading-more-no-more-text="'没有更多数据了'" :hide-empty-view="false" :empty-view-center="true"
 				:empty-view-text="$t('pages.luntan.masterForum.noData')"
-				:empty-view-img="'/static/imgs-liuhe/activity/empty.png'" :fixed="false"
+				:empty-view-img="'@/static/imgs-liuhe/activity/empty.png'" :fixed="false"
 				:empty-view-style="{ 'margin-bottom': '170px' }"
 				:empty-view-img-style="{ 'width': '398rpx', 'height': '398rpx' }"
 				:empty-view-title-style="{ 'color': ' #A1A1A1', 'font-size': '28rpx', 'line-height': '44rpx', 'margin-top': '10rpx' }">
@@ -95,9 +95,9 @@
 								<image @click.stop="homepage(item)" class="headPic" :src="item.headPic"></image>
 								<text class="title">{{ item.title }}</text>
 								<view class="zan" @click.stop="thumbUp(item)">
-									<img v-if="item.thumbUpCount > 0" src="/static/img/zan-fill.png" alt=""
+									<img v-if="item.thumbUpCount > 0" src="@/static/img/zan-fill.png" alt=""
 										class="zan-img">
-									<img v-else src="/static/img/zan-stroke.png" alt="" class="zan-img">
+									<img v-else src="@/static/img/zan-stroke.png" alt="" class="zan-img">
 									<span class="num">{{ item.thumbUpCount | moneyFormat }}</span>
 								</view>
 							</view>
@@ -127,7 +127,7 @@
 				:loading-more-loading-animated="false" :loading-more-default-as-loading="true"
 				:show-loading-more-no-more-view="true" :loading-more-no-more-text="'没有更多数据了'" :hide-empty-view="false"
 				:empty-view-center="true" :empty-view-text="$t('pages.luntan.masterForum.noData')"
-				:empty-view-img="'/static/imgs-liuhe/activity/empty.png'" :fixed="false"
+				:empty-view-img="'@/static/imgs-liuhe/activity/empty.png'" :fixed="false"
 				:empty-view-style="{ 'margin-bottom': '0' }"
 				:empty-view-img-style="{ 'width': '398rpx', 'height': '398rpx' }"
 				:empty-view-title-style="{ 'color': ' #A1A1A1', 'font-size': '28rpx', 'line-height': '44rpx', 'margin-top': '10rpx' }">
@@ -152,9 +152,9 @@
 								<image @click.stop="homepage(item)" class="headPic" :src="item.headPic"></image>
 								<text class="title">{{ item.title }}</text>
 								<view class="zan" @click.stop="thumbUp(item)">
-									<img v-if="item.thumbUpCount > 0" src="/static/img/zan-fill.png" alt=""
+									<img v-if="item.thumbUpCount > 0" src="@/static/img/zan-fill.png" alt=""
 										class="zan-img">
-									<img v-else src="/static/img/zan-stroke.png" alt="" class="zan-img">
+									<img v-else src="@/static/img/zan-stroke.png" alt="" class="zan-img">
 									<span class="num">{{ item.thumbUpCount | moneyFormat }}</span>
 								</view>
 							</view>
@@ -242,7 +242,7 @@
 				loading: false,
 				curr: 0,
 				searchTitle: this.$t('pages.luntan.find.index.SearchPlaceholder'),
-				loadingImg: '/static/img/zw.png',
+				loadingImg: '@/static/img/zw.png',
 				dataList: [],
 				dataOne: {
 					searchValue: '',

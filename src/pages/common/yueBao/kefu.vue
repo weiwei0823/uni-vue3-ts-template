@@ -7,7 +7,7 @@
 				<view class="title">Hi,{{ userInfo.nickname }}</view>
 				<view class="text">{{ $t('pages.common.userCenter.yueBao.kefu.Welcome') }}</view>
 			</view>
-			<image class="img" src="/static/img/liuhe/help/roboto 1.png"></image>
+			<image class="img" src="@/static/img/liuhe/help/roboto 1.png"></image>
 		</view>
 		<view :enhanced="true" :bounces="false" :show-scrollbar="false">
 			<view class="content-box">

@@ -1,6 +1,6 @@
 <template>
     <view class="ptp-empty">
-        <image class="img" mode="widthFix" src="/static/imgs-liuhe/activity/empty.png" alt=""></image>
+        <image class="img" mode="widthFix" src="@/static/imgs-liuhe/activity/empty.png" alt=""></image>
         <view class="text">{{ $t('pages.luntan.masterForum.noData') }}</view>
     </view>
 </template>

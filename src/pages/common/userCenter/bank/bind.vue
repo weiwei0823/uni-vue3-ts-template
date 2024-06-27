@@ -6,7 +6,7 @@
   >
     <Header :title="title" :isBack="false" showBack @back="backPage" />
     <view class="img-box">
-      <image src="/static/imgs-liuhe/bank/empty.png" mode="widthFix"></image>
+      <image src="@/static/imgs-liuhe/bank/empty.png" mode="widthFix"></image>
     </view>
     <view class="btn-box">
       <view
@@ -16,7 +16,7 @@
         v-show="bindType.includes(item.key)"
       >
         <text class="name">{{ item.name }}</text>
-        <image class="img" src="/static/imgs-liuhe/bank/right.png"></image>
+        <image class="img" src="@/static/imgs-liuhe/bank/right.png"></image>
       </view>
     </view>
     <AlertInjectLayer />

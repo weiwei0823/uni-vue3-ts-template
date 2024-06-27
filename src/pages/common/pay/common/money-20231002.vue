@@ -5,12 +5,12 @@
 				:bg-color="headerStyle.backgroundColor" :font-color="fontColor" :title-style="titleStyle">
 				<block slot="left">
 					<view class="" @click="back">
-						<filterIcon src="/static/imgs-liuhe/activity/back.png" :width="24" :height="42" />
+						<filterIcon src="@/static/imgs-liuhe/activity/back.png" :width="24" :height="42" />
 					</view>
 					<!-- <image @click="back" :style="{
             width: '24rpx',
             height: '42rpx',
-          }" src="/static/imgs-liuhe/activity/back.png"></image> -->
+          }" src="@/static/imgs-liuhe/activity/back.png"></image> -->
 				</block>
 			</NavBar>
 			<view class="input-amount">

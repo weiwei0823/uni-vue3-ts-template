@@ -35,7 +35,7 @@
 								<!-- {{ $store.state.appInfoStore.userInfo ? playing.setAmount($store.state.appInfoStore.userInfo.userBalance, 2, '.', ',') : '-'}} -->
 								<view :class="{ refresh: true, runRefresh: inRefreshBrance }" @click="refresh">
 									<!-- <filterIcon fillColor="#A1A1A1" :useThemeColor="false"
-										src="/static/img/liuhe/refresh.png" :width="40" :height="40" /> -->
+										src="@/static/img/liuhe/refresh.png" :width="40" :height="40" /> -->
 									<svg xmlns="http://www.w3.org/2000/svg" style="width: 40rpx; height: 40rpx;"
 										viewBox="0 0 20 20" fill="none">
 										<path

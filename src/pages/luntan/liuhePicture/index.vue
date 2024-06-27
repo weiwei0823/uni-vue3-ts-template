@@ -11,7 +11,7 @@
 						<template #itemImg="item">
 							<view class="item-img">
 								<image class="img" v-if="item.value === 1"
-									src="/static/imgs-liuhe/activity/item-selected.png">
+									src="@/static/imgs-liuhe/activity/item-selected.png">
 								</image>
 							</view>
 						</template>
@@ -125,7 +125,7 @@
 					.top + "px",
 				current: 0,
 				scrollTop: 0,
-				loadingImg: '/static/img/zw.png',
+				loadingImg: '@/static/img/zw.png',
 				title: this.$t('components.CommonPages.pages-luntan.LuntanIndex_02.sixGallery'),
 				swiperHeight: 180,
 				old: {
@@ -149,7 +149,7 @@
 				//菜单栏
 				menulist: [
 					[{
-							icon: '/static/img/index/kaijiangxianchang.svg',
+							icon: '@/static/img/index/kaijiangxianchang.svg',
 							text: this.$t('components.CommonPages.pages-luntan.LuntanIndex_02.liveDraw'),
 							// #ifdef APP-PLUS
 							url: '/pages/luntan/applive/Live', //打包app解开此行注释
@@ -160,44 +160,44 @@
 							type: 1,
 						},
 						{
-							icon: '/static/img/index/jiaoliudating.svg',
+							icon: '@/static/img/index/jiaoliudating.svg',
 							text: this.$t('components.CommonPages.pages-luntan.LuntanIndex_02.masterForum'),
 							url: '/pages/luntan/masterForum/index',
 							type: 1,
 						},
 						{
-							icon: '/static/img/index/ziliaodaquan.svg',
+							icon: '@/static/img/index/ziliaodaquan.svg',
 							text: this.$t('components.CommonPages.pages-luntan.LuntanIndex_02.dataCollection'),
 							url: '/pages/luntan/dataCollection/Index/Index',
 							type: 1,
 						},
 						{
-							icon: '/static/img/index/chaxunzhushou.svg',
+							icon: '@/static/img/index/chaxunzhushou.svg',
 							text: this.$t('components.CommonPages.pages-luntan.LuntanIndex_02.queryAssistant'),
 							url: '/pages/luntan/queryHelper/index',
 							type: 1,
 						},
 					],
 					[{
-							icon: '/static/img/index/ymjc.svg',
+							icon: '@/static/img/index/ymjc.svg',
 							text: this.$t('components.CommonPages.pages-luntan.LuntanIndex_02.humorousGuess'),
 							url: '/pages/luntan/humorousGuessing/index',
 							type: 1,
 						},
 						{
-							icon: '/static/img/index/liuhetuku.svg',
+							icon: '@/static/img/index/liuhetuku.svg',
 							text: this.$t('components.CommonPages.pages-luntan.LuntanIndex_02.sixGallery'),
 							url: '/pages/luntan/liuhePicture/index?show=1',
 							type: 1,
 						},
 						{
-							icon: '/static/img/index/zixuntongji.svg',
+							icon: '@/static/img/index/zixuntongji.svg',
 							text: this.$t('components.CommonPages.pages-luntan.LuntanIndex_02.infoStats'),
 							url: '/pages/common/informationCount/liuhe',
 							type: 1,
 						},
 						{
-							icon: '/static/img/index/gongjubaoxiang.svg',
+							icon: '@/static/img/index/gongjubaoxiang.svg',
 							text: this.$t('components.CommonPages.pages-luntan.LuntanIndex_02.toolbox'),
 							url: '/pages/luntan/toolBox/index',
 							type: 1,

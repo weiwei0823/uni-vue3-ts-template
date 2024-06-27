@@ -15,7 +15,7 @@
 						<template #itemImg="item">
 							<view class="item-img">
 								<image class="img" v-if="item.value === curr"
-									src="/static/imgs-liuhe/activity/item-selected.png">
+									src="@/static/imgs-liuhe/activity/item-selected.png">
 								</image>
 							</view>
 						</template>
@@ -231,8 +231,8 @@
 
 					<view class="hd-interaction">
 						<span class="tool-item">
-							<img v-if="info.thumbUp == 0" src="/static/img/zan-stroke.png" alt="" class="zan-img">
-							<img v-else src="/static/img/zan-fill.png" alt="" class="zan-img">
+							<img v-if="info.thumbUp == 0" src="@/static/img/zan-stroke.png" alt="" class="zan-img">
+							<img v-else src="@/static/img/zan-fill.png" alt="" class="zan-img">
 							<view class="text">{{ info.thumbUpCount | moneyFormat }}{{
 								$t('pages.luntan.liuhePicture.detail.likes') }}</view>
 						</span>

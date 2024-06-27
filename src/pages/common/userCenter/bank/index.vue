@@ -33,7 +33,7 @@
 					<view class="left">
 						<view class="top" :class="{ 'is-qrcode': item.type == 3 }">
 							<view class="img">
-								<image :src="item.logoMobile || '/static/img/user/bank/usdt.png'"></image>
+								<image :src="item.logoMobile || '@/static/img/user/bank/usdt.png'"></image>
 							</view>
 							<view class="title">
 								<view class="name">{{ item.type == 4 ? 'USDT地址' : item.bankName }}</view>
@@ -83,22 +83,22 @@
 			</view>
 			<view class="btn-box">
 				<view class="btn" v-show="bindType.indexOf(1)!=-1" @click="toUrl('/pages/common/userCenter/bank/add')">
-					<imageSvgUrl style="margin-right:20rpx;" url="/static/img/user/bank/svgs/1.svg" :width="48"
+					<imageSvgUrl style="margin-right:20rpx;" url="@/static/img/user/bank/svgs/1.svg" :width="48"
 						:height="48" replaceThemeTargetColor="#07C160" />
 					{{ $t('pages.common.userCenter.bank.index.AddNewBankCard') }}
 				</view>
 				<view class="btn" v-show="bindType.indexOf(4)!=-1"  @click="toUrl('/pages/common/userCenter/bank/usdt')">
-					<imageSvgUrl style="margin-right:20rpx;" url="/static/img/user/bank/svgs/1.svg" :width="48"
+					<imageSvgUrl style="margin-right:20rpx;" url="@/static/img/user/bank/svgs/1.svg" :width="48"
 						:height="48" replaceThemeTargetColor="#07C160" />
 					{{ $t('pages.common.userCenter.bank.index.AddUSDTAddress') }}
 				</view>
 				<view class="btn" v-show="bindType.indexOf(2)!=-1" @click="toUrl('/pages/common/userCenter/bank/wallet')">
-					<imageSvgUrl style="margin-right:20rpx;" url="/static/img/user/bank/svgs/1.svg" :width="48"
+					<imageSvgUrl style="margin-right:20rpx;" url="@/static/img/user/bank/svgs/1.svg" :width="48"
 						:height="48" replaceThemeTargetColor="#07C160" />
 					{{ $t('pages.common.userCenter.bank.index.AddThirdPartyWallet') }}
 				</view>
 				<view class="btn" v-show="bindType.indexOf(3)!=-1" @click="toUrl('/pages/common/userCenter/bank/qrcode')">
-					<imageSvgUrl style="margin-right:20rpx;" url="/static/img/user/bank/svgs/1.svg" :width="48"
+					<imageSvgUrl style="margin-right:20rpx;" url="@/static/img/user/bank/svgs/1.svg" :width="48"
 						:height="48" replaceThemeTargetColor="#07C160" />
 					{{ $t('pages.common.userCenter.bank.index.AddPaymentQRCode') }}
 				</view>
@@ -106,7 +106,7 @@
 			<view class="hint">
 				<view class="hint-box">
 					<text class="hint-title">
-						<!-- <image src="/static/img/user/bank/warning.png"></image> -->
+						<!-- <image src="@/static/img/user/bank/warning.png"></image> -->
 						<u-icon name="error-circle-fill" color="#f00" size="28"></u-icon>
 						{{ $t('pages.common.userCenter.bank.index.Tip') }}</text>
 					<view class="content">

@@ -38,27 +38,27 @@
 			...mapGetters(["themeColor"]),
 			menulist() {
 				let data = [{
-						icon: '/static/img/index/kaijiangxianchang.svg',
+						icon: '@/static/img/index/kaijiangxianchang.svg',
 						text: this.$t('components.common.fab.Fab.lotteryLive'),
 						url: '/pages/luntan/live/Live'
 					},
 					{
-						icon: '/static/img/index/jiaoliudating.svg',
+						icon: '@/static/img/index/jiaoliudating.svg',
 						text: this.$t('components.common.fab.Fab.masterForum'),
 						url: '/pages/luntan/masterForum/index'
 					},
 					{
-						icon: '/static/img/index/tlsc.svg',
+						icon: '@/static/img/index/tlsc.svg',
 						text: this.$t('components.common.fab.Fab.materialMarket'),
 						url: 'taoliao'
 					},
 					{
-						icon: '/static/img/index/zixuntongji.svg',
+						icon: '@/static/img/index/zixuntongji.svg',
 						text: this.$t('components.common.fab.Fab.infoStats'),
 						url: '/pages/common/informationCount/liuhe'
 					},
 					{
-						icon: '/static/img/index/home.svg',
+						icon: '@/static/img/index/home.svg',
 						text: this.$t('components.common.fab.Fab.backHome'),
 						url: '/'
 					},

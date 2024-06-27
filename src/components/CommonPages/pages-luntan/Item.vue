@@ -24,7 +24,7 @@
 		},
 		data() {
 			return {
-				loadingImg: '/static/img/zw.png',
+				loadingImg: '@/static/img/zw.png',
 			}
 		},
 		mounted() {

@@ -39,7 +39,7 @@
 						</uni-swiper-dot>
 						<view class="noticeBlock">
 							<view class="notice_list">
-								<!-- <filterIcon src="/static/imgs-liuhe/index_02/blue/speaker.png" :width="48"
+								<!-- <filterIcon src="@/static/imgs-liuhe/index_02/blue/speaker.png" :width="48"
                   :height="48" /> -->
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 									<g clip-path="url(#clip0_104_44478)">

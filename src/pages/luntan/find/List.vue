@@ -39,13 +39,13 @@
           <view class="zan" @click.stop="thumbUp(item)">
             <img
               v-if="item.thumbUpCount > 0"
-              src="/static/img/zan-fill.png"
+              src="@/static/img/zan-fill.png"
               alt=""
               class="zan-img"
             />
             <img
               v-else
-              src="/static/img/zan-stroke.png"
+              src="@/static/img/zan-stroke.png"
               alt=""
               class="zan-img"
             />
@@ -78,7 +78,7 @@ export default {
       pageSize: 10,
       searchValue: "",
       status: "loadmore",
-      loadingImg: "/static/img/zw.png",
+      loadingImg: "@/static/img/zw.png",
       lotteryType: this.$config.getStorageSync(
         this.$config.enumMgr.APP_LOCALSTORE_KEYS.LOCAL_STORE_LOTTERYTYPE
       ),

@@ -61,8 +61,8 @@
 								{{ $t("components.common.comment.text2") }}
 							</view>
 							<span class="zan post" @click="thumbUp(value)">
-								<img v-if="value.thumbUp == 0" src="/static/img/zan-stroke.png" alt="" class="zan-img">
-								<img v-else src="/static/img/zan-fill.png" alt="" class="zan-img">
+								<img v-if="value.thumbUp == 0" src="@/static/img/zan-stroke.png" alt="" class="zan-img">
+								<img v-else src="@/static/img/zan-fill.png" alt="" class="zan-img">
 								<view class="text">{{ value.thumbUpCount || '' }}</view>
 							</span>
 						</view>
@@ -74,7 +74,7 @@
 			</template>
 			<div class="van-empty" v-else>
 				<div class="van-empty__image" style="max-width: 220rpx; height: 200rpx">
-					<img mode="heightFix" src="/static/imgs-liuhe/activity/empty.png" />
+					<img mode="heightFix" src="@/static/imgs-liuhe/activity/empty.png" />
 				</div>
 				<p class="van-empty__description">
 					{{ $t("components.common.comment.text7") }}
@@ -142,8 +142,8 @@
 								{{ $t("components.common.comment.text6") }}
 							</view>
 							<span class="zan post" @click="thumbUp(item)">
-								<img v-if="item.thumbUp == 0" src="/static/img/zan-stroke.png" alt="" class="zan-img">
-								<img v-else src="/static/img/zan-fill.png" alt="" class="zan-img">
+								<img v-if="item.thumbUp == 0" src="@/static/img/zan-stroke.png" alt="" class="zan-img">
+								<img v-else src="@/static/img/zan-fill.png" alt="" class="zan-img">
 								<view class="text">{{ item.thumbUpCount }}</view>
 							</span>
 						</view><!----><!----><!---->
@@ -157,7 +157,7 @@
 
 			<div class="van-empty" v-else>
 				<div class="van-empty__image" style="max-width: 220rpx; height: 200rpx">
-					<img mode="heightFix" src="/static/imgs-liuhe/activity/empty.png" />
+					<img mode="heightFix" src="@/static/imgs-liuhe/activity/empty.png" />
 				</div>
 				<p class="van-empty__description">
 					{{ $t("components.common.comment.text7") }}

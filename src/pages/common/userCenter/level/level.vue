@@ -15,7 +15,7 @@
 		</Header>
 		<uni-popup ref="popup" type="center">
 			<view class="buy-block">
-				<image src="/static/img/buy-level.png" mode=""></image>
+				<image src="@/static/img/buy-level.png" mode=""></image>
 				<view class="btn-group">
 					<view class="" @click="chargeVip">
 
