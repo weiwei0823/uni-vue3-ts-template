@@ -126,9 +126,8 @@
 		punish
 	} from '@/utils/user';
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue";
-	import {
-		mapGetters
-	} from 'pinia';
+  import imgBg from '@/static/img/Rectangle9364.png'
+
 	export default {
 		components: {
 			AlertInjectLayer,
@@ -155,34 +154,34 @@
 				times: 0,
 				winHeight: 0,
 				bgList: [{
-						src: require('./../../../../static/img/Rectangle9364.png')
+						src: imgBg
 					},
 					{
-						src: require('./../../../../static/img/Rectangle9364.png')
+						src: imgBg
 					},
 					{
-						src: require('./../../../../static/img/Rectangle9364.png')
+						src: imgBg
 					},
 					{
-						src: require('./../../../../static/img/Rectangle9364.png')
+						src: imgBg
 					},
 					{
-						src: require('./../../../../static/img/Rectangle9364.png')
+						src: imgBg
 					},
 					{
-						src: require('./../../../../static/img/Rectangle9364.png')
+						src: imgBg
 					},
 					{
-						src: require('./../../../../static/img/Rectangle9364.png')
+						src: imgBg
 					},
 					{
-						src: require('./../../../../static/img/Rectangle9364.png')
+						src: imgBg
 					},
 					{
-						src: require('./../../../../static/img/Rectangle9364.png')
+						src: imgBg
 					},
 					{
-						src: require('./../../../../static/img/Rectangle9364.png')
+						src: imgBg
 					}
 				]
 			};

@@ -538,7 +538,7 @@ export default {
           [img70, img71],
           [img80, img81],
           [img90, img91],
-				]
+				];
 				data.forEach(item => {
 					item.imgs = imgs[item.id] || []
 				});

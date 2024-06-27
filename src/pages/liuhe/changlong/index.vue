@@ -5,11 +5,11 @@
 				<view class="header">
 					<view class="title">
 						<view class="left">
-							<image :src="require('./../../../static/img/changlong/left.png')"></image>
+							<image :src="imgLeft"></image>
 						</view>
 						<view>规则说明</view>
 						<view class="right">
-							<image :src="require('./../../../static/img/changlong/right.png')"></image>
+							<image :src="imgRight"></image>
 						</view>
 					</view>
 				</view>
@@ -43,18 +43,18 @@
 							v-for="(item,index) in periodList" :key="index" @click="onSelectedPeriod(item)">{{item}}
 						</view>
 					</view>
-					<image :src="require('./../../../static/img/changlong/down.png')"></image>
+					<image :src="imgDown"></image>
 					期以上的{{currentTab === 0 ? "长龙" : "遗漏"}}
 				</view>
 				<view class="condition">
 					{{sortList[currentSort].label}}
-					<image :src="require('./../../../static/img/changlong/down-fill.png')" @click="isShowSort"></image>
+					<image :src="imgDownFill" @click="isShowSort"></image>
 					<view class="sort-filter" v-if="showSort">
 						<view class="sort-item" v-for="(item,index) in sortList" :key="index"
 							@click="onChangeSort(index)">{{item.label}}</view>
 					</view>
 					<view class="rules">
-						<image :src="require('./../../../static/img/changlong/rule.png')" @click="showRule"></image>
+						<image :src="imgRule" @click="showRule"></image>
 					</view>
 				</view>
 			</view>
@@ -130,7 +130,7 @@
 						<view class="bottom-line" v-if="currentTab === 0">
 							<view class="bottom-line-left"></view>
 							<view class="pk">
-								<image :src="require('./../../../static/img/changlong/pk.png')"></image>
+								<image :src="imgPk"></image>
 							</view>
 							<view class="bottom-line-right"></view>
 						</view>
@@ -147,20 +147,19 @@
 	</view>
 </template>
 <script>
-	import {
-		getTrendChartBet,
-		getLotteryBet
-	} from "../../../utils/lottery/betting";
-	import Playing from "../../../utils/common/playing";
-	import {
-		websocetObj
-	} from '@/utils/websocet/websocet.js';
-	import {
-		mapGetters
-	} from 'pinia';
-  import usePlayingStore from "@/store/modules/playIngStore";
+import {getLotteryBet, getTrendChartBet} from "@/utils/lottery/betting";
+import Playing from "@/utils/common/playing";
+import {websocetObj} from '@/utils/websocet/websocet.js';
+import usePlayingStore from "@/store/modules/playIngStore";
 
-	export default {
+import imgLeft from "@/static/img/changlong/left.png"
+import imgRight from "@/static/img/changlong/right.png"
+import imgDown from "@/static/img/changlong/down.png"
+import imgDownFill from "@/static/img/changlong/down-fill.png"
+import imgRule from "@/static/img/changlong/rule.png"
+import imgPk from "@/static/img/changlong/pk.png"
+
+export default {
 		components: {},
 		props: {
 			playData: {
@@ -188,7 +187,13 @@
 				currentSort: 0,
 				isSelected: false,
 				currentIndex: null,
-				currentBall: null
+				currentBall: null,
+        imgLeft: imgLeft,
+        imgRight: imgRight,
+        imgDown: imgDown,
+        imgDownFill: imgDownFill,
+        imgRule: imgRule,
+        imgPk: imgPk,
 			}
 		},
 		computed: {

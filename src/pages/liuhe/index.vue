@@ -705,23 +705,23 @@ height: 34rpx;"></image>
 			//获取菜单
 			getCategories() {
 				const data = uni.getStorageSync('categories') || []
+        const imgs = [
+          [img00, img01],
+          '',
+          [img20, img21],
+          [img30, img31],
+          [img40, img41],
+          [img50, img51],
+          [img60, img61],
+          [img70, img71],
+          [img80, img81],
+          [img90, img91],
+        ];
 				if (data.length) {
 					this.nav = data
 					this.category = this.nav[0]
 					this.getCategoryData()
 					categories().then(res => {
-            const imgs = [
-              [img00, img01],
-              '',
-              [img20, img21],
-              [img30, img31],
-              [img40, img41],
-              [img50, img51],
-              [img60, img61],
-              [img70, img71],
-              [img80, img81],
-              [img90, img91],
-            ];
 						res.result.forEach(item => {
 							item.imgs = imgs[item.id] || []
 						});
@@ -732,27 +732,6 @@ height: 34rpx;"></image>
 					})
 				} else {
 					categories().then(res => {
-						const imgs = [
-							[require('@/static/img/liuhe/index/category/0_0.png'), require(
-								'@/static/img/liuhe/index/category/0_1.png')],
-							'',
-							[require('@/static/img/liuhe/index/category/2_0.png'), require(
-								'@/static/img/liuhe/index/category/2_1.png')],
-							[require('@/static/img/liuhe/index/category/3_0.png'), require(
-								'@/static/img/liuhe/index/category/3_1.png')],
-							[require('@/static/img/liuhe/index/category/4_0.png'), require(
-								'@/static/img/liuhe/index/category/4_1.png')],
-							[require('@/static/img/liuhe/index/category/5_0.png'), require(
-								'@/static/img/liuhe/index/category/5_1.png')],
-							[require('@/static/img/liuhe/index/category/6_0.png'), require(
-								'@/static/img/liuhe/index/category/6_1.png')],
-							[require('@/static/img/liuhe/index/category/7_0.png'), require(
-								'@/static/img/liuhe/index/category/7_1.png')],
-							[require('@/static/img/liuhe/index/category/8_0.png'), require(
-								'@/static/img/liuhe/index/category/8_1.png')],
-							[require('@/static/img/liuhe/index/category/9_0.png'), require(
-								'@/static/img/liuhe/index/category/9_1.png')],
-						]
 						res.result.forEach(item => {
 							item.imgs = imgs[item.id] || []
 						});
