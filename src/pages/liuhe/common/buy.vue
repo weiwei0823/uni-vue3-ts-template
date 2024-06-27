@@ -175,7 +175,7 @@
 </template>
 
 <script>
-import {mapGetters, mapState} from 'pinia'
+import {mapState} from 'pinia'
 import USlider from 'vk-uview-ui/components/u-slider/u-slider.vue'
 import UniRow from '@/uni_modules/uni-row/components/uni-row/uni-row'
 import UniCol from '@/uni_modules/uni-row/components/uni-col/uni-col'
@@ -184,6 +184,10 @@ import { getLotteryType } from '@/utils/lottery/betting'
 import useAppInfoStore from "@/store/modules/appInfoStore";
 import usePlayingStore from "@/store/modules/playIngStore";
 
+import imgUp from '@/static/img/liuhe/up.png';
+import imgDown from '@/static/img/liuhe/down.png';
+import imgCoin from '@/static/img/liuhe/coin.png';
+import imgCoinSelect from '@/static/img/liuhe/coin-select.png';
 export default {
   name: 'buy',
   components: {
@@ -239,10 +243,10 @@ export default {
       sum: 0,
       isExpand: false,
       coinCurrent: null,
-      up: require('@/static/img/liuhe/up.png'),
-      down: require('@/static/img/liuhe/down.png'),
-      coin: require('@/static/img/liuhe/coin.png'),
-      coinSelect: require('@/static/img/liuhe/coin-select.png'),
+      up: imgUp,
+      down: imgDown,
+      coin: imgCoin,
+      coinSelect: imgCoinSelect,
       // coins: [5, 10, 50, 100, 500],
       // 基础表单数据
       baseFormData: {

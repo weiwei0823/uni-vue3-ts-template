@@ -40,9 +40,15 @@
 	</view>
 </template>
 <script>
-	import {
-		mapGetters
-	} from 'pinia';
+import imgUser from '@/static/img/all/lh-input/user.png';
+import imgLock from '@/static/img/all/lh-input/lock.png';
+import imgEdit from '@/static/img/all/lh-input/edit.png';
+import imgCellphone from '@/static/img/all/lh-input/cellphone.png';
+import imgSecurity from '@/static/img/all/lh-input/security.png';
+import imgEvited from '@/static/img/all/lh-input/evited.png';
+import imgShowPassword from "@/static/img/all/lh-input/opened-eye.png";
+import imgHidePassword from "@/static/img/all/lh-input/closed-eye.png";
+
 	export default {
 		props: {
 			value: String,
@@ -63,12 +69,12 @@
 				focus: false,
 				showPassword: false,
 				iconMap: {
-					user: require('@/static/img/all/lh-input/user.png'),
-					lock: require('@/static/img/all/lh-input/lock.png'),
-					edit: require('@/static/img/all/lh-input/edit.png'),
-					cellphone: require('@/static/img/all/lh-input/cellphone.png'),
-					security: require('@/static/img/all/lh-input/security.png'),
-					evited: require('@/static/img/all/lh-input/evited.png'),
+					user: imgUser,
+					lock: imgLock,
+					edit: imgEdit,
+					cellphone: imgCellphone,
+					security: imgSecurity,
+					evited: imgEvited,
 				},
 			}
 		},
@@ -84,7 +90,7 @@
 				return this.showPassword ? 'text' : this.type
 			},
 			passwordIcon() {
-				return require(`@/static/img/all/lh-input/${this.showPassword ? 'opened' : 'closed'}-eye.png`)
+        return this.showPassword ? imgShowPassword : imgHidePassword;
 			},
 			checkPasswordStrength() {
 				const password = this.value

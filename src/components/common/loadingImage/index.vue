@@ -9,11 +9,13 @@
 </template>
 
 <script>
+import imgLoading from "@/static/img/loadingImg.png";
+
 	export default {
 		data() {
 			return {
 				isLoad: false,
-				loadingImg: require("@/static/img/loadingImg.png")
+				loadingImg: imgLoading
 			}
 		},
 		props: {

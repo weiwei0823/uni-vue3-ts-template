@@ -23,12 +23,12 @@
 </template>
 
 <script>
-	import {
-		mapGetters
-	} from 'pinia';
 	import Download from "./download.vue";
   import useAppInfoStore from "@/store/modules/appInfoStore";
   import useSystemInfoStore from "@/store/modules/systemInfoStore";
+  import imgBlue from '@/static/img/all/header/light-blue.png';
+  import imgGreen from '@/static/img/all/header/light-green.png';
+
 	export default {
 		components: {
 			Download
@@ -95,8 +95,8 @@
 		data() {
 			return {
 				iconMap: {
-					blue: require('@/static/img/all/header/light-blue.png'),
-					green: require('@/static/img/all/header/light-green.png')
+					blue: imgBlue,
+					green: imgGreen
 				},
 				isForceHideBack: false
 			}

@@ -1,6 +1,6 @@
 <template>
 	<view>
-<!--		<component ref="componentRef" :is="componentId" />-->
+		<component ref="componentRef" :is="componentId" />
 		<ColorSwitch />
 	</view>
 </template>
@@ -8,14 +8,10 @@
 <script>
 
 import ColorSwitch from '@/components/common/colorSwitch/index.vue';
-// import LuntanIndex_01 from '@/components/CommonPages/pages-luntan/LuntanIndex_01.vue'
-// import LuntanIndex_02 from '@/components/CommonPages/pages-luntan/LuntanIndex_02.vue'
-import {
-	mapGetters
-} from 'pinia';
+import LuntanIndex_01 from '@/components/CommonPages/pages-luntan/LuntanIndex_01.vue'
+import LuntanIndex_02 from '@/components/CommonPages/pages-luntan/LuntanIndex_02.vue'
 import stores from "@/store"
 import useAppInfoStore from "@/store/modules/appInfoStore";
-import useSystemInfoStore from "@/store/modules/systemInfoStore";
 /**
  * 2023-08-16:修改一些调用onshow等逻辑BUG 避免组件载入后重复调用非必要生命周期时间。诱发一些获取数据重复请求未做去重的BUG
  */

@@ -240,6 +240,27 @@ import Playing from '@/utils/common/playing';
 import topicon from '@/components/gwh-backTopIcon/gwh-backTopIcon.vue'
 import {config} from '@/config/config'
 import defaultTemplate from "@/utils/defaultTemplate";
+import img00 from "@/static/img/liuhe/index/category/0_0.png";
+import img20 from "@/static/img/liuhe/index/category/2_0.png";
+import img30 from "@/static/img/liuhe/index/category/3_0.png";
+import img40 from "@/static/img/liuhe/index/category/4_0.png";
+import img50 from "@/static/img/liuhe/index/category/5_0.png";
+import img60 from "@/static/img/liuhe/index/category/6_0.png";
+import img70 from "@/static/img/liuhe/index/category/7_0.png";
+import img80 from "@/static/img/liuhe/index/category/8_0.png";
+import img90 from "@/static/img/liuhe/index/category/9_0.png";
+import img01 from "@/static/img/liuhe/index/category/0_1.png";
+import img21 from "@/static/img/liuhe/index/category/2_1.png";
+import img31 from "@/static/img/liuhe/index/category/3_1.png";
+import img41 from "@/static/img/liuhe/index/category/4_1.png";
+import img51 from "@/static/img/liuhe/index/category/5_1.png";
+import img61 from "@/static/img/liuhe/index/category/6_1.png";
+import img71 from "@/static/img/liuhe/index/category/7_1.png";
+import img81 from "@/static/img/liuhe/index/category/8_1.png";
+import img91 from "@/static/img/liuhe/index/category/9_1.png";
+import imgCategory00 from "@/static/img/liuhe/index/category/c_0_0_0.png";
+import imgCategory01 from "@/static/img/liuhe/index/category/c_0_0_1.png";
+
 
 export default {
 		name: "index",
@@ -507,25 +528,16 @@ export default {
 			//获取菜单
 			getCategories(data) {
 				const imgs = [
-					[require('@/static/img/liuhe/index/category/0_0.png'), require(
-						'@/static/img/liuhe/index/category/0_1.png')],
+          [img00, img01],
 					'',
-					[require('@/static/img/liuhe/index/category/2_0.png'), require(
-						'@/static/img/liuhe/index/category/2_1.png')],
-					[require('@/static/img/liuhe/index/category/3_0.png'), require(
-						'@/static/img/liuhe/index/category/3_1.png')],
-					[require('@/static/img/liuhe/index/category/4_0.png'), require(
-						'@/static/img/liuhe/index/category/4_1.png')],
-					[require('@/static/img/liuhe/index/category/5_0.png'), require(
-						'@/static/img/liuhe/index/category/5_1.png')],
-					[require('@/static/img/liuhe/index/category/6_0.png'), require(
-						'@/static/img/liuhe/index/category/6_1.png')],
-					[require('@/static/img/liuhe/index/category/7_0.png'), require(
-						'@/static/img/liuhe/index/category/7_1.png')],
-					[require('@/static/img/liuhe/index/category/8_0.png'), require(
-						'@/static/img/liuhe/index/category/8_1.png')],
-					[require('@/static/img/liuhe/index/category/9_0.png'), require(
-						'@/static/img/liuhe/index/category/9_1.png')],
+          [img20, img21],
+          [img30, img31],
+          [img40, img41],
+          [img50, img51],
+          [img60, img61],
+          [img70, img71],
+          [img80, img81],
+          [img90, img91],
 				]
 				data.forEach(item => {
 					item.imgs = imgs[item.id] || []
@@ -977,8 +989,7 @@ export default {
 				categoryData(prams).then(res => {
 					if (res.code == 200) {
 						const imgs = {
-							'0_0': [require('@/static/img/liuhe/index/category/c_0_0_0.png'), require(
-								'@/static/img/liuhe/index/category/c_0_0_1.png')]
+							'0_0': [imgCategory00, imgCategory01]
 						}
 						res.result.forEach(item => {
 							item.imgs = imgs[item.id] || []
