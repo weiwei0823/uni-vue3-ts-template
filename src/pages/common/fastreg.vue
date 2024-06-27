@@ -152,11 +152,10 @@ export default {
   },
 
   computed: {
-    ...mapState(useAppInfoStore, ['themeColor']),
+    ...mapState(useAppInfoStore, ['themeColor', 'webSiteConfig']),
     theme() {
       return getApp().globalData.themeMap[this.$config.station];
     },
-    ...mapState(useAppInfoStore, ["webSiteConfig"]),
     logo() {
       let contantLogoAndNameId =
         this.$config.enumMgr.CONTANTS_CONFIGS_ID.LOGO_HAD_NAME;

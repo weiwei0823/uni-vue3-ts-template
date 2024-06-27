@@ -55,9 +55,7 @@
 	import LEchart from '@/uni_modules/lime-echart/components/l-echart/l-echart.vue';
 	import Header from '@/components/common/header/index.vue';
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
-	import {
-		mapGetters
-	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		name: "bszm",
 		components: {

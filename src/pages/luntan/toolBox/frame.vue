@@ -44,6 +44,7 @@ import Playing from "@/utils/common/playing";
 import defaultTemplate from "@/utils/defaultTemplate";
 import { mapGetters } from 'pinia';
 import { convertData, convert } from "@/utils/user/gold.js";
+import useAppInfoStore from "@/store/modules/appInfoStore";
 export default {
   components: {
     Header,

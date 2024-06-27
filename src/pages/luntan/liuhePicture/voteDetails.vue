@@ -129,9 +129,8 @@
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
 	import Comment from "@/components/common/comment/Comment";
 	import ReplyComment from "@/components/common/comment/ReplyComment";
-	import {
-		mapGetters
-	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+
 	export default {
 		name: "voteDetails",
 		components: {

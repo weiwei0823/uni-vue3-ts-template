@@ -65,13 +65,12 @@
 	import oneInput from '@/components/myp-one/myp-one'
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
 	import {
-		mapGetters
-	} from 'pinia';
-	import {
 		getRollInAmount,
 		rollIn
 	} from '@/utils/yeb'
 	import defaultTemplate from "@/utils/defaultTemplate";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+
 	export default {
 		components: {
 			Header,

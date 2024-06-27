@@ -47,9 +47,7 @@
 </template>
 <script>
 	import Playing from "../../../utils/common/playing";
-	import {
-		mapGetters
-	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 
 	export default {
 		props: {

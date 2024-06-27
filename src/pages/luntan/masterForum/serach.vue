@@ -160,6 +160,7 @@
 		mapGetters
 	} from 'pinia';
 	import Empty from "@/components/common/empty/empty";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		name: "serach",
 		components: {

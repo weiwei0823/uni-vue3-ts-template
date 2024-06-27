@@ -8,6 +8,7 @@ import Tabbar from '@/components/Tabbar/PagesTabbar'
 import {
 	mapGetters
 } from 'pinia';
+import useAppInfoStore from "@/store/modules/appInfoStore";
 export default {
 	components: {
 		Tabbar,

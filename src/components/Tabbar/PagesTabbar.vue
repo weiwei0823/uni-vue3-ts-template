@@ -20,7 +20,6 @@ import {
   mapGetters, mapState
 } from 'pinia';
 import useAppInfoStore from "@/store/modules/appInfoStore";
-import useSystemInfoStore from "@/store/modules/systemInfoStore";
 	export default {
 		data() {
 			return {

@@ -82,9 +82,7 @@
 	import Empty from '@/components/common/empty/empty'
 	import NavBar from '@/components/common/navBar/navBar.vue'
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
-	import {
-		mapGetters
-	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	import {
 		setPickerStyle
 	} from "@/utils/common.ts";

@@ -25,6 +25,7 @@
 <script>
 import { mapGetters } from 'pinia';
 import { config } from "../../../config/config";
+import useAppInfoStore from "@/store/modules/appInfoStore";
 
 export default {
   name: "LotteryTypeTab",

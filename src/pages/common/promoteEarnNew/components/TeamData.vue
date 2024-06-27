@@ -82,6 +82,7 @@ import {
 } from 'pinia';
 import defaultTemplate from '@/utils/defaultTemplate'
 import TimePicker from "@/components/common/time-picker-earn";
+import useAppInfoStore from "@/store/modules/appInfoStore";
 
 export default {
 	components: {

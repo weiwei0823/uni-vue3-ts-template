@@ -176,6 +176,7 @@
 		getTime
 	} from "@/utils/function"
 	import TimePicker from "@/components/common/time-picker";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		components: {
 			TimePicker,

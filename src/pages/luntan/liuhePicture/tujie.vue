@@ -177,9 +177,8 @@
 	} from "@/utils/user/index.js";
 	import Empty from "@/components/common/empty/empty";
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue";
-	import {
-		mapGetters
-	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+
 	export default {
 		name: "tujie",
 		components: {

@@ -393,6 +393,7 @@
 	import Playing from "@/utils/common/playing";
 	import defaultTemplate from "@/utils/defaultTemplate";
 	import AccountMess from "@/components/common/userCenter/account-mess.vue"
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		name: "index",
 		components: {

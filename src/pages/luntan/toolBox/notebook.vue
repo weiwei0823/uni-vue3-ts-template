@@ -31,9 +31,7 @@
 </template>
 <script>
 	import Header from "@/components/common/header/index.vue";
-	import {
-		mapGetters
-	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	import Empty from "../../../components/common/empty/empty.vue";
 	export default {
 		components: {

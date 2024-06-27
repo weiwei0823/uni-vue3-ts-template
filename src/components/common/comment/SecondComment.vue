@@ -118,6 +118,7 @@ import {
 import {
 	mapGetters
 } from 'pinia';
+import useAppInfoStore from "@/store/modules/appInfoStore";
 
 export default {
 	name: "SecondComment",

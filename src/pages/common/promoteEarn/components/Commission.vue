@@ -79,6 +79,7 @@ import {
 	mapGetters
 } from 'pinia';
 import TimePicker from "@/components/common/time-picker-earn.vue";
+import useAppInfoStore from "@/store/modules/appInfoStore";
 
 export default {
 	components: {

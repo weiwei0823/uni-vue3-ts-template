@@ -63,6 +63,7 @@
 		mapGetters
 	} from 'pinia';
 	import Header from '@/components/common/header/index.vue';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		name: "bstm",
 		components: {

@@ -38,6 +38,7 @@
   import {
     mapGetters
   } from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 
 
 export default {
@@ -58,7 +59,6 @@ export default {
   computed: {
     ...mapState(useAppInfoStore, ['themeColor']),
     // 全文本所占总行数
-
   },
   methods: {
     open() {

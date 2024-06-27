@@ -189,15 +189,9 @@
 
 <script>
 	import {
-		concern,
 		thumbUp
 	} from '@/utils/user/index.js'
-	import {
-		mapGetters
-	} from 'pinia';
-	import {
-		findList
-	} from "@/utils/forum/index.js"
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	import TabBar from '@/components/Tabbar/Luntan'
 	import Fab from "@/components/common/fab/Fab";
 	import UniRow from "@/uni_modules/uni-row/components/uni-row/uni-row";

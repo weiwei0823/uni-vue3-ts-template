@@ -26,6 +26,7 @@
 	import {
 		mapGetters
 	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		name: 'mypOneInput',
 		props: {
@@ -77,7 +78,6 @@
 		},
 		computed: {
 			...mapState(useAppInfoStore, ['themeColor']),
-
 		},
 		data() {
 			return {

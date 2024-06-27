@@ -18,6 +18,7 @@ import {
 import {
 	requestSvg
 } from '@/utils/common/index.js'
+import useAppInfoStore from "@/store/modules/appInfoStore";
 export default {
 	props: {
 		url: String,

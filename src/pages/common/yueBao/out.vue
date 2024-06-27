@@ -53,11 +53,10 @@
 	import oneInput from '@/components/myp-one/myp-one'
 	import PopItem from "@/components/common/PopItem/PopItem";
 	import {
-		mapGetters
-	} from 'pinia';
-	import {
 		rollOut
-	} from '@/utils/yeb'
+	} from '@/utils/yeb';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+  
 	export default {
 		components: {
 			Header,

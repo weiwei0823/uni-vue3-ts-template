@@ -91,6 +91,7 @@
 	import {
 		getArticleTime
 	} from '@/utils/forum/index.js'
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		components: {
 			Header,

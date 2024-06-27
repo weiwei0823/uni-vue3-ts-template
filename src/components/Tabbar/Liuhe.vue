@@ -35,6 +35,7 @@
 <script>
 import sheetAnimation from "@/components/common/sheetAnimation/SheetAnimation.vue";
 import { mapGetters } from 'pinia';
+import useAppInfoStore from "@/store/modules/appInfoStore";
 export default {
   name: "TabBar",
   components: {

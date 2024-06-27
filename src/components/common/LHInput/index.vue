@@ -48,6 +48,7 @@ import imgSecurity from '@/static/img/all/lh-input/security.png';
 import imgEvited from '@/static/img/all/lh-input/evited.png';
 import imgShowPassword from "@/static/img/all/lh-input/opened-eye.png";
 import imgHidePassword from "@/static/img/all/lh-input/closed-eye.png";
+import useAppInfoStore from "@/store/modules/appInfoStore";
 
 	export default {
 		props: {

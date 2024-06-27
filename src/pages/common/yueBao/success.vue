@@ -23,6 +23,7 @@
 	import {
 		rollOut
 	} from '@/utils/yeb'
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		components: {
 			Header,

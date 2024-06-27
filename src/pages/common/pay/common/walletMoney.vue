@@ -94,6 +94,7 @@ import Header from '@/components/common/header/index.vue';
 import {
 	mapGetters
 } from 'pinia';
+import useAppInfoStore from "@/store/modules/appInfoStore";
 export default {
 	name: "bankMoney",
 	components: {
@@ -145,7 +146,6 @@ export default {
 	},
 	computed: {
 		...mapState(useAppInfoStore, ['themeColor']),
-
 		getMoney() {
 			if (this.money > 0) {
 				return this.money * this.info.exchangeRatio

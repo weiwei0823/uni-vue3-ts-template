@@ -127,6 +127,7 @@
 	} from '@/utils/user';
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue";
   import imgBg from '@/static/img/Rectangle9364.png'
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 
 	export default {
 		components: {

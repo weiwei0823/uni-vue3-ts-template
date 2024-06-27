@@ -146,6 +146,7 @@ import TabBarLiuhe from '@/components/Tabbar/Liuhe'
 import {
 	mapGetters
 } from 'pinia';
+import useAppInfoStore from "@/store/modules/appInfoStore";
 export default {
 	name: "profitreport",
 	components: {

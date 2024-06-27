@@ -62,6 +62,7 @@ import Playing from "@/utils/common/playing";
 
 import { mapGetters } from 'pinia';
 import { goldRecords } from "@/utils/user/gold.js";
+import useAppInfoStore from "@/store/modules/appInfoStore";
 
 export default {
   components: {

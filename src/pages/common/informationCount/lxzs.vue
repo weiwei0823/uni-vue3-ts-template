@@ -99,6 +99,7 @@
 	import {
 		setPickerStyle
 	} from "@/utils/common.ts";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		name: "lxzs",
 		components: {

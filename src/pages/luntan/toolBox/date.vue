@@ -23,9 +23,7 @@
 		listLotteryDate
 	} from '@/utils/lottery/index'
 	import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
-	import {
-		mapGetters
-	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	import DateItem from "@/components/common/date/dateItem";
 
 	export default {

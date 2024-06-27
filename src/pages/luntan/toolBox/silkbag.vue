@@ -99,6 +99,7 @@
 		mapGetters
 	} from 'pinia';
 	import ltLoading from "@/components/common/loading/LuntanLoading.vue";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 
 	export default {
 		name: "silkbag",

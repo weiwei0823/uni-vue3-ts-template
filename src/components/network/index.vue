@@ -46,7 +46,6 @@
 		config
 	} from '@/config/config'
   import useAppInfoStore from "@/store/modules/appInfoStore";
-  import useSystemInfoStore from "@/store/modules/systemInfoStore";
   import useWebsocketStore from "@/store/modules/websocketStore";
 	export default {
 		props: {

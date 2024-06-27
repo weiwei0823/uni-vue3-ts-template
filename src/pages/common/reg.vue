@@ -169,12 +169,11 @@
 		},
 
 		computed: {
-      ...mapState(useAppInfoStore, ["themeColor"]),
+      ...mapState(useAppInfoStore, ["themeColor", "webSiteConfig"]),
       ...mapState(useSystemInfoStore, ["uWindowHeight"]),
 			theme() {
 				return getApp().globalData.themeMap[this.$config.station]
 			},
-      ...mapState(useAppInfoStore, ["webSiteConfig"]),
 			showReg() {
 				return this.webSiteConfig.website_register_phone_check === 1
 			},

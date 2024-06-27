@@ -143,6 +143,7 @@
 		feedbackList
 	} from '@/utils/user/feedback'
 	import Pact from "../../../liuhe/pact.vue";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		components: {
 			Pact,

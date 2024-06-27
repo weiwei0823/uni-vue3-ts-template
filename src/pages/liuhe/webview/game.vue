@@ -68,6 +68,7 @@ import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue"
 import {
 	mapGetters
 } from 'pinia';
+import useAppInfoStore from "@/store/modules/appInfoStore";
 export default {
 	components: {
 		AlertInjectLayer,

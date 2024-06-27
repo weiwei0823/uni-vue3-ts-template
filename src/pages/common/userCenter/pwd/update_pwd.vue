@@ -38,6 +38,7 @@
 		mapGetters
 	} from 'pinia';
 import { nextTick } from 'vue';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 
 		name: "index",

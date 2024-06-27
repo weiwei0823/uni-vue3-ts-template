@@ -43,12 +43,11 @@
 	import Header from '@/components/common/header/index.vue';
 	import Empty from '@/components/common/empty/empty'
 	import {
-		mapGetters
-	} from 'pinia';
-	import {
 		helps
 	} from "@/utils/lottery/help";
 	import defaultTemplate from "@/utils/defaultTemplate";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+
 	export default {
 		components: {
 			Header,

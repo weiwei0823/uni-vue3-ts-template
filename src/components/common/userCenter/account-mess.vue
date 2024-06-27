@@ -97,6 +97,7 @@
 		aboutUs
 	} from "@/utils/user/index.js";
 	import defaultTemplate from '@/utils/defaultTemplate';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		props: {
 			isFixed: {

@@ -133,6 +133,7 @@ import ReplyComment from "@/components/common/comment/ReplyComment";
 import {
 	mapGetters
 } from 'pinia';
+import useAppInfoStore from "@/store/modules/appInfoStore";
 export default {
 	name: "voteDetails",
 	components: {

@@ -96,9 +96,8 @@
 	} from '@/utils/yeb'
 	import defaultTemplate from "@/utils/defaultTemplate";
 	import Playing from '@/utils/common/playing';
-	import {
-		mapGetters
-	} from 'pinia';
+  import useAppInfoStore from "@/store/modules/appInfoStore";
+
 	export default {
 		components: {
 			NavBar

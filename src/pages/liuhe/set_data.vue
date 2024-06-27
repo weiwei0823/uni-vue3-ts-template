@@ -111,6 +111,7 @@ import {
 	getRealName,
 	setPinCode
 } from "@/utils/lottery/mine";
+import useAppInfoStore from "@/store/modules/appInfoStore";
 export default {
 	components: {
 		Header,
@@ -138,7 +139,6 @@ export default {
 	},
 	computed: {
 		...mapState(useAppInfoStore, ['themeColor']),
-
 	},
 	onLoad() {
 		this.realName()

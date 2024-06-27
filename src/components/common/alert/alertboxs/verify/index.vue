@@ -36,9 +36,6 @@
 	import Select from './Select'
 	import Input from './Input'
 	import Slide from './Slide'
-	import {
-		mapGetters
-	} from 'pinia';
   import useAppInfoStore from "@/store/modules/appInfoStore";
 
 	export default {
@@ -95,9 +92,7 @@
 				} = data
 				this.key = key
 				// 如果没指定验证码类型 随意使用一个
-				this.componentId = verifyType || this.verifyTypeList[Math.floor(Math.random() * this.verifyTypeList
-					.length)]
-
+				this.componentId = verifyType || this.verifyTypeList[Math.floor(Math.random() * this.verifyTypeList.length)]
 				this.success = success
 				this.fail = fail
 			},

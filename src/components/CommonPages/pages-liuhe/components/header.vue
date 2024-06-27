@@ -73,6 +73,7 @@
 		mapGetters
 	} from 'pinia';
 	import Download from "@/components/common/header/download.vue";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 
 		props: {

@@ -77,6 +77,7 @@
 	} from '@/utils/user/feedback'
 	import defaultTemplate from '@/utils/defaultTemplate'
 	import cusPreviewImg from '@/components/cus-previewImg/cus-previewImg.vue'
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 	export default {
 		components: {
 			NavBar,

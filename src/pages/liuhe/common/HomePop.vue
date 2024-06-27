@@ -127,6 +127,7 @@
 	import {
 		receive,
 	} from "@/utils/activity/index";
+  import useAppInfoStore from "@/store/modules/appInfoStore";
 
 	export default {
 		name: "HomePop",

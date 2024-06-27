@@ -30,6 +30,7 @@ import UniRow from "@/uni_modules/uni-row/components/uni-row/uni-row";
 import { bankListInit } from "@/utils/lottery/mine";
 import AlertInjectLayer from "@/components/common/alert/AlertInjectLayer.vue";
 import { mapGetters } from 'pinia';
+import useAppInfoStore from "@/store/modules/appInfoStore";
 export default {
   name: "bind",
   components: {
