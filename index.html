@@ -1,25 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<!-- <html lang="en"> -->
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <script>
-    var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
-      CSS.supports('top: constant(a)'))
-    document.write(
-      '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
-      (coverSupport ? ', viewport-fit=cover' : '') + '" />')
-  </script>
-  <title></title>
-  <!--preload-links-->
-  <!--app-context-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="no-referrer">
+    <meta name="format-detection" content="telephone=no" />
+    <!--删除苹果默认的工具栏和菜单栏，默认为no显示工具栏和菜单栏。-->
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv="pragma" content="no-cache">
+
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <meta http-equiv="Content-Type" content="application/xhtml+xml">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff" />
+
+    <!--QQ强制全屏-->
+
+    <meta name="x5-fullscreen" content="true">
+
+    <!-- UC强制全屏 -->
+
+    <meta name="fullscreen" content="yes">
+    <!--		<link rel="shortcut icon" href="/static/ico.png" type="image/x-icon">-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <script src="./configuration.js" type="module"></script>
+    <script src="./src/static/js/sign.js?t=1" type="module"></script>
+    <!-- Google tag (gtag.js) -->
+    <!--      <script async src="https://www.googletagmanager.com/gtag/js?id=G-81LJ7CC6X6"></script>-->
+    <!--      <script>-->
+    <!--        window.dataLayer = window.dataLayer || [];-->
+    <!--        function gtag(){dataLayer.push(arguments);}-->
+    <!--        gtag('js', new Date());-->
+
+    <!--        gtag('config', 'G-81LJ7CC6X6');-->
+    <!--      </script>-->
+
+    <script>
+        const coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+            CSS.supports('top: constant(a)'));
+        const meta = document.createElement('meta');
+        meta.name = "viewport";
+        meta.content = "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" + (coverSupport ? ", viewport-fit=cover" : "");
+        document.getElementsByTagName('head')[0].appendChild(meta);
+
+        window.onload = function() {
+            document.body.style.overflow = 'hidden';
+        }
+    </script>
+    <!--preload-links-->
+    <!--app-context-->
 </head>
-
 <body>
-  <div id="app">
+<div id="app">
     <!--app-html-->
-  </div>
-  <script type="module" src="/src/main.ts"></script>
+</div>
+<script type="module" src="/src/main.ts"></script>
 </body>
-
 </html>
