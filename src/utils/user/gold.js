@@ -1,53 +1,53 @@
-import { apiLoginRequest } from "../request";
+import { apiLoginRequest } from '../request'
 
 export const details = (query) => {
   return apiLoginRequest({
-    url: "/api/user/gold/sign/details",
+    url: '/api/user/gold/sign/details',
     baseUrl: 1,
-    method: "GET",
-    query: { ...query },
-  });
-};
+    method: 'GET',
+    query: { ...query }
+  })
+}
 export const sign = (query) => {
   return apiLoginRequest({
-    url: "/api/user/gold/sign/sign",
+    url: '/api/user/gold/sign/sign',
     baseUrl: 1,
-    method: "GET",
-    query: { ...query },
-  });
-};
+    method: 'GET',
+    query: { ...query }
+  })
+}
 
 export const keepSignReceive = (query) => {
   return apiLoginRequest({
-    url: "/api/user/gold/sign/keepSignReceive",
+    url: '/api/user/gold/sign/keepSignReceive',
     baseUrl: 1,
-    method: "GET",
-    query: { ...query },
-  });
-};
+    method: 'GET',
+    query: { ...query }
+  })
+}
 
 export const goldRecords = (query) => {
   return apiLoginRequest({
-    url: "/api/user/gold/sign/goldRecords",
+    url: '/api/user/gold/sign/goldRecords',
     baseUrl: 1,
-    method: "GET",
-    query: { ...query },
-  });
-};
+    method: 'GET',
+    query: { ...query }
+  })
+}
 
 export const convertData = (query) => {
   return apiLoginRequest({
-    url: "/api/user/gold/sign/convertData",
+    url: '/api/user/gold/sign/convertData',
     baseUrl: 1,
-    method: "GET",
-    query: { ...query },
-  });
-};
+    method: 'GET',
+    query: { ...query }
+  })
+}
 export const convert = (query) => {
   return apiLoginRequest({
-    url: "/api/user/gold/sign/convert",
+    url: '/api/user/gold/sign/convert',
     baseUrl: 1,
-    method: "POST",
-    query: { ...query },
-  });
-};
+    method: 'POST',
+    query: { ...query }
+  })
+}

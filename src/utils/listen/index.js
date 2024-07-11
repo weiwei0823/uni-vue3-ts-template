@@ -1,15 +1,15 @@
 const onPageMounted = () => {
-	uni.$on("on_page_mounted", (pageInstance) => {
-		//OPPPO 机型下 此属性三指触摸会导致三指触摸出现触摸无法滚动问题
-		try {
-			if(browserPlatform() == browserPlatform.FLUTTER_App){
-				pageInstance.$parent.$parent.disableScroll = false;
-			}
-		}catch (e) {
-			console.error(e);
-		}
-	})
-};
+  uni.$on('on_page_mounted', (pageInstance) => {
+    // OPPPO 机型下 此属性三指触摸会导致三指触摸出现触摸无法滚动问题
+    try {
+      if (browserPlatform() == browserPlatform.FLUTTER_App) {
+        pageInstance.$parent.$parent.disableScroll = false
+      }
+    } catch (e) {
+      console.error(e)
+    }
+  })
+}
 
 /**
  * @sanm 实现
@@ -18,5 +18,5 @@ const onPageMounted = () => {
  */
 
 export const initListen = () => {
-	onPageMounted();
+  onPageMounted()
 }

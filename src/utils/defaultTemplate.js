@@ -24,64 +24,66 @@
  * @return 处理后的数据
  */
 export default function defaultTemplate(def, src) {
-	if (def == null) {
-		return src
-	} else if (typeof def === 'function') {
-		return def(src)
-	} else if (isBaseType(def)) {
-		return src != null && isBaseType(src) ? convert(def)(src) : def
-	} else if (Array.isArray(def)) {
-		if (Array.isArray(src)) {
-			if (def.length) {
-				const arr = new Array(src.length)
-				const def1 = def[0]
-				for (let i = 0; i < src.length; ++i) {
-					arr[i] = defaultTemplate(def1, src[i])
-				}
-				return arr
-			}
-			return src
-		}
-		return []
-	} else {
-		const keys = Object.keys(def)
-		const obj = {}
-		if (isObject(src)) {
-			const srcKeys = Object.keys(src)
-			let isAllTemplate = false
-			let allTemplate
-			//倒序遍历, 方便从数组后面移除元素(更快)
-			for (let i = keys.length - 1; i >= 0; --i) {
-				const key = keys[i]
-				if (key === '?') {
-					isAllTemplate = true
-					allTemplate = def[key]
-					continue
-				}
-				//元素大概率在后面, 所以采用lastIndexOf方法
-				const index = srcKeys.lastIndexOf(key)
-				if (index !== -1) {
-					srcKeys.splice(index, 1)
-					obj[key] = defaultTemplate(def[key], src[key])
-				} else {
-					obj[key] = defaultTemplate(def[key], undefined)
-				}
-			}
-			if (isAllTemplate) {
-				for (let i = 0; i < srcKeys.length; ++i) {
-					const key = srcKeys[i]
-					obj[key] = defaultTemplate(allTemplate, src[key])
-				}
-			}
-		} else {
-			for (let i = keys.length - 1; i >= 0; --i) {
-				const key = keys[i]
-				if (key === '?') continue
-				obj[key] = defaultTemplate(def[key], undefined)
-			}
-		}
-		return obj
-	}
+  if (def == null) {
+    return src
+  }
+  if (typeof def === 'function') {
+    return def(src)
+  }
+  if (isBaseType(def)) {
+    return src != null && isBaseType(src) ? convert(def)(src) : def
+  }
+  if (Array.isArray(def)) {
+    if (Array.isArray(src)) {
+      if (def.length) {
+        const arr = new Array(src.length)
+        const def1 = def[0]
+        for (let i = 0; i < src.length; ++i) {
+          arr[i] = defaultTemplate(def1, src[i])
+        }
+        return arr
+      }
+      return src
+    }
+    return []
+  }
+  const keys = Object.keys(def)
+  const obj = {}
+  if (isObject(src)) {
+    const srcKeys = Object.keys(src)
+    let isAllTemplate = false
+    let allTemplate
+    // 倒序遍历, 方便从数组后面移除元素(更快)
+    for (let i = keys.length - 1; i >= 0; --i) {
+      const key = keys[i]
+      if (key === '?') {
+        isAllTemplate = true
+        allTemplate = def[key]
+        continue
+      }
+      // 元素大概率在后面, 所以采用lastIndexOf方法
+      const index = srcKeys.lastIndexOf(key)
+      if (index !== -1) {
+        srcKeys.splice(index, 1)
+        obj[key] = defaultTemplate(def[key], src[key])
+      } else {
+        obj[key] = defaultTemplate(def[key], undefined)
+      }
+    }
+    if (isAllTemplate) {
+      for (let i = 0; i < srcKeys.length; ++i) {
+        const key = srcKeys[i]
+        obj[key] = defaultTemplate(allTemplate, src[key])
+      }
+    }
+  } else {
+    for (let i = keys.length - 1; i >= 0; --i) {
+      const key = keys[i]
+      if (key === '?') continue
+      obj[key] = defaultTemplate(def[key], undefined)
+    }
+  }
+  return obj
 }
 /**
  * 判断基本类型(可以直接赋值)
@@ -90,15 +92,15 @@ export default function defaultTemplate(def, src) {
  * @return 测试结果
  */
 function isBaseType(val) {
-	return (
-		val == null ||
-		typeof val === 'boolean' ||
-		typeof val === 'number' ||
-		typeof val === 'string' ||
-		typeof val === 'function' ||
-		typeof val === 'bigint' ||
-		val.constructor === Symbol
-	)
+  return (
+    val == null ||
+    typeof val === 'boolean' ||
+    typeof val === 'number' ||
+    typeof val === 'string' ||
+    typeof val === 'function' ||
+    typeof val === 'bigint' ||
+    val.constructor === Symbol
+  )
 }
 /**
  * 判断普通对象(不包括数组)
@@ -107,7 +109,7 @@ function isBaseType(val) {
  * @return 测试结果
  */
 function isObject(val) {
-	return !(isBaseType(val) || Array.isArray(val))
+  return !(isBaseType(val) || Array.isArray(val))
 }
 
 /**
@@ -116,23 +118,24 @@ function isObject(val) {
  * @return 转换器
  */
 function convert(type) {
-	if (typeof type === 'boolean') {
-		return function (val) {
-			if (typeof val === 'string' && val.toLowerCase() === 'false') return false
-			return Boolean(val)
-		}
-	} else if (typeof type === 'number') {
-		return function (val) {
-			const val2 = Number(val)
-			return isFinite(val2) ? val2.toFixed(2) : type
-		}
-	} else if (typeof type === 'string') {
-		return function (val) {
-			return `${val}`
-		}
-	} else {
-		return function (val) {
-			return val
-		}
-	}
+  if (typeof type === 'boolean') {
+    return function (val) {
+      if (typeof val === 'string' && val.toLowerCase() === 'false') return false
+      return Boolean(val)
+    }
+  }
+  if (typeof type === 'number') {
+    return function (val) {
+      const val2 = Number(val)
+      return isFinite(val2) ? val2.toFixed(2) : type
+    }
+  }
+  if (typeof type === 'string') {
+    return function (val) {
+      return `${val}`
+    }
+  }
+  return function (val) {
+    return val
+  }
 }
