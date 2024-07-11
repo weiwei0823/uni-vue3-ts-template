@@ -1,6 +1,6 @@
-import configUIMgr from '../../config/models/configUIMgr.js'
+import configUIMgr from '@/config/models/configUIMgr'
 
-export const formatterColor = (id) => {
+export const formatterColor = (id: any) => {
   const color = configUIMgr.themeColors
   const selectedThemeInfo = color.find((item) => item.id === id)
   if (!selectedThemeInfo)

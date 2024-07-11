@@ -1,4 +1,4 @@
-import { apiRequest, apiRequestBase64, apiLoginRequest } from '../request'
+import { apiRequest, apiRequestBase64 } from '../request'
 // 直播获取
 export const getLiveInfoByLotteryId = (query) => {
   return apiRequestBase64({

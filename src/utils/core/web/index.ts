@@ -1,5 +1,5 @@
 import { config } from '@/config/config'
-import $store from '@/store/index'
+import $store from '@/store'
 
 /**
  * 初始化dom元素功能

@@ -1,7 +1,7 @@
 import Base64 from 'base-64'
-import $store from '@/store/index.js'
-import { config } from '../../config/config'
-import EncryptUtils from '@/utils/common/encryptUtils.js'
+import $store from '@/store'
+import { config } from '@/config/config'
+import EncryptUtils from '@/utils/common/encryptUtils'
 import CryptoJS from '@/utils/common/crypto-js'
 
 let isSocketClose = false // 是否关闭socket

@@ -1,4 +1,4 @@
-import { apiRequest, apiRequestBase64, apiLoginRequest } from '../request.js'
+import { apiRequestBase64 } from '../request'
 
 // POST 请求案例
 

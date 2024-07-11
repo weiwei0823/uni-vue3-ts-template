@@ -1,5 +1,5 @@
 import { apiRequest, apiRequestBase64, apiLoginRequest } from '../request'
-import Logger from '../debug/Logger.js'
+import Logger from '../debug/Logger'
 
 // 试玩账号登录
 export const demoLogin = (prams) => {

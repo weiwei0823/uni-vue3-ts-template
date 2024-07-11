@@ -1,4 +1,4 @@
-import { apiRequest, apiLoginRequest, apiRequestBase64 } from '../request'
+import { apiRequestBase64 } from '../request'
 
 export const listArticleType = (query) => {
   return apiRequestBase64({

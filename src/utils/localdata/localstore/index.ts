@@ -1,4 +1,4 @@
-import userInfo from './userInfo/userInfo.js'
+import userInfo from './userInfo/userInfo'
 
 /**
  * 管理层 将切割字符串 指向对应注入脚本及调用方法

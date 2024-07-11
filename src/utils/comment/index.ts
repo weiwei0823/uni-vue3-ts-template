@@ -1,4 +1,4 @@
-import { apiRequest, apiRequestBase64, apiLoginRequest } from '../request'
+import { apiRequestBase64, apiLoginRequest } from '../request'
 
 // 热门评论
 export const commentList = (query) => {

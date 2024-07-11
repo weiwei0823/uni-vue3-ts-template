@@ -1,10 +1,10 @@
 import Vue from 'vue'
-import { config } from '../config/config.js'
+import { config } from '../config/config'
 import CryptoJS from '@/utils/common/crypto-js'
-import EncryptUtils from '@/utils/common/encryptUtils.js'
+import EncryptUtils from '@/utils/common/encryptUtils'
 import $store from '@/store/index'
-import { paramKeySort, deepEqual } from '@/utils/common.js'
-import requestCacheMgr from '@/utils/requestCache/requestCache.js'
+import { paramKeySort, deepEqual } from '@/utils/common'
+import requestCacheMgr from '@/utils/requestCache/requestCache'
 
 const apiTimestampDic = {}
 let l = 0

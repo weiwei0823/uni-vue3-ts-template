@@ -1,7 +1,7 @@
-import ball1 from '../../static/img/liuhe/ball/1.svg'
-import ball2 from '../../static/img/liuhe/ball/2.svg'
-import ball3 from '../../static/img/liuhe/ball/3.png'
-import { config } from '../../config/config'
+// import ball1 from '../../static/img/liuhe/ball/1.svg'
+// import ball2 from '../../static/img/liuhe/ball/2.svg'
+// import ball3 from '../../static/img/liuhe/ball/3.png'
+// import { config } from '@/config/config'
 
 export default class Playing {
   constructor() {

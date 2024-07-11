@@ -1,4 +1,4 @@
-import { apiRequest, apiLoginRequest, apiRequestBase64 } from '../request'
+import { apiLoginRequest, apiRequestBase64 } from '../request'
 
 // 高手论坛列表
 export const listLatest = (prams) => {
