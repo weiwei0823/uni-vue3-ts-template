@@ -1,5 +1,5 @@
 import enumConfig from './configEnum'
-import { config } from '../config.js'
+import { config } from '../config'
 
 export default {
   memCheckPageElement: {},

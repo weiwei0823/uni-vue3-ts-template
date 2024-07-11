@@ -26,4 +26,4 @@ const replaceFileFun = (path) => {
   })
 }
 
-replaceFileFun('./src/utils')
+replaceFileFun('/Users/个人/远程工作/uni-vue3-ts-template/src/config/models')

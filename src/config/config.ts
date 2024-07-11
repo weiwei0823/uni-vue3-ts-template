@@ -1,11 +1,11 @@
-import configGameRouter from './models/configGameRouter.js'
-import configEnums from './models/configEnum.js'
+import configGameRouter from './models/configGameRouter'
+import configEnums from './models/configEnum'
 import configLotties from './models/configLotteries'
 import configUIMgr from './models/configUIMgr'
 import configVersionMgr from './models/configVersionMgr'
 import configLanguage from './models/configLanguage'
 import configCache from './models/configCache'
-import configuratioBuilder from './configurationBuilder/configurationBuilder.js'
+import configuratioBuilder from './configurationBuilder/configurationBuilder'
 
 let isDebug = configuratioBuilder.getConfigIsDebugOrDefault(false) //true;
 //是否为开发环境

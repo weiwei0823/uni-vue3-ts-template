@@ -1,7 +1,7 @@
 // 游戏路径配置 避免在其它逻辑点一直去计算而且不好管理
-import $store from '@/store/index'
+import $store from '@/store'
 import { config } from '../config'
-import { enter, gamePlatformUpholdInfo } from '@/utils/lottery/mine'
+import { enter } from '@/utils/lottery/mine'
 // TODO 替换其它页面中出现的零散逻辑
 export default {
   routeConfigs: {

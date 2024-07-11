@@ -1,4 +1,4 @@
-import configEnums from '../models/configEnum.js'
+import configEnums from '../models/configEnum'
 
 export default {
   KEY_IS_DEBUG: 'isDebug',

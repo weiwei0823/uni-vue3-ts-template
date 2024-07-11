@@ -6,7 +6,7 @@ import en from '../../locale/en.json'
 import pt from '../../locale/pt.json'
 import zhHans from '../../locale/zh-Hans.json'
 import zhHant from '../../locale/zh-Hant.json'
-import { config } from '@/config/config.js'
+import { config } from '@/config/config'
 import { login } from '../../utils/common'
 
 export default {
