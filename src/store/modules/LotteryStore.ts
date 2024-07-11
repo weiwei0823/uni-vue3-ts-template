@@ -1,4 +1,4 @@
-import {config} from '@/config/config'
+import { config } from '@/config/config'
 
 export const useLotteryStore = defineStore('lottery', () => {
   // 当前所在彩票游戏Id
