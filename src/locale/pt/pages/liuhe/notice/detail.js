@@ -1,4 +1,3 @@
 export default {
-	"pages.liuhe.notice.detail.text1": "Announcement details",
-
+  'pages.liuhe.notice.detail.text1': 'Announcement details'
 }

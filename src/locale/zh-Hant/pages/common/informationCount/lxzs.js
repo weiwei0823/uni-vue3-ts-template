@@ -1,3 +1,3 @@
 export default {
-	'pages.common.informationCount.lxzs.title': '連肖走勢圖',
+  'pages.common.informationCount.lxzs.title': '連肖走勢圖'
 }

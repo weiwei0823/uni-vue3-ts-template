@@ -1,3 +1,3 @@
 export default {
-    'components.common.notice.notice.text0': 'Introduction',
+  'components.common.notice.notice.text0': 'Introduction'
 }

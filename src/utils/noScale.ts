@@ -1,7 +1,7 @@
 // #ifdef H5
 window.onload = function () {
   setTimeout(function () {
-    if (browserPlatform() == browserPlatform.FLUTTER_App) {
+    if (browserPlatform() === browserPlatform.FLUTTER_App) {
     } else {
       document.body.style.overflow = 'hidden'
       document.addEventListener('touchstart', function (event) {

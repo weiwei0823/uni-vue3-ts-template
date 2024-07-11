@@ -1,3 +1,3 @@
-export default{
-    'components.common.notice.notice.text0':'简介'
+export default {
+  'components.common.notice.notice.text0': '简介'
 }
