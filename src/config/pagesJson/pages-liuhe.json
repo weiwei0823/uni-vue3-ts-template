@@ -1,0 +1,850 @@
+{
+	"pages": [{
+			"path": "pages/liuhe/indexNew",
+			"style": {
+				"navigationBarTitleText": "购彩大厅",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/liuhe/trendChart/index",
+			"style": {
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/game_hall",
+			"style": {
+				"navigationBarTitleText": "游戏大厅",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/activity",
+			"style": {
+				"navigationBarTitleText": "优惠活动",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/liuhe/my",
+			"style": {
+				"navigationBarTitleText": "我的钱包",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/liuhe/arrangementThree",
+			"style": {
+				"enablePullDownRefresh": false,
+				"disableScroll": true,
+				"navigationBarTitleText": "图库"
+			}
+		},
+		{
+			"path": "pages/liuhe/arrangementThree/betting_results",
+			"style": {
+				"navigationBarTitleText": "投注结果",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/arrangementThree/recent_draws",
+			"style": {
+				"navigationBarTitleText": "最近开奖",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/elevenOutOfFive",
+			"style": {
+				"enablePullDownRefresh": false,
+				"disableScroll": true,
+				"navigationBarTitleText": "图库"
+			}
+		},
+		{
+			"path": "pages/liuhe/elevenOutOfFive",
+			"style": {
+				"enablePullDownRefresh": false,
+				"disableScroll": true,
+				"navigationBarTitleText": "图库"
+			}
+		},
+		{
+			"path": "pages/liuhe/recent_draws",
+			"style": {
+				"navigationBarTitleText": "最近开奖",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/ssc/recent_draws",
+			"style": {
+				"navigationBarTitleText": "最近开奖",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/liuhe/airship/recent_draws",
+			"style": {
+				"navigationBarTitleText": "最近开奖",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/liuhe/elevenOutOfFive/recent_draws",
+			"style": {
+				"navigationBarTitleText": "最近开奖",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/liuhe/luckyTwenty/recent_draws",
+			"style": {
+				"navigationBarTitleText": "最近开奖",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/liuhe/pcEgg/recent_draws",
+			"style": {
+				"navigationBarTitleText": "最近开奖",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/liuhe/luckyFarm/recent_draws",
+			"style": {
+				"navigationBarTitleText": "最近开奖",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/liuhe/hashIntro",
+			"style": {
+				"navigationBarTitleText": "哈希介绍",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/liuhe/luckyTwenty",
+			"style": {
+				"enablePullDownRefresh": false,
+				"disableScroll": true,
+				"navigationBarTitleText": "图库"
+			}
+		},
+		{
+			"path": "pages/liuhe/pcEgg",
+			"style": {
+				"enablePullDownRefresh": false,
+				"disableScroll": true,
+				"navigationBarTitleText": "图库"
+			}
+		},
+		{
+			"path": "pages/liuhe/luckyFarm",
+			"style": {
+				"enablePullDownRefresh": false,
+				"disableScroll": true,
+				"navigationBarTitleText": "图库"
+			}
+		},
+		{
+			"path": "pages/liuhe/shishicai",
+			"style": {
+				"enablePullDownRefresh": false,
+				"disableScroll": true,
+				"navigationBarTitleText": "图库"
+			}
+		},
+		{
+			"path": "pages/liuhe/airship",
+			"style": {
+				"enablePullDownRefresh": false,
+				"disableScroll": true,
+				"navigationBarTitleText": "图库"
+			}
+		},
+		{
+			"path": "pages/common/withdraw/index",
+			"style": {
+				"navigationBarTitleText": "提现",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/pay/index",
+			"style": {
+				"navigationBarTitleText": "充值",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/activity/index",
+			"style": {
+				"navigationBarTitleText": "%liuhe.activity.title%",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/activity/detail",
+			"style": {
+				"navigationBarTitleText": "%liuhe.activity.detail.title%",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/activity/log",
+			"style": {
+				"navigationBarTitleText": "领取记录",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/list",
+			"style": {
+				"navigationBarTitleText": "游戏大厅",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/common/userCenter/wallet/index",
+			"style": {
+				"navigationBarTitleText": "我的钱包",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/setting/index",
+			"style": {
+				"navigationBarTitleText": "%liuhe.setting.title%",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/setting/userInfo",
+			"style": {
+				"navigationBarTitleText": "%liuhe.setting.userInfo.title%",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/setting/setHead",
+			"style": {
+				"navigationBarTitleText": "修改头像"
+			}
+		},
+		{
+			"path": "pages/common/setting/setNickname",
+			"style": {
+				"navigationBarTitleText": "修改昵称",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/bank/bind",
+			"style": {
+				"navigationBarTitleText": "绑定",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/setting/setMobile",
+			"style": {
+				"navigationBarTitleText": "绑定手机号",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/setting/setPwd",
+			"style": {
+				"navigationBarTitleText": "修改登录密码",
+
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/setting/upMobile",
+			"style": {
+				"navigationBarTitleText": "修改手机号"
+			}
+		},
+		{
+			"path": "pages/common/userCenter/pwd/set_pwd",
+			"style": {
+				"navigationBarTitleText": "资金密码设置"
+			}
+		},
+		{
+			"path": "pages/common/userCenter/pwd/update_pwd",
+			"style": {
+				"navigationBarTitleText": "资金密码修改"
+			}
+		},
+		{
+			"path": "pages/common/userCenter/downloadPage",
+			"style": {
+				"navigationBarTitleText": "APP下载"
+			}
+		},
+		{
+			"path": "pages/common/login",
+			"style": {
+				"navigationBarTitleText": "%liuhe.login.title%",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/service/index",
+			"style": {
+				"navigationBarTitleText": "联系客服",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/reg",
+			"style": {
+				"navigationBarTitleText": "%liuhe.reg.title%",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/pact",
+			"style": {
+				"navigationBarTitleText": "%liuhe.reg.pact.title%",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/wallet/vip",
+			"style": {
+				"navigationBarTitleText": "VIP等级",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/withdraw/mtzc",
+			"style": {
+				"navigationBarTitleText": "免提直充",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/accountLog/menu",
+			"style": {
+				"navigationBarTitleText": "账变明细",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/accountLog/accountlog",
+			"style": {
+				"navigationBarTitleText": "账变明细",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/profitreport/profitreport",
+			"style": {
+				"navigationBarTitleText": "盈亏报表",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/profitreportTab/profitreport",
+			"style": {
+				"navigationBarTitleText": "盈亏报表",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/history/index",
+			"style": {
+				"navigationBarTitleText": "我的投注",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/bet_details",
+			"style": {
+				"navigationBarTitleText": "注单详情",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+
+			}
+		},
+		{
+			"path": "pages/liuhe/cart",
+			"style": {
+				"navigationBarTitleText": "购物车",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/bet_num",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/kuaisan/betting_results",
+			"style": {
+				"navigationBarTitleText": "投注结果",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/airship/betting_results",
+			"style": {
+				"navigationBarTitleText": "投注结果",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/ssc/betting_results",
+			"style": {
+				"navigationBarTitleText": "投注结果",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/elevenOutOfFive/betting_results",
+			"style": {
+				"navigationBarTitleText": "投注结果",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/luckyTwenty/betting_results",
+			"style": {
+				"navigationBarTitleText": "投注结果",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/betting_results",
+			"style": {
+				"navigationBarTitleText": "投注结果",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/kuaisan",
+			"style": {
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/kuaisan/recent_draws",
+			"style": {
+				"navigationBarTitleText": "最近开奖",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/how_to_play",
+			"style": {
+				"navigationBarTitleText": "玩法说明",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/accountLog/index",
+			"style": {
+				"navigationBarTitleText": "存取记录",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/profitreport/detail",
+			"style": {
+				"navigationBarTitleText": "游戏明细",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/accountLog/convert",
+			"style": {
+				"navigationBarTitleText": "转换记录",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/accountLog/outstanding_balance",
+			"style": {
+				"navigationBarTitleText": "未结余额",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/accountLog/gift_money",
+			"style": {
+				"navigationBarTitleText": "礼金记录",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/wallet/quota",
+			"style": {
+				"navigationBarTitleText": "额度回收",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/safeCenter/index",
+			"style": {
+				"navigationBarTitleText": "安全中心",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/bank/index",
+			"style": {
+				"navigationBarTitleText": "银行卡管理",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/bank/add",
+			"style": {
+				"navigationBarTitleText": "添加银行卡",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/bank/usdt",
+			"style": {
+				"navigationBarTitleText": "添加USDT",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/bank/wallet",
+			"style": {
+				"navigationBarTitleText": "绑定第三方钱包地址",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/bank/qrcode",
+			"style": {
+				"navigationBarTitleText": "添加收款二维码",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/yueBao/index",
+			"style": {
+				"navigationBarTitleText": "余额宝",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/yueBao/kefu",
+			"style": {
+				"navigationBarTitleText": "客服中心",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/yueBao/out",
+			"style": {
+				"navigationBarTitleText": "转出本金",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/yueBao/enter",
+			"style": {
+				"navigationBarTitleText": "转入",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/yueBao/success",
+			"style": {
+				"navigationBarTitleText": "成功",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/common/yueBao/earnings",
+			"style": {
+				"navigationBarTitleText": "收益记录",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/yueBao/capital",
+			"style": {
+				"navigationBarTitleText": "资金明细",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/common/promoteEarn/index",
+			"style": {
+				"navigationBarTitleText": "推广赚钱",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/promoteEarnNew/index",
+			"style": {
+				"navigationBarTitleText": "代理",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/promoteEarn/collectionRecord",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/liuhe/help/index",
+			"style": {
+				"navigationBarTitleText": "帮助中心",
+				"enablePullDownRefresh": false,
+				"disableScroll": true,
+				"app-plus": {
+					"safeArea": "none"
+				  }
+			}
+		},
+		{
+			"path": "pages/liuhe/help/detail",
+			"style": {
+				"navigationBarTitleText": "常见问题",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/help/list",
+			"style": {
+				"navigationBarTitleText": "帮助中心分类列表",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/feedback/index",
+			"style": {
+				"navigationBarTitleText": "有奖反馈",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/userCenter/feedback/detail",
+			"style": {
+				"navigationBarTitleText": "反馈详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/liuhe/notice/index",
+			"style": {
+				"navigationBarTitleText": "公告",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/notice/detail",
+			"style": {
+				"navigationBarTitleText": "公告详情"
+			}
+		},
+		{
+			"path": "pages/liuhe/notice/msg",
+			"style": {
+				"navigationBarTitleText": "站内信详情",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/liuhe/liuhePlaying",
+			"style": {
+				"enablePullDownRefresh": false,
+				"disableScroll": true,
+				"navigationBarTitleText": "图库"
+			}
+		},
+		{
+			"path": "pages/liuhe/webview/game",
+			"style": {
+				"navigationBarTitleText": "图库",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/liuhe/set_data",
+			"style": {
+				"navigationBarTitleText": "%liuhe.reg.title%"
+			}
+		},
+		{
+			"path": "pages/common/userCenter/accountLog/detail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/global/errors/ServiceLimitation",
+			"desc": "访问受限报错页",
+			"style": {
+				"navigationBarTitleText": "访问受限",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/liuhe/recommend",
+			"style": {
+				"navigationBarTitleText": "本站推荐",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/error",
+			"style": {
+				"navigationBarTitleText": "请稍后重试"
+			}
+		},
+		{
+			"path": "pages/common/userCenter/pwd/set_pwd",
+			"style": {
+				"navigationBarTitleText": "资金密码设置"
+			}
+		},
+		{
+			"path": "pages/common/maintain",
+			"style": {
+				"navigationBarTitleText": "系统正在维护"
+			}
+		},
+		{
+			"path": "pages/common/userCenter/reportRecord/reportDetail",
+			"style": {
+				"navigationBarTitleText": "举报详情",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/global/maintenance/index",
+			"style": {
+				"navigationBarTitleText": "系统维护中...",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/luntan/humorousGuessing/voteDetails",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/common/accessRestrictions",
+			"style": {
+				"navigationBarTitleText": "访问限制"
+			}
+		},
+		{
+			"path": "pages/common/chat_room",
+			"style": {
+				"navigationBarTitleText": "聊天室"
+			}
+		},
+		{
+			"path": "pages/liuhe/webview/hash_web"
+		}
+	],
+	"tabBarList": [{
+			"pagePath": "pages/liuhe/indexNew"
+		},
+		{
+			"pagePath": "pages/liuhe/game_hall"
+		},
+		{
+			"pagePath": "pages/liuhe/activity"
+		},
+		{
+			"pagePath": "pages/common/promoteEarnNew/index"
+		},
+		{
+			"pagePath": "pages/common/userCenter/profitreportTab/index"
+		},
+		{
+			"pagePath": "pages/liuhe/my"
+		}
+	]
+}
