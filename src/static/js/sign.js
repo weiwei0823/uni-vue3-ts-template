@@ -260,7 +260,7 @@ assert(!ENVIRONMENT_IS_SHELL, "shell environment detected but not enabled at bui
 // An online HTML version (which may be of a different version of Emscripten)
 //    is up at http://kripken.github.io/emscripten-site/docs/api_reference/preamble.js.html
 
-var wasmBinary;
+var wasmBinary; 
 if (Module['wasmBinary']) wasmBinary = Module['wasmBinary'];legacyModuleProp('wasmBinary', 'wasmBinary');
 
 if (typeof WebAssembly != 'object') {
@@ -410,7 +410,7 @@ function initRuntime() {
 
   checkStackCookie();
 
-
+  
   callRuntimeCallbacks(__ATINIT__);
 }
 
@@ -713,10 +713,10 @@ function createWasm() {
   function receiveInstance(instance, module) {
     wasmExports = instance.exports;
 
-
+    
 
     wasmMemory = wasmExports['memory'];
-
+    
     assert(wasmMemory, "memory not found in wasm exports");
     // This assertion doesn't hold when emscripten is run in --post-link
     // mode.
@@ -873,8 +873,8 @@ function dbg(text) {
 // === Body ===
 
 var ASM_CONSTS = {
-  66376: ($0) => { console.log(UTF8ToString($0)) },
- 66406: () => { return typeof window !== 'undefined' ? 1 : 0; },
+  66376: ($0) => { console.log(UTF8ToString($0)) },  
+ 66406: () => { return typeof window !== 'undefined' ? 1 : 0; },  
  66456: () => { console.log("Not running in a browser environment."); }
 };
 
@@ -895,7 +895,7 @@ var ASM_CONSTS = {
       }
     };
 
-
+  
     /**
      * @param {number} ptr
      * @param {string} type
@@ -924,7 +924,7 @@ var ASM_CONSTS = {
       return '0x' + ptr.toString(16).padStart(8, '0');
     };
 
-
+  
     /**
      * @param {number} ptr
      * @param {number} value
@@ -998,7 +998,7 @@ var ASM_CONSTS = {
 
   var getHeapMax = () =>
       HEAPU8.length;
-
+  
   var abortOnCannotGrowMemory = (requestedSize) => {
       abort(`Cannot enlarge memory arrays to size ${requestedSize} bytes (OOM). Either (1) compile with -sINITIAL_MEMORY=X with X higher than the current value ${HEAP8.length}, (2) compile with -sALLOW_MEMORY_GROWTH which allows increasing the size at runtime, or (3) if you want malloc to return NULL (0) instead of this abort, compile with -sABORTING_MALLOC=0`);
     };
@@ -1010,9 +1010,9 @@ var ASM_CONSTS = {
     };
 
   var printCharBuffers = [null,[],[]];
-
+  
   var UTF8Decoder = typeof TextDecoder != 'undefined' ? new TextDecoder('utf8') : undefined;
-
+  
     /**
      * Given a pointer 'idx' to a null-terminated UTF8-encoded string in the given
      * array that contains uint8 values, returns a copy of that string as a
@@ -1031,7 +1031,7 @@ var ASM_CONSTS = {
       // (As a tiny code save trick, compare endPtr against endIdx using a negation,
       // so that undefined means Infinity)
       while (heapOrArray[endPtr] && !(endPtr >= endIdx)) ++endPtr;
-
+  
       if (endPtr - idx > 16 && heapOrArray.buffer && UTF8Decoder) {
         return UTF8Decoder.decode(heapOrArray.subarray(idx, endPtr));
       }
@@ -1054,7 +1054,7 @@ var ASM_CONSTS = {
           if ((u0 & 0xF8) != 0xF0) warnOnce('Invalid UTF-8 leading byte ' + ptrToString(u0) + ' encountered when deserializing a UTF-8 string in wasm memory to a JS string!');
           u0 = ((u0 & 7) << 18) | (u1 << 12) | (u2 << 6) | (heapOrArray[idx++] & 63);
         }
-
+  
         if (u0 < 0x10000) {
           str += String.fromCharCode(u0);
         } else {
@@ -1074,16 +1074,16 @@ var ASM_CONSTS = {
         buffer.push(curr);
       }
     };
-
+  
   var flush_NO_FILESYSTEM = () => {
       // flush anything remaining in the buffers during shutdown
       _fflush(0);
       if (printCharBuffers[1].length) printChar(1, 10);
       if (printCharBuffers[2].length) printChar(2, 10);
     };
-
-
-
+  
+  
+  
     /**
      * Given a pointer 'ptr' to a null-terminated UTF8-encoded string in the
      * emscripten HEAP, returns a copy of that string as a Javascript String object.
@@ -1154,14 +1154,14 @@ var ASM_CONSTS = {
       }
       return len;
     };
-
+  
   var stringToUTF8Array = (str, heap, outIdx, maxBytesToWrite) => {
       assert(typeof str === 'string', `stringToUTF8Array expects a string (got ${typeof str})`);
       // Parameter maxBytesToWrite is not optional. Negative values, 0, null,
       // undefined and false each don't write out any bytes.
       if (!(maxBytesToWrite > 0))
         return 0;
-
+  
       var startIdx = outIdx;
       var endIdx = outIdx + maxBytesToWrite - 1; // -1 for string null terminator.
       for (var i = 0; i < str.length; ++i) {
@@ -1214,21 +1214,21 @@ var ASM_CONSTS = {
     };
 
   var ALLOC_NORMAL = 0;
-
+  
   var ALLOC_STACK = 1;
-
-
+  
+  
   var allocate = (slab, allocator) => {
       var ret;
       assert(typeof allocator == 'number', 'allocate no longer takes a type argument')
       assert(typeof slab != 'number', 'allocate no longer takes a number as arg0')
-
+  
       if (allocator == ALLOC_STACK) {
         ret = stackAlloc(slab.length);
       } else {
         ret = _malloc(slab.length);
       }
-
+  
       if (!slab.subarray && !slab.slice) {
         slab = new Uint8Array(slab);
       }
@@ -1237,11 +1237,11 @@ var ASM_CONSTS = {
     };
 
 
-
+  
   /** @deprecated @param {boolean=} dontAddNull */
   var writeStringToMemory = (string, buffer, dontAddNull) => {
       warnOnce('writeStringToMemory is deprecated and should not be called! Use stringToUTF8() instead!');
-
+  
       var /** @type {number} */ lastChar, /** @type {number} */ end;
       if (dontAddNull) {
         // stringToUTF8 always appends null. If we don't want to do that, remember the
@@ -1256,7 +1256,7 @@ var ASM_CONSTS = {
 
 
 
-
+  
   /** @type {function(string, boolean=, number=)} */
   function intArrayFromString(stringy, dontAddNull, length) {
     var len = length > 0 ? length : lengthBytesUTF8(stringy)+1;
@@ -1699,4 +1699,12 @@ function checkUnflushedContent() {
 
   run();
 }
+
+
+
+
+
+
+
+
 // end include: postamble.js

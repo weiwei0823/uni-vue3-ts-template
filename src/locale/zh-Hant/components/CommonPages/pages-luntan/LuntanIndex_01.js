@@ -1,0 +1,26 @@
+export default {
+	"components.luntan.index.lottery": "開獎",
+	"components.luntan.index.follow": "關注",
+	"components.luntan.index.followed": "已關注",
+	"components.luntan.index.read": "已讀",
+	"components.luntan.index.total": "共",
+	"components.luntan.index.cards": "張",
+
+	"components.luntan.index.sixGallery": "六合圖庫",
+	"components.luntan.index.liveDraw": "開獎直播",
+	"components.luntan.index.masterForum": "高手論壇",
+	"components.luntan.index.dataCollection": "資料大全",
+	"components.luntan.index.humorousGuess": "幽默猜測",
+	"components.luntan.index.sixGallery": "六合圖庫",
+	"components.luntan.index.infoStats": "資訊統計",
+	"components.luntan.index.toolbox": "工具寶箱",
+	"components.luntan.index.comprehensive": "綜合",
+	"components.luntan.index.essence": "精華",
+	"components.luntan.index.mostLikes": "最多贊",
+	"components.luntan.index.newest": "最新",
+	"components.luntan.index.all": "全部",
+	"components.luntan.index.australiaLottery": "澳彩",
+	"components.luntan.index.hongKongLottery": "港彩",
+	"components.luntan.index.taiwanLottery": "台彩",
+	"components.luntan.index.newLottery": "新彩"
+}

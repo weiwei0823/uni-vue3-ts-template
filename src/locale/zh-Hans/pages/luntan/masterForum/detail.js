@@ -1,0 +1,28 @@
+export default {
+    "pages.luntan.masterForum.detail.follow": "关注",
+    "pages.luntan.masterForum.detail.historyPosts": "历史帖子",
+    "pages.luntan.masterForum.detail.edit": "编辑",
+    "pages.luntan.masterForum.detail.likes": "获赞",
+    "pages.luntan.masterForum.detail.followers": "粉丝",
+    "pages.luntan.masterForum.detail.following": "关注",
+    "pages.luntan.masterForum.detail.growthValue": "成长值",
+    "pages.luntan.masterForum.detail.reads": "阅读数",
+    "pages.luntan.masterForum.detail.leaveComment": "想说点什么",
+    "pages.luntan.masterForum.detail.share": "分享",
+    "pages.luntan.masterForum.detail.viewUserPage": "查看用户主页",
+    "pages.luntan.masterForum.detail.historyPosts": "历史帖子",
+    "pages.luntan.masterForum.detail.applyFeatured": "申请加精",
+    "pages.luntan.masterForum.detail.featuredPending": "精华帖审核中",
+    "pages.luntan.masterForum.detail.featuredSuccess": "加精成功",
+    "pages.luntan.masterForum.detail.report": "举报",
+    "pages.luntan.masterForum.detail.cancel": "取消",
+
+    "pages.luntan.masterForum.detail.details": "详情",
+    "pages.luntan.masterForum.detail.hongKongLottery": "港彩",
+    "pages.luntan.masterForum.detail.australianLottery": "澳彩",
+    "pages.luntan.masterForum.detail.taiwanLottery": "台彩",
+    "pages.luntan.masterForum.detail.newLottery": "新彩",
+    "pages.luntan.masterForum.detail.issue": "第",
+    "pages.luntan.masterForum.detail.period": "期",
+    "pages.luntan.masterForum.detail.submitSuccess": "提交成功"
+}

@@ -1,0 +1,20 @@
+{
+	"liuhe.login.title": "login",
+	"liuhe.login.kefu": "online service",
+	"liuhe.enter.user": "Please enter account name",
+	"liuhe.enter.pwd": "Please enter account password",
+	"liuhe.forget.pwd": "forget the password",
+	"liuhe.setting.title": "Setting",
+	"liuhe.activity.title": "Promotions",
+	"pages.service.kefu": "客服中心",
+
+	"liuhe.setting.list1": "Account information",
+	"liuhe.setting.list2": "Share bet",
+	"liuhe.setting.list3": "Winning animation",
+	"liuhe.setting.list4": "Left and right gestures (default left hand)",
+	"liuhe.setting.list5": "Language selection ",
+	"liuhe.setting.list6": "Skin selection",
+	"liuhe.setting.list7": "Empty the cache",
+	"liuhe.setting.list8": "Current version",
+	"liuhe.setting.logout": "Sign out"
+}

@@ -1,0 +1,26 @@
+export default {
+    "components.luntan.index.lottery": "Lottery",
+    "components.luntan.index.follow": "Follow",
+    "components.luntan.index.followed": "Followed",
+    "components.luntan.index.read": "Read",
+    "components.luntan.index.total": "Total",
+    "components.luntan.index.cards": "Cards",
+
+    "components.luntan.index.sixGallery": "Six Gallery",
+    "components.luntan.index.liveDraw": "Live Draw",
+    "components.luntan.index.masterForum": "Master Forum",
+    "components.luntan.index.dataCollection": "Data Collection",
+    "components.luntan.index.humorousGuess": "Humorous Guess",
+    "components.luntan.index.sixGallery": "Six Gallery",
+    "components.luntan.index.infoStats": "Info Stats",
+    "components.luntan.index.toolbox": "Toolbox",
+    "components.luntan.index.comprehensive": "Comprehensive",
+    "components.luntan.index.essence": "Essence",
+    "components.luntan.index.mostLikes": "Most Likes",
+    "components.luntan.index.newest": "Newest",
+    "components.luntan.index.all": "All",
+    "components.luntan.index.australiaLottery": "Australia Lottery",
+    "components.luntan.index.hongKongLottery": "Hong Kong Lottery",
+    "components.luntan.index.taiwanLottery": "Taiwan Lottery",
+    "components.luntan.index.newLottery": "New Lottery"
+}

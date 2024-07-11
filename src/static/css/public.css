@@ -226,7 +226,11 @@ li {
 .comment-list .comment-item .comment-item-bd .images-box {
 	padding-top: 16rpx;
 }
-
+iframe {
+	width: 100% !important;
+	height: 100% !important;
+	border: 0 !important;
+}
 /**
  *	修复六合彩编辑弹窗导宽度不对的BUG
  */
