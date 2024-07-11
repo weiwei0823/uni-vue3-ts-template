@@ -1,13 +1,10 @@
 import VueI18n from 'vue-i18n'
-import { mapGetters } from 'vuex'
-import Vue from 'vue'
 import enumConfig from './configEnum'
 import en from '../../locale/en.json'
 import pt from '../../locale/pt.json'
 import zhHans from '../../locale/zh-Hans.json'
 import zhHant from '../../locale/zh-Hant.json'
 import { config } from '@/config/config'
-import { login } from '../../utils/common'
 
 export default {
   default: 'zh-Hans',
@@ -51,7 +48,7 @@ export default {
       navigatorStr: 'pt'
     }
   ],
-  init(Vue, store) {
+  init(Vue) {
     Vue.use(VueI18n)
     const i18n = new VueI18n({
       locale: uni.getLocale(),
@@ -63,8 +60,9 @@ export default {
     return i18n
   },
   loadLocaleMessages() {
+    console.log(require.context, "aaaaaa")
     const locales = require.context(
-      '../../locale',
+      '@/locale',
       true,
       /[A-Za-z0-9-_,\s]+\/import\.js$/i
     )

@@ -5,11 +5,11 @@
     "module": "esnext",
     "moduleResolution": "node", // 指定模块解析策略，'node' 用于 Node.js 的 CommonJS 实现
     "strict": true,
-    "allowJs": true, // 允许编译器编译JS，JSX文件
+    "allowJs": false, // 允许编译器编译JS，JSX文件
     "checkJs": true,
     "noEmit": true, // 编译后不输出任何js文件
     "jsx": "preserve", // 在 .tsx 中支持 JSX
-    "sourceMap": true, // 生成目标文件的 sourceMap 文件
+    "sourceMap": false, // 生成目标文件的 sourceMap 文件
     "resolveJsonModule": true, // 允许导入带有“.json”扩展名的模块
     "esModuleInterop": true, // CommonJS/AMD/UMD 模块导入兼容
     "importHelpers": true, // 模块导入辅助，通过 tslib 引入 helper 函数，https://www.typescriptlang.org/tsconfig#importHelpers
